@@ -1,12 +1,7 @@
 # Code and data availability
 
-This repository is the versioned reproducibility archive associated with the manuscript
-“Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity.”
+The version-controlled reproducibility code, exported numerical data, figure outputs, and manuscript sources are hosted at:
 
-The manuscript cites the repository under the key `kulkarni2026code`. The repository
-name is fixed as `emergent-pt-dirac-impurity`; the owner-specific public URL can be
-added to `CITATION.bib`, `CITATION.cff`, and the manuscript metadata immediately after
-public activation.
+https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity
 
-No external data downloads are required. The Fig. 3 source data are included in
-`data_fig3_weight_transfer/`.
+The main article and Supplemental Material cite this repository as `kulkarni2026code`.

@@ -72,11 +72,12 @@ script directory.
 Please cite the associated manuscript and the repository. Ready-to-copy entries are in
 `CITATION.bib`; GitHub-compatible metadata are in `CITATION.cff`.
 
-## Public-release note
+## Repository URL
 
-Repository URL:
+https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity
 
-`https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity`
+The manuscript and Supplemental Material cite this repository using the key
+`kulkarni2026code`.
 
 
 Validation diagnostics

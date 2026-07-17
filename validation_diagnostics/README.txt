@@ -12,4 +12,3 @@ FDR:
 - The maximum residual is 5.61e-14.
 - Fig. 4(d) uses the separately stated spectral resolution eta_spec=0.015 and is not used to compute the FDR residual.
 
-The log files record the exact values printed by the figure-generation code.

@@ -6,9 +6,10 @@ authors:
   - family-names: Kulkarni
     given-names: Vinayak M.
     orcid: "https://orcid.org/0000-0001-7590-2728"
-version: "1.0.0-rc1"
-date-released: "2026-07-16"
+version: "1.0.0"
+date-released: "2026-07-17"
 repository-code: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
+url: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
 abstract: >-
   Python scripts, numerical data, and manuscript sources for the passive-PT
   projected-kernel, slave-boson mean-field, spectral-weight-transfer, and

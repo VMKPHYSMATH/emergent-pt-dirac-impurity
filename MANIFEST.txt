@@ -68,5 +68,3 @@ validation_diagnostics/Fig4_FDR_residual_impurity.dat
 validation_diagnostics/Fig4_fFD.dat
 validation_diagnostics/README.txt
 validation_diagnostics/SFig4_negative_onset_summary.txt
-validation_diagnostics/fig1.log
-validation_diagnostics/fig4.log

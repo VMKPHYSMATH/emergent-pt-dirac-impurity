@@ -522,9 +522,9 @@
 \bibitem [{\citenamefont {Kulkarni}(2026)}]{kulkarni2026code}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~M.}\ \bibnamefont
-  {Kulkarni}},\ }\bibfield {title} {\bibinfo {title} {Reproducibility code and
-  data for ``Emergent {PT} Symmetry and Exceptional Points in a Driven Dirac
-  Impurity''},\ }\href@noop {} {\bibinfo {howpublished} {GitHub repository,
-  \texttt{emergent-pt-dirac-impurity}}} (\bibinfo {year} {2026}),\ \bibinfo
-  {note} {public release upon submission}\BibitemShut {NoStop}%
+  {Kulkarni}},\ }\href
+  {https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity} {\bibinfo {title}
+  {{Reproducibility code and data for ``Emergent {PT} Symmetry and Exceptional
+  Points in a Driven Dirac Impurity''}}},\ \bibinfo {howpublished} {GitHub
+  repository} (\bibinfo {year} {2026})\BibitemShut {NoStop}%
 \end{thebibliography}%
