@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Please cite both the software archive and the associated manuscript."
+title: "Reproducibility code and data for Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity"
+type: software
+authors:
+  - family-names: Kulkarni
+    given-names: Vinayak M.
+    orcid: "https://orcid.org/0000-0001-7590-2728"
+version: "1.0.0-rc1"
+date-released: "2026-07-16"
+repository-code: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
+abstract: >-
+  Python scripts, numerical data, and manuscript sources for the passive-PT
+  projected-kernel, slave-boson mean-field, spectral-weight-transfer, and
+  frozen Bethe-Ansatz-kernel diagnostics reported in the associated article.
+keywords:
+  - non-Hermitian physics
+  - exceptional points
+  - Kondo impurity
+  - Dirac bath
+  - slave-boson mean field
+  - Bethe ansatz
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Kulkarni
+      given-names: Vinayak M.
+      orcid: "https://orcid.org/0000-0001-7590-2728"
+  title: "Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity"
+  year: 2026
+  identifiers:
+    - type: url
+      value: "https://arxiv.org/abs/2505.17811"

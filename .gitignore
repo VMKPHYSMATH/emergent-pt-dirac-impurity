@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+.DS_Store
+figs_unified/
+fig5_rapidities.png
+fig6_phasediag.png
