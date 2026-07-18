@@ -6,8 +6,8 @@ authors:
   - family-names: Kulkarni
     given-names: Vinayak M.
     orcid: "https://orcid.org/0000-0001-7590-2728"
-version: "1.0.0"
-date-released: "2026-07-17"
+version: "1.0.1"
+date-released: "2026-07-19"
 repository-code: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
 url: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
 abstract: >-

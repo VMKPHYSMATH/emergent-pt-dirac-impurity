@@ -1,3 +1,12 @@
+# Version 1.0.1 - 2026-07-19
+
+- Added an MIT License for the Python source code and supporting software
+  configuration files.
+- Added CC BY 4.0 licensing for the numerical data and validation files.
+- Clarified the licensing scope in the README and citation metadata.
+- Scientific code, numerical results, manuscript files, and figures are
+  unchanged from Version 1.0.0.
+
 # Version 1.0.0 - 2026-07-17
 
 - Final self-contained 18-page main article and 12-page standalone Supplemental Material.

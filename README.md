@@ -16,6 +16,7 @@ bath and off-shell auxiliary sector are projected into the retarded impurity ker
 - `figures/main/` and `figures/supplement/` - final PDF figures.
 - `paper/` - final manuscript and Supplemental Material sources and PDFs.
 - `CITATION.cff` and `CITATION.bib` - software and manuscript citation metadata.
+- `LICENSE` and `LICENSE-DATA` - scoped licenses for code and numerical data.
 
 ## Environment
 
@@ -78,6 +79,19 @@ https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity
 
 The manuscript and Supplemental Material cite this repository using the key
 `kulkarni2026code`.
+
+## License
+
+- The Python source code and supporting software configuration files are
+  licensed under the MIT License; see `LICENSE`.
+- The numerical data and numerical validation files in
+  `data_fig3_weight_transfer/` and `validation_diagnostics/` are licensed
+  under the Creative Commons Attribution 4.0 International License
+  (CC BY 4.0); see `LICENSE-DATA`.
+- The manuscript text, TeX sources, compiled PDFs, and publication figures
+  are not covered by the software or data licenses. Copyright in those
+  materials remains with the author and is subject to the applicable journal,
+  preprint-server, and repository terms.
 
 
 Validation diagnostics
