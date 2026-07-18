@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+doi: 10.5281/zenodo.21434683
 message: "Please cite both the software archive and the associated manuscript."
 title: "Reproducibility code and data for Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity"
 type: software
