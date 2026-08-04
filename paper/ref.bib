@@ -5,10 +5,9 @@
 %   1. PhysRevB.108.155120: volume 105->108, pages 205125->155120,
 %      year 2022->2023, doi added, note{} DELETED.
 %   2. simons2015hubbard: NEW ENTRY added (was missing; was in arXiv version).
-%   3. li2024discoverynonhermitianphasetransition: flagged as possibly published --
-%      update journal/volume/pages if you can confirm the journal ref.
-%   4. pasnoori2025tdkondo doi and hu2025ceco2p2 doi: unusual format flagged --
-%      verify against doi.org.
+%   3. li2024discoverynonhermitianphasetransition remains cited as an arXiv preprint.
+%   4. The opaque APS DOI suffixes for pasnoori2025tdkondo and hu2025ceco2p2
+%      were verified against the corresponding APS records.
 %   5. All other 32 entries: unchanged from uploaded version (correct).
 
 @book{kamenev2023field,
@@ -297,12 +296,10 @@
   journal = {Phys. Rev. B},
   volume  = {106},
   pages   = {075113},
-  year    = {2022}
+  year    = {2022},
+  doi     = {10.1103/PhysRevB.106.075113}
 }
 
-% CHECK doi: 10.1103/78xb-5lmw is non-standard format.
-% Standard PRB doi would be 10.1103/PhysRevB.112.L060409.
-% Verify at doi.org before submission.
 @article{pasnoori2025tdkondo,
   author  = {Pasnoori, P. R.},
   title   = {Integrability of the {Kondo} model with time-dependent
@@ -314,9 +311,6 @@
   doi     = {10.1103/78xb-5lmw}
 }
 
-% CHECK doi: 10.1103/w2p1-3zhl is non-standard format.
-% Standard PRB doi would be 10.1103/PhysRevB.112.195107.
-% Verify at doi.org before submission.
 @article{hu2025ceco2p2,
   author  = {Hu, H. and Jiang, Y. and Liu, D.
              and Chen, Y. and Tsvelik, A. M.
@@ -424,10 +418,135 @@
   doi     = {10.1088/0022-3719/16/17/014}
 }
 
+@article{yamamoto2026complex,
+  author  = {Yamamoto, Kazuki and Nakagawa, Masaya and Kawakami, Norio},
+  title   = {Kondo breakdown induced by non-Hermitian complex hybridization},
+  journal = {Phys. Rev. B},
+  volume  = {114},
+  pages   = {065118},
+  year    = {2026},
+  doi     = {10.1103/w6zs-kb6m}
+}
+
+@article{oguri2013highbias,
+  author  = {Oguri, Akira and Sakano, Rui},
+  title   = {Exact interacting Green's function for the {Anderson} impurity at high bias voltages},
+  journal = {Phys. Rev. B},
+  volume  = {88},
+  pages   = {155424},
+  year    = {2013},
+  doi     = {10.1103/PhysRevB.88.155424}
+}
+
+@article{fisherlee1981,
+  author  = {Fisher, Daniel S. and Lee, Patrick A.},
+  title   = {Relation between conductivity and transmission matrix},
+  journal = {Phys. Rev. B},
+  volume  = {23},
+  pages   = {6851--6854},
+  year    = {1981},
+  doi     = {10.1103/PhysRevB.23.6851}
+}
+
+@article{wigner1955,
+  author  = {Wigner, Eugene P.},
+  title   = {Lower limit for the energy derivative of the scattering phase shift},
+  journal = {Phys. Rev.},
+  volume  = {98},
+  pages   = {145--147},
+  year    = {1955},
+  doi     = {10.1103/PhysRev.98.145}
+}
+
+@article{smith1960,
+  author  = {Smith, Felix T.},
+  title   = {Lifetime matrix in collision theory},
+  journal = {Phys. Rev.},
+  volume  = {118},
+  pages   = {349--356},
+  year    = {1960},
+  doi     = {10.1103/PhysRev.118.349}
+}
+
+@article{anderson1970poor,
+  author  = {Anderson, P. W.},
+  title   = {A poor man's derivation of scaling laws for the {Kondo} problem},
+  journal = {J. Phys. C: Solid State Phys.},
+  volume  = {3},
+  pages   = {2436--2441},
+  year    = {1970},
+  doi     = {10.1088/0022-3719/3/12/008}
+}
+
 @misc{kulkarni2026code,
   author       = {Kulkarni, Vinayak M.},
   title        = {{Reproducibility code and data for ``Emergent {PT} Symmetry and Exceptional Points in a Driven Dirac Impurity''}},
   year         = {2026},
-  howpublished = {GitHub repository},
-  url          = {https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity}
+  howpublished = {GitHub release v1.0.1 and Zenodo archive},
+  url          = {https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity/tree/v1.0.1},
+  doi          = {10.5281/zenodo.21434682},
+  note         = {All-versions DOI: doi:10.5281/zenodo.21434682; version v1.0.1 DOI: doi:10.5281/zenodo.21434683}
+}
+
+@misc{KulkarniYB2026,
+  author        = {Kulkarni, Vinayak M.},
+  title         = {Jordan-Twist Bethe Ansatz and Many-Body
+                   Exceptional-Point Amplification in the Finite-$U$
+                   Anderson Impurity},
+  year          = {2026},
+  eprint        = {2604.21547},
+  archivePrefix = {arXiv},
+  primaryClass  = {math-ph},
+  doi           = {10.48550/arXiv.2604.21547}
+}
+
+@article{Wiegmann1980,
+  author  = {Wiegmann, P. B.},
+  title   = {Towards an exact solution of the {Anderson} model},
+  journal = {Phys. Lett. A},
+  volume  = {80},
+  pages   = {163--167},
+  year    = {1980},
+  doi     = {10.1016/0375-9601(80)90206-8}
+}
+
+@article{KawakamiOkiji1982,
+  author  = {Kawakami, N. and Okiji, A.},
+  title   = {Exact expression of the ground-state energy for the symmetric
+             {Anderson} model},
+  journal = {J. Phys. Soc. Jpn.},
+  volume  = {51},
+  pages   = {1145--1156},
+  year    = {1982},
+  doi     = {10.1143/JPSJ.51.1145}
+}
+
+@article{WiegmannTsvelick1983,
+  author  = {Wiegmann, P. B. and Tsvelick, A. M.},
+  title   = {Exact solution of the {Anderson} model: {I}},
+  journal = {J. Phys. C: Solid State Phys.},
+  volume  = {16},
+  pages   = {2281--2319},
+  year    = {1983},
+  doi     = {10.1088/0022-3719/16/12/017}
+}
+
+@article{ChaoPalacios2011,
+  author  = {Chao, S.-P. and Palacios, G.},
+  title   = {Nonequilibrium transport in the {Anderson} model of a biased
+             quantum dot: Scattering {Bethe} ansatz phenomenology},
+  journal = {Phys. Rev. B},
+  volume  = {83},
+  pages   = {195314},
+  year    = {2011},
+  doi     = {10.1103/PhysRevB.83.195314}
+}
+
+@misc{suppmat,
+  year = {2026},
+  note = {See Supplemental Material at [URL will be inserted by publisher]
+          for detailed Wigner and Schur-complement derivations, Keldysh and
+          screening constructions, low-temperature saddle, causal scattering
+          validation, finite-$U$ contact algebra, the operator-resolved NRG
+          residue audit, and Figs. S1--S8}
 }

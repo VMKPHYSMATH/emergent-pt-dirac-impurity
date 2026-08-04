@@ -18,14 +18,13 @@
 \newcommand{\Htilde}{\tilde{H}}
 \newcommand{\teps}{\tilde{\epsilon}_{\xi}}
 \newcommand{\keff}{\kappa_{\rm imp}}
-\newcommand{\seff}{s_{\rm eff}}
 \newcommand{\Eep}{E_{\rm EP}}
 \newcommand{\Gless}{G^{<}}
 \newcommand{\Gret}{G^{R}}
 \newcommand{\Gadv}{G^{A}}
 \newcommand{\tb}{\tilde{\beta}}          % gauge-invariant SBMF scale
 \newcommand{\gb}{\beta_0}               % signed frozen drive-control amplitude
-\newcommand{\gm}{\gamma}                % flip in frozen BA
+\newcommand{\gm}{\gamma}                % coherent frozen-core amplitude
 \newcommand{\Gpt}{\Gamma_{\mathrm{PT}}}   % projected gain/loss channel
 \newcommand{\dSig}{\delta_{\Sigma}}          % real one-body self-energy shift
 \newcommand{\Deff}{\Delta_{\rm eff}}     % projected coherent splitting/flip
@@ -35,7 +34,6 @@
 \newcommand{\cGm}{c_{\Gamma}}
 \newcommand{\cDl}{c_{\Delta}}
 \newcommand{\cV}{c_V}
-\newcommand{\mur}{\mu}                   % BA auxiliary rapidity
 
 \begin{document}
 
@@ -51,30 +49,40 @@
 \date{\today}
 
 \begin{abstract}
-Periodic driving of correlated impurities can generate nonequilibrium steady
-states, but the microscopic origin of passive non-Hermitian structures in such
-systems is often obscured.  We show that a driven, inversion-asymmetric Dirac
-impurity can realize a passive $\PT$-symmetric projected retarded kernel without
-adding gain or loss to the microscopic Hamiltonian.  The construction proceeds
-in two steps: off-shell auxiliary angular harmonics generate a real spin-odd
-coherent shift, and embedding this shifted channel in an energy-dependent Dirac
-bath converts it into a relative spin-dependent decay rate.  After subtracting
-common bath damping, the co-decaying impurity kernel contains the passive
-$\PT$ core $\Delta_{\rm eff}\sigma_x+i\Gamma_{\rm PT}\sigma_z$,
-while the Kramers--Kronig partner $\Delta_{\rm coh}\sigma_z$ provides a causal
-detuning floor that bounds the approach to exact coalescence.  We solve the
-interacting impurity at the slave-boson mean-field level using the
-gauge-invariant projected hybridization $\tilde\beta=|\beta_0||b_c|$ and the
-physical bath-FDR spectrum.  Analytic Schrieffer--Wolff and frozen
-Bethe-Ansatz-kernel estimates give the near-EP screening-scale enhancement;
-independently, the SBMF spectra show positive spectral-weight transfer into
-the shifted Friedel-type spectral resonance (FSR) associated with the Kondo feature in the same drive window.  The SBMF weight
-transfer is not used as a definition of a thermodynamic Kondo temperature, and
-FWHM-like linewidths are assigned only where the positive resonance is locally
-resolved.  The result is a self-contained projected-kernel description of how
-impurity-localized passive-\(\PT\) nonnormality can enhance low-energy
-screening diagnostics while preserving causality of the underlying Hermitian
-system.
+Periodic driving can generate nonequilibrium impurity states, but the
+microscopic origin of passive non-Hermitian structures is often obscured.  We
+derive such a structure for an inversion-asymmetric spin--orbit-coupled (SOC)
+Dirac impurity without adding microscopic gain or loss.  Cubic crystalline
+anisotropy selects remote angular harmonics; their off-shell, slowly driven
+projection produces a real spin-odd shift, and the energy-dependent Dirac
+bath converts that shift into a relative spin-dependent decay rate.  After
+subtracting common damping, the co-decaying retarded kernel contains the
+passive parity--time ($\PT$) core
+$\Delta_{\rm eff}\sigma_x+i\Gamma_{\rm PT}\sigma_z$, while its
+Kramers--Kronig partner supplies a causal detuning floor.  The frozen core has
+$E_\pm=\tilde\epsilon_\xi\pm
+\sqrt{\Delta_{\rm eff}^2-\Gamma_{\rm PT}^2}$ and an exceptional point (EP)
+with a finite Jordan simple-plus-double-pole resolvent.  We formulate the
+complete passive problem through its unitary two-channel scattering matrix;
+its eigenphases obey an exact one-particle contact-phase condition, and their
+logarithmic derivative equals the Wigner--Smith scattering
+density-of-states shift.  We then isolate a controlled, equal-velocity
+branchwise linearization.  A canonical non-unitary CPT/metric similarity
+diagonalizes the constant component matrix away from the EP while leaving
+the scalar hybridization and finite-$U$ interaction invariant.  Eliminating
+the doubly occupied contact amplitude yields the exact Anderson two-electron
+matrix, rational in a dressed rapidity and covariant under
+$GL(2,\mathbb C)$; hence its Yang--Baxter algebra survives the similarity.
+At the EP the diagonalizer is singular and the same datum is represented
+instead by an invertible unipotent boundary twist.  This integrability
+statement applies only to the stated linearized submanifold, not to the
+complete curved, energy-dependent driven kernel.  Slave-boson,
+fluctuation--dissipation, channel-resolved renormalization-group, and
+operator-resolved biorthogonal NRG checks show pre-EP concentration of the
+scattering phase density, bounded weak-flow amplification, and a nearly
+traceless finite-$U$ transition residue aligned with the nilpotent EP
+direction.  The numerical pole splitting establishes neither a stable
+universal interaction law nor an enhanced thermodynamic Kondo temperature.
 \end{abstract}
 
 \maketitle
@@ -138,6 +146,21 @@ Non-Hermitian Kondo physics has been explored via numerical
 renormalization group, cold-atom platforms, and Floquet-engineered
 conduction bands~\cite{burke2025non,19td-1k9s,
 PhysRevLett.121.203001,PhysRevB.108.155120,SBkeld}.
+Recent work on a non-Hermitian Anderson model with complex hybridization has
+also established a genuine ground-state Kondo-breakdown transition by
+self-consistent slave-boson and interacting Bethe-Ansatz
+methods~\cite{yamamoto2026complex}.  The present problem is different: its
+non-Hermitian structure is a passive retarded kernel derived from a Hermitian
+driven system, and its RG result is deliberately restricted to a weak-flow
+pre-EP diagnostic.
+An exact limiting precedent for an emergent non-Hermitian impurity generator
+was given by Oguri and Sakano~\cite{oguri2013highbias}: at infinite bias (or
+in the corresponding high-temperature limit) the Anderson impurity maps to a
+finite Liouville--Fock Hamiltonian, while physical Green functions require the
+complete doubled-space initial/final-state construction.  That high-energy
+limit is distinct from the present adiabatic passive kernel, but it reinforces
+the need to retain complete retarded, advanced, and lesser objects rather than
+assigning observability to an individual left or right eigenvector residue.
 Integrability of the Kondo model with time-dependent couplings
 has been established via quantum Knizhnik--Zamolodchikov
 equations~\cite{pasnoori2025tdkondo}, and a $\PT$-protected
@@ -149,6 +172,20 @@ mean-field treatments of correlated
 electrons~\cite{simons2015hubbard}, directly motivating the
 approach employed in Sec.~\ref{sec:mf}.
 
+The exact algebraic question is separated from the microscopic derivation.
+The present article derives the driven retarded kernel and identifies the
+controlled low-energy submanifold on which its contact problem reduces to a
+finite-$U$ Anderson model.  A companion mathematical work
+~\cite{KulkarniYB2026} develops that reduced model independently: it proves
+the finite-volume gauge equivalence, YBE/RLL/RTT construction, unipotent
+boundary-twist limit, the resolution of the nonzero transverse
+pseudospin-ladder sector, the resulting many-body Jordan structure, and the
+Laguerre-scaled contraction of descendant spin roots at
+\(\lambda=\infty\).  This
+division of labor is important.  The exact result below is not a claim that
+curvature, unequal branch velocities, or the full frequency-dependent
+self-energy of the driven model are Yang--Baxter integrable.
+
 Here we show that a driven impurity embedded in a Dirac-like bath
 naturally develops a passive non-Hermitian kernel once higher angular
 harmonics and the energy-dependent Dirac bath are treated together.
@@ -159,10 +196,14 @@ rate.  After subtracting the common bath damping, the remaining
 co-decaying kernel contains a dynamically induced passive
 $\PT$-symmetric core, together with a Kramers--Kronig-related coherent
 detuning that bounds the approach to exact coalescence.
-We demonstrate that the resulting finite-drive near-EP structure
-persists under thermal equilibration and under self-consistent
-minimization---despite arising without any explicit non-Hermitian term
-in the microscopic Hamiltonian.
+We demonstrate that the resulting finite-drive near-EP structure is compatible
+with the bath-controlled thermal closure---despite arising without any
+explicit non-Hermitian term in the microscopic Hamiltonian.  The principal
+spectral figures are frozen-kernel diagnostics.  A separate low-temperature
+$U\to\infty$ saddle verifies projected-channel scaling and charge continuity,
+while no finite-$r$ branch is found at the reference temperature
+$T_{\rm b}=0.1$; no finite-temperature enhancement of the condensate is
+claimed.
 \emph{In contrast to earlier studies where non-Hermiticity is
 imposed phenomenologically or emerges through renormalization-group
 flow~\cite{PhysRevLett.121.203001,han2023complex,
@@ -182,12 +223,16 @@ Section~\ref{sec:Hss} derives the steady-state Hamiltonian and
 the Hadamard rotation that makes hybridization diagonal.
 Section~\ref{sec:mf} presents the slave-boson mean field and
 the resulting shifted resonance condition.
-Sections~\ref{sec:spectra}--\ref{sec:FDR} show spectral properties,
-phase-selective EP diagnostics, and the fluctuation--dissipation
-relation (FDR).  Section~\ref{sec:dynamics} discusses real-time dynamics
-in the passive co-decaying frame.  Section~\ref{sec:BA} presents the
-biorthogonal Bethe Ansatz (BA) for the frozen effective model.
-Section~\ref{sec:kondo} discusses near-EP low-energy scale estimates within slave-boson mean-field (SBMF) theory.
+Sections~\ref{sec:spectra}--\ref{sec:FDR} state the spectral and
+fluctuation--dissipation checks, whose full numerical panels are collected in
+the Supplemental Material.  Section~\ref{sec:dynamics} discusses real-time
+dynamics in the passive co-decaying frame.  Section~\ref{sec:scattering}
+derives the Jordan response and full scattering eigenphases, then obtains
+the exact finite-$U$ contact matrix on the controlled branchwise-linearized
+submanifold and states its CPT-covariant Yang--Baxter structure.
+Section~\ref{sec:kondo} separates the analytic frozen estimate from the
+supporting weak-coupling flow and from any thermodynamic Kondo-temperature
+claim.
 Section~\ref{sec:conc} concludes.
 
 % ============================================================
@@ -217,9 +262,12 @@ amplitude; and $\tilde\beta=|\beta_0||b_c|$ is its nonnegative
 SBMF-renormalized projection.  The radial momentum cutoff $k_{\rm max}$ and
 the ultraviolet energy cutoff $D_{\rm uv}$ are conceptually distinct; in the
 dimensionless plots both are set numerically to $\pi/4$ as a convention.
-We denote the analytic bare-block EP by
-$\beta_{0,{\rm bare}}^{\rm EP}=\gamma=0.50$ and the full projected
-numerical value by $\beta_{0,{\rm proj}}^{\rm EP}=0.4975$.
+We denote the analytic local bare-core EP by
+$\beta_{0,{\rm core}}^{\rm EP}=\gamma=0.50$.  At the
+SOC-degenerate $k=0$ point the relevant bath-dressed double-root condition is
+identical to this core condition.  On the finite-$k$ plotting path, the
+operational Schur-tracked nearest approach is
+$\beta_{0,{\rm proj}}^{\rm min}=0.4975$.
 
 \subsection{Bath}
 
@@ -277,6 +325,9 @@ H_{\rm imp\text{-}bath}
 where $W_k$ is the bare hybridization amplitude.
 This term defines the physical coupling between the impurity and the
 conduction bath before the angular-momentum harmonics are introduced.
+Importantly, $W_k$ is time independent and is not proportional to the
+frozen drive control $\beta_0$.  At the slave-boson saddle the physical
+spinon--bath vertex is $rW_k$, with $r=|b_c|$.
 
 In the presence of the driven angular-momentum sector
 [Eqs.~(\ref{eq:HO})--(\ref{eq:Hhyb})], the $m=0$ bath propagator
@@ -314,7 +365,7 @@ O^\dagger_{k,m+3,\sigma}O_{k,m,\sigma}\\
 \end{split}
 \end{equation}
 where the mode energies satisfy $\epsilon_O^{(m)}=\epsilon_O^{(-m)}$
-(inversion symmetry of the crystal).  The fields $O_{k,m,\sigma}$
+by mirror/time-reversal symmetry of the $C_{3v}$ crystal field.  The fields $O_{k,m,\sigma}$
 should be understood as a Feshbach, or Loewdin-partitioned, representation
 of remote higher-angular-harmonic crystal-field channels rather than as
 an additional low-energy bath.  Their energies include the local orbital
@@ -457,9 +508,15 @@ v_{m\sigma}(t)
 \end{align}
 For the diagonal terms, and also for any Hermitian off-shell auxiliary
 matrix after summing conjugate paths, the phases enter as
-$e^{i\zeta_\sigma[\phi(t)-\phi(t')]}$.  In Wigner coordinates this becomes
-$1+O(\Omega/\epsilon_O)$ and gives a regular Hermitian
-principal-value shift.  Equivalently, after the unitary rotation in
+$e^{i\zeta_\sigma[\phi(t)-\phi(t')]}$.  With
+$T=t_{\rm av}$ and $\tau=t-t'$, this is
+$e^{i\zeta_\sigma\tau\dot\phi(T)}$ to first adiabatic order, so the
+Wigner transform shifts the stationary auxiliary self-energy as
+$\Sigma_0^{O,R}(\omega)\to
+\Sigma_0^{O,R}[\omega+\zeta_\sigma\dot\phi(T)]$.
+Its first-order expansion gives the regular Hermitian principal-value shift
+in Eq.~(\ref{eq:aux_real_shift}); the explicit transform and sign are given
+in the Supplemental Material.  Equivalently, after the unitary rotation in
 Eq.~(\ref{eq:aux_gauge_rotation}), the same result is obtained from the
 spin-dependent level shift in Eq.~(\ref{eq:aux_level_shift}).
 
@@ -678,19 +735,30 @@ $\partial_\omega\bar\Gamma$ remains finite, while near the Fermi level
 the companion ratio is logarithmically enhanced,
 $|\Dcoh/\Gamma_{\rm PT}|\simeq(2/\pi)\ln(D_{\rm uv}/|\omega|)$.  Away from the
 compensated point, the Kramers--Kronig detuning prevents a literal pole
-coalescence: minimizing $|s|$ over $\Deff$ at fixed $\Dcoh$ and
-$\Gamma_{\rm PT}$ gives the causal floor
+coalescence.  Minimizing $|s|$ over real $\Deff$ at fixed $\Dcoh$ and
+$\Gamma_{\rm PT}$ gives
 \begin{equation}
-|s|_{\rm min}=\sqrt{2\,|\Dcoh|\,\Gamma_{\rm PT}}\,,
+|s|_{\rm min}=
+\begin{cases}
+\sqrt{2|\Dcoh\Gamma_{\rm PT}|},
+& |\Dcoh|\le|\Gamma_{\rm PT}|,\\[2pt]
+\sqrt{\Dcoh^2+\Gamma_{\rm PT}^2},
+& |\Dcoh|>|\Gamma_{\rm PT}|,
+\end{cases}
 \label{eq:KK_floor}
 \end{equation}
-with the same square-root non-analyticity as the interaction floor
-$\seff=[U\gb\sqrt{F(\lambda)}]^{1/2}$ of the Supplemental Material, where $F(\lambda)$ is the SOC-overlap form factor: causality and
-interactions regularize the EP with the identical functional form.  The
-figures should therefore be read as near-EP diagnostics of the
-co-decaying projected kernel, consistent with the bounded
-$Z_{\eta}^{\rm bio}$ and $s_{\min}$ regularization used in the
-BA-kernel analysis.
+with the square-root non-analyticity characteristic of a second-order EP.
+This causal detuning should not be identified with a universal
+interaction-induced splitting.  In the exact equal-velocity,
+scalar-hybridization linearized reduction derived below, the standard local
+interaction preserves the complexified pseudospin symmetry and does not
+lift the EP~\cite{KulkarniYB2026}.  Curvature, unequal velocities, an
+energy-dependent self-energy, or component-dependent vertices can instead
+move or split it.  The Supplemental Material derives the minimization and
+the sharp-cutoff Dirac Kramers--Kronig estimate explicitly.  The figures
+should therefore be read as near-EP diagnostics of the co-decaying projected
+kernel, with the causal scale $s_{\min}$ preventing an unphysical pole on
+the real-frequency axis.
 
 This two-step structure is the microscopic origin of the kernel used in
 the rest of the paper: off-shell auxiliary modes generate a real spin-odd
@@ -706,8 +774,14 @@ kernel control parameter.  Microscopically,
 \label{eq:Gamma_PT_micro_scale}
 \end{equation}
 so the construction establishes the symmetry-allowed origin of the passive
-relative channel, while the plotted values explore the resulting frozen
-low-energy kernel.
+relative channel, but does not determine the numerical magnitude of the
+dimensionless frozen-kernel control $\gb$.  Figures~\ref{fig:full_H}
+and~\ref{fig:flip0} therefore use a normalized geometry scan to expose the
+coalescence structure.  The independent causal test in
+Supplemental Fig.~S6 instead uses a fixed small bare width
+$\Gamma_0=0.12$ relative to the unit charge gap.  This distinction prevents
+the adiabatic estimate in Eq.~(\ref{eq:Gamma_PT_micro_scale}) from being
+misread as a microscopic prediction of $\gb\simeq0.5$.
 
 % ============================================================
 \section{Steady-State Hamiltonian and Emergent Non-Hermiticity}
@@ -717,10 +791,12 @@ low-energy kernel.
 Given the passive spin-conjugate relative self-energy from Sec.~\ref{sec:coarse}, this section derives
 the explicit $4\times4$ steady-state Hamiltonian $\Htilde(k)$
 and identifies the structural origin of its exceptional points.
-A key step is the Hadamard rotation that diagonalizes the
+A key step is the Hadamard rotation that diagonalizes the bare
 hybridization block, revealing that each chiral spinon mode
-couples exclusively to one bath channel---a property that later
-leads to the block-diagonal $S$-matrix used in the frozen-model Bethe-Ansatz diagnostic.
+couples directly to one bath channel.  The internal
+$i\Gamma_{\rm PT}$ term still mixes those impurity modes, so the physical
+two-channel scattering matrix need not be diagonal; the frozen finite-size
+quantization below is therefore formulated using its exact eigenphases.
 
 \subsection{From Self-Energy to Steady-State Hamiltonian}
 \label{sec:deriveHss}
@@ -734,38 +810,43 @@ $S_{\rm imp}^R=\sum_k\bar{f}[\omega\mathbb{I}-\Hss(k)]f$,
 where the steady-state Hamiltonian $\Hss(k)$ is defined as the
 inverse of the retarded Green's function at the saddle point:
 $\Hss(k)\equiv[\Gret_{\rm ss}(\omega,k)]^{-1}|_{\rm saddle}$.
-The gauge-invariant slave-boson amplitude
-$r=|b_c|$ defines the natural low-energy scale
-$\tb=|\gb| r$ in the symmetric frozen-kernel convention used for
-the final numerical diagnostics.  The sign of $\gb$ is then a drive
-or projection convention and does not change the physical low-energy
-amplitudes.  The three channels that appear in the effective
-Hamiltonian have distinct microscopic origins: the anti-Hermitian
-passive relative gain--loss channel is the projected imaginary part of the
-retarded self-energy, the coherent splitting/flip is the projected
-Hermitian impurity channel, and the impurity--bath hybridization is
-the slave-boson-renormalized hybridization.  We therefore use the channel-projected parametrization
-\begin{equation}
-\Gpt=\cGm\tb,\qquad
-\Deff=\Dzero+\cDl\tb,\qquad
-\Veff=\cV\tb,
+The gauge-invariant slave-boson amplitude is $r=|b_c|$.  The three
+channels in the effective Hamiltonian have distinct microscopic origins:
+the passive relative width and coherent detuning are components of the
+projected retarded self-energy, whereas the impurity--bath vertex descends
+from the time-independent bare coupling $W$.  Since an impurity self-energy
+contains two spinon--bath vertices, the physical projected parametrization is
+\begin{align}
+\Gpt&=r^2\Gamma_{\rm PT}^{(0)}(\gb),&
+\Deff&=r^2\!\left[\Delta_0^{(0)}+c_\Delta^{(0)}\gb\right],
+\nonumber\\[-0.2em]
+\Veff&=rW .
 \label{eq:projected_channels}
+\end{align}
+Here the superscript $(0)$ denotes the frozen bath projection before
+slave-boson renormalization.  The core discriminant consequently obeys
+\begin{equation}
+s_{\rm core}^2=r^4\left\{
+\left[\Delta_0^{(0)}+c_\Delta^{(0)}\gb\right]^2
+-\left[\Gamma_{\rm PT}^{(0)}(\gb)\right]^2\right\}.
+\label{eq:r4_core}
 \end{equation}
-where $\Dzero$ is a possible static coherent splitting and
-$\cGm$, $\cDl$, and $\cV$ are real low-energy projection
-coefficients.  These coefficients should be understood as Wilson
-coefficients of the coarse-grained effective Hamiltonian, not as
-independent microscopic couplings inserted by hand.  The
-anti-Hermitian spin-odd component of the retarded self-energy projects
-onto $\Gpt$, the Hermitian spin-mixing component projects onto
-$\Deff$, and the remaining chiral-bath overlap determines $\Veff$.
-The common slave-boson scale is $\tb=|\gb| |b_c|$ in the
-symmetric plotting convention, but $\PT$ symmetry
-only requires the projected coefficients to be real; it does not
-require $\cGm=\cDl=\cV$.  The minimal symmetric representative is
-$\Dzero=0$ and $\cGm=\cDl=\cV=1$.  A generic channel projection
-with $\Dzero\neq0$ or unequal slopes separates an isolated finite-drive
-impurity EP from the artificial EP ray of the fully symmetric limit.
+For $r>0$, the common factor $r^4$ cancels from the core EP condition.
+The local core EP is therefore exactly invariant under changes of $r$,
+whereas a bath-dressed finite-$k$ Schur minimum must still be tracked.
+Figures~\ref{fig:full_H} and~\ref{fig:flip0} use $r=1$ and a normalized
+frozen-kernel geometry path; they are intended to display the bifurcation
+rather than to fix an Anderson hybridization width.  The supporting
+channel-resolved RG calculation uses the conservative fixed-$W$ projection
+\begin{align}
+\Gamma_0&=\pi\rho W^2=0.12,\nonumber\\
+\Delta_{\rm eff}^{(0)}&=0.075+0.05\gb,\qquad
+\Gamma_{\rm PT}^{(0)}=0.20\gb ,
+\label{eq:smallW_path}
+\end{align}
+for which $\Gamma_0/\Delta_{\rm charge}=0.12$ and the core EP remains at
+$\gb=0.50$.  Thus the RG test is performed in a local-moment-compatible
+small-width regime, with $W$ independent of the drive coordinate.
 
 At the compensated passive-$\PT$ point $\Dcoh=0$, substituting the projected self-energy into
 the retarded Dyson equation and including the hybridization to the
@@ -789,8 +870,8 @@ shift from the principal-value self-energy in Sec.~\ref{sec:PT_all}
 bath dispersions are $\varepsilon_{c,\pm}(k)=\alpha_{\rm b}k^2\pm\lambda k$.
 The interaction $U$ is not an explicit two-body coupling in the
 $4\times4$ Gaussian kernel; it enters through the SBMF constraint and
-through the Schrieffer--Wolff / BA-kernel virtual charge
-energies used for the Kondo-scale estimate.  For the
+through the Schrieffer--Wolff and finite-\(U\) contact virtual-charge
+energies used below.  For the
 finite-$U$ Anderson interpretation, particle-hole symmetry is imposed
 by the common impurity-level choice $\epsilon_\xi=-U/2$, not by adding
 opposite $\pm U/2$ spin splittings.  A real Zeeman field, when present,
@@ -838,7 +919,7 @@ The algebra is identical to the symmetric case:
 $\frac{\Veff}{\sqrt{2}}\cdot\frac{1}{\sqrt{2}}
 \bigl[\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\bigr]^2
 =\frac{\Veff}{2}\cdot2\mathbb{I}=\Veff\mathbb{I}$.
-The full rotated Hamiltonian in the 
+The full rotated Hamiltonian in the
 $(\tilde{d}_+,\tilde{d}_-,c_{k+},c_{k-})$ basis is:
 \begin{equation}
 \Htilde(k)=
@@ -856,7 +937,10 @@ Three key properties of $\Htilde(k)$ follow:
 \item \emph{Diagonal hybridization}: $\tilde{d}_+$ hybridizes
   exclusively with the $c_{k+}$ bath (amplitude $\Veff$)
   and $\tilde{d}_-$ with $c_{k-}$, independently.
-  No cross-channel hybridization.
+  There is no bare cross-channel vertex.  The internal
+  $i\Gamma_{\rm PT}$ matrix element can nevertheless mediate conversion
+  between the two asymptotic bath channels, so it does not imply a diagonal
+  physical scattering matrix.
 
 \item \emph{Impurity block}: the $2\times2$ frozen impurity block
   $h_d=\bigl[\begin{smallmatrix}\teps+\Deff&i\Gpt\\
@@ -879,8 +963,9 @@ Three key properties of $\Htilde(k)$ follow:
 
 
 \paragraph{Full \texorpdfstring{$4\times4$}{4x4} eigenvalue condition.}
-The numerical eigenvalues and condition numbers in Figs.~\ref{fig:full_H}
---\ref{fig:regimes} are computed from the full channel-projected kernel
+The numerical eigenvalues and condition numbers in
+Figs.~\ref{fig:full_H} and~\ref{fig:flip0} are computed from the full
+channel-projected kernel
 of Eq.~(\ref{eq:Htilde}), not from the isolated impurity block alone.
 Eliminating the bath components gives the exact Schur-complement
 condition
@@ -909,6 +994,9 @@ where
 \qquad
 \delta_{c,\eta}(z,k)=z-\varepsilon_{c,\eta}(k).
 \end{equation}
+Equation~(\ref{eq:full4_quartic}) is only the characteristic polynomial of
+the quadratic $4\times4$ kernel; it is unrelated to an interaction-induced
+quartic scaling law for the EP pole splitting.
 The full EP condition is therefore
 \begin{equation}
 \mathcal P(z_{\rm EP},k)=0,
@@ -919,6 +1007,23 @@ The full EP condition is therefore
 The simpler impurity-block expression in item~(iii) is the
 transparent $\Veff\to0$ limit and explains the local square-root
 mechanism; the plotted spectra use the full $4\times4$ matrix.
+At $k=0$, however, the SOC-split bath energies coincide and the Schur
+self-energy is a common scalar shift
+$\zeta(z)=z-\teps-\Veff^2/z$.  Equation~(\ref{eq:full4_schur}) then reduces to
+\begin{equation}
+\mathcal P(z,0)=\zeta(z)^2-\left(\Deff^2-\Gpt^2\right).
+\label{eq:k0_common_shift}
+\end{equation}
+The impurity-related double root therefore occurs exactly at
+$\Deff^2=\Gpt^2$, independent of $W$ and of $r>0$.  SOC-resolved finite-$k$
+asymmetry breaks this common-shift form, so its operational minimum can drift
+and must be tracked rather than called an exact core EP.
+An operator-resolved finite-$U$ biorthogonal NRG calculation for the
+corresponding scalar-hybridization Wilson-chain control is consistent with
+this hierarchy: the transition-residue matrix remains aligned with the
+nilpotent EP direction and is nearly traceless, whereas the branch-resolved
+pole splitting does not yield a stable universal interaction exponent or
+quartic coefficient (Supplemental Fig.~S8).
 In the opposite limit in which one chiral impurity--bath channel is
 isolated, the square root is
 \begin{equation}
@@ -937,9 +1042,11 @@ product is not identified with a Kondo scale unless it contributes to
 a positive screening eigenvalue of the biorthogonal exchange matrix.
 
 \paragraph{Behaviour at \texorpdfstring{\(\gb=0\)}{beta0=0}.}
-In the minimal symmetric representative, $\Dzero=0$, the exact origin
-has $\tb=0$ and hence $\Gpt=\Deff=\Veff=0$.  The local impurity
-block then reduces to $\teps\,\mathbb{I}$.  This is a normal twofold
+In the minimal symmetric representative, the exact origin has
+$\Gpt=\Deff=0$ while the time-independent hybridization $rW$ remains
+common to both channels.  At the SOC-degenerate $k=0$ point that common
+bath dressing is proportional to the identity, so the local impurity
+block reduces to $\teps\,\mathbb{I}$.  This is a normal twofold
 degeneracy, not a genuine exceptional point: the matrix is
 diagonalizable and one may choose an orthonormal eigenbasis with
 $\keff=1$.  The apparent singularity of an EP-adapted normalization
@@ -964,13 +1071,14 @@ and eigenvector coalescence occur away from the trivial normal
 degeneracy, are the physically relevant EP diagnostics in
 Figs.~\ref{fig:full_H} and~\ref{fig:flip0}.
 
-\paragraph{Interaction regularization of the EP.}
-The interaction enters through the self-consistent SBMF parameters
-and shifts the frozen splitting $s$ to an effective EP distance
-$\seff$ (Supplemental Material).  Thus the condition number remains
-large but finite in the interacting calculation.  We use
-$\keff=C/|\seff|$ as a diagnostic of nonnormality near the EP rather
-than as an independent proof of a universal Kondo scale.
+\paragraph{Interaction and the EP.}
+The local Hubbard interaction is a scalar in the two-component Fock space,
+$n_{d+}n_{d-}=N_d(N_d-1)/2$.  It therefore does not by itself break the
+complexified pseudospin symmetry of the equal-velocity,
+scalar-hybridization linearized model.  On that exact submanifold the EP
+remains symmetry protected at finite $U$ and $\keff\sim C/|s|$.  In the
+complete driven problem, deviations from that submanifold may shift or split
+the EP; no universal interaction ``floor'' is inserted here.
 
 % ============================================================
 \section{Slave-Boson Mean Field and Keldysh Self-Consistency}
@@ -978,10 +1086,11 @@ than as an independent proof of a universal Kondo scale.
 % ============================================================
 
 The effective impurity problem originates from a correlated Anderson
-level with local repulsion $U$.  We treat the constrained low-energy
-sector using large-$N$ slave-boson mean-field theory~\cite{coleman1984mixed,read1983solution,SBkeld}
-as a controlled saddle-point description of the Kondo regime
-($T_{\rm b}\ll T_K$).  This section introduces the spinon operators
+level with local repulsion $U$.  We formulate the constrained low-energy
+sector using the $U\to\infty$ large-$N$ slave-boson mean-field
+saddle~\cite{coleman1984mixed,read1983solution,SBkeld}.  The finite-$U=2$
+Schrieffer--Wolff formulas used later are a separate frozen analytic estimate.
+This section introduces the spinon operators
 $f_\sigma^\dagger$ that replace the physical $d_\sigma^\dagger$
 after the slave-boson decoupling, derives the self-consistent
 equations for the condensate amplitude $r=|b_c|$ and Lagrange
@@ -1010,7 +1119,7 @@ The constraint is imposed via a Lagrange multiplier $\delta_c$.
 At the saddle point $b\to b_c\in\mathbb{C}$, the phase of
 $b_c$ is an internal $U(1)$ gauge choice.  We therefore work in the
 gauge-fixed convention in which observables depend on the amplitude
-$r\equiv|b_c|$, and the spinon hybridization scale is $rV_k$.
+$r\equiv|b_c|$, and the spinon hybridization scale is $rW_k$.
 
 The renormalized impurity level and gauge-invariant SBMF scale are
 then
@@ -1023,54 +1132,43 @@ then
 Here $\dSig$ is the real principal-value one-body shift of the
 projected impurity level; if this shift is absorbed into the bare level,
 one may set $\dSig=0$ and reinterpret $\epsilon_\xi$ accordingly.
-The projected channels entering $\Hss$ are subsequently defined by
-Eq.~(\ref{eq:projected_channels}): $\Gpt=\cGm\tb$,
-$\Deff=\Dzero+\cDl\tb$, and $\Veff=\cV\tb$.  Thus $\tb$ fixes
-the natural slave-boson-renormalized scale, while $\Dzero$ and the
-projection coefficients encode, respectively, static coherent splitting,
-the anti-Hermitian self-energy channel, the drive-induced coherent
-splitting, and the impurity--bath form factor.  We solve for $b_c$ and
-$\delta_c$ self-consistently.
+The projected channels entering $\Hss$ are defined by
+Eq.~(\ref{eq:projected_channels}); in particular, the hybridization is
+$\Veff=rW$ rather than $c_V\tb$.  The equations below define the
+large-$N$ saddle.  For the fixed-$W$ small-width path of
+Eq.~(\ref{eq:smallW_path}), a seed-independent finite-$r$ solution is found
+at $T_{\rm b}=10^{-6}$ throughout $0.35\leq\gb\leq0.55$: $r$ decreases
+smoothly from $0.01047$ to $0.00955$, with maximum constraint and
+stationarity residuals below $4.1\times10^{-10}$ and
+$9.6\times10^{-10}$, respectively.  Charge continuity is satisfied to
+$3.9\times10^{-23}$.  At the manuscript reference temperature
+$T_{\rm b}=0.1$, however, the same $U\to\infty$ closure has no finite-$r$
+branch and terminates at the $r=0$ boundary.  The spectra displayed below
+therefore use stated frozen values and are not used to claim a
+finite-temperature enhancement of $r$.  The complete convergence and
+seed-independence audit is given in the Supplemental Material.
 
 \subsection{Saddle-Point Equations and Gauge-Invariant Amplitude}
 
-The Keldysh saddle-point conditions are obtained by varying the
-action with respect to $b_c$ and $\delta_c$ on the quantum
-(Keldysh) branch (Supplemental Material).
-At the non-Hermitian fixed point, the equations take the form:
+The Keldysh saddle-point conditions follow by varying the complete contour
+action with respect to $r=|b_c|$ and $\delta_c$ (Supplemental Material):
 \begin{align}
-b_c\delta_c + 2i\gb\sum_k
-\bigl[\Gless_{\tilde{d}+,c_+}
-     +\Gless_{\tilde{d}-,c_-}\bigr] &= 0,
-\label{eq:saddle1}\\
-r^2 - i\sum_{k,\pm}[\Gless_{\rm ss}(t,t)]_{\tilde{d}\pm,\tilde{d}\pm}
-&= Q.
-\label{eq:saddle2}
+0&=r^2+n_f-Q,\qquad
+n_f=-i\int\frac{d\omega}{2\pi}{\rm Tr}_sG_{ff}^<,
+\label{eq:saddle2}\\
+0&=2r\delta_c+\mathcal F_W+2rD_0\,\mathcal X
++2r\mathcal I_\Gamma .
+\label{eq:saddle1}
 \end{align}
-The value of $Q$ is the same normalization as in Eq.~(\ref{eq:sb_rep});
-in particular, a rescaled large-$N$ or two-channel numerical amplitude
-should not be identified directly with the bounded physical $Q=1$
-slave-boson amplitude.
-Here $\Gless_{\tilde{d}\eta,c_\eta}$ is the impurity-bath
-off-diagonal lesser Green's function and
-$[\Gless_{\rm ss}(t,t)]_{\tilde{d}\pm,\tilde{d}\pm}$ is the
-on-site occupation of the $\tilde{d}_\pm$ spinon.
-Although the slave-boson substitution $d^\dagger_\sigma=f^\dagger_\sigma b$
-is introduced in the $\uparrow\downarrow$ basis, the saddle-point equations are
-equivalently written in the rotated $\tilde{d}_\pm=(d_\uparrow\pm
-d_\downarrow)/\sqrt{2}$ basis via the Hadamard rotation of
-Sec.~\ref{sec:rotation}: at the saddle point $b\to b_c$ (a c-number),
-$\tilde{d}_\pm$ and the rotated spinons
-$\tilde{f}_\pm=(f_\uparrow\pm f_\downarrow)/\sqrt{2}$ are
-identical up to the overall factor $b_c$.
-The rewriting from the $\uparrow\downarrow$ basis to the $\pm$ basis is exact because (i) the Hadamard
-rotation is unitary so $\sum_\sigma G^<_{f_\sigma c_\sigma}
-=G^<_{\tilde{f}_+,c_+}+G^<_{\tilde{f}_-,c_-}$, and
-(ii) the diagonal hybridization of $\Htilde(k)$
-[Eq.~(\ref{eq:Htilde})] kills all cross-channel terms
-$G^<_{\tilde{f}+,c_-}=G^<_{\tilde{f}-,c_+}=0$ exactly.
-The full derivation in the $\uparrow\downarrow$ basis is given in
-Supplemental Material.
+The hybridization force $\mathcal F_W$ is linear in $rW$; $\mathcal X$ is the
+coherent-channel force associated with the unrenormalized projected
+coefficient $D_0(\beta_0)$; and $\mathcal I_\Gamma$ is the full retarded/advanced/
+lesser influence-kernel force.  Its Langreth form contains both
+$K_\Gamma^RG^<$ and $K_\Gamma^<G^A$; dropping the latter is not a valid
+thermal saddle.  In the chiral basis the relative dissipative kernel is
+off-diagonal, so $G^<_{+-}$ and $G^<_{-+}$ cannot be discarded.  The
+Supplemental Material gives the explicit expressions and the
+no-double-counting rule.
 
 A central point, emphasized to avoid any gauge ambiguity, is that
 the physical amplitude $r=|b_c|$ is gauge-invariant, whereas the
@@ -1093,12 +1191,16 @@ $T_{\rm b}$, the Keldysh construction gives
 \Gless_{\rm bath}(\omega)
 &=\Gret(\omega)\,\Sigma^<_{\rm bath}(\omega)\,\Gadv(\omega)
 \notag\\
-&=f(\omega)\,[\Gret(\omega)-\Gadv(\omega)] .
+&=f(\omega)\,[\Gadv(\omega)-\Gret(\omega)] .
 \label{eq:Gless_bath}
 \end{align}
 with $f(\omega)=[e^{\omega/T_{\rm b}}+1]^{-1}$.
 This bath-controlled object is the $G^<$ used for the physical
-occupations and for the SBMF self-consistency.
+occupations, with $n_f=-i\,{\rm Tr}\,G^<(t,t)$.  Equivalently,
+$\Sigma^<_{\rm bath}=if\Gamma_{\rm bath}$ and
+$i(G^R-G^A)=G^R\Gamma_{\rm bath}G^A$.  This sandwich form retains the
+complete channel matrix and introduces no separate biorthogonal
+normalization factor.
 
 For comparison only, one can also assign Fermi occupations to the
 biorthogonal eigenmodes of $\Htilde(k)$,
@@ -1136,25 +1238,24 @@ claim that the gauge-dependent phase of $b_c$ is observable.
 The shift is controlled by the renormalized level $\teps$, the
 spin-dependent widths, and the self-consistent amplitude
 $\tb=|\gb| |b_c|$.
-The dashed black line in Fig.~\ref{fig:regimes}(d) marks this
-reference position.  In the strongly non-Lorentzian regime the
+In the strongly non-Lorentzian regime the
 observed peak need not coincide exactly with this reference, and we
 therefore treat the deviation as a line-shape effect rather than as a
 violation of a sum rule.  In the frozen kernel used for the plotted
 spectra, the local-moment reference has
 $\mathrm{Re}(\teps)\simeq -1.0$ for
 $\epsilon_\xi=-U/2=-1.0$; a fully self-consistent finite-temperature
-SBMF closure would replace this by its computed saddle-point value.
+SBMF closure, when a finite-$r$ branch exists, would replace this by its
+computed saddle-point value.
 
-\subsection{Near-EP SBMF Kondo-Scale Estimate}
+\subsection{Near-EP Analytic Screening-Scale Estimate}
 
-Near an isolated EP, the impurity-projected resolvent develops a large
-EP-active contribution associated with the coalescing left and right
-eigenvectors.  We use the corresponding condition number $\keff$ only
-as a diagnostic of this nonnormality and of the distance to the EP; it
-is not used as an independent definition of a Kondo temperature.  The
-proper screening scale is controlled instead by the exchange eigenvalues
-of the channel-projected biorthogonal Schrieffer--Wolff matrix.
+Near an isolated EP, the individual spectral projectors grow as the left and
+right eigenvectors coalesce, while the complete resolvent remains the finite
+Jordan expression derived in Sec.~\ref{sec:complete_resolvent}.  We use the
+condition number $\keff$ only as a diagnostic of nonnormality and EP distance.
+The screening estimate is controlled instead by the eigenvalues of the
+complete channel-projected Schrieffer--Wolff matrix.
 We write
 \begin{align}
 T_K^{\rm est}
@@ -1170,9 +1271,9 @@ Here $j_\alpha$ are the eigenvalues of the dimensionless biorthogonal
 exchange matrix $\rho_bJ^{\rm bio}$, and only positive-real-part eigenvalues
 are retained as antiferromagnetic screening channels.  The coefficient
 $\chi_K>0$ fixes the conventional scaling normalization; all plotted estimates
-use $\chi_K=1$.  An EP-active
-sector can enhance the physical Kondo scale only if its residue feeds
-such a positive screening eigenvalue.  By contrast, a hybridization
+use $\chi_K=1$.  A scale increase is possible only if the complete EP-active
+channel calculation increases such a positive screening eigenvalue.  No
+individual projector residue is inserted.  By contrast, a hybridization
 induced EP generated by a negative scalar product $V^R V^L<0$ can
 produce strong spectral nonnormality and a frozen non-Hermitian
 crossover scale, but it should not automatically be identified with an
@@ -1197,10 +1298,11 @@ $\epsilon_\xi=-U/2=-1.0$, $U=2.0$, and $T_{\rm b}=0.1$.
 The plotted eigenvalues and eigenvectors are computed from the full rotated
 $4\times4$ kernel of Eq.~(\ref{eq:Htilde}), not from the isolated impurity block.
 \textbf{(a)} Real and imaginary parts of the four eigenvalues of
-$\Htilde(k=0)$ versus $\gb$.  The representative finite-drive local EPs occur at
-$|\gb|\simeq0.50$; double-root tracking gives
-$\beta_{0,{\rm proj}}^{\rm EP}=0.4975$, while the discrete grid peaks at the adjacent point
-$\beta_0=0.5025$ ($\Delta\beta_0=0.0075$).
+$\Htilde(k=0)$ versus $\gb$.  The impurity-related double-root condition at
+this SOC-degenerate point is exactly the local-core value
+$\beta_{0,{\rm core}}^{\rm EP}=0.50$; the discrete condition-number grid peaks
+at the adjacent point $\beta_0=0.5025$.  The separately tracked finite-$k$
+operational minimum is $\beta_{0,{\rm proj}}^{\rm min}=0.4975$.
 \textbf{(b)} Condition number $\keff=\|R\|\,\|R^{-1}\|$,
 using the same eigenvector normalization throughout the scan.  The finite-
 $|\gb|$ peaks locate eigenvector coalescence; the origin is a normal degeneracy
@@ -1244,13 +1346,18 @@ Unless stated otherwise, the final numerical figures use the uniform local-momen
 \qquad T_{\rm b}=0.1,
 \label{eq:numerical_convention_final}
 \end{equation}
-with the gauge-fixed projected scale $\tb=|\gb|r$.  The projected double-root value is $\beta_{0,{\rm proj}}^{\rm EP}=0.4975$; the discrete condition-number grid peaks at the adjacent point $\beta_0=0.5025$.  Figure~\ref{fig:full_H} displays the corresponding pair at $|\gb|\simeq0.50$.
+with the gauge-fixed projected scale $\tb=|\gb|r$.  The exact $k=0$
+core/dressed value is $\beta_{0,{\rm core}}^{\rm EP}=0.50$, the separately
+tracked finite-$k$ operational minimum is
+$\beta_{0,{\rm proj}}^{\rm min}=0.4975$, and the discrete condition-number
+grid peaks at $\beta_0=0.5025$.  Figure~\ref{fig:full_H} displays the $k=0$
+diagnostic near $|\gb|\simeq0.50$.
 
 Figures~\ref{fig:full_H} and~\ref{fig:flip0} display the
 dynamical fingerprints of the EP-active projected impurity block and of
 the relative gain--loss-only diagnostic limit, respectively.
-In the projected Kondo-regime kernel
-($\epsilon_\xi=-1.0=-U/2$, $U=2.0$, $T_{\rm b}/T_K<1$), the representative
+In the frozen particle--hole-symmetric diagnostic kernel
+($\epsilon_\xi=-1.0=-U/2$, $U=2.0$, $T_{\rm b}=0.1$), the representative
 coefficients place a symmetric local EP pair at $|\gb|\simeq0.5$,
 accompanied by a condition-number peak and by a crossover from
 oscillatory to overdamped local dynamics.
@@ -1273,117 +1380,30 @@ low-energy scale estimates, occupied fluctuation--dissipation-relation (FDR)-wei
 channel-projected amplitudes extracted with the same gauge-invariant
 convention \(\tb=|\gb||b_c|\).
 
-\subsection{Phase-Selective EP Enhancement}
+\subsection{Causal Pre-EP Amplification}
 
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=0.78\textwidth,height=0.42\textheight,keepaspectratio]{Fig3.pdf}
-\caption{%
-\textbf{Compact frozen regime diagnostics: scales, peak merging, three-regime
-spectra, and peak tracking.}
-All panels use $\epsilon_\xi=-U/2=-1.0$, $U=2.0$, and the gauge-fixed scale
-$\tb=|\gb|r$.  The positive-branch EP marker is
-$\beta_{0,{\rm proj}}^{\rm EP}=0.4975$ in the plotted scan.
-\textbf{(a)} Independent SBMF spectral-weight-transfer check.  The plotted
-quantity is the positive spectral-weight transfer ratio
-$\mathcal W_{\rm FSR}^{+}/\mathcal W_{\rm CP}^{+}$, normalized to the stable low-drive reference
-$\beta_{0,{\rm ref}}=0.30$.  Here $\mathcal W_{\rm FSR}^{+}$ is the positive spectral
-weight in a window around the shifted FSR/Kondo feature
-$\omega_{\rm res}\simeq\mathrm{Re}\,\teps$, while $\mathcal W_{\rm CP}^{+}$ is the
-corresponding positive weight in the central-peak window near $\omega=0$.
-The faint points are raw window-integrated values and the solid line is a local
-trend.  The ratio is meaningful only once the central-peak window carries
-non-negligible positive weight, so the plotted range starts at the stable
-low-drive plateau on which the reference is taken; at smaller $\beta_0$ the
-central peak has not yet formed and the raw ratio is dominated by the
-vanishing denominator (the full range is included in the exported data).
-The diagnostic terminates at the negative-signed-weight onset
-$\beta_0\simeq0.50$, i.e.\ at the EP, beyond which the signed response is
-reported separately.  This construction avoids assigning a linewidth when
-several peaks overlap or the signed projected response becomes
-non-Lorentzian.  The analytic SW/BA
-screening estimates are not overlaid here; they are compared with the same SBMF
-transfer diagnostic on a common relative scale in the Supplemental Material.
-\textbf{(b)} Peak-merging diagnostics extracted from the same frozen spectra:
-the centroid separation, the upper- and lower-window widths, and the local
-EP-distance $|s_{\rm eff}|$ are normalized to their panel maxima so the
-coalescence/redistribution trend is visible even when the raw peaks are close.
-\textbf{(c)} Broadened normalized retarded spectra for the screened
-local-moment, resonant/mixed-valence, and high-temperature free-orbital
-references.  When the same frozen retarded kernel is used, regime distinctions
-come from $T_{\rm b}/T_K$ and from the occupied FDR-weighted spectrum rather than from
-$A(\omega)$ alone.
-\textbf{(d)} Peak positions versus $\gb$.  The reference line is
-$\mathrm{Re}(\teps)=-1.0000$.  In the scan, the upper-window centroid ranges
-from $-1.60\times10^{-2}$ to $1.63\times10^{-1}$, while the lower-window
-centroid ranges from $-1.181$ to $-0.709$; the apparent peak separation is
-largest near the EP because the signed frozen spectral response is strongly
-non-Lorentzian there.
-}
-\label{fig:regimes}
-\end{figure*}
-
-Figure~\ref{fig:regimes} should be read as a compact frozen
-channel-projected spectral diagnostic, not as a full finite-temperature SBMF
-phase diagram.  The condition-number and $T_{\rm b}/T_K$ regime classifiers are
-discussed in the text and caption rather than assigned separate panels.  Panel
-(a) deliberately shows only the non-circular SBMF positive
-spectral-weight-transfer diagnostic on its own normalized scale.  This avoids
-forcing a window-integrated SBMF spectral measure and the analytic SW/BA
-screening estimates to share an artificial absolute normalization.  The full
-relative comparison of SW, BA, and the SBMF transfer ratio is given in
-Supplemental Fig.~S3.  The exported data also include the peak-resolved HWHM
-and re-solved FDR-window temperature diagnostics, but these are not used as main
-scales because they can become ill-defined or non-monotonic when several peaks
-overlap.
-
-In the local-moment reference, particle-hole symmetry is imposed uniformly by
-$\epsilon_\xi=-U/2=-1.0$ with $U=2.0$.  The Hubbard interaction is not inserted
-as opposite $\pm U/2$ spin splittings in the $4\times4$ quasiparticle kernel.
-The impurity-like spectral feature is therefore referenced to
-$\omega\simeq\mathrm{Re}(\teps)=-1.0000$ in the frozen closure.  Moving
-$\epsilon_\xi$ close to zero would move the coalescence toward the Fermi level,
-but that would be a resonant or mixed-valence reference rather than the Kondo
-local-moment convention used for the final figures.
+The complete causal channel density and the channel-resolved weak-coupling
+flow provide supporting tests of the analytic construction; the full panels
+and adverse controls are shown in Supplemental Figs.~S4 and S6.  For
+$\beta_0=0.50$, the active/control ratios are $1.0567$ at $g_\ast=0.30$,
+$1.0179$ at $g_\ast=0.40$, $0.9893$ at $g_\ast=0.50$, and $0.9166$ at
+$g_\ast=1$.  Thus the larger leading channel-density eigenvalue and early RG
+trajectory are bounded pre-EP effects in the stated window, but they do not
+support the stronger statement of an enhanced asymptotic Kondo temperature.
+The matrix density is positive in the retained
+passive window, and the result is stable under RG-step refinement.  A
+rate-matched off-EP control can exceed the EP in the largest proper-delay
+peak, so the Smith delay is not counted as independent evidence of
+enhancement; this control is shown in the Supplemental Material.
 
 % ============================================================
 \section{Fluctuation-Dissipation Relation and Spectral Functions}
 \label{sec:FDR}
 % ============================================================
 
-%        Fig. 4 uses the frozen-kernel reference Re(teps) generated by the
-%        same figure pipeline.  Do not quote the older self-consistent value unless a
-%        separate self-consistent closure is rerun and used for the figure.
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.90\linewidth,height=0.72\textheight,keepaspectratio]{Fig4.pdf}
-\caption{%
-\textbf{Bath-controlled FDR, eigenmode diagnostic, and physical spectral response.}
-The uniform impurity convention is $\epsilon_\xi=-U/2=-1.0$, $U=2.0$, and
-$T_{\rm b}=0.1$.  The bath-based FDR construction is the physical one used for
-occupations and SBMF self-consistency.
-\textbf{(a)} Impurity and bath FDR ratios obtained from
-$G^<_{\rm phys}=f_{\rm FD}(\omega)[G^R-G^A]$ on spectral support.  Both follow
-$f_{\rm FD}(\omega)$; in the exported diagnostic file the maximum residual of
-the bath-constructed ratio from $f_{\rm FD}$ is below $10^{-12}$.
-\textbf{(b)} Absolute FDR residual for the bath-constructed physical ratio;
-the exported diagnostic gives a maximum residual below $10^{-12}$.
-\textbf{(c)} Eigenmode-based ratio obtained by assigning occupations to
-non-Hermitian eigenmodes.  This object is nonthermal and is shown only as a
-nonnormality/eigenbasis diagnostic; it is not used in the saddle-point equations
-or in the physical FDR analysis.
-\textbf{(d)} Physical impurity spectral response with the Fermi level
-$\omega=0$, the frozen impurity reference $\mathrm{Re}(\teps)=-1.0000$, and the
-observed spectral peak marker.  When the frozen kernel is instead evaluated on
-the PT-broken side, a negative signed response should be reported explicitly as
-a causality diagnostic, not as a positive physical DOS.
-}
-\label{fig:FDR}
-\end{figure}
-
 For a non-Hermitian system, two inequivalent constructions of
 $G^<$ arise and it is essential to distinguish them.
-Figure~\ref{fig:FDR} separates these objects explicitly.  The impurity and
+Supplemental Fig.~S7 separates these objects explicitly.  The impurity and
 bath FDR ratios constructed from the reservoir self-energy follow the same
 thermal Fermi function on spectral support.  The eigenmode-based construction
 is displayed in a separate diagnostic panel because it is not a bath-imposed
@@ -1400,25 +1420,33 @@ self-energy.  For a bilinear impurity--bath coupling,
 \label{eq:Gless_physical_fdr}
 \end{equation}
 If the bath is thermal, then
-\begin{equation}
+\begin{align}
 \Sigma^<_{\rm bath}(\omega)
-=
-f(\omega)
-\left[
-\Sigma^R_{\rm bath}(\omega)-\Sigma^A_{\rm bath}(\omega)
-\right].
+&=if(\omega)\Gamma_{\rm bath}(\omega)
+\nonumber\\
+&=f(\omega)
+\left[\Sigma^A_{\rm bath}(\omega)-\Sigma^R_{\rm bath}(\omega)\right].
 \label{eq:bath_selfenergy_fdr}
-\end{equation}
+\end{align}
 Combining this with the Dyson identity for the bath-induced
 broadening gives
 \begin{equation}
 \Gless_{\rm phys}(\omega)
 =
-f(\omega)\,[\Gret(\omega)-\Gadv(\omega)].
+f(\omega)\,[\Gadv(\omega)-\Gret(\omega)].
 \label{eq:impurity_fdr_inherited}
 \end{equation}
 Thus the physical impurity FDR is inherited from the reservoir and is
-the $G^<$ used in the SBMF self-consistency.
+the $G^<$ used in the SBMF self-consistency.  Charge conservation is checked
+through the steady-state collision integral
+\begin{equation}
+\mathcal I_N=\int\frac{d\omega}{2\pi}\,
+{\rm Tr}\!\left[\Sigma^<G^>-\Sigma^>G^<\right]=0,
+\label{eq:number_continuity}
+\end{equation}
+which vanishes for the same complete thermal bath self-energy.  This is a
+nontrivial number-continuity check; diagonalizing the non-Hermitian kernel and
+assigning occupations mode by mode need not satisfy it.
 
 \paragraph{Eigenmode-based construction (comparison).}
 $\Gless_{\rm eig}=iR\,\mathrm{diag}(f(\mathrm{Re}\,\mathcal E_n))
@@ -1458,8 +1486,9 @@ The off-shell auxiliary sector supplies the real spin-odd shift, while the
 energy-dependent Dirac bath converts this shift into the relative
 spin-dependent width $\Gamma_{\rm PT}$.  The
 effective Hamiltonian is therefore written in terms of the real,
-gauge-invariant amplitude $\tb=|\gb||b_c|$ and the projected channels
-$\Gpt=\cGm\tb$, $\Deff=\Dzero+\cDl\tb$, and $\Veff=\cV\tb$.
+gauge-invariant amplitude $r=|b_c|$ and the projected channels
+$\Gpt=r^2\Gamma_{\rm PT}^{(0)}(\gb)$,
+$\Deff=r^2[\Delta_0^{(0)}+c_\Delta^{(0)}\gb]$, and $\Veff=rW$.
 The phase of the auxiliary slave-boson field is not used separately
 in spectral calculations.  With this convention, the same $\Hss$ is
 used for eigenvalues, condition numbers, and spectral functions, and
@@ -1481,16 +1510,16 @@ $[\mathrm{Re}\,O(t),\mathrm{Im}\,O(t)]$.  This is a non-unitary
 propagator diagnostic of the local EP; it is not used as a normalized
 thermal expectation value.  For Fig.~\ref{fig:full_H}(c),(d) we use
 $\epsilon_\xi=-U/2=-1.0$, $U=2.0$, $T_{\rm b}=0.1$, and
-$\beta_{0,{\rm proj}}^{\rm EP}\approx0.5$.  The evolution shows a direct dynamical
+$\beta_{0,{\rm core}}^{\rm EP}=0.50$.  The evolution shows a direct dynamical
 signature of the EP:
 
 \begin{itemize}
-\item \emph{Below EP} ($\gb<\beta_{0,{\rm proj}}^{\rm EP}$, local splitting real):
+\item \emph{Below EP} ($\gb<\beta_{0,{\rm core}}^{\rm EP}$, local splitting real):
   eigenvalues are non-degenerate; the evolution shows underdamped
   oscillations with a frequency set by $\mathrm{Re}(E_+-E_-)=2\mathrm{Re}\,s$
   and a decay rate set by $\mathrm{Im}(E_\pm)$.
 
-\item \emph{Above EP} ($\gb>\beta_{0,{\rm proj}}^{\rm EP}$, local splitting imaginary):
+\item \emph{Above EP} ($\gb>\beta_{0,{\rm core}}^{\rm EP}$, local splitting imaginary):
   eigenvalues have opposite imaginary parts; the gain mode
   dominates and the evolution shows overdamped decay.
 
@@ -1512,658 +1541,592 @@ projected self-energy components.  Equality of their coefficients is a
 symmetric representative limit, not a symmetry requirement.
 
 % ============================================================
-\section{Biorthogonal Bethe Ansatz}
+\section{Causal Scattering and Linearized Contact Algebra}
+\label{sec:scattering}
 \label{sec:BA}
+\label{sec:complete_resolvent}
 % ============================================================
 
-The saddle-point treatment of Sec.~\ref{sec:mf} motivates the
-gauge-invariant scale $\tb=|\gb||b_c|$ and the renormalized level
-$\teps$.  The Bethe-Ansatz analysis below is a frozen effective-model
-diagnostic: $\gm$ denotes the coherent impurity splitting/flip channel,
-while $\gb$ denotes the projected relative gain--loss channel in the minimal
-frozen notation.  The general projected description is
-$\Gpt=\cGm\tb$, $\Deff=\Dzero+\cDl\tb$, and $\Veff=\cV\tb$.
-The local EP is controlled by the competition between $\Gpt$ and
-$\Deff$, while $\Veff$ controls bath coupling and the positive
-screening hybridization.
-The diagonal hybridization structure [property~(i) of
-Sec.~\ref{sec:rotation}] is the key that makes the frozen-$\tb$
-problem analytically tractable: it forces the two-body $S$-matrix to be
-block-diagonal ($S^{LR}=S^{RL}=0$), providing the channel separation used in the Bethe-Ansatz
-construction of the frozen effective model.
-For the frozen diagnostic phase diagram, $\gb$ (gain/loss amplitude)
-and $\gm$ (coherent flip amplitude) are kept as independent
-projection channels.  Their equality is a special symmetric
-representative, not a general consequence of the slave-boson saddle.
-The frozen-BA approximation is used only as a low-energy analytic
-screening diagnostic, most directly when $T_{\rm b}\ll T_K$ and hybridization
-fluctuations about the saddle point are small.
+\subsection{Complete scattering and Jordan response}
 
-\subsection{Block-Diagonal $S$-Matrix from Diagonal Hybridization}
-
-The diagonal hybridization [property~(i) of Sec.~\ref{sec:rotation}]
-is the key that makes the frozen effective model channel-separated.
-Because $\tilde{d}_+$ couples only to $c_{k+}$ and $\tilde{d}_-$
-only to $c_{k-}$, the two-body scattering is channel-diagonal:
-bath $+$ electrons can only scatter from the $\tilde{d}_+$
-impurity state and vice versa.
-The internal relative channel $i\gb$ is an excitation that mixes
-the two impurity states, but it does not connect incoming bath $+$
-electrons to outgoing bath $-$ electrons.  This follows because the
-hybridization vertices preserve the bath channel index, so impurity
-mixing does not induce cross-channel propagation of bath electrons.
-This is verified by the two-body contact algebra
-(Supplemental Material): the off-diagonal scattering
-amplitudes $e_{+-}$ and $e_{-+}$ satisfy homogeneous equations
-[Eqs.~(G2) and~(G4)] with no external bath
-source terms.
-Together with the density-density interaction $H_U=Un_{d+}n_{d-}$
-(which preserves channel labels), this gives the block-diagonal $S$-matrix:
-\begin{equation}
-S^{LR}=S^{RL}=0,\qquad
-S_{\rm tot}=\begin{pmatrix}S^{RR}&0\\0&S^{LL}\end{pmatrix}.
-\label{eq:Stot}
-\end{equation}
-The biorthogonal impurity problem therefore separates into
-independent right and left sectors, which is the structural input
-used for the Bethe-Ansatz construction below.
-
-\subsection{Renormalized Contact Denominators and Breit--Wigner $S$-Matrix}
-
-The two-body contact algebra (Supplemental Material) gives
-the renormalized denominators through the relative channel $\gb$:
-\begin{equation}
-\mathfrak a = \teps+\gm-E,\quad \mathfrak b = \teps-\gm-E,
-\label{eq:ab_bare}
-\end{equation}
-\begin{equation}
-\tilde{\mathfrak a}=\mathfrak a+\frac{\gb^2}{\mathfrak b},\qquad
-\tilde{\mathfrak b}=\mathfrak b+\frac{\gb^2}{\mathfrak a}.
-\label{eq:atilde}
-\end{equation}
-Here $\mathfrak a$ and $\mathfrak b$ are energy denominators for the $\tilde{d}_+$
-and $\tilde{d}_-$ impurity levels respectively; the bath
-dispersion $\varepsilon_{c,\pm}(k)$ enters the contact equations
-through the bath wavefunctions $\Phi_\pm$, not through $\mathfrak a$ or $\mathfrak b$.
-Each diagonal block of the $S$-matrix takes the Breit--Wigner
-form:
-\begin{equation}
-S^{XX}_{\eta\eta}(k)
-=\frac{k-\tilde\epsilon_{d,\eta}-i\tilde\Gamma_\eta}
-      {k-\tilde\epsilon_{d,\eta}+i\tilde\Gamma_\eta},
-\quad X\in\{R,L\},\;\eta\in\{+,-\},
-\label{eq:Ssoln}
-\end{equation}
-where $\tilde\epsilon_{d,\eta}=\epsilon_{d,\eta}+\Lambda_\eta^{\rm PV}$ is the
-bath-shifted impurity level with one-body shift
-$\Lambda_\eta^{\rm PV}=(V_\eta)^2\sum_k(\epsilon_{d,\eta}-\varepsilon_{c,\eta}(k))^{-1}$.
-For reciprocal Hermitian hybridization the resonance width is
-$\tilde\Gamma_\eta=\pi\rho_{b,\eta}(0)|V_\eta|^2$.  In a genuinely
-non-Hermitian or nonreciprocal channel this is replaced by the
-biorthogonal product
-\begin{equation}
-\tilde\Gamma_\eta^{\rm bio}
-=
-\pi\rho_{b,\eta}(0)V_\eta^R V_\eta^L .
-\label{eq:Gamma_bio_product}
-\end{equation}
-The density $\rho_{b,\eta}(0)$ used here is the local radial-channel
-density of states of the frozen channel-projected effective model,
-evaluated at the active resonance after the chiral rotation and
-low-energy linearization.  It is not the bare two-dimensional Dirac
-point density $\rho_{\rm bath}(\omega)\sim |\omega|/\lambda^2$, which
-vanishes at the undoped Dirac point.  In the frozen BA diagnostic we
-work in a finite scattering window where $\rho_{b,\eta}$ is slowly
-varying and may be replaced by the constant
-$\rho_{b,\eta}(0)\simeq1/k_{\rm max}$.  The full numerical spectral
-calculations retain the bath dispersion explicitly.
-
-\subsection{Integrability via Yang--Baxter Equation}
-\label{sec:YBE}
-
-Because the diagonal hybridization [Eq.~(\ref{eq:Htilde})]
-decouples the $+$ and $-$ channels completely, the $S$-matrix in
-each diagonal block is a \emph{scalar} Breit--Wigner
-[Eq.~(\ref{eq:Ssoln})].  Scalar $S$-matrices trivially satisfy the
-Yang--Baxter equation: for c-number $S^X_{\eta\eta}(k)$, the
-three-body relation
+We use the standard Fisher--Lee and Wigner--Smith constructions
+only as causal scattering diagnostics of the projected kernel
+~\cite{fisherlee1981,wigner1955,smith1960}; they are not introduced here as
+new formalisms.  The basis labels must be kept explicit.  In the original
+spin basis $\Psi_s=(d_\uparrow,d_\downarrow)^T$, the compensated Markov
+kernel and its positive rate matrix are
 \begin{align}
-S^X_{\eta\eta}(k_1{-}k_3)\,S^X_{\eta\eta}(k_2{-}k_3)\,S^X_{\eta\eta}(k_1{-}k_2)
-\nonumber\\
-=S^X_{\eta\eta}(k_1{-}k_2)\,S^X_{\eta\eta}(k_2{-}k_3)\,S^X_{\eta\eta}(k_1{-}k_3)
-\label{eq:YBE_scalar}
+h_s&=\Delta_{\rm eff}\sigma_x+i\Gamma_{\rm PT}\sigma_z
+-i\bar\Gamma I,\nonumber\\
+\Gamma_s&=i(\Sigma_s^R-\Sigma_s^A)
+=2(\bar\Gamma I-\Gamma_{\rm PT}\sigma_z)\succeq0 .
+\label{eq:Gamma_bath_scattering}
 \end{align}
-holds identically by commutativity of scalar multiplication,
-establishing channel-separated scattering in the frozen
-model.
-
-Supplemental Material gives the same statement in the contact-projector
-notation.  Since each frozen block is a scalar Breit--Wigner amplitude,
-YBE factorization follows from channel separation and scalar
-commutativity alone.  No additional Baxterization functional equation is
-required.  Bath dispersions enter only as diagonal one-body phases in
-the Bethe equations and do not spoil factorization.
-
-%   captions rewritten to reflect the corrected figure content
-%   (eta_phys used, so Im(mu^R) is finite everywhere; panel (c) shows
-%   channel splitting, not L-R distance).
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{fig5_rapidities.pdf}
-\caption{%
-\textbf{Biorthogonal BA rapidities and EP structure.}
-Three layers per panel represent distinct levels of physics
-($\epsilon_\xi=-U/2=-1.0$, $U=2.0$, $\gm=\gb=0.5$ at bare EP,
-$\lambda=0.50$, $k_{\rm max}=\pi/4$,
-D-SOC$^2$ form factor $F=1-(\lambda/k_{\rm max})^2\approx0.595$).
-Vertical red dashed lines mark the bare EP at $|\gb|=\gm=0.5$.
-\emph{Layer~1 (thick black)}: bare $h_d$ eigenvalues
-$E_\pm^{\rm bare}=\teps\pm s$, $s=\sqrt{\gm^2-\gb^2}$.
-This is the only layer with a genuine EP (at $\gb=\gm$, where $s=0$).
-\emph{Layer~2 (grey)}: $U$-corrected levels
-$\teps\pm\seff$ from the quartic (Supplemental Material);
-$\seff>0$ for all $\gb$ when $U>0$ and $F(\lambda)>0$ (EP avoided).
-\emph{Layer~3 (blue circles: bare $s$; orange squares: $s_{\rm eff}$)}:
-Bethe-dressed rapidities $\mur^{R,U}_\pm=(\teps\pm\seff)+\Lambda_\pm^{\rm PV}$
-using the physical S-matrix resonance width
-$\tilde\Gamma_\eta=\pi V_\eta^2\rho_{b,\eta}(0)=\pi\gb^2/k_{\rm max}$
-(for this frozen diagnostic $r=1$, so $V_\eta=\tb=|\gb|$) in the bath shift $\Lambda_\pm^{\rm PV}$;
-$\mur^L = (\mur^R)^*$ by $\PT$ symmetry.
-\textbf{(a)} Real parts vs $\gb$: $\mathrm{Re}\,\mur^R=\mathrm{Re}\,\mur^L$
-by $\PT$ symmetry; only the bare $U=0$ layer coalesces at the bare EP, while the $U>0$ layers remain split.
-\textbf{(b)} Imaginary parts vs $\gb$: $\mathrm{Im}\,\mur^R=-\tilde\Gamma_{\rm phys}
-=-\pi\gb^2/k_{\rm max}$
-is the physical bath decay width, finite everywhere for all $\gb$.
-$\mathrm{Im}\,\mur^L=-\mathrm{Im}\,\mur^R$ by $\PT$ (mirror symmetry).
-The imaginary part is \emph{not} an EP diagnostic; see panel~(c).
-\textbf{(c)} Channel splitting $|\mur^{R(+)}-\mur^{R(-)}|$
-(log scale): the genuine EP diagnostic (text after Eq.~\ref{eq:BAaux}).
-Three reference layers are shown: $2|s|$ (Layer~1, black), $2|\seff|$
-(Layer~2, grey), and the bath-dressed splitting (Layer~3, coloured).
-Bare $s$ touches zero at $\gb=\gm$; $U$-corrected $\seff$ stays
-finite (EP regularised by interactions).
-\textbf{(d)} Biorthogonal width $\tilde\Gamma_{\rm bio}=\gb^2/s$
-vs $\gb$ (log scale): diverges at the bare EP ($s\to0$),
-driving the biorthogonal norm divergence and BA-kernel nonnormality enhancement; regularised to $\gb^2/\seff$ by interactions
-($U>0$, orange dashed), remaining finite everywhere.
-}
-\label{fig:bethe}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{fig6_phasediag.pdf}
-\caption{%
-\textbf{EP-boundary diagnostic controlled by the SOC form factor.}
-Color: $\mathcal{D}_{\rm EP}(U,\lambda)=\gm^2-C_FU^2F(\lambda)$,
-derived in the Supplemental Material in the adopted dimensionless
-normalization $C_F=1$ and evaluated at the bare control point
-$\gb=\gm$.
-Positive (red): relative $\PT$-unbroken ($\mathcal{D}_{\rm EP}>0$); negative
-(blue): relative $\PT$-broken ($\mathcal{D}_{\rm EP}<0$).
-The thick black curve is the local EP-boundary diagnostic
-$\mathcal{D}_{\rm EP}(U,\lambda)=0$.
-Horizontal lines mark the SOC values used in Fig.~\ref{fig:bethe}:
-dashed $\lambda=0.50$, dotted $\lambda=k_{\rm max}=\pi/4$.
-\textbf{(a)} Gaussian form factor $F=e^{-(\lambda/k_{\rm max})^2}$:
-interactions $U$ regularise the EP for all $\lambda$; the EP
-boundary curves to large $U$ as $\lambda\to k_{\rm max}$.
-\textbf{(b)} D-SOC$^2$ form factor
-$F=\max(1-(\lambda/k_{\rm max})^2,\,0)$: at $\lambda=k_{\rm max}$,
-$F=0$ exactly (orange dotted line), so $U$ cannot regularise
-the EP regardless of interaction strength---producing the sharp
-vertical wall in this analytic diagnostic.  The figure illustrates the
-model dependence of the interaction-induced impurity-sector EP shift; it
-is not used as a standalone many-body phase diagram or an independent
-determination of the Kondo scale.
-}
-\label{fig:phasediag}
-\end{figure}
-
-\subsection{Bethe Ansatz Equations}
-
-The charge rapidities $\{k_j^R\}$ in the right sector satisfy:
+The Hadamard matrix $U_H$ that defines the fixed chiral fields
+$\Psi_\chi=U_H^\dagger\Psi_s$ gives
 \begin{equation}
-e^{ik_j^R\mathcal{L}}
-=\prod_{\ell\neq j}S^{RR}(k_j^R-k_\ell^R)
-\prod_{\eta,a}
-\frac{\mur^{R(\eta)}_a-k_j^R+\tilde\epsilon_{d\eta}
-      +i\tilde\Gamma^R_\eta/2}
-     {\mur^{R(\eta)}_a-k_j^R+\tilde\epsilon_{d\eta}
-      -i\tilde\Gamma^R_\eta/2},
-\label{eq:BAright}
+\begin{aligned}
+h_\chi&=U_H^\dagger h_sU_H\\
+&=\Delta_{\rm eff}\sigma_z+i\Gamma_{\rm PT}\sigma_x-i\bar\Gamma I,\\
+\Gamma_\chi&=U_H^\dagger\Gamma_sU_H\\
+&=2(\bar\Gamma I-\Gamma_{\rm PT}\sigma_x).
+\end{aligned}
+\label{eq:spin_chiral_scattering_map}
 \end{equation}
-and the auxiliary rapidities $\{\mur^{R(\eta)}_a\}$ satisfy:
-\begin{multline}
-\prod_j
-\frac{\mur^{R(\eta)}_a-k_j+\tilde\epsilon_{d\eta}
-      +i\tilde\Gamma^R_\eta/2}
-     {\mur^{R(\eta)}_a-k_j+\tilde\epsilon_{d\eta}
-      -i\tilde\Gamma^R_\eta/2}
-\\
-=\prod_{b\neq a}
-\frac{\mur^{R(\eta)}_a-\mur^{R(\eta)}_b
-      +i\tilde\Gamma^R_\eta}
-     {\mur^{R(\eta)}_a-\mur^{R(\eta)}_b
-      -i\tilde\Gamma^R_\eta}.
-\label{eq:BAaux}
-\end{multline}
-Left-sector equations follow by $R\to L$.  Written with symmetric
-$\pm i\tilde\Gamma_\eta/2$ shifts, these equations reduce to the standard
-Hermitian Anderson impurity quantization conditions when
-$V_\eta^R=V_\eta^L$ and the relative non-Hermitian channel is set to zero.
-The bare $U=0$ EP manifests in the BA through the channel splitting
-$2|s|\to0$ at $\gb=\gm$.  For $U>0$ and $F(\lambda)>0$, the
-interaction-corrected splitting $2\seff$ remains finite and represents
-an avoided coalescence at the same bare control point
-(the R--L distance $|\mur^R-\mur^L|=2\tilde\Gamma$ is nonzero
-everywhere and is not an EP diagnostic; see also
-Refs.~\cite{garcia2022jordan,yi2022novel}).
-The dressed rapidities $\mur^{R/L}_\pm$ presented in
-Fig.~\ref{fig:bethe} encode the full pseudo-Hermitian structure:
-the three-layer picture---bare hd eigenvalues, interaction-corrected
-$\teps\pm\seff$, and Bethe-dressed $\mur^{R,U}_\pm$---demonstrates
-how interactions replace the bare coalescence by an avoided one, with the
-channel splitting serving as the quantitative EP-distance diagnostic across
-all parameter regimes.
+For either representation $\nu=s,\chi$,
+\begin{equation}
+S_\nu(\omega)=I-i\Gamma_\nu^{1/2}G_\nu^R(\omega)
+\Gamma_\nu^{1/2},
+\qquad
+S_\chi=U_H^\dagger S_sU_H ,
+\label{eq:Fisher_Lee}
+\end{equation}
+and, in the passive window, $S_\nu$ is unitary.  The Wigner--Smith matrix
+\begin{equation}
+Q_\nu(\omega)=-iS_\nu^\dagger(\omega)\partial_\omega S_\nu(\omega)
+\label{eq:Smith_Q}
+\end{equation}
+is Hermitian and transforms covariantly.  Thus its trace and eigenvalues,
+like the eigenphases of $S$, are basis invariant.  Individual entries such
+as $S_{+-}$ are representation dependent and are not used as evidence for
+enhancement.  The basis-resolved Green functions and coefficients are
+worked out in the Supplemental Material.
 
+For the compensated unbroken Markov core,
+$s=\sqrt{\Delta_{\rm eff}^2-\Gamma_{\rm PT}^2}\in\mathbb R$ and the
+two causal scattering phases give
+\begin{align}
+\operatorname{Tr}Q(\teps)
+&=\frac{4\bar\Gamma}{s^2+\bar\Gamma^2},\nonumber\\
+\frac{\operatorname{Tr}Q_{\Gamma_{\rm PT}}(\teps)}
+{\operatorname{Tr}Q_{0}(\teps)}
+&=\frac{\Delta_{\rm eff}^2+\bar\Gamma^2}
+{\Delta_{\rm eff}^2-\Gamma_{\rm PT}^2+\bar\Gamma^2}>1 .
+\label{eq:Smith_preep_ratio_main}
+\end{align}
+Thus, at fixed $\Delta_{\rm eff}$ and $\bar\Gamma$, the invariant scattering
+phase density is analytically concentrated at the resonance center as the
+EP is approached.  Its integrated weight remains fixed, and linewidth- or
+rate-matched adverse controls need not share the peak ordering.  We call
+Eq.~(\ref{eq:Smith_preep_ratio_main}) path-specific causal preamplification,
+not an enhanced thermodynamic Kondo temperature.
 
-\subsection{Frozen-model BA scattering kernel and screening-scale estimate}
+The cancellation responsible for its regularity is transparent for the
+traceless core $h=\Delta_{\rm eff}\sigma_x+i\Gamma_{\rm PT}\sigma_z$,
+$h^2=s^2I$.  Although the individual biorthogonal projectors
+$P_\pm=(I\pm h/s)/2$ grow as $1/s$, their complete resolvent is
+\begin{equation}
+\frac{P_+}{z-s}+\frac{P_-}{z+s}
+=\frac{zI+h}{z^2-s^2}.
+\label{eq:complete_resolvent}
+\end{equation}
+At the EP, $h_{\rm EP}^2=0$, and
+\begin{equation}
+(zI-h_{\rm EP})^{-1}
+=\frac{I}{z}+\frac{h_{\rm EP}}{z^2},
+\label{eq:jordan_resolvent_main}
+\end{equation}
+so the coalescence produces a finite simple-plus-double-pole Jordan
+response.  An independent finite-$U$ biorthogonal NRG audit resolves the
+same matrix direction in branch-tracked transition residues: the channel
+trace is strongly suppressed while the channel-odd and symmetric
+off-diagonal components retain the nilpotent Jordan structure.  This is a
+matrix-residue statement, not a universal interaction-induced
+pole-splitting law.  For the compensated Markovian kernel,
+\begin{align}
+\operatorname{Tr}Q_{\rm EP}(\omega)
+&=\frac{4\bar\Gamma}
+{(\omega-\operatorname{Re}E_{\rm EP})^2+\bar\Gamma^2},
+\nonumber\\
+\int\frac{d\omega}{2\pi}\operatorname{Tr}Q_{\rm EP}&=2 .
+\label{eq:Smith_EP}
+\end{align}
+The numerical implementation satisfies scattering unitarity to
+$1.33\times10^{-15}$ and the trace-delay/determinant identity to
+$4.97\times10^{-14}$.  A rate-matched off-EP control can nevertheless have a
+larger maximum proper delay, so this observable diagnoses causal pole
+coalescence but is not, by itself, evidence of many-body enhancement.
+
+The same cancellation occurs in the finite-$U$ virtual-charge sum.  At
+particle--hole symmetry, with $A=U/2$ and a channel-independent bare vertex
+$W$,
+\begin{align}
+J_{\rm SW}(s)
+&=2W^2\left[(AI-h)^{-1}+(AI+h)^{-1}\right]
+\notag\\
+&=\frac{4AW^2}{A^2-s^2}I,\qquad
+J_{\rm SW}(0)=\frac{8W^2}{U}.
+\label{eq:SW_complete_charge}
+\end{align}
+Thus neither a Green function nor an exchange vertex acquires an independent
+Petermann or condition-number multiplier.  This causal scattering statement
+does not assume integrability.  We first record its exact one-particle phase
+condition and then isolate the additional low-energy assumptions under which
+the finite-$U$ contact problem has a genuine multiparticle Yang--Baxter
+algebra.
+
+\subsection{One-particle contact-phase quantization}
+\label{sec:frozen_ba_main}
+
+Let $\mathsf{s}_a(\omega)$, $a=1,2$, be the two eigenvalues of the complete unitary
+matrix $S(\omega)$ in Eq.~(\ref{eq:Fisher_Lee}).  In the passive window
+\begin{equation}
+\begin{aligned}
+S(\omega)u_a(\omega)&=\mathsf{s}_a(\omega)u_a(\omega),\\
+\mathsf{s}_a(\omega)&=e^{2i\delta_a(\omega)},\qquad
+|\mathsf{s}_a|=1 .
+\end{aligned}
+\label{eq:contact_scattering_eigenphases}
+\end{equation}
+The index $a$ labels scattering eigenphases, not necessarily the fixed chiral
+channels: although the bare vertex is diagonal after the Hadamard rotation,
+the internal $i\Gamma_{\rm PT}$ term generally produces off-diagonal channel
+conversion.  After linearizing the radial propagation in the stated finite
+scattering window, a ring of length $\mathcal L$ has the exact one-particle
+finite-size condition
+\begin{equation}
+\det\!\left[I-e^{ik\mathcal L}S(k)\right]=0
+\quad\Longleftrightarrow\quad
+e^{ik_{ja}\mathcal L}\mathsf{s}_a(k_{ja})=1 .
+\label{eq:contact_finite_size}
+\end{equation}
+This is an exact one-particle scattering statement.  It is not, by itself, a
+multiparticle Bethe ansatz or a Yang--Baxter theorem.
+
+The calculation-level consistency check is exact for the full matrix:
+\begin{align}
+K_{\rm ph}(\omega)
+&=\sum_{a=1}^{2}\frac{1}{2\pi i}
+  \partial_\omega\ln \mathsf{s}_a(\omega)
+=\frac{1}{2\pi i}\partial_\omega\ln\det S(\omega)
+\notag\\
+&=\frac{1}{2\pi}\operatorname{Tr}Q(\omega)
+\equiv\Delta\rho_{\rm scatt}(\omega).
+\label{eq:contact_Smith_identity}
+\end{align}
+The numerical gate reported in Supplemental Fig.~S6 gives
+$\int d\omega\,K_{\rm ph}=1.99236$ over the displayed finite integration
+window, while the complete analytic pole count is $2$.  This identity
+directly validates the phase quantization against the causal scattering
+calculation; it does not define a thermodynamic Kondo temperature.  The same
+full-matrix gate finds
+the two scattering eigenvalues unimodular to $1.11\times10^{-15}$, and an
+independent finite-difference evaluation of the phase identity agrees to
+$5.53\times10^{-9}$.  The earlier value $0.9213$ is retained in the
+Supplemental coefficient audit only as a spin-representation matrix element
+(equivalently, at the resonance center, the magnitude of the imaginary part
+of the two scattering eigenvalues); it is not called a fixed-chiral-channel
+conversion probability.
+
+\subsection{Controlled branchwise linearization and CPT similarity}
+\label{sec:linearized_cpt}
+
+The two SOC branches in Eq.~(\ref{eq:Htilde}) are shifted copies of the same
+parabola,
+\begin{equation}
+\varepsilon_{c,\eta}(k)
+=\alpha_{\rm b}\left(k+\eta\frac{\lambda}{2\alpha_{\rm b}}\right)^2
+-\frac{\lambda^2}{4\alpha_{\rm b}},\qquad \eta=\pm .
+\label{eq:shifted_parabolas_main}
+\end{equation}
+Linearizing each branch about a counterpropagating Fermi point gives
+\begin{equation}
+\varepsilon_{c,\eta}(k_{\eta F}+q)
+=\mu+\eta vq+O(q^2).
+\label{eq:branch_linearization_main}
+\end{equation}
+After subtracting $\mu$ and folding the left mover, both components have the
+same right-moving kinetic term.  The controlled reduction used from this
+point onward assumes equal folded velocities, drops $O(q^2)$ curvature,
+freezes the component matrix, and retains the momentum-independent scalar
+hybridization obtained in Eq.~(\ref{eq:V_rotated}).  It is
+\begin{align}
+H_{\rm lin}(M)={}&-iv\int_0^{\mathcal L}dx\,
+\bar\chi_a\partial_x\chi_a
+\notag\\
+&+\bar d_a(\epsilon_d\delta_{ab}+M_{ab})d_b
++U n_{d+}n_{d-}
+\notag\\
+&+V\left[\bar\chi_a(0)d_a+\bar d_a\chi_a(0)\right].
+\label{eq:H_linearized_main}
+\end{align}
+\begin{equation}
+M=D\sigma_z+iG\sigma_x,\qquad
+D\equiv\Delta_{\rm eff},\quad G\equiv\Gamma_{\rm PT}.
+\label{eq:M_linearized_main}
+\end{equation}
+Here a bar denotes the canonical dual; under a non-unitary change of
+components it transforms with the inverse matrix, not the Hermitian adjoint.
+
+Away from the EP, \(s^2=D^2-G^2\ne0\), the constant matrix is diagonalized by
+\begin{equation}
+S_C=e^{\theta\sigma_y/2},\qquad
+\tanh\theta=\frac{G}{D},\qquad
+S_C^{-1}MS_C=s\sigma_z .
+\label{eq:CPT_diagonalizer_main}
+\end{equation}
+For \(|G|<|D|\), \(\theta\) is real and \(S_C\) is the usual non-unitary
+CPT/metric similarity; outside that region Eq.~(\ref{eq:CPT_diagonalizer_main})
+is its complex \(GL(2,\mathbb C)\) continuation.  The simultaneous canonical
+transformation
+\begin{equation}
+\chi=S_C\widetilde\chi,\quad d=S_C\widetilde d,\qquad
+\bar\chi=\bar{\widetilde\chi}S_C^{-1},\quad
+\bar d=\bar{\widetilde d}S_C^{-1}
+\label{eq:canonical_CPT_main}
+\end{equation}
+leaves the kinetic term and scalar hybridization unchanged.  It also leaves
+the interaction unchanged because
+\begin{equation}
+n_{d+}n_{d-}=\frac12N_d(N_d-1),\qquad
+N_d=\bar d_a d_a,
+\label{eq:interaction_invariance_main}
+\end{equation}
+and \(N_d\) is invariant under Eq.~(\ref{eq:canonical_CPT_main}).  Thus
+finite \(U\) is compatible with, rather than an obstruction to, this
+component rotation.  At \(s=0\), \(M\ne0\) is nilpotent and the diagonalizer
+is singular; the EP must be treated in the Jordan or boundary-twist form
+below, not as a diagonal CPT frame.
+
+\subsection{Finite-\texorpdfstring{\(U\)}{U} two-electron contact algebra}
+\label{sec:finiteU_contact_main}
+
+Let \(\mathcal A_{12}\) and \(\mathcal A_{21}\) be the two-component
+pseudospin amplitudes in the two coordinate-ordering sectors.  Eliminating
+the empty, singly occupied, and doubly occupied impurity contact amplitudes
+gives the triplet and singlet matching conditions
+\begin{align}
+\mathcal A_{21}^{(t)}&=\mathcal A_{12}^{(t)},\nonumber\\
+\left[\Delta\mathcal B+i\,2U\Gamma_A\right]
+\mathcal A_{21}^{(s)}
+&=\left[\Delta\mathcal B-i\,2U\Gamma_A\right]
+\mathcal A_{12}^{(s)},
+\label{eq:singlet_triplet_matching_main}\\
+\Delta\mathcal B&=\mathcal B(p)-\mathcal B(q),\nonumber\\
+\mathcal B(p)&=p(p-2\epsilon_d-U),\qquad
+\Gamma_A=\frac{V^2}{2v}.
+\notag
+\end{align}
+The explicit elimination is given in the Supplemental Material.  With
+\(\Pi_t=(I+P_{12})/2\) and \(\Pi_s=(I-P_{12})/2\), these two equations combine
+to the exact finite-\(U\) Anderson contact matrix
+~\cite{Wiegmann1980,KawakamiOkiji1982,WiegmannTsvelick1983,
+ChaoPalacios2011},
+\begin{align}
+R_{12}(p,q)
+&=\Pi_t+
+\frac{\Delta\mathcal B-i\,2U\Gamma_A}
+     {\Delta\mathcal B+i\,2U\Gamma_A}\Pi_s
+\notag\\
+&=\frac{\Delta\mathcal B\,I_{12}
+       +i\,2U\Gamma_A P_{12}}
+      {\Delta\mathcal B+i\,2U\Gamma_A}.
+\label{eq:Anderson_R_main}
+\end{align}
+For \(U\ne0\), define the dressed Anderson rapidity
+\begin{equation}
+u(p)=\frac{\mathcal B(p)}{2U\Gamma_A},\qquad x=u(p)-u(q).
+\label{eq:dressed_rapidity_main}
+\end{equation}
+Up to the displayed scalar normalization,
+\begin{equation}
+R_{12}(x)=\frac{xI_{12}+iP_{12}}{x+i}
+=\frac{1}{x+i}
+\begin{pmatrix}
+x+i&0&0&0\\
+0&x&i&0\\
+0&i&x&0\\
+0&0&0&x+i
+\end{pmatrix},
+\label{eq:explicit_R4_main}
+\end{equation}
+in the ordered basis
+\(\{|++\rangle,|+-\rangle,|-+\rangle,|--\rangle\}\).
+The identity
+\begin{equation}
+\mathcal B(p)-\mathcal B(q)
+=(p-q)(p+q-2\epsilon_d-U)
+\label{eq:B_difference_main}
+\end{equation}
+shows why the bare pair-energy factor does not obstruct factorization: the
+exact difference variable is \(u(p)-u(q)\).  The map \(p\mapsto u(p)\) is
+two-to-one and its \(U\to0\) limit is singular; neither fact affects the
+finite-\(U\) matrix identity, while the quadratic benchmark must be handled
+separately.
+
+Permutation algebra gives the ordinary Yang--Baxter equation
+\begin{align}
+&R_{12}(u-v)R_{13}(u-w)R_{23}(v-w)
+\notag\\
+&\qquad=R_{23}(v-w)R_{13}(u-w)R_{12}(u-v).
+\label{eq:YBE_main}
+\end{align}
+Moreover, for every \(S\in GL(2,\mathbb C)\),
+\begin{equation}
+(S\otimes S)^{-1}R_{12}(x)(S\otimes S)=R_{12}(x),
+\label{eq:R_GL2_main}
+\end{equation}
+because \([P_{12},S\otimes S]=0\).  In particular, the CPT/metric
+transformation \(S_C\) preserves the ordinary YBE.  It does not generate a
+new bulk \(R\)-matrix; the non-Hermitian datum resides in the boundary twist.
+
+\subsection{Boundary twist and precise scope}
+\label{sec:boundary_twist_main}
+
+Let \(H_A=H_{\rm lin}(0)\).  Its scalar kinetic, hybridization, and
+interaction terms commute with the complexified global pseudospin charge
+\begin{equation}
+Q_M=\int_0^{\mathcal L}dx\,\bar\chi M\chi+\bar dMd .
+\label{eq:global_charge_main}
+\end{equation}
+To display the transverse terms explicitly, define
+\begin{equation}
+\mathcal J^\mu
+=\frac12\int_0^{\mathcal L}dx\,\bar\chi\sigma_\mu\chi
+ \frac12\bar d\sigma_\mu d,\qquad
+\mathcal J^\pm=\mathcal J^x\pm i\mathcal J^y .
+\label{eq:global_ladders_main}
+\end{equation}
+For \(M=D\sigma_z+iG\sigma_x\),
+\begin{equation}
+Q_M
+=2D\mathcal J^z+2iG\mathcal J^x
+=2D\mathcal J^z+iG(\mathcal J^++\mathcal J^-).
+\label{eq:global_charge_ladders_main}
+\end{equation}
+Thus the nonzero ladder components, often denoted \(S^\pm\), are
+retained as parts of a conserved \emph{global} charge.  Away from the
+EP the canonical \(GL(2,\mathbb C)\) transformation
+Eq.~(\ref{eq:canonical_CPT_main}) reduces this charge to
+\(2s\mathcal J^z\) without changing the rational bulk \(R\)-matrix.
+At the EP the diagonalizer is not used: \(Q_M\) is conjugate to a
+nonzero nilpotent ladder generator and the boundary twist remains
+unipotent and invertible.
+
+On a finite ring, the bounded multiplication operator
+\(e^{-iMx/v}\) maps \(H_A+Q_M\) to the impurity form
+Eq.~(\ref{eq:H_linearized_main}) with boundary twist
+\begin{equation}
+\mathcal G=e^{iM\mathcal L/v}.
+\label{eq:boundary_twist_main}
+\end{equation}
+At the EP, \(M^2=0\), so
+\(\mathcal G=I+iM\mathcal L/v\) is unipotent but remains invertible.
+Taking \(L_{aj}(z)=R_{aj}[z-u(p_j)]\), inserting
+\(\mathcal G\) in the auxiliary monodromy, and using
+Eq.~(\ref{eq:R_GL2_main}) gives RLL, twisted RTT, and
+\([t_{\mathcal G}(z),t_{\mathcal G}(w)]=0\) for arbitrary particle number.
+The bounded-domain proof and the many-body Jordan consequences are the
+subject of Ref.~\cite{KulkarniYB2026}; they are not inferred here from a
+singular diagonalizer.  In particular, that work proves explicitly that
+the transverse ladder terms generate, rather than lift, the Jordan chain
+on the integrable submanifold.  It also solves the twisted nested Bethe
+equations and locates the universal descendant-root contraction at the
+projective point \(\lambda=\infty\), with scaled coordinates fixed by a
+generalized Laguerre polynomial.  It does not claim coalescence of the finite
+Anderson charge roots.
+
+This exact bridge requires equal folded velocities, a linear wide band,
+constant \(M\), scalar momentum-independent hybridization, and the standard
+component-symmetric local \(U\).  The complete driven model also contains
+curvature, energy dependence, causal detuning, and potentially unequal
+velocities or non-scalar projected vertices.  Those terms lie outside the
+proof and can shift or split the symmetry-protected EP.  Thus the result
+establishes a controlled integrable low-energy submanifold, not the
+Yang--Baxter integrability of the full driven nonequilibrium kernel.
+
+\subsection{Frozen Schrieffer--Wolff screening estimate}
 \label{sec:frozen_TBA_scale}
 
-The frozen Bethe-Ansatz (BA) construction gives a channel-diagonal
-Breit--Wigner scattering amplitude.  In what follows we use the logarithmic
-derivative of this frozen two-body scattering phase to define an
-integrability-based kernel and then match its dimensionful scale to the same
-microscopic Anderson channel used in the Schrieffer--Wolff reduction.  The
-result is therefore a BA-kernel screening-scale estimate for the frozen
-effective model, rather than a full thermodynamic Bethe-Ansatz determination
-of the Kondo temperature:
-\begin{equation}
-S_{\eta}(k)=
-\frac{k-\tilde{\epsilon}_{d,\eta}-i\tilde{\Gamma}_{\eta}}
-{k-\tilde{\epsilon}_{d,\eta}+i\tilde{\Gamma}_{\eta}},
-\qquad \eta=\pm .
-\label{eq:S_frozen_TBA}
-\end{equation}
-The rapidity matching used below follows the usual frozen
-Anderson--Kondo scattering construction: the charge rapidity is measured from
-the dressed impurity level, $u=k-\tilde\epsilon_{d,\eta}$, and the
-logarithmic derivative of the Breit--Wigner phase shift gives the kernel in
-Eq.~(\ref{eq:TBA_kernel_frozen}).  The phase-shift kernel fixes the scattering
-structure but does not by itself determine a unique thermodynamic energy
-scale.  We therefore set the dimensionful scale by matching the same frozen
-channel to the Schrieffer--Wolff exchange.  In this construction the imaginary
-parts and coalescence of the biorthogonal rapidities diagnose the EP structure;
-they are not identified directly with $T_K$.
-At the uniform particle-hole convention used in the final figures,
-$\epsilon_\xi=-U/2=-1.0$ and $U=2.0$, the two virtual charge denominators are
-both unity,
-\begin{equation}
-|\tilde\epsilon_d|^{-1}+|\tilde\epsilon_d+U|^{-1}=1+1=2,
-\label{eq:PH_denominator_numeric}
-\end{equation}
-so the PH-symmetric exponent reduces to
-$-\pi/(4\chi_K\tilde\Gamma_{\eta}^{\rm bio})$ in the dimensionless units of
-the frozen scale estimate.  This is the rapidity-to-Anderson matching used for
-the SW/BA-kernel relative comparison of Supplemental Fig.~S3.
-
-For a reciprocal Hermitian Anderson channel,
-\begin{equation}
-\tilde{\Gamma}_{\eta}=\pi\rho_{b,\eta}(0)|V_{\eta}|^2,
-\label{eq:Gamma_Hermitian}
-\end{equation}
-while a non-Hermitian or nonreciprocal channel is described by the
-biorthogonal product
-\begin{equation}
-\tilde{\Gamma}_{\eta}^{\rm bio}
-=\pi\rho_{b,\eta}(0)V_{\eta}^{R}V_{\eta}^{L}.
-\label{eq:Gamma_TBA_bio}
-\end{equation}
-Only positive-real-part screening eigenvalues of the corresponding
-exchange matrix are interpreted as Kondo screening channels.
-
-Spin--orbit coupling (SOC) enters the frozen scale through the active
-channel width,
-\begin{equation}
-\tilde{\Gamma}_{\eta}^{\rm bio}(\lambda)
-=\pi\rho_{b,\eta}(0;\lambda)
-V_{\eta}^{R}(\lambda)V_{\eta}^{L}(\lambda) .
-\label{eq:SOC_width_TBA}
-\end{equation}
-The channel density of states contains the Rashba-split velocity
-Jacobian,
-\begin{equation}
-\rho_{b,\eta}(0;\lambda)
-=
-\sum_{k_\ast}
-\frac{\mathcal{J}_{2}(k_\ast)}
-{\left|\partial_k\varepsilon_{\eta}(k;\lambda)
-\right|_{k=k_\ast}},
-\qquad
-\varepsilon_{\eta}(k_\ast;\lambda)=0,
-\label{eq:SOC_DOS_velocity}
-\end{equation}
-where $\mathcal{J}_{2}(k)=k/(2\pi)$ in two dimensions.  Unless the
-real part of the bath self-energy is explicitly retained,
-$\tilde\epsilon_{d,\eta}$ is kept as the frozen impurity level and the
-explicit SOC dependence is collected in
-$\tilde\Gamma_{\eta}^{\rm bio}(\lambda)$.  If such a real
-shift is retained, one replaces
-\begin{equation}
-\tilde{\epsilon}_{d,\eta}
-=\epsilon_d+\mathrm{Re}\,\Sigma_{\eta}^{R}(0;\lambda).
-\label{eq:SOC_epsilon_shift}
-\end{equation}
-
-With $u=k-\tilde\epsilon_{d,\eta}$, the logarithmic derivative of
-Eq.~(\ref{eq:S_frozen_TBA}) gives the Lorentzian frozen BA-kernel,
+The Yang--Baxter identity is algebraic and does not itself determine a
+thermodynamic screening scale.  For comparison with the numerical weak-flow
+diagnostic, we retain only the conventional frozen Schrieffer--Wolff and
+poor-man's-scaling estimate.  In a positive screening channel,
 \begin{align}
-K_\eta(u)
-&=\frac{1}{2\pi i}\frac{d}{du}\ln S_\eta(u)
-\notag\\
-&=\frac{1}{\pi}\frac{\tilde\Gamma_\eta}
-{u^2+\tilde\Gamma_\eta^2},
-\qquad
-\int du\,K_\eta(u)=1 .
-\label{eq:TBA_kernel_frozen}
+\mathcal C_a
+&\equiv
+|\tilde\epsilon_{d,a}|^{-1}
++|\tilde\epsilon_{d,a}+U|^{-1},
+\nonumber\\
+J_a^{\rm SW}
+&=2|W_a|^2\mathcal C_a .
+\label{eq:frozen_SW_main}
 \end{align}
-This kernel fixes the frozen scattering phase.  The associated
-screening-scale estimate follows only after matching to the microscopic
-Anderson exchange; no separate identification of $T_K$ with the imaginary
-weight of a Bethe string is required in the present frozen-kernel construction.  The frozen
-Schrieffer--Wolff exchange is
+Writing
+\(\tilde\Gamma_a=\pi\rho_{b,a}(0)|W_a|^2\), the corresponding estimate is
 \begin{equation}
-J_{\eta}^{\rm SW}=2|V_\eta|^2
-\left[
-|\tilde\epsilon_{d,\eta}|^{-1}
-+|\tilde\epsilon_{d,\eta}+U|^{-1}
-\right],
-\label{eq:SW_exchange_frozen}
+T_{K,a}^{\rm SW(est)}
+\simeq D_{{\rm uv},a}
+\exp\!\left[
+-\frac{\pi}{2\chi_K\tilde\Gamma_a\mathcal C_a}
+\right].
+\label{eq:TK_SW_est}
 \end{equation}
-so that
+At particle--hole symmetry,
 \begin{equation}
-T_{K,\eta}^{\rm BA}
-\simeq
-D_{{\rm uv},\eta}
-\exp\left[-\frac{\pi}
-{2\chi_K\,\tilde\Gamma_\eta
-\left(
-|\tilde\epsilon_{d,\eta}|^{-1}
-+|\tilde\epsilon_{d,\eta}+U|^{-1}
-\right)}\right].
-\label{eq:TK_BA_width}
+T_{K,a}^{\rm SW(est)}
+\simeq D_{{\rm uv},a}
+\exp\!\left[-\frac{\pi U}
+{8\chi_K\tilde\Gamma_a}\right].
+\label{eq:TK_SW_PH_main}
 \end{equation}
-In the SOC-resolved non-Hermitian channel one reads
-$\tilde\Gamma_\eta\to\tilde\Gamma_{\eta}^{\rm bio}(\lambda)$.
-Thus SOC enhances or suppresses the frozen scale only by increasing or
-decreasing the positive screening-channel width, or by an explicitly
-included real level shift.
-
-At particle-hole symmetry with no channel-dependent real shift,
-$\tilde\epsilon_{d,\eta}=-U/2$, Eq.~(\ref{eq:TK_BA_width}) reduces to
-\begin{equation}
-T_{K,\eta}^{\rm BA}
-\simeq
-D_{{\rm uv},\eta}
-\exp\left[-\frac{\pi U}
-{8\chi_K\,\tilde\Gamma_{\eta}^{\rm bio}(\lambda)}\right].
-\label{eq:TK_BA_PH}
-\end{equation}
-If a real channel shift
-$\tilde\epsilon_{d,\eta}=-U/2+\eta s_\epsilon$ is retained, the
-linear $\eta s_\epsilon$ terms from the empty and doubly occupied
-virtual charge sectors cancel, giving for $|s_\epsilon|<U/2$
-\begin{equation}
-T_{K,\eta}^{\rm BA}
-\simeq
-D_{{\rm uv},\eta}
-\exp\left[-\frac{\pi(U^2-4s_\epsilon^2)}
-{8\chi_K\,\tilde\Gamma_{\eta}^{\rm bio}(\lambda)U}\right].
-\label{eq:TK_BA_PH_shifted}
-\end{equation}
-As $|s_\epsilon|\to U/2$, the local-moment Schrieffer--Wolff estimate
-breaks down and the system crosses into mixed-valence physics.
-
-For a genuinely non-Hermitian channel, the scalar product
-$V_\eta^RV_\eta^L$ replaces $|V_\eta|^2$.  A conventional screening
-scale is then attached only to positive-real-part eigenvalues,
+SOC enters through the channel density, velocity Jacobian, principal-value
+level shift, and overlap,
 \begin{align}
-T_K^{\rm BA,NH}
-&=D_{\rm uv}\exp\left[-\frac{1}{\chi_K j_{\rm scr}}\right],
-\label{eq:TK_BA_screening}\\
-j_{\rm scr}
-&=\max\left\{\operatorname{Re}j_\alpha:\;
- j_\alpha\in\operatorname{spec}(\rho_bJ^{\rm bio}),\;
- \operatorname{Re}j_\alpha>0\right\}.
-\label{eq:j_scr_BA}
+\tilde\Gamma_a(\lambda)
+&=\pi\rho_{b,a}(0;\lambda)|W_a|^2,\nonumber\\
+\rho_{b,a}(0;\lambda)
+&=\sum_{k_*}
+\frac{k_*/(2\pi)}
+{|\partial_k\varepsilon_a(k;\lambda)|_{k=k_*}} .
+\label{eq:SOC_SW_width_main}
 \end{align}
-A negative or complex hybridization product can produce a frozen
-non-Hermitian EP/crossover, but it is not by itself an enhanced
-thermodynamic Kondo temperature.
-
-Near an impurity EP that feeds a positive screening channel, the
-biorthogonal residue may enhance the active width in the frozen estimate,
-\begin{equation}
-\tilde\Gamma_{\eta}^{\rm BA,EP}
-=Z_\eta^{\rm bio}\tilde\Gamma_{\eta}^{\rm bio}(\lambda),
-\qquad
-1\le Z_\eta^{\rm bio}\le Z_{\rm max},
-\label{eq:Gamma_bio_def}
-\end{equation}
-with the bounded diagnostic form
-\begin{equation}
-Z_\eta^{\rm bio}=
-\min\left[Z_{\rm max},
-\frac{s_{{\rm ref},\eta}}
-{\max(|s_{\rm eff}|,s_{\rm floor})}\right].
-\label{eq:Gamma_bio_bound}
-\end{equation}
-Here $s_{{\rm ref},\eta}$ is a smooth off-EP channel normalization,
-$s_{\rm floor}>0$ is the causal/numerical infrared floor, and $Z_{\rm max}$
-prevents a formal Jordan divergence from being interpreted as an observable.
-For the plotted analytic curve we use $s_{{\rm ref},\eta}=0.375$,
-$s_{\rm floor}=0.03$, and $Z_{\rm max}=25$.
-Writing the nonsingular projection onto the screening channel as
-$\mathcal A_\eta$, define
-\begin{equation}
-\mathcal J_\eta^{\rm eff}
-=\mathcal A_\eta|V_\eta^RV_\eta^L|
-\left(|\tilde\epsilon_{d,\eta}|^{-1}
-+|\tilde\epsilon_{d,\eta}+U|^{-1}\right).
-\label{eq:Jeta_eff}
-\end{equation}
-The corresponding frozen-model scale is
-\begin{equation}
-T_{K,\eta}^{\rm BA,EP}
-\simeq
-D_{{\rm uv},\eta}
-\exp\left[-\frac{\pi|s_{\rm eff}|}
-{2\chi_K\mathcal J_\eta^{\rm eff}}\right].
-\label{eq:TK_BA_EP}
-\end{equation}
-Equation~(\ref{eq:TK_BA_EP}) is an analytic frozen-model scale, or
-EP-distance diagnostic, not the exact thermodynamic Kondo temperature
-of the full driven interacting problem.
+Thus the analytic estimate can increase relative to a Hermitian reference
+only when the EP-active projection increases a \emph{positive} channel width
+or exchange eigenvalue, or moves an ordinary charge denominator within the
+local-moment window.  It does not acquire an independent \(1/s\) factor.
+For a matrix exchange the corresponding statement is obtained from the
+largest positive real eigenvalue of $\rho_bJ$; negative or complex
+eigenvalues are not called Kondo screening.
 
 
 % ============================================================
-\section{Near-EP Low-Energy Scale Diagnostics}
+\section{Scope of the Near-EP Scale Estimate}
 \label{sec:kondo}
 % ============================================================
 
 Near the EP, the condition number
-$\keff\sim C/|\seff|$ provides a diagnostic of eigenvector
-nonorthogonality and of the associated redistribution of low-energy
-spectral weight within the SBMF treatment.  In the conservative
-interpretation used here, Eq.~(\ref{eq:TKep}) is a screening-eigenvalue
-estimate rather than a universal expression for the exact Kondo
-temperature.  The low-energy response is phase-selective: it is most visible
-in the Kondo regime (Fig.~\ref{fig:regimes}) and is reduced both by
-large SOC, which suppresses the overlap factor $F(\lambda)$ in
-Supplemental Material, and by strong interaction-induced
-regularisation, which increases $\seff$.
-The diagnostic mechanism is the near-collinearity of the right
-eigenvectors,
-$|r_+\rangle\approx|r_-\rangle$ as $s\to0$, accompanied by the
-corresponding growth of the dual norm.  Thus
-$\keff=\|R\|\|R^{-1}\|$ tracks the distance to the EP and the
-near-EP redistribution of impurity spectral weight, but it is not used
-as a standalone proof of a universal Kondo-scale enhancement.  A
-proper Kondo-temperature enhancement is claimed only when the EP-active
-sector feeds a positive antiferromagnetic screening eigenvalue of
-$\rho_bJ^{\rm bio}$.
-The enhancement is exponential: SOC does not add a separate factor to
-\(T_K\), but changes the screening width appearing in the denominator
-of the Kondo exponent.  If the Rashba-split bath increases the active
-channel density of states or the chiral hybridization product
-\(V_\eta^R V_\eta^L\), then
-\(\tilde\Gamma_\eta^{\rm bio}(\lambda)\) increases and the
-negative exponent in \(T_{K,\eta}^{\rm BA}\) is reduced in magnitude.
-Conversely, if SOC lowers the active density of states or suppresses
-the form factor, the same expression suppresses the frozen Kondo
-scale.  Near an impurity EP feeding a positive screening channel, the
-biorthogonal residue further renormalizes the width as
-\(\tilde\Gamma_{\eta}^{\rm BA,EP}
-=Z_\eta^{\rm bio}\tilde\Gamma_\eta^{\rm bio}\), where $Z_\eta^{\rm bio}$ is the bounded diagnostic factor of
-Eqs.~(\ref{eq:Gamma_bio_def})--(\ref{eq:Gamma_bio_bound}).  This gives an
-additional EP-assisted increase of the frozen scale as the regularized
-EP-distance is reduced, but not a literal divergent thermodynamic
-Kondo temperature.
+$\keff\sim C/|s|$ measures eigenvector nonorthogonality.  It is useful
+for locating the projected-core degeneracy but is not a spectral residue,
+exchange vertex, or quasiparticle weight.  The singular parts cancel in the
+complete Green function [Eq.~(\ref{eq:complete_resolvent})] and in the
+finite-$U$ charge sum [Eq.~(\ref{eq:SW_complete_charge})].  Consequently no
+$Z^{\rm bio}$ or Petermann multiplier is inserted into a propagator,
+diagrammatic vertex, or Kondo exponent.
+
+On the exact linearized submanifold, the local \(U\) preserves the
+complexified pseudospin symmetry and therefore does not cut off this
+algebraic Jordan limit.  This does not require a divergent observable: the
+complete resolvent and charge sum remain finite.  In the complete driven
+kernel, curvature, velocity mismatch, frequency dependence, or
+component-dependent vertices can move or split the EP, but their effect must
+be calculated microscopically rather than represented by a universal
+interaction floor.
+
+Equation~(\ref{eq:TK_SW_est}) retains the conventional frozen
+Schrieffer--Wolff scale estimate and
+permits an EP-assisted enhancement relative to a matched Hermitian reference
+only when the projected Dirac/SOC channel increases a positive screening
+width or exchange eigenvalue.  That conditional estimate is conceptually
+distinct both from multiplying a Hermitian scale by a biorthogonal norm and
+from the Yang--Baxter identity.
+
+The direct numerical evidence is narrower.  The leading eigenvalue of the
+complete causal channel density is larger in the chosen Fermi window, and
+the largest exchange eigenvalue initially grows faster than in the matched
+Hermitian control.
+Supplemental Fig.~S6 shows that this ordering reverses before strong
+coupling.  The low-temperature slave-boson saddle in Supplemental Fig.~S2
+validates the $r^2$ scaling and charge constraint, but the same closure has no
+finite-$r$ branch at $T_{\rm b}=0.1$.  We therefore use ``pre-EP
+amplification'' only for the demonstrated spectral/weak-flow response.
+The estimate in Eq.~(\ref{eq:TK_SW_est}) remains conditional on a positive
+screening channel, and no enhanced thermodynamic Kondo temperature is
+claimed.
 
 % ============================================================
 \section{Conclusions}
 \label{sec:conc}
 % ============================================================
 
-We have shown that a strictly Hermitian, periodically driven
-quantum impurity coupled to a spin-orbit-split Dirac bath
-develops emergent passive non-Hermitian behavior through a transparent
-and controllable microscopic mechanism.  Bilinear Gaussian coarse
-graining over off-shell angular-momentum harmonics produces a real
-spin-odd coherent shift.  Embedding this shifted channel in the
-energy-dependent retarded Dirac bath converts it into a spin-dependent
-width.  After subtracting the common bath damping, the compensated relative kernel
-contains the passive $\PT$ core of Eq.~(\ref{eq:passive_PT_core}), while the
-Kramers--Kronig partner $\Dcoh\sigma_z$ acts as a causal detuning floor.
-The gauge-invariant amplitude $\tb=|\gb||b_c|$ controls the projected
-channel hybridization.
+We have shown that a strictly Hermitian, periodically driven Dirac impurity
+develops an emergent passive non-Hermitian retarded kernel by a controlled
+two-stage mechanism: off-shell angular harmonics produce a real spin-odd
+shift, and the energy-dependent Dirac bath converts that shift into a
+relative decay channel.  After common damping is removed, the compensated
+kernel contains the passive $\PT$ core of
+Eq.~(\ref{eq:passive_PT_core}); its Kramers--Kronig partner supplies the
+causal detuning floor.
 
-Four central and physically distinct results emerge:
+The focused conclusions are fourfold.  First, the projected channels scale as
+$r^2$ while the time-independent impurity--bath vertex scales as $rW$.
+Consequently the local core EP is exactly invariant for $r>0$, whereas a
+finite-$k$ dressed minimum must be tracked.  The low-temperature saddle
+confirms this structure and charge continuity, but the same closure has no
+finite-$r$ branch at $T_{\rm b}=0.1$; the main spectra are therefore stated
+explicitly as frozen-kernel diagnostics.
 
-First, the Hadamard rotation $U_2$ diagonalizes the hybridization
-block exactly, producing $\tilde{d}_\pm$ channels that couple
-exclusively to the $c_{k\pm}$ bath modes [Eq.~(\ref{eq:Htilde})].
-This diagonal structure makes the two-body $S$-matrix block-diagonal
-($S^{LR}=S^{RL}=0$), which is the origin of the channel-separated scattering
-used in the frozen-model Bethe-Ansatz construction.
+Second, the complete Green function acquires no independent divergent
+biorthogonal-projector prefactor at coalescence.  The divergent pieces of the
+individual projectors cancel and form the finite-coefficient Jordan
+simple-plus-double-pole resolvent, Eq.~(\ref{eq:jordan_resolvent_main}).  An
+operator-resolved finite-$U$ biorthogonal NRG audit independently preserves
+this matrix structure: the branch-tracked double-pole coefficient is nearly
+perfectly aligned with the nilpotent EP direction while its trace is
+suppressed by more than three orders of magnitude.  The same analytic
+cancellation keeps the particle--hole-symmetric finite-$U$
+Schrieffer--Wolff exchange finite.  Neither the numerical pole splittings nor
+the complex quartic diagnostic show a stable universal interaction law.
+Hence biorthogonal normalization does not multiply a propagator, a
+diagrammatic vertex, or a screening exponent, and no universal
+interaction-induced EP floor is inferred.
 
-Second, the condition number $\keff\sim C/|\seff|$ shows a
-phase-selective EP response within the SBMF treatment,
-with the largest response in the Kondo regime and much weaker
-responses in the resonant-level and free-orbital regimes
-(Fig.~\ref{fig:regimes}).  The interaction $U$ renormalizes the
-EP distance $\seff$ and keeps the condition number finite.  Thus
-$\keff$ is used as a diagnostic of nonnormality and of the associated
-low-energy scale diagnostics, rather than as a standalone proof of a
-universal Kondo scale.
-The sign difference of the passive relative gain--loss channel alone does not
-split the Kondo scale, since the naive channel estimate depends on the
-squared detuning.  Distinct channel scale estimates arise only when the
-SOC-split bath or the self-consistent saddle produces unequal channel
-widths or real detunings, as detailed in the Supplemental Material.  The
-condition-number peaks in Figs.~\ref{fig:full_H}--\ref{fig:regimes}
-are therefore interpreted as finite-$|\gb|$ EP diagnostics whose
-response is strongest in the Kondo regime, rather than as a separate
-universal ``$\tb\sim T_K$'' precursor criterion.
+Third, the positive bath rate matrix gives a unitary Fisher--Lee scattering
+matrix.  Its Wigner--Smith trace develops the analytic EP coalescence profile
+of Eq.~(\ref{eq:Smith_EP}), providing a causal pole and linewidth fingerprint.
+Because a rate-matched off-EP control can have a larger proper delay, this
+profile is not promoted to independent evidence of many-body enhancement.
+Its exact one-particle contact-phase condition is tied to the same causal
+object through \(K_{\rm ph}=\operatorname{Tr}Q/(2\pi)\).  The direct
+small-width channel-resolved RG calculation shows bounded pre-EP
+amplification at weak thresholds, but the ordering reverses before strong
+coupling; an enhanced thermodynamic Kondo temperature is not established.
 
-Third, SOC enters the screening-scale estimate through the
-channel-resolved density of states, cutoff, chiral hybridization form factor,
-and one-body level shift.  The frozen BA-kernel expression
-$T_{K,\eta}^{\rm BA}(\lambda)$ should therefore be read as an
-integrability-based low-energy diagnostic, matched to the Schrieffer--Wolff
-channel, rather than as an independent exact thermodynamic identity.  Its
-variation captures a combined SOC-projection and impurity-sector
-nonnormality effect within the frozen effective model, not a universal
-monotonic enhancement of $T_K$ with SOC.
+Fourth, branchwise linearization and folding identify a precise integrable
+submanifold of the physical model.  The finite-\(U\) contact matching yields
+the exact rational Anderson matrix
+Eq.~(\ref{eq:Anderson_R_main}) in the dressed rapidity
+Eq.~(\ref{eq:dressed_rapidity_main}).  Its \(GL(2,\mathbb C)\) covariance
+shows directly that an off-EP CPT/metric similarity preserves YBE.  At the
+EP the diagonalizer is singular, but the boundary twist is invertible and
+unipotent.  The nonzero transverse pseudospin ladders are retained as
+components of the conserved global charge; the companion
+work~\cite{KulkarniYB2026} develops their diagonal-twist reduction away from
+the EP and their unipotent RLL/RTT and many-body Jordan realization at it.
+Curvature and the energy-dependent
+driven self-energy remain outside this theorem, so the full microscopic
+model is not claimed to be Yang--Baxter integrable.
 
-
-The location of the exceptional point is also important for this
-interpretation.  In the mechanism studied here the relevant EP is localized
-in the effective impurity block and can modify the same positive screening
-channel that enters the Schrieffer--Wolff exchange.  In that case an enhanced
-biorthogonal residue may increase the corresponding frozen screening-scale
-estimate.  An EP generated predominantly by the bath dispersion, reservoir
-self-energy, or an extended bath sector need not feed the local exchange in
-the same way.  Such a bath-induced EP may alter spectral, transport, or decay
-properties without producing a comparable Kondo-scale enhancement.  The
-connection between an EP and screening is therefore conditional on how the EP
-projects onto the low-energy impurity screening channel.
-
-Fourth, the driven impurity exhibits a shifted Friedel-type
-resonance: the low-energy peak is referenced by
-$\omega_{\rm res}\simeq\mathrm{Re}(\teps)\neq0$
-[Eq.~(\ref{eq:omega_K})].
-This shift is expressed in terms of the gauge-invariant amplitude
-$|b_c|$, the spin-selective self-energy, and the renormalized
-impurity level; it is not attributed to the phase of the auxiliary
-slave-boson field.
-For the frozen kernel plotted in Fig.~\ref{fig:FDR}, the reference
-position is $\omega_{\rm res}\simeq\mathrm{Re}(\teps)=-1.0000$ at
-$\epsilon_\xi=-U/2=-1.0$.  A separate self-consistent finite-temperature
-SBMF closure may shift this value; such a shift should be quoted only
-when the same closure is used to generate the plotted spectrum.
-
-Several directions open from these results.
-The biorthogonal Bethe-Ansatz equations
-[Eqs.~(\ref{eq:BAright})--(\ref{eq:BAaux})] provide an analytic
-frozen-model description, and the dressed rapidities in
-Fig.~\ref{fig:bethe} reveal the essential pseudo-Hermitian structure: the two BA
-rapidities $\mur^{\rm BA}_\pm$ encode the EP-distance structure in
-rapidity space.  The bare $U=0$ splitting vanishes continuously at
-$\gb=\gm$, whereas the interaction-corrected $2\seff$ remains
-finite for $U>0$ and $F(\lambda)>0$, producing avoided rapidity coalescence.
-The bare coalescence suggests, by analogy with Jordan-block
-branch points, that the frozen effective model may develop singular
-low-energy density-of-states corrections near the merged peak.  We do not
-identify the imaginary rapidity weight or this possible singularity directly
-with the Kondo temperature, and neither is used as an input to the scale
-estimate.  Establishing any thermodynamic consequence beyond the frozen
-scattering diagnostic is left for future work.
-The SOC-dependent factor $F(\lambda)=\max(1-\lambda^2/k_{\rm max}^2,0)$
-introduces a sharp diagnostic boundary at $\lambda=k_{\rm max}$ where this
-particular interaction correction to the impurity-sector EP vanishes,
-producing the vertical wall in Fig.~\ref{fig:phasediag}.
-The shifted channel-selective resonance at $\omega_{\rm res}\neq0$, together
-with relative gain--loss side features at scales set by $|\Gpt|$, provides
-possible signatures in spin-resolved tunneling spectroscopy and
-non-equilibrium noise measurements in driven quantum dot devices.
-More broadly, our results support the comparatively narrow conclusion that an
-impurity-localized pseudo-Hermitian EP can enhance a low-energy screening
-diagnostic when it couples to a positive Kondo screening channel.  They do not
-imply that every bath- or reservoir-induced EP enhances the Kondo scale.
-
-
-
-\section*{Supplemental Material}
-Detailed derivations of the auxiliary-mode influence functional, Keldysh
-mean-field equations, physical-FDR construction, frozen SW/BA-kernel
-estimates, HWHM validity mask, negative signed-weight diagnostics, and
-parameter tables are provided in the Supplemental Material.  The main text is
-kept self-contained by stating the effective projected kernel, the physical
-spectrum, the screening-scale estimates, and the SBMF spectral-weight
-transfer diagnostic explicitly.
 
 
 \section*{Code and data availability}
 The numerical scripts and tabulated data used to generate the main and
 Supplemental figures are included in the accompanying reproducibility archive.
+The NRG portion contains the independent propagation of
+$L^\dagger cR$ and $L^\dagger c^\dagger R$, the no-truncation regression,
+branch tracking, the comprehensive scaling audit, and the exported data used
+for Supplemental Fig.~S8.
+The source archive also includes
+\nolinkurl{verify_finiteU_contact_algebra.py}, an independent check of the
+finite-\(U\) contact matrix, CPT covariance, and three-particle YBE.
 A version-controlled copy of the code, data, figure outputs, and manuscript
 sources is available in the GitHub repository
-\href{https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity}{\texttt{VMKPHYSMATH/emergent-pt-dirac-impurity}}~\cite{kulkarni2026code}.  The archived
-files include the gauge-fixed frozen effective-model solver, the cleaned
-BA-kernel figure script, and the full Fig.~\ref{fig:regimes} drive-range data
-referred to in the caption.
+\href{https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity}{\texttt{VMKPHYSMATH/emergent-pt-dirac-impurity}}~\cite{kulkarni2026code}.
+Release v1.0.1 is archived at
+\href{https://doi.org/10.5281/zenodo.21434683}{doi:10.5281/zenodo.21434683};
+the all-versions record is
+\href{https://doi.org/10.5281/zenodo.21434682}{doi:10.5281/zenodo.21434682}.
+Release v1.0.1 predates the present biorthogonal-resolvent and causal-RG
+corrections and is therefore superseded by the accompanying revision archive.
+
+\section*{Supplemental Material}
+Detailed derivations of the auxiliary-mode influence functional, Keldysh
+mean-field equations, physical fluctuation--dissipation construction, complete
+biorthogonal and finite-$U$ charge-resolvent identities, causal matrix-RG
+validation, the finite-$U$ two-electron contact algebra, and parameter tables
+are provided in the Supplemental Material~\cite{suppmat}.
+The main text remains self-contained by stating the effective projected kernel,
+physical spectrum, and claim boundary explicitly.
 
 \begin{acknowledgments}
 The author thanks colleagues and workshop participants for useful
@@ -2171,6 +2134,7 @@ discussions on driven quantum impurity systems, non-Hermitian
 many-body physics, and Keldysh methods.
 \end{acknowledgments}
 
+\bibliographystyle{apsrev4-2}
 \bibliography{ref}
 
 \end{document}

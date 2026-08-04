@@ -1,0 +1,42 @@
+[model]
+U = 2.0
+eps_d = -1.0
+delta0 = 0.075
+c_delta = 0.050
+g_gamma = 0.200
+beta0 = 0.500
+delta_coh = 0.0001
+gamma_common = 0.120
+frame = "relative"
+bandwidth = 0.7853981633974483
+bath_exponent = 1.0
+gamma_edge = 0.120
+hybridization_V = nan
+bath_split = 0.0
+reciprocal_hybridization = true
+soc_mode = "overlap"
+soc_lambda = 0.500
+soc_kmax = 0.7853981633974483
+
+[nrg]
+Lambda = 3.0
+z_shift = 0.5
+iterations = 20
+nkeep = 180
+min_keep_per_charge = 4
+sort_type = "LowRe"
+star_intervals = 80
+overlap_floor = 1.0e-10
+degeneracy_tolerance = 1.0e-10
+residual_tolerance = 1.0e-9
+save_levels = 36
+
+[lehmann]
+enabled = false
+omega_min = -1.0
+omega_max = 1.0
+omega_points = 2001
+eta = 0.01
+
+[output]
+directory = "output/soc_overlap_single"

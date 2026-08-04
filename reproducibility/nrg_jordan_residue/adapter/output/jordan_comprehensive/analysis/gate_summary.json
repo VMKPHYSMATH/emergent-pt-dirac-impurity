@@ -1,0 +1,16 @@
+{
+  "reference_config": "reference",
+  "reliable_fraction": 0.9939393939393939,
+  "numerical_gate": true,
+  "median_alignment": 0.9999996308273453,
+  "median_trace_fraction": 0.0008356705116663367,
+  "median_nilpotent_mismatch": 7.317911243963874e-07,
+  "jordan_gate": true,
+  "p_complex_median": 1.3590431244859587,
+  "p_complex_68_spread": 1.9907887985031179,
+  "square_root_gate": false,
+  "quartic_plateau_abs_slope": 0.8801700302566724,
+  "quartic_complex_scatter": 1.118199295098119,
+  "quartic_phase_spread": 0.36771867503100125,
+  "quartic_gate": false
+}

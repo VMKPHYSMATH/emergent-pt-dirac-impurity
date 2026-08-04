@@ -1,0 +1,37 @@
+[scan]
+beta_EP = 0.5
+delta_coh = 0.0
+beta_values_smoke = [0.0, 0.45]
+beta_values_pilot = [0.0, 0.2, 0.35, 0.4, 0.45, 0.475, 0.49, 0.4975]
+beta_values_matrix = [0.0, 0.2, 0.35, 0.4, 0.45, 0.475, 0.49, 0.4975]
+U_values_smoke = [2.0]
+U_values_pilot = [2.0]
+U_values_matrix = [1.0, 2.0, 4.0]
+soc_ratio_values_smoke = [0.0]
+soc_ratio_values_pilot = [0.0, 0.5]
+soc_ratio_values_matrix = [0.0, 0.25, 0.5, 0.75]
+z_values_smoke = [0.5]
+z_values_pilot = [0.5]
+z_values_matrix = [0.25, 0.5, 0.75]
+
+[profiles]
+smoke_iterations = 6
+smoke_nkeep = 48
+pilot_iterations = 16
+pilot_nkeep = 96
+matrix_iterations = 22
+matrix_nkeep = 180
+
+[dmnrg_response]
+omega_min = 0.0
+omega_max = 0.30
+omega_points = 801
+eta = 0.003
+imag_tolerance = 1.0e-8
+components = ["x", "z"]
+weight_fraction = 0.9999
+weight_floor = 1.0e-12
+max_transitions_per_shell = 4000
+time_max = 400.0
+time_points = 1001
+exploratory_complex = true

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "four_by_four_determinant_factorization": true,
+    "folded_determinant_after_clearing_denominators": true,
+    "folded_ratio_after_cross_multiplication": true,
+    "smith_ratio_minus_one_identity": true
+  },
+  "scope": {
+    "contact_4x4": "exact for the quadratic projected kernel",
+    "finite_u_contact": "exact algebra within the stated local Feshbach closure",
+    "smith_ratio": "compensated unbroken Markov core at fixed D and common half-width"
+  }
+}

@@ -1,0 +1,51 @@
+[scan]
+# Dense around the nominal compensated point beta_EP=delta0/(g_gamma-c_delta)=0.5.
+beta_values_production = [0.0, 0.10, 0.20, 0.30, 0.40, 0.45, 0.475, 0.49, 0.495, 0.4975, 0.50, 0.5025, 0.505, 0.51, 0.525, 0.55, 0.60, 0.70]
+beta_values_pilot = [0.0, 0.30, 0.45, 0.49, 0.50, 0.51, 0.55, 0.70]
+beta_values_smoke = [0.30, 0.49, 0.51]
+
+# Keep a nonzero coherent detuning so the left/right basis is not exactly defective.
+delta_coh = 1.0e-3
+
+[profiles]
+# A smoke run checks installation only. Pilot and production preserve the base
+# config unless these caps are lower than the values in the base config.
+smoke_iterations = 6
+smoke_nkeep = 96
+smoke_lehmann = false
+pilot_iterations = 18
+pilot_nkeep = 240
+pilot_lehmann = true
+production_lehmann = true
+
+[flow]
+# Fixed-point entry is diagnosed from the two-shell (same-parity) level-flow
+# distance, avoiding the ordinary even/odd NRG alternation.
+levels_per_charge = 4
+min_iteration = 4
+distance_tolerance = 0.05
+consecutive_same_parity = 3
+max_residual = 1.0e-7
+max_biorth_error = 1.0e-5
+
+[poles]
+# Full 2x2 transition-residue pairs are branch tracked in beta0 at each NRG
+# iteration. Reported energy scales use physical pole_real/pole_imag columns.
+reference_iterations = [4, 5, 6]
+pair_pool = 8
+support_fraction = 0.05
+min_support = 1.0e-4
+max_residual = 1.0e-7
+max_biorth_error = 1.0e-5
+min_jordan_alignment = 0.95
+max_trace_fraction = 0.10
+onset_consecutive_same_parity = 2
+
+[spectral]
+# These are kept-space diagnostics, not FDM-NRG thermodynamic scales.
+zero_window = 0.30
+max_sumrule_error = 0.15
+min_trace_positive_fraction = 0.90
+
+[plot]
+reference_beta = 0.0

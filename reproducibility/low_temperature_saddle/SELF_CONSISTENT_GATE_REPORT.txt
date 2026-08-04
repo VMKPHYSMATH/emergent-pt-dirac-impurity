@@ -1,0 +1,30 @@
+DRIVEN-DIRAC IMPURITY SELF-CONSISTENT SADDLE GATE
+STATUS: PASS_LOW_T__BLOCKED_AT_REFERENCE_T
+
+temperature=1e-06; Gamma0=0.12000000; lambda_soc=0.50000000; kmax=0.78539816
+manuscript reference temperature=0.1; finite saddle at every beta=False
+
+CHECKS
+test_7_all_seed_triplets_converged: PASS
+test_7_seed_independence: PASS
+test_8_constraint_residual: PASS
+test_8_stationarity_residual: PASS
+test_8_grid_refinement: PASS
+test_8_superfine_grid_validation: PASS
+test_8_rate_matrix_PSD: PASS
+test_8_total_charge_continuity: PASS
+test_9_projected_root_exported: PASS
+test_finite_nonzero_saddle: PASS
+test_lambda_below_kmax: PASS
+
+HEADLINE
+{
+  "converged_beta_count": 5,
+  "minimum_r": 0.009551970257228173,
+  "maximum_r": 0.010468828715785698,
+  "max_constraint_residual": 4.03715283425754e-10,
+  "max_stationarity_residual": 9.58452983645941e-10,
+  "max_grid_refinement_error": 2.9719258159977002e-06,
+  "max_level2_to_level3_integral_drift": 5.119405903641905e-07,
+  "max_charge_continuity_residual": 3.9373813359749394e-23
+}

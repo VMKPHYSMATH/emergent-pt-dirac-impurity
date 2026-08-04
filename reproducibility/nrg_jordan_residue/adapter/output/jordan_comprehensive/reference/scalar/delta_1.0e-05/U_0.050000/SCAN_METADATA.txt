@@ -1,0 +1,11 @@
+created_utc=2026-08-02T22:03:18
+profile=comprehensive
+suite=core
+config_label=reference
+model_label=scalar
+Lambda=3.0
+z_shift=0.5
+nkeep=320
+grid=core
+U=0.05
+delta_coh=1.0e-5

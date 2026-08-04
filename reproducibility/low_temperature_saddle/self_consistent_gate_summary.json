@@ -1,0 +1,86 @@
+{
+  "status": "PASS_LOW_T__BLOCKED_AT_REFERENCE_T",
+  "kernel_mode": "complete_thermal_markov_influence_kernel",
+  "parameters": {
+    "eps_d": -1.0,
+    "Q": 1.0,
+    "charge_gap": 1.0,
+    "gamma0": 0.12,
+    "k_max": 0.7853981633974483,
+    "lambda_soc": 0.5,
+    "delta0": 0.075,
+    "c_delta": 0.05,
+    "g_gamma": 0.2,
+    "temperature": 1e-06,
+    "manuscript_reference_temperature": 0.1,
+    "band_lo": -4.0,
+    "band_hi": 4.0,
+    "base_points": 4001,
+    "pole_points_per_min_width": 12,
+    "pole_span_in_max_widths": 30.0,
+    "thermal_points_per_T": 12,
+    "thermal_span_in_T": 40.0,
+    "r_guard": 1e-05,
+    "residual_tolerance": 3e-07,
+    "grid_tolerance": 3e-06,
+    "r_search_min": 0.001,
+    "r_search_max": 0.5,
+    "r_search_points": 13,
+    "beta_min": 0.35,
+    "beta_max": 0.55,
+    "rho": 0.6366197723675814,
+    "W": 0.2449489742783178,
+    "beta_core": 0.4999999999999999,
+    "beta_passive_max": 0.6
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "checks": {
+    "test_7_all_seed_triplets_converged": true,
+    "test_7_seed_independence": true,
+    "test_8_constraint_residual": true,
+    "test_8_stationarity_residual": true,
+    "test_8_grid_refinement": true,
+    "test_8_superfine_grid_validation": true,
+    "test_8_rate_matrix_PSD": true,
+    "test_8_total_charge_continuity": true,
+    "test_9_projected_root_exported": true,
+    "test_finite_nonzero_saddle": true,
+    "test_lambda_below_kmax": true
+  },
+  "scope_gate": {
+    "manuscript_reference_temperature": 0.1,
+    "finite_r_saddle_at_every_beta": false,
+    "finite_r_saddle_by_beta": {
+      "0.350": false,
+      "0.400": false,
+      "0.450": false,
+      "0.500": false,
+      "0.550": false
+    }
+  },
+  "headline": {
+    "converged_beta_count": 5,
+    "minimum_r": 0.009551970257228173,
+    "maximum_r": 0.010468828715785698,
+    "max_constraint_residual": 4.03715283425754e-10,
+    "max_stationarity_residual": 9.58452983645941e-10,
+    "max_grid_refinement_error": 2.9719258159977002e-06,
+    "max_level2_to_level3_integral_drift": 5.119405903641905e-07,
+    "max_charge_continuity_residual": 3.9373813359749394e-23
+  },
+  "notes": [
+    "The input boson phase is gauge fixed by r=|b_c| before iteration.",
+    "The solver updates r*delta_c when r is above the guard and never divides Eq. (24) by a vanishing r.",
+    "Non-passive beta0 values are masked before entering the iteration loop.",
+    "The frequency grid is locally refined around every retarded pole and around the Fermi edge, then doubled for the exported quadrature check.",
+    "The converged finite-r table is evaluated at the explicitly reported low temperature; the manuscript reference temperature is tested separately and may block transfer of the result into the paper.",
+    "At finite k the reported gap minimum reaches the upper edge of the declared physical beta scan, so it is classified as boundary-limited rather than as an interior projected EP.",
+    "Across the converged low-temperature scan r decreases with beta0; this gate therefore does not supply evidence for an enhanced saddle amplitude near the core EP.",
+    "No manuscript, response letter, figure renderer, or public archive is modified by this gate."
+  ]
+}

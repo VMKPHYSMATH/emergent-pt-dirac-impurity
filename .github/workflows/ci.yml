@@ -1,0 +1,32 @@
+name: reproducibility
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python reproducibility/finite_u_contact/verify_finiteU_contact_algebra.py
+      - run: python reproducibility/analytic_checks/contact_and_smith_identity_check.py
+      - run: python reproducibility/bethe_smith_phase/bethe_smith_phase_gate.py
+      - run: python benchmarks/prb_complete/tests/validate_biorth_fix.py
+        working-directory: reproducibility/nrg_jordan_residue/adapter
+      - run: python benchmarks/prb_complete/tests/validate_install.py
+        working-directory: reproducibility/nrg_jordan_residue/adapter
+      - run: python benchmarks/prb_complete/tests/validate_jordan_comprehensive.py
+        working-directory: reproducibility/nrg_jordan_residue/adapter
+
+  latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y texlive-latex-extra texlive-publishers
+      - run: make paper

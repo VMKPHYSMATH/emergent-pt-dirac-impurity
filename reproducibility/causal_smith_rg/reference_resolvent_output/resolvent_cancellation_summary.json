@@ -1,0 +1,45 @@
+{
+  "status": "PASS__DIVERGENT_PROJECTORS_CANCEL_IN_COMPLETE_RESOLVENTS",
+  "generated_utc": "2026-07-30T12:00:00+00:00",
+  "scope": "Compensated two-channel projected core on the strict pre-EP side; particle-hole-symmetric unit charge gap.",
+  "parameters": {
+    "beta_values": [
+      0.2,
+      0.35,
+      0.45,
+      0.48,
+      0.49,
+      0.495,
+      0.499,
+      0.4999
+    ],
+    "resolvent_point_real": 0.31,
+    "resolvent_point_imag": 0.17,
+    "particle_hole_charge_gap": 1.0,
+    "delta0": 0.075,
+    "c_delta": 0.05,
+    "g_gamma": 0.2,
+    "beta_core_EP": 0.4999999999999999
+  },
+  "software": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "checks": {
+    "strict_pre_EP_points": true,
+    "projector_algebra": true,
+    "pole_sum_equals_direct_resolvent": true,
+    "two_charge_sum_equals_closed_resolvent": true,
+    "complete_charge_factor_finite": true,
+    "no_petermann_multiplier_inserted": true
+  },
+  "headline": {
+    "maximum_projector_algebra_error": 3.3306690738754696e-14,
+    "maximum_pole_sum_resolvent_error": 1.1133826641568277e-14,
+    "maximum_two_charge_SW_resolvent_error": 4.440892098500626e-16,
+    "largest_individual_projector_norm": 57.73574876472261,
+    "closest_beta_to_EP": 0.4999,
+    "closest_complete_charge_factor": 1.0000029996339976
+  }
+}
