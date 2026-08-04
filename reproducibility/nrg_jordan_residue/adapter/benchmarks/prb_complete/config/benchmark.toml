@@ -1,0 +1,61 @@
+[paths]
+output_root = "output/prb_complete_benchmark"
+
+[physics]
+U = 2.0
+eps_d = -1.0
+delta0 = 0.075
+c_delta = 0.050
+g_gamma = 0.200
+beta_core = 0.5
+gamma_common = 0.120
+bandwidth = 0.7853981633974483
+gamma_edge = 0.120
+bath_exponent = 1.0
+frame = "relative"
+
+# External frozen Bethe/SW diagnostic.  This F(lambda) is not inserted into
+# the NH-NRG Hamiltonian.  The default is the D-SOC^2 form factor evaluated at
+# lambda_soc=0.50 and k_max=pi/4, matching the saddle gate convention.
+lambda_soc = 0.50
+k_max = 0.7853981633974483
+f_lambda_model = "d_soc2"
+f_lambda_override = "nan"
+bethe_eta = 0.01
+bio_floor = 1.0e-14
+
+[scan]
+delta_values = [1.0e-2, 3.0e-3, 1.0e-3, 3.0e-4, 1.0e-4]
+u_values = [0.0, 1.0, 2.0, 4.0]
+u_scan_delta_values = [1.0e-2, 1.0e-3, 1.0e-4]
+side_beta_values = [0.49, 0.51]
+crossover_thresholds = [1.0e-6, 1.0e-8, 1.0e-10]
+consecutive_iterations = 3
+
+[nrg]
+Lambda = 3.0
+z_shift = 0.5
+iterations = 30
+nkeep_pilot = 300
+nkeep_production = 400
+min_keep_per_charge = 1
+sort_type = "LowRe"
+star_intervals = 120
+overlap_floor = 1.0e-10
+degeneracy_tolerance = 1.0e-10
+residual_tolerance = 1.0e-8
+save_levels = 64
+lehmann_enabled = false
+
+[controls]
+run_metallic = true
+run_hermitian = true
+run_side_points = true
+run_convergence = true
+convergence_nkeep = [300, 400]
+convergence_sort = ["LowRe", "LowMag"]
+convergence_Lambda = [3.0, 2.5]
+
+[auxiliary]
+run_saddle_gate = true
+run_causal_rg_gate = true

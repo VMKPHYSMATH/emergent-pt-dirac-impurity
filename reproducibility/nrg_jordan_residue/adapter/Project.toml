@@ -1,0 +1,7 @@
+name = "PTDiracNHNRGAdapter"
+uuid = "6f2c36f1-c9bf-4df2-a4c4-3622057ca506"
+authors = ["Vinayak M. Kulkarni", "OpenAI adaptation"]
+version = "0.1.0"
+
+[compat]
+julia = "1.11"

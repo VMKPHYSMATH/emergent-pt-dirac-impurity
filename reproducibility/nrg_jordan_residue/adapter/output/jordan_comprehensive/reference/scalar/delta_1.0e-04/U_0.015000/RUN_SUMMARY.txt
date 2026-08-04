@@ -1,0 +1,25 @@
+PT-DIRAC NON-HERMITIAN NRG ADAPTER
+beta0=0.5
+U=0.015; eps_d=-0.0075
+Delta_eff=0.1; Gamma_PT=0.1; Delta_coh=0.0001
+frame=relative; gamma_common=0.12
+bath exponent=1.0; D=0.7853981633974483
+V=0.17320508075688773; Gamma_edge=0.12
+soc_mode=none; soc_lambda=0.0; soc_kmax=0.7853981633974483; F_lambda=1.0
+soc_normalized_hybridization_det=1.0
+Lambda=3.0; iterations=8; nkeep=320
+final kept=320
+final max residual=1.7505390901607585e-11
+final biorth error=0.0012038305698526379
+final minimum paired overlap=0.021713573032781906
+
+IMPORTANT SCOPE
+The exported Lehmann curve is a kept-space zero-temperature diagnostic.
+It is not yet a complete-basis/FDM-NRG spectral function and must be judged by lehmann_sumrule.csv.
+impurity_transition_weights.csv contains iteration-resolved, biorthogonal
+addition/removal residue products used only to identify impurity-supported crossovers.
+impurity_transition_residue_matrix.csv contains the full 2x2 complex
+transition-residue matrices for non-circular pole-pair and Jordan diagnostics.
+soc_hybridization_matrix.csv records V_lambda and V_lambda V_lambda^dagger/V^2.
+In soc_mode=overlap, det(V_lambda V_lambda^dagger/V^2)=F_lambda.
+Run away from an exact Jordan point; the biorthogonal basis is singular at exact defectiveness.

@@ -1,27 +1,32 @@
 cff-version: 1.2.0
-doi: 10.5281/zenodo.21434683
-message: "Please cite both the software archive and the associated manuscript."
+doi: 10.5281/zenodo.21434682
+message: "Please cite both the reproducibility archive and the associated manuscript."
 title: "Reproducibility code and data for Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity"
 type: software
 authors:
   - family-names: Kulkarni
     given-names: Vinayak M.
     orcid: "https://orcid.org/0000-0001-7590-2728"
-version: "1.0.1"
-date-released: "2026-07-19"
+version: "2.0.0"
+date-released: "2026-08-04"
 repository-code: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
 url: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
 abstract: >-
-  Python scripts, numerical data, and manuscript sources for the passive-PT
-  projected-kernel, slave-boson mean-field, spectral-weight-transfer, and
-  frozen Bethe-Ansatz-kernel diagnostics reported in the associated article.
+  Code, data, figures, and checked manuscript sources for a passive
+  pseudo-Hermitian driven Dirac impurity. Version 2 adds causal spectral and
+  Wigner-Smith checks, a controlled finite-U Anderson contact/Yang-Baxter
+  reduction, and an operator-resolved biorthogonal NRG residue audit. The
+  exact integrability claim is restricted to the linearized equal-velocity
+  scalar-hybridization submanifold.
 keywords:
   - non-Hermitian physics
   - exceptional points
-  - Kondo impurity
+  - quantum impurity
   - Dirac bath
-  - slave-boson mean field
-  - Bethe ansatz
+  - causal spectral density
+  - Wigner-Smith delay
+  - numerical renormalization group
+  - Yang-Baxter equation
 preferred-citation:
   type: article
   authors:

@@ -1,72 +1,578 @@
-.gitignore
-CITATION.bib
-CITATION.cff
-CODE_AVAILABILITY.md
-LICENSE
-LICENSE-DATA
-README.md
-RELEASE_NOTES.md
-bethe_fig5_fig6_final.py
-data_fig3_weight_transfer/Fig3_EP_distance.dat
-data_fig3_weight_transfer/Fig3_SBMF_HWHM_valid_mask.dat
-data_fig3_weight_transfer/Fig3_SBMF_W_CP_positive.dat
-data_fig3_weight_transfer/Fig3_SBMF_W_FSR_positive.dat
-data_fig3_weight_transfer/Fig3_SBMF_area_width_FSR.dat
-data_fig3_weight_transfer/Fig3_SBMF_area_width_FSR_norm_beta_ref_0p30.dat
-data_fig3_weight_transfer/Fig3_SBMF_area_width_FSR_valid.dat
-data_fig3_weight_transfer/Fig3_SBMF_transfer_ratio.dat
-data_fig3_weight_transfer/Fig3_SBMF_transfer_ratio_norm_beta_ref_0p30.dat
-data_fig3_weight_transfer/Fig3_SBMF_transfer_ratio_trend_norm_beta_ref_0p30.dat
-data_fig3_weight_transfer/Fig3_SBMF_transfer_ratio_valid.dat
-data_fig3_weight_transfer/Fig3_TK_BA_norm_beta_ref_0p30.dat
-data_fig3_weight_transfer/Fig3_TK_EP_assisted.dat
-data_fig3_weight_transfer/Fig3_TK_SBMF_FSR_HWHM_norm_beta_ref_0p30.dat
-data_fig3_weight_transfer/Fig3_TK_SBMF_FSR_HWHM_trend_norm_beta_ref_0p30.dat
-data_fig3_weight_transfer/Fig3_TK_SBMF_HWHM.dat
-data_fig3_weight_transfer/Fig3_TK_SBMF_HWHM_trend.dat
-data_fig3_weight_transfer/Fig3_TK_SBMF_Tsweep.dat
-data_fig3_weight_transfer/Fig3_TK_SW.dat
-data_fig3_weight_transfer/Fig3_TK_SW_norm_beta_ref_0p30.dat
-data_fig3_weight_transfer/Fig3_TK_enhancement.dat
-data_fig3_weight_transfer/Fig3_Tsweep_weight_beta_0.30.dat
-data_fig3_weight_transfer/Fig3_Z_EP.dat
-data_fig3_weight_transfer/Fig3_negative_weight.dat
-data_fig3_weight_transfer/Fig3_peak_lower.dat
-data_fig3_weight_transfer/Fig3_peak_upper.dat
-data_fig3_weight_transfer/Fig3_regime_Kondo.dat
-data_fig3_weight_transfer/Fig3_regime_free.dat
-data_fig3_weight_transfer/Fig3_regime_resonant.dat
-data_fig3_weight_transfer/Fig3_signed_DOS_min.dat
-data_fig3_weight_transfer/Fig3_signed_DOS_stack_beta_0.30.dat
-data_fig3_weight_transfer/Fig3_signed_DOS_stack_beta_0.42.dat
-data_fig3_weight_transfer/Fig3_signed_DOS_stack_beta_0.50.dat
-data_fig3_weight_transfer/Fig3_signed_DOS_stack_beta_0.58.dat
-data_fig3_weight_transfer/Fig3_teps_ref.dat
-data_fig3_weight_transfer/SFig3_supplemental_diagnostics.pdf
-data_fig3_weight_transfer/SFig3_supplemental_diagnostics.png
-figures/main/Fig1.pdf
-figures/main/Fig2.pdf
-figures/main/Fig3.pdf
-figures/main/Fig4.pdf
-figures/main/fig5_rapidities.pdf
-figures/main/fig6_phasediag.pdf
-figures/supplement/SFig1_bloch_diagnostic.pdf
-figures/supplement/SFig3_supplemental_diagnostics.pdf
-figures/supplement/SFig4_negative_onset_broadening_check.pdf
-paper/main.bbl
-paper/main.tex
-paper/mainNotes.bib
-paper/manuscript.pdf
-paper/ref.bib
-paper/supplemental_material.bbl
-paper/supplemental_material.pdf
-paper/supplemental_material.tex
-paper/supplemental_materialNotes.bib
-prb_all_in_one_final.py
-requirements.txt
-validation_diagnostics/Fig1_kappa.dat
-validation_diagnostics/Fig4_FDR_residual_bath.dat
-validation_diagnostics/Fig4_FDR_residual_impurity.dat
-validation_diagnostics/Fig4_fFD.dat
-validation_diagnostics/README.txt
-validation_diagnostics/SFig4_negative_onset_summary.txt
+Repository file manifest
+Generated 2026-08-04
+
+.gitattributes	115 bytes
+.github/workflows/ci.yml	1197 bytes
+.gitignore	177 bytes
+CITATION.bib	695 bytes
+CITATION.cff	1523 bytes
+CODE_AVAILABILITY.md	858 bytes
+LICENSE	1388 bytes
+LICENSE-DATA	1177 bytes
+Makefile	983 bytes
+README.md	6661 bytes
+RELEASE_NOTES.md	1842 bytes
+VALIDATION_REPORT.md	1559 bytes
+docs/PUSH_INSTRUCTIONS.md	1559 bytes
+figures/main/Fig1.pdf	146911 bytes
+figures/main/Fig2.pdf	61355 bytes
+figures/supplement/SFig1_bloch_diagnostic.pdf	142898 bytes
+figures/supplement/SFig2_lowT_saddle.pdf	26312 bytes
+figures/supplement/SFig3_resolvent_cancellation.pdf	23312 bytes
+figures/supplement/SFig4_channel_RG.pdf	29801 bytes
+figures/supplement/SFig5_broadening_control.pdf	20774 bytes
+figures/supplement/SFig6_causal_scattering_RG.pdf	35609 bytes
+figures/supplement/SFig7_FDR_validation.pdf	26278 bytes
+figures/supplement/SFig8_NRG_Jordan_residue.pdf	26115 bytes
+paper/Fig1.pdf	146911 bytes
+paper/Fig2.pdf	61355 bytes
+paper/Fig3.pdf	35609 bytes
+paper/Fig4.pdf	26278 bytes
+paper/Fig_NRG_Jordan_structural_clean.pdf	26115 bytes
+paper/SFig1_bloch_diagnostic.pdf	142898 bytes
+paper/SFig2_lowT_saddle.pdf	26312 bytes
+paper/SFig3_supplemental_diagnostics.pdf	23312 bytes
+paper/SFig4_channel_RG.pdf	29801 bytes
+paper/SFig4_negative_onset_broadening_check.pdf	20774 bytes
+paper/aps10pt4-2.rtx	4578 bytes
+paper/aps4-2.rtx	16252 bytes
+paper/apsrev4-2.bst	69609 bytes
+paper/main.bbl	32923 bytes
+paper/main.tex	98374 bytes
+paper/make_nrg_jordan_structural.py	11042 bytes
+paper/manuscript.pdf	662693 bytes
+paper/physics.sty	29603 bytes
+paper/ref.bib	17408 bytes
+paper/revsymb4-2.sty	5426 bytes
+paper/revtex4-2.cls	200683 bytes
+paper/supplement_checked.pdf	754765 bytes
+paper/supplemental_material.bbl	8489 bytes
+paper/supplemental_material.tex	79356 bytes
+paper/verify_finiteU_contact_algebra.py	3669 bytes
+reproducibility/README.md	1930 bytes
+reproducibility/analytic_checks/README.md	673 bytes
+reproducibility/analytic_checks/SHA256SUMS	284 bytes
+reproducibility/analytic_checks/contact_and_smith_identity_check.py	5435 bytes
+reproducibility/analytic_checks/contact_and_smith_identity_summary.json	500 bytes
+reproducibility/bethe_smith_phase/README.md	772 bytes
+reproducibility/bethe_smith_phase/SHA256SUMS	365 bytes
+reproducibility/bethe_smith_phase/bethe_smith_phase_gate.py	8205 bytes
+reproducibility/bethe_smith_phase/bethe_smith_phase_summary.json	1774 bytes
+reproducibility/bethe_smith_phase/scattering_eigenphase_samples.csv	1394 bytes
+reproducibility/causal_smith_rg/channel_resolved_rg_gate.py	38979 bytes
+reproducibility/causal_smith_rg/reference_resolvent_output/README.md	613 bytes
+reproducibility/causal_smith_rg/reference_resolvent_output/SFig3_Resolvent_Cancellation.pdf	23349 bytes
+reproducibility/causal_smith_rg/reference_resolvent_output/SFig3_Resolvent_Cancellation.png	150292 bytes
+reproducibility/causal_smith_rg/reference_resolvent_output/SHA256SUMS	676 bytes
+reproducibility/causal_smith_rg/reference_resolvent_output/resolvent_cancellation_checks.csv	1631 bytes
+reproducibility/causal_smith_rg/reference_resolvent_output/resolvent_cancellation_summary.json	1331 bytes
+reproducibility/causal_smith_rg/reference_rg_output/Channel_Resolved_RG_Gate.pdf	32560 bytes
+reproducibility/causal_smith_rg/reference_rg_output/Channel_Resolved_RG_Gate.png	246452 bytes
+reproducibility/causal_smith_rg/reference_rg_output/README.md	2967 bytes
+reproducibility/causal_smith_rg/reference_rg_output/SHA256SUMS	1225 bytes
+reproducibility/causal_smith_rg/reference_rg_output/active_control_scale_comparison.csv	8171 bytes
+reproducibility/causal_smith_rg/reference_rg_output/causal_channel_density.csv	161023 bytes
+reproducibility/causal_smith_rg/reference_rg_output/causal_density_sum_rules.csv	200 bytes
+reproducibility/causal_smith_rg/reference_rg_output/channel_resolved_rg_summary.json	4560 bytes
+reproducibility/causal_smith_rg/reference_rg_output/inverse_flow_crosscheck.csv	507 bytes
+reproducibility/causal_smith_rg/reference_rg_output/matrix_rg_threshold_scales.csv	90132 bytes
+reproducibility/causal_smith_rg/reference_rg_output/representative_rg_flow.csv	53171 bytes
+reproducibility/causal_smith_rg/reference_rg_output/rg_step_refinement.csv	4924 bytes
+reproducibility/causal_smith_rg/reference_smith_output/README.md	1113 bytes
+reproducibility/causal_smith_rg/reference_smith_output/SFig4_Smith_Delay_Validation.pdf	29863 bytes
+reproducibility/causal_smith_rg/reference_smith_output/SFig4_Smith_Delay_Validation.png	247105 bytes
+reproducibility/causal_smith_rg/reference_smith_output/SFig5_Causal_Scattering_and_RG.pdf	34897 bytes
+reproducibility/causal_smith_rg/reference_smith_output/SFig5_Causal_Scattering_and_RG.png	323674 bytes
+reproducibility/causal_smith_rg/reference_smith_output/SHA256SUMS	1507 bytes
+reproducibility/causal_smith_rg/reference_smith_output/scattering_delay_peaks.csv	3061 bytes
+reproducibility/causal_smith_rg/reference_smith_output/scattering_delay_profiles.csv	1292767 bytes
+reproducibility/causal_smith_rg/reference_smith_output/scattering_poles_and_linewidths.csv	17186 bytes
+reproducibility/causal_smith_rg/reference_smith_output/smith_delay_rg_summary.json	2584 bytes
+reproducibility/causal_smith_rg/resolvent_cancellation_gate.py	10800 bytes
+reproducibility/causal_smith_rg/self_consistent_saddle_gate.py	34489 bytes
+reproducibility/causal_smith_rg/smith_delay_rg_gate.py	27957 bytes
+reproducibility/finite_u_contact/verify_finiteU_contact_algebra.py	3669 bytes
+reproducibility/frozen_kernel_figures.py	27710 bytes
+reproducibility/low_temperature_saddle/README.md	2217 bytes
+reproducibility/low_temperature_saddle/SELF_CONSISTENT_GATE_REPORT.txt	1023 bytes
+reproducibility/low_temperature_saddle/SHA256SUMS	1219 bytes
+reproducibility/low_temperature_saddle/Self_Consistent_Saddle_Gate.pdf	26312 bytes
+reproducibility/low_temperature_saddle/Self_Consistent_Saddle_Gate.png	182668 bytes
+reproducibility/low_temperature_saddle/converged_saddles.csv	5014 bytes
+reproducibility/low_temperature_saddle/dressed_root_tracking.csv	3701 bytes
+reproducibility/low_temperature_saddle/reference_temperature_solver.csv	623 bytes
+reproducibility/low_temperature_saddle/reference_temperature_stability.csv	4423 bytes
+reproducibility/low_temperature_saddle/seed_convergence.csv	13211 bytes
+reproducibility/low_temperature_saddle/seed_independence.csv	124 bytes
+reproducibility/low_temperature_saddle/self_consistent_gate_summary.json	3288 bytes
+reproducibility/low_temperature_saddle/self_consistent_saddle_gate.py	34489 bytes
+reproducibility/low_temperature_saddle/superfine_grid_validation.csv	795 bytes
+reproducibility/nrg_jordan_residue/README.md	2949 bytes
+reproducibility/nrg_jordan_residue/adapter/BIORTH_OPERATOR_FIX.md	1874 bytes
+reproducibility/nrg_jordan_residue/adapter/LICENSE	1076 bytes
+reproducibility/nrg_jordan_residue/adapter/PATCH_SCOPE.md	1162 bytes
+reproducibility/nrg_jordan_residue/adapter/Project.toml	173 bytes
+reproducibility/nrg_jordan_residue/adapter/README.md	4112 bytes
+reproducibility/nrg_jordan_residue/adapter/UPSTREAM_NOTICE.md	553 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/README.md	4619 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/config/benchmark.toml	1414 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/config/beta_scale_scan.toml	1622 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/config/dmnrg_response_scan.toml	891 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/config/fdm_metallic_control.toml	948 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/config/fdm_tk_scan.toml	893 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/config/soc_overlap_pilot.toml	727 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/docs/BETA_SCALE_EXTRACTION.md	2683 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/docs/DMNRG_RESPONSE.md	1533 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/docs/FDM_TK_EXTRACTION.md	2020 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/docs/SCOPE_AND_PROVENANCE.md	613 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/docs/SOC_OVERLAP_EXTENSION.md	2886 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/requirements.txt	52 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/run_benchmark_macos.sh	799 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/analyze_benchmark.py	21387 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/analyze_jordan_comprehensive.py	44897 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/analyze_jordan_quartic_scaling.py	17262 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/common.py	6246 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/dmnrg_response_core.jl	25729 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/extract_beta_scales.py	31292 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/extract_dmnrg_response.py	16587 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/extract_fdm_tk.py	10847 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/jordan_channel_audit.py	14073 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/quartic_pole_audit.py	17252 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_beta_scale_scan.py	7338 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_complete_benchmark.py	9951 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_dmnrg_response_one.jl	794 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_dmnrg_response_scan.py	8670 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_fdm_tk_scan.py	7717 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_jordan_comprehensive_scan.jl	7210 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_jordan_quartic_scaling_scan.jl	3951 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_one.jl	398 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_quartic_pole_scan.jl	3162 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/scripts/run_soc_quartic_scan.jl	4057 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/tests/validate_beta_scale_extraction.py	5978 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/tests/validate_biorth_fix.py	1563 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/tests/validate_dmnrg_response.py	2067 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/tests/validate_fdm_tk.py	4627 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/tests/validate_install.py	1722 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/tests/validate_jordan_comprehensive.py	919 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/tests/validate_soc_overlap.py	1482 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/vendor/channel_resolved_rg_gate.py	24694 bytes
+reproducibility/nrg_jordan_residue/adapter/benchmarks/prb_complete/vendor/self_consistent_saddle_gate.py	34174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis.zip	805403 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Branch_tracking_cost.pdf	15285 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Branch_tracking_cost.png	96738 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/COMPREHENSIVE_JORDAN_SCALING_REPORT.md	18520 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Delta_s2_iteration_stability.pdf	18742 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Delta_s2_iteration_stability.png	88885 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Exponent_vs_iteration.pdf	21473 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Exponent_vs_iteration.png	119297 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Joint_surface_exponent.pdf	18181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Joint_surface_exponent.png	85955 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Jordan_components_refined.pdf	16736 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Jordan_components_refined.png	59856 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Quartic_coefficient_complex_plane.pdf	17199 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/Quartic_coefficient_complex_plane.png	73690 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/convergence_summary.csv	1270 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/exponent_stability.csv	22817 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/gate_summary.json	562 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/iteration_stability.csv	6686 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/joint_surface_fits.csv	20224 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/quartic_plateau_metrics.csv	20434 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/sector_symmetry.csv	13512 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/tracked_pairs_all_iterations.csv	246427 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/analysis/zero_detuning_ensemble.csv	306481 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.000000/RUN_SUMMARY.txt	1254 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.000000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.000000/complex_level_flow.csv	98797 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.000000/impurity_transition_residue_matrix.csv	243183 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.000000/impurity_transition_weights.csv	162166 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.000000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.000000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.002500/RUN_SUMMARY.txt	1262 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.002500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.002500/complex_level_flow.csv	98592 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.002500/impurity_transition_residue_matrix.csv	241495 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.002500/impurity_transition_weights.csv	161413 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.002500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.002500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.005000/RUN_SUMMARY.txt	1259 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.005000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.005000/complex_level_flow.csv	98727 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.005000/impurity_transition_residue_matrix.csv	241312 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.005000/impurity_transition_weights.csv	161378 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.005000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.005000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.007500/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.007500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.007500/complex_level_flow.csv	98440 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.007500/impurity_transition_residue_matrix.csv	241038 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.007500/impurity_transition_weights.csv	161023 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.007500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.007500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.010000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.010000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.010000/complex_level_flow.csv	98701 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.010000/impurity_transition_residue_matrix.csv	241390 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.010000/impurity_transition_weights.csv	161221 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.010000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.010000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.015000/RUN_SUMMARY.txt	1260 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.015000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.015000/complex_level_flow.csv	98799 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.015000/impurity_transition_residue_matrix.csv	241285 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.015000/impurity_transition_weights.csv	161255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.015000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.015000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.020000/RUN_SUMMARY.txt	1256 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.020000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.020000/complex_level_flow.csv	98861 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.020000/impurity_transition_residue_matrix.csv	241047 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.020000/impurity_transition_weights.csv	161258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.020000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.020000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.030000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.030000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.030000/complex_level_flow.csv	98972 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.030000/impurity_transition_residue_matrix.csv	241284 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.030000/impurity_transition_weights.csv	161149 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.030000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.030000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.050000/RUN_SUMMARY.txt	1256 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.050000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.050000/complex_level_flow.csv	98686 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.050000/impurity_transition_residue_matrix.csv	240677 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.050000/impurity_transition_weights.csv	160999 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.050000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.050000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.075000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.075000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.075000/complex_level_flow.csv	98288 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.075000/impurity_transition_residue_matrix.csv	240384 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.075000/impurity_transition_weights.csv	160498 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.075000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.075000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.100000/RUN_SUMMARY.txt	1254 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.100000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.100000/complex_level_flow.csv	98730 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.100000/impurity_transition_residue_matrix.csv	240651 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.100000/impurity_transition_weights.csv	160842 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.100000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-04/U_0.100000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.000000/RUN_SUMMARY.txt	1253 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.000000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.000000/complex_level_flow.csv	99079 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.000000/impurity_transition_residue_matrix.csv	242824 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.000000/impurity_transition_weights.csv	162429 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.000000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.000000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.002500/RUN_SUMMARY.txt	1261 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.002500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.002500/complex_level_flow.csv	98898 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.002500/impurity_transition_residue_matrix.csv	241377 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.002500/impurity_transition_weights.csv	161574 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.002500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.002500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.005000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.005000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.005000/complex_level_flow.csv	98936 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.005000/impurity_transition_residue_matrix.csv	241302 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.005000/impurity_transition_weights.csv	161502 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.005000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.005000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.007500/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.007500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.007500/complex_level_flow.csv	98809 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.007500/impurity_transition_residue_matrix.csv	241049 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.007500/impurity_transition_weights.csv	161389 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.007500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.007500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.010000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.010000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.010000/complex_level_flow.csv	99213 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.010000/impurity_transition_residue_matrix.csv	241152 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.010000/impurity_transition_weights.csv	161554 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.010000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.010000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.015000/RUN_SUMMARY.txt	1257 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.015000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.015000/complex_level_flow.csv	98996 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.015000/impurity_transition_residue_matrix.csv	240801 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.015000/impurity_transition_weights.csv	161384 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.015000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.015000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.020000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.020000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.020000/complex_level_flow.csv	99301 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.020000/impurity_transition_residue_matrix.csv	241128 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.020000/impurity_transition_weights.csv	161547 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.020000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.020000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.030000/RUN_SUMMARY.txt	1256 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.030000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.030000/complex_level_flow.csv	99155 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.030000/impurity_transition_residue_matrix.csv	240874 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.030000/impurity_transition_weights.csv	161259 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.030000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.030000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.050000/RUN_SUMMARY.txt	1256 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.050000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.050000/complex_level_flow.csv	99152 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.050000/impurity_transition_residue_matrix.csv	240475 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.050000/impurity_transition_weights.csv	161160 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.050000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.050000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.075000/RUN_SUMMARY.txt	1257 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.075000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.075000/complex_level_flow.csv	98811 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.075000/impurity_transition_residue_matrix.csv	240139 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.075000/impurity_transition_weights.csv	160827 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.075000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.075000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.100000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.100000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.100000/complex_level_flow.csv	99440 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.100000/impurity_transition_residue_matrix.csv	240875 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.100000/impurity_transition_weights.csv	161417 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.100000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_1.0e-05/U_0.100000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.000000/RUN_SUMMARY.txt	1252 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.000000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.000000/complex_level_flow.csv	99039 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.000000/impurity_transition_residue_matrix.csv	242877 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.000000/impurity_transition_weights.csv	162414 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.000000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.000000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.002500/RUN_SUMMARY.txt	1261 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.002500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.002500/complex_level_flow.csv	99150 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.002500/impurity_transition_residue_matrix.csv	241616 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.002500/impurity_transition_weights.csv	161849 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.002500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.002500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.005000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.005000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.005000/complex_level_flow.csv	98982 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.005000/impurity_transition_residue_matrix.csv	241018 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.005000/impurity_transition_weights.csv	161589 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.005000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.005000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.007500/RUN_SUMMARY.txt	1260 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.007500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.007500/complex_level_flow.csv	98921 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.007500/impurity_transition_residue_matrix.csv	240925 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.007500/impurity_transition_weights.csv	161434 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.007500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.007500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.010000/RUN_SUMMARY.txt	1256 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.010000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.010000/complex_level_flow.csv	98965 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.010000/impurity_transition_residue_matrix.csv	240821 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.010000/impurity_transition_weights.csv	161462 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.010000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.010000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.015000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.015000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.015000/complex_level_flow.csv	99257 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.015000/impurity_transition_residue_matrix.csv	241083 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.015000/impurity_transition_weights.csv	161506 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.015000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.015000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.020000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.020000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.020000/complex_level_flow.csv	99069 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.020000/impurity_transition_residue_matrix.csv	241040 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.020000/impurity_transition_weights.csv	161413 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.020000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.020000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.030000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.030000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.030000/complex_level_flow.csv	99331 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.030000/impurity_transition_residue_matrix.csv	241032 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.030000/impurity_transition_weights.csv	161608 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.030000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.030000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.050000/RUN_SUMMARY.txt	1253 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.050000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.050000/complex_level_flow.csv	98709 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.050000/impurity_transition_residue_matrix.csv	240399 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.050000/impurity_transition_weights.csv	160803 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.050000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.050000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.075000/RUN_SUMMARY.txt	1257 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.075000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.075000/complex_level_flow.csv	99017 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.075000/impurity_transition_residue_matrix.csv	240646 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.075000/impurity_transition_weights.csv	161109 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.075000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.075000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.100000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.100000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.100000/complex_level_flow.csv	99435 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.100000/impurity_transition_residue_matrix.csv	240744 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.100000/impurity_transition_weights.csv	161451 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.100000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_2.0e-05/U_0.100000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.000000/RUN_SUMMARY.txt	1254 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.000000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.000000/complex_level_flow.csv	99286 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.000000/impurity_transition_residue_matrix.csv	243182 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.000000/impurity_transition_weights.csv	162641 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.000000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.000000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.002500/RUN_SUMMARY.txt	1259 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.002500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.002500/complex_level_flow.csv	98610 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.002500/impurity_transition_residue_matrix.csv	241132 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.002500/impurity_transition_weights.csv	161297 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.002500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.002500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.005000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.005000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.005000/complex_level_flow.csv	98679 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.005000/impurity_transition_residue_matrix.csv	241011 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.005000/impurity_transition_weights.csv	161307 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.005000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.005000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.007500/RUN_SUMMARY.txt	1260 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.007500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.007500/complex_level_flow.csv	98452 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.007500/impurity_transition_residue_matrix.csv	240794 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.007500/impurity_transition_weights.csv	161098 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.007500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.007500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.010000/RUN_SUMMARY.txt	1256 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.010000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.010000/complex_level_flow.csv	99116 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.010000/impurity_transition_residue_matrix.csv	241483 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.010000/impurity_transition_weights.csv	161585 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.010000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.010000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.015000/RUN_SUMMARY.txt	1260 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.015000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.015000/complex_level_flow.csv	99512 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.015000/impurity_transition_residue_matrix.csv	241550 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.015000/impurity_transition_weights.csv	161978 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.015000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.015000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.020000/RUN_SUMMARY.txt	1256 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.020000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.020000/complex_level_flow.csv	99204 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.020000/impurity_transition_residue_matrix.csv	241444 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.020000/impurity_transition_weights.csv	161628 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.020000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.020000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.030000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.030000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.030000/complex_level_flow.csv	98802 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.030000/impurity_transition_residue_matrix.csv	240908 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.030000/impurity_transition_weights.csv	161114 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.030000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.030000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.050000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.050000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.050000/complex_level_flow.csv	98391 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.050000/impurity_transition_residue_matrix.csv	240175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.050000/impurity_transition_weights.csv	160496 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.050000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.050000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.075000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.075000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.075000/complex_level_flow.csv	98862 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.075000/impurity_transition_residue_matrix.csv	240755 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.075000/impurity_transition_weights.csv	160903 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.075000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.075000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.100000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.100000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.100000/complex_level_flow.csv	99187 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.100000/impurity_transition_residue_matrix.csv	240776 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.100000/impurity_transition_weights.csv	161204 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.100000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_4.0e-05/U_0.100000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.000000/RUN_SUMMARY.txt	1254 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.000000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.000000/complex_level_flow.csv	98801 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.000000/impurity_transition_residue_matrix.csv	243099 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.000000/impurity_transition_weights.csv	162272 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.000000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.000000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.002500/RUN_SUMMARY.txt	1260 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.002500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.002500/complex_level_flow.csv	98274 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.002500/impurity_transition_residue_matrix.csv	240920 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.002500/impurity_transition_weights.csv	161103 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.002500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.002500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.005000/RUN_SUMMARY.txt	1259 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.005000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.005000/complex_level_flow.csv	99089 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.005000/impurity_transition_residue_matrix.csv	241506 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.005000/impurity_transition_weights.csv	161672 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.005000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.005000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.007500/RUN_SUMMARY.txt	1261 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.007500/SCAN_METADATA.txt	176 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.007500/complex_level_flow.csv	99164 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.007500/impurity_transition_residue_matrix.csv	241492 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.007500/impurity_transition_weights.csv	161651 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.007500/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.007500/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.010000/RUN_SUMMARY.txt	1257 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.010000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.010000/complex_level_flow.csv	99045 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.010000/impurity_transition_residue_matrix.csv	241415 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.010000/impurity_transition_weights.csv	161556 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.010000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.010000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.015000/RUN_SUMMARY.txt	1258 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.015000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.015000/complex_level_flow.csv	98695 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.015000/impurity_transition_residue_matrix.csv	241057 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.015000/impurity_transition_weights.csv	161209 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.015000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.015000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.020000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.020000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.020000/complex_level_flow.csv	98779 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.020000/impurity_transition_residue_matrix.csv	240868 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.020000/impurity_transition_weights.csv	161253 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.020000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.020000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.030000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.030000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.030000/complex_level_flow.csv	98833 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.030000/impurity_transition_residue_matrix.csv	240958 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.030000/impurity_transition_weights.csv	161048 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.030000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.030000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.050000/RUN_SUMMARY.txt	1255 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.050000/SCAN_METADATA.txt	174 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.050000/complex_level_flow.csv	98630 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.050000/impurity_transition_residue_matrix.csv	240602 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.050000/impurity_transition_weights.csv	160907 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.050000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.050000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.075000/RUN_SUMMARY.txt	1257 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.075000/SCAN_METADATA.txt	175 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.075000/complex_level_flow.csv	99107 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.075000/impurity_transition_residue_matrix.csv	241133 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.075000/impurity_transition_weights.csv	161342 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.075000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.075000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.100000/RUN_SUMMARY.txt	1254 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.100000/SCAN_METADATA.txt	173 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.100000/complex_level_flow.csv	98548 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.100000/impurity_transition_residue_matrix.csv	240421 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.100000/impurity_transition_weights.csv	160701 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.100000/soc_hybridization_matrix.csv	181 bytes
+reproducibility/nrg_jordan_residue/adapter/output/jordan_comprehensive/reference/scalar/delta_7.0e-05/U_0.100000/wilson_chain.csv	374 bytes
+reproducibility/nrg_jordan_residue/adapter/run_pt_dirac_nhnrg.jl	2169 bytes
+reproducibility/nrg_jordan_residue/adapter/src/PTDiracNHNRG.jl	59422 bytes
+reproducibility/nrg_jordan_residue/adapter/test/biorth_operator_regression.jl	4656 bytes
+reproducibility/nrg_jordan_residue/adapter/test/dmnrg_response_smoke.jl	2791 bytes
+reproducibility/nrg_jordan_residue/adapter/test/fdm_thermo_smoke.jl	1214 bytes
+reproducibility/nrg_jordan_residue/adapter/test/smoke_test.jl	1905 bytes
+reproducibility/nrg_jordan_residue/adapter/test/validate_reference.py	4309 bytes
+reproducibility/nrg_jordan_residue/figure/Fig_NRG_Jordan_structural_clean.pdf	26115 bytes
+reproducibility/nrg_jordan_residue/figure/Fig_NRG_Jordan_structural_clean.png	254362 bytes
+reproducibility/nrg_jordan_residue/figure/make_nrg_jordan_structural.py	11042 bytes
+requirements.txt	52 bytes

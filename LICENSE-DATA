@@ -3,13 +3,17 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 Copyright (c) 2026 Vinayak M. Kulkarni
 
 Scope: Unless otherwise noted, this license applies to the numerical data and
-numerical validation files contained in:
+machine-readable/reference validation outputs under:
 
-  data_fig3_weight_transfer/
-  validation_diagnostics/
+  reproducibility/analytic_checks/
+  reproducibility/bethe_smith_phase/
+  reproducibility/causal_smith_rg/reference_resolvent_output/
+  reproducibility/causal_smith_rg/reference_rg_output/
+  reproducibility/causal_smith_rg/reference_smith_output/
+  reproducibility/low_temperature_saddle/
 
 It does not apply to the manuscript text, TeX sources, compiled PDFs,
-publication figures, or source code.
+publication figures, source code, README files, or checksum manifests.
 
 You are free to share and adapt the licensed data for any purpose, including
 commercial use, provided that you give appropriate credit, provide a link to

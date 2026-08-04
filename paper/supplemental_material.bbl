@@ -1,12 +1,12 @@
 %apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
 %Control: key (0)
-%Control: author (8) initials jnrlst
+%Control: author (72) initials jnrlst
 %Control: editor formatted (1) identically to author
-%Control: production of article title (0) allowed
+%Control: production of article title (-1) disabled
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{5}%
+\begin{thebibliography}{14}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -57,44 +57,110 @@
   Non-Equilibrium Systems}}},\ \bibinfo {edition} {2nd}\ ed.\ (\bibinfo
   {publisher} {Cambridge University Press},\ \bibinfo {year}
   {2023})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Oguri}\ and\ \citenamefont
+  {Sakano}(2013)}]{oguri2013highbias}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Oguri}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Sakano}},\
+  }\href {https://doi.org/10.1103/PhysRevB.88.155424} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {88}},\
+  \bibinfo {pages} {155424} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kulkarni}\ and\ \citenamefont
   {Vidhyadhiraja}(2025)}]{kulkscipo}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~M.}\ \bibnamefont
   {Kulkarni}}\ and\ \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont
-  {Vidhyadhiraja}},\ }\bibfield  {title} {\bibinfo {title} {Anderson impurities
-  in edge states with nonlinear and dissipative perturbations},\ }\href@noop {}
-  {\bibfield  {journal} {\bibinfo  {journal} {SciPost Phys.}\ }\textbf
-  {\bibinfo {volume} {19}},\ \bibinfo {pages} {036} (\bibinfo {year}
-  {2025})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Garc\'ia}\ and\ \citenamefont
-  {Wyss}(2022)}]{garcia2022jordan}%
+  {Vidhyadhiraja}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {SciPost Phys.}\ }\textbf {\bibinfo {volume} {19}},\ \bibinfo {pages} {036}
+  (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fisher}\ and\ \citenamefont
+  {Lee}(1981)}]{fisherlee1981}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.~N.}\
-  \bibnamefont {Garc\'ia}}\ and\ \bibinfo {author} {\bibfnamefont
-  {L.}~\bibnamefont {Wyss}},\ }\bibfield  {title} {\bibinfo {title} {Jordan
-  blocks and the {Bethe} ansatz {I}: The eclectic spin chain as a limit},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nucl. Phys. B}\
-  }\textbf {\bibinfo {volume} {981}},\ \bibinfo {pages} {115860} (\bibinfo
-  {year} {2022})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yi}\ \emph {et~al.}(2022)\citenamefont {Yi},
-  \citenamefont {Qiao}, \citenamefont {Cao},\ and\ \citenamefont
-  {Yang}}]{yi2022novel}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~S.}\ \bibnamefont
+  {Fisher}}\ and\ \bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
+  {Lee}},\ }\href {https://doi.org/10.1103/PhysRevB.23.6851} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
+  {23}},\ \bibinfo {pages} {6851} (\bibinfo {year} {1981})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Wigner}(1955)}]{wigner1955}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Yi}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Qiao}}, \bibinfo
-  {author} {\bibfnamefont {J.}~\bibnamefont {Cao}},\ and\ \bibinfo {author}
-  {\bibfnamefont {W.-L.}\ \bibnamefont {Yang}},\ }\bibfield  {title} {\bibinfo
-  {title} {A novel {Bethe} ansatz scheme for the one-dimensional {Hubbard}
-  model},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nucl.
-  Phys. B}\ }\textbf {\bibinfo {volume} {977}},\ \bibinfo {pages} {115732}
-  (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kulkarni}(2026)}]{kulkarni2026code}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~P.}\ \bibnamefont
+  {Wigner}},\ }\href {https://doi.org/10.1103/PhysRev.98.145} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {98}},\ \bibinfo {pages} {145} (\bibinfo {year} {1955})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Smith}(1960)}]{smith1960}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~T.}\ \bibnamefont
+  {Smith}},\ }\href {https://doi.org/10.1103/PhysRev.118.349} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {118}},\ \bibinfo {pages} {349} (\bibinfo {year} {1960})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Wiegmann}(1980)}]{Wiegmann1980}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
+  {Wiegmann}},\ }\href {https://doi.org/10.1016/0375-9601(80)90206-8}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Lett. A}\ }\textbf
+  {\bibinfo {volume} {80}},\ \bibinfo {pages} {163} (\bibinfo {year}
+  {1980})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kawakami}\ and\ \citenamefont
+  {Okiji}(1982)}]{KawakamiOkiji1982}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Kawakami}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Okiji}},\ }\href {https://doi.org/10.1143/JPSJ.51.1145} {\bibfield
+  {journal} {\bibinfo  {journal} {J. Phys. Soc. Jpn.}\ }\textbf {\bibinfo
+  {volume} {51}},\ \bibinfo {pages} {1145} (\bibinfo {year}
+  {1982})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wiegmann}\ and\ \citenamefont
+  {Tsvelick}(1983)}]{WiegmannTsvelick1983}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
+  {Wiegmann}}\ and\ \bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Tsvelick}},\ }\href {https://doi.org/10.1088/0022-3719/16/12/017} {\bibfield
+   {journal} {\bibinfo  {journal} {J. Phys. C: Solid State Phys.}\ }\textbf
+  {\bibinfo {volume} {16}},\ \bibinfo {pages} {2281} (\bibinfo {year}
+  {1983})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chao}\ and\ \citenamefont
+  {Palacios}(2011)}]{ChaoPalacios2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.-P.}\ \bibnamefont
+  {Chao}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Palacios}},\ }\href {https://doi.org/10.1103/PhysRevB.83.195314} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
+  {83}},\ \bibinfo {pages} {195314} (\bibinfo {year} {2011})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kulkarni}(2026{\natexlab{a}})}]{KulkarniYB2026}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~M.}\ \bibnamefont
-  {Kulkarni}},\ }\href
-  {https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity} {\bibinfo {title}
-  {{Reproducibility code and data for ``Emergent {PT} Symmetry and Exceptional
-  Points in a Driven Dirac Impurity''}}},\ \bibinfo {howpublished} {GitHub
-  repository} (\bibinfo {year} {2026})\BibitemShut {NoStop}%
+  {Kulkarni}},\ }\href {https://doi.org/10.48550/arXiv.2604.21547} {\bibinfo
+  {title} {Jordan-twist bethe ansatz and many-body exceptional-point
+  amplification in the finite-$u$ anderson impurity}} (\bibinfo {year}
+  {2026}{\natexlab{a}}),\ \Eprint {https://arxiv.org/abs/2604.21547}
+  {arXiv:2604.21547 [math-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Anderson}(1970)}]{anderson1970poor}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~W.}\ \bibnamefont
+  {Anderson}},\ }\href {https://doi.org/10.1088/0022-3719/3/12/008} {\bibfield
+  {journal} {\bibinfo  {journal} {J. Phys. C: Solid State Phys.}\ }\textbf
+  {\bibinfo {volume} {3}},\ \bibinfo {pages} {2436} (\bibinfo {year}
+  {1970})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Burke}\ and\ \citenamefont
+  {Mitchell}(2025)}]{burke2025non}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~C.}\ \bibnamefont
+  {Burke}}\ and\ \bibinfo {author} {\bibfnamefont {A.~K.}\ \bibnamefont
+  {Mitchell}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\ \bibinfo {pages}
+  {206502} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kulkarni}(2026{\natexlab{b}})}]{kulkarni2026code}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~M.}\ \bibnamefont
+  {Kulkarni}},\ }\href {https://doi.org/10.5281/zenodo.21434682} {\bibinfo
+  {title} {{Reproducibility code and data for ``Emergent {PT} Symmetry and
+  Exceptional Points in a Driven Dirac Impurity''}}},\ \bibinfo {howpublished}
+  {GitHub release v1.0.1 and Zenodo archive} (\bibinfo {year}
+  {2026}{\natexlab{b}}),\ \bibinfo {note} {all-versions DOI:
+  doi:10.5281/zenodo.21434682; version v1.0.1 DOI:
+  doi:10.5281/zenodo.21434683}\BibitemShut {NoStop}%
 \end{thebibliography}%

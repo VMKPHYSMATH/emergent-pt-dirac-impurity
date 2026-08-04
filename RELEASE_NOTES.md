@@ -1,19 +1,34 @@
-# Version 1.0.1 - 2026-07-19
+# Version 2.0.0 release candidate — 2026-08-04
 
-- Added an MIT License for the Python source code and supporting software
-  configuration files.
-- Added CC BY 4.0 licensing for the numerical data and validation files.
-- Clarified the licensing scope in the README and citation metadata.
-- Scientific code, numerical results, manuscript files, and figures are
-  unchanged from Version 1.0.0.
+- Replaced the obsolete frozen Bethe/phase-map interpretation with exact
+  one-particle Fisher–Lee, contact-phase, and Wigner–Smith statements.
+- Restricted Yang–Baxter integrability to the explicitly stated
+  equal-velocity, branchwise-linearized, scalar-hybridization finite-\(U\)
+  Anderson submanifold.
+- Added the exact dressed-rapidity \(4\times4\) rational contact matrix,
+  three-particle YBE validation, and \(GL(2,\mathbb C)\) covariance check.
+- Clarified that a CPT/non-unitary rotation preserves the existing rational
+  bulk algebra and that the exceptional-point datum is an invertible
+  unipotent boundary twist; no new bulk \(R\)-matrix is claimed.
+- Added the causal passive-density, resolvent-cancellation, Smith-delay, and
+  channel-resolved weak-flow audits.
+- Added the operator-resolved finite-\(U\) biorthogonal NRG residue audit and
+  Supplemental Fig. S8. The audit validates the nearly traceless nilpotent
+  residue direction but rejects a universal pole exponent and complex
+  quartic plateau.
+- Preserved all 47 main-manuscript references and the checked Supplemental
+  bibliography.
+- Removed active copies of the obsolete rapidity plot, interaction phase map,
+  universal quartic-floor construction, and signed relative-kernel DOS
+  interpretation.
+- Cross-linked the separate mathematical companion work
+  [arXiv:2604.21547](https://arxiv.org/abs/2604.21547), which contains the
+  arbitrary-particle RTT/Jordan and projective descendant-root results.
 
-# Version 1.0.0 - 2026-07-17
+This is a pre-publication repository candidate. Journal target names do not
+imply acceptance. Add the version-specific Zenodo DOI only after deposition.
 
-- Final self-contained 18-page main article and 12-page standalone Supplemental Material.
-- Exact GitHub repository citation and clickable repository URL added to both documents.
-- Exact Schur-complement derivation of the drive-dependent impurity self-energy.
-- Passive-PT core separated from the Kramers-Kronig detuning floor.
-- Final notation audit (`t_av`, `tau`, `T_b`, `k_max`, `D_uv`, and unique channel indices).
-- Fig. 3 uses independent SBMF positive spectral-weight transfer, with linewidth validity masking.
-- Bare rapidity coalescence distinguished from interaction-regularized avoided coalescence.
-- Editorial-only identifiers and wording removed from the public code package.
+## Historical releases
+
+- `v1.0.1` — licensing clarification and Zenodo archival metadata.
+- `v1.0.0` — initial public reproducibility snapshot.

@@ -1,0 +1,65 @@
+{
+  "status": "PASS__SMITH_DELAY_IS_CAUSAL_COALESCENCE_FINGERPRINT_NOT_INDEPENDENT_ENHANCEMENT",
+  "generated_utc": "2026-07-26T12:00:00+00:00",
+  "scope": "Passive two-channel Markov projected-core Fisher--Lee scattering, combined with the previously validated causal matrix RG.",
+  "parameters": {
+    "eps_d": -1.0,
+    "Q": 1.0,
+    "charge_gap": 1.0,
+    "gamma0": 0.12,
+    "k_max": 0.7853981633974483,
+    "lambda_soc": 0.5,
+    "delta0": 0.075,
+    "c_delta": 0.05,
+    "g_gamma": 0.2,
+    "temperature": 1e-06,
+    "manuscript_reference_temperature": 0.1,
+    "band_lo": -4.0,
+    "band_hi": 4.0,
+    "base_points": 4001,
+    "pole_points_per_min_width": 12,
+    "pole_span_in_max_widths": 30.0,
+    "thermal_points_per_T": 12,
+    "thermal_span_in_T": 40.0,
+    "r_guard": 1e-05,
+    "residual_tolerance": 3e-07,
+    "grid_tolerance": 3e-06,
+    "r_search_min": 0.001,
+    "r_search_max": 0.5,
+    "r_search_points": 13,
+    "beta_min": 0.35,
+    "beta_max": 0.55
+  },
+  "software": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "checks": {
+    "scattering_unitarity": true,
+    "smith_hermiticity": true,
+    "trace_delay_determinant_identity": true,
+    "determinant_attenuation_zero": true,
+    "EP_double_pole_delay_identity": true,
+    "two_state_delay_sum_rule": true,
+    "rate_matched_off_EP_peak_can_exceed_EP_peak": true,
+    "petermann_multiplier_inserted": false
+  },
+  "headline": {
+    "maximum_unitarity_error": 1.3324403465649347e-15,
+    "maximum_smith_hermiticity_error": 2.5188119878704696e-14,
+    "maximum_trace_delay_determinant_error": 4.973799150320701e-14,
+    "EP_trace_delay_at_omega0": 33.333333333333336,
+    "analytic_EP_trace_delay_at_omega0": 33.333333333333336,
+    "EP_trace_delay_identity_error": 0.0,
+    "integrated_trace_delay_over_2pi": 1.9923606543996735,
+    "EP_largest_proper_delay_peak": 30.555555555555557,
+    "rate_matched_off_EP_D005_largest_proper_delay_peak": 63.768115942028984
+  },
+  "interpretation": {
+    "positive": "The physical S matrix is unitary in the passive window and the trace delay acquires the exact merged double-pole Lorentzian Tr Q_EP=4 Gamma_bar/(omega^2+Gamma_bar^2).",
+    "limitation": "A raw proper-delay peak is not an independent EP enhancement; it is sensitive to the rate eigenchannel and can be reproduced or exceeded by rate-matched off-EP kernels.",
+    "manuscript_use": "Use the Smith delay as a causal coalescence/linewidth fingerprint. Retain the threshold-dependent matrix RG as the independent pre-EP weak-flow result."
+  }
+}

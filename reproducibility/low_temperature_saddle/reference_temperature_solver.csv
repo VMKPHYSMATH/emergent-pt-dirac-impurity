@@ -1,0 +1,6 @@
+beta0,seed,seed_boson_real,seed_boson_imag,seed_delta_c,gauge_fixed_initial_r,status,converged,failure_reason
+0.35,real,0.3,0.0,0.8,0.3,NO_FINITE_R_SADDLE,0,could not polish the Coleman constraint on a fixed grid
+0.4,real,0.3,0.0,0.8,0.3,NO_FINITE_R_SADDLE,0,could not polish the Coleman constraint on a fixed grid
+0.45,real,0.3,0.0,0.8,0.3,NO_FINITE_R_SADDLE,0,could not polish the Coleman constraint on a fixed grid
+0.5,real,0.3,0.0,0.8,0.3,NO_FINITE_R_SADDLE,0,could not polish the Coleman constraint on a fixed grid
+0.55,real,0.3,0.0,0.8,0.3,NO_FINITE_R_SADDLE,0,could not polish the Coleman constraint on a fixed grid

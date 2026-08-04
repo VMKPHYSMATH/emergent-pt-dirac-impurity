@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "kernel": "full two-channel Fisher-Lee scattering matrix",
+  "interpretation": "exact one-particle finite-size phase quantization; not a multiparticle interacting Bethe solution; matrix components are basis dependent",
+  "basis_audit": "S_chiral = U_H^dagger S_spin U_H; Green functions and bath-rate matrices are transformed together",
+  "summaries": [
+    {
+      "beta0": 0.35,
+      "max_unitarity_error": 9.99300925899852e-16,
+      "max_scattering_eigenvalue_modulus_error": 8.881784197001252e-16,
+      "max_spin_basis_offdiagonal_magnitude": 0.9986331346706311,
+      "max_fixed_chiral_basis_offdiagonal_magnitude": 0.5833304991997539,
+      "max_bethe_smith_phase_identity_error": 1.998536447445076e-09,
+      "finite_window_phase_count": 1.992360584574831,
+      "analytic_complete_pole_count": 2.0
+    },
+    {
+      "beta0": 0.45,
+      "max_unitarity_error": 1.1104455640026535e-15,
+      "max_scattering_eigenvalue_modulus_error": 1.1102230246251565e-15,
+      "max_spin_basis_offdiagonal_magnitude": 0.9792104496466812,
+      "max_fixed_chiral_basis_offdiagonal_magnitude": 0.7499980049472409,
+      "max_bethe_smith_phase_identity_error": 3.5731346770262462e-09,
+      "finite_window_phase_count": 1.992360627544116,
+      "analytic_complete_pole_count": 2.0
+    },
+    {
+      "beta0": 0.5,
+      "max_unitarity_error": 1.221412102498337e-15,
+      "max_scattering_eigenvalue_modulus_error": 9.992007221626409e-16,
+      "max_spin_basis_offdiagonal_magnitude": 0.9212846639876111,
+      "max_fixed_chiral_basis_offdiagonal_magnitude": 0.8333333333333331,
+      "max_bethe_smith_phase_identity_error": 5.529848579044483e-09,
+      "finite_window_phase_count": 1.9923606543996732,
+      "analytic_complete_pole_count": 2.0
+    }
+  ]
+}
