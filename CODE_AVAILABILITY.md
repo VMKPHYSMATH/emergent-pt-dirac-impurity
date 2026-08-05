@@ -20,3 +20,5 @@ creation/annihilation transition-operator fix in
 
 No data in this repository establish a universal interaction-induced EP
 floor, enhanced thermodynamic Kondo temperature, or many-body phase boundary.
+Third-party attribution, licensing, and the pinned upstream revision are
+recorded in `THIRD_PARTY_NOTICES.md`.

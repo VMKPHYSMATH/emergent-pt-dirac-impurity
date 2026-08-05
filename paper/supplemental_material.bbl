@@ -150,9 +150,10 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~C.}\ \bibnamefont
   {Burke}}\ and\ \bibinfo {author} {\bibfnamefont {A.~K.}\ \bibnamefont
-  {Mitchell}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\ \bibinfo {pages}
-  {206502} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+  {Mitchell}},\ }\href {https://doi.org/10.1103/19td-1k9s} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {135}},\ \bibinfo {pages} {206502} (\bibinfo {year}
+  {2025})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kulkarni}(2026{\natexlab{b}})}]{kulkarni2026code}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~M.}\ \bibnamefont

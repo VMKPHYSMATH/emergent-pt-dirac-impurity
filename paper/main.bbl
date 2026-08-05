@@ -87,16 +87,13 @@
   {Lamacraft}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Phys. Rev. Research}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages}
   {013033} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Nakagawa}\ \emph {et~al.}(2018)\citenamefont
-  {Nakagawa}, \citenamefont {Kawakami},\ and\ \citenamefont
-  {Ueda}}]{PhysRevLett.121.203001}%
+\bibitem [{\citenamefont {Yao}\ and\ \citenamefont {Wang}(2018)}]{YaoWang2018}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Nakagawa}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Kawakami}},\
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ueda}},\ }\href@noop
-  {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
-  {\bibinfo {volume} {121}},\ \bibinfo {pages} {203001} (\bibinfo {year}
-  {2018})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Yao}}\ and\ \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Wang}},\
+  }\href {https://doi.org/10.1103/PhysRevLett.121.086803} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {121}},\
+  \bibinfo {pages} {086803} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Pan}\ \emph {et~al.}(2019)\citenamefont {Pan},
   \citenamefont {Chen},\ and\ \citenamefont {Cui}}]{higherorder}%
   \BibitemOpen
@@ -356,20 +353,20 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~C.}\ \bibnamefont
   {Burke}}\ and\ \bibinfo {author} {\bibfnamefont {A.~K.}\ \bibnamefont
-  {Mitchell}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\ \bibinfo {pages}
-  {206502} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2019)\citenamefont {Li},
-  \citenamefont {Chen}, \citenamefont {Nitzan},\ and\ \citenamefont
-  {Subotnik}}]{19td-1k9s}%
+  {Mitchell}},\ }\href {https://doi.org/10.1103/19td-1k9s} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {135}},\ \bibinfo {pages} {206502} (\bibinfo {year}
+  {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nakagawa}\ \emph {et~al.}(2018)\citenamefont
+  {Nakagawa}, \citenamefont {Kawakami},\ and\ \citenamefont
+  {Ueda}}]{PhysRevLett.121.203001}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~E.}\ \bibnamefont
-  {Li}}, \bibinfo {author} {\bibfnamefont {H.-T.}\ \bibnamefont {Chen}},
-  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Nitzan}},\ and\ \bibinfo
-  {author} {\bibfnamefont {J.~E.}\ \bibnamefont {Subotnik}},\ }\href@noop {}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo
-  {volume} {100}},\ \bibinfo {pages} {062509} (\bibinfo {year}
-  {2019})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Nakagawa}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Kawakami}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ueda}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {121}},\ \bibinfo {pages} {203001} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Yamamoto}\ \emph {et~al.}(2023)\citenamefont
   {Yamamoto}, \citenamefont {Nakagawa}, \citenamefont {Tezuka}, \citenamefont
   {Ueda},\ and\ \citenamefont {Kawakami}}]{PhysRevB.108.155120}%

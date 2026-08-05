@@ -1,17 +1,18 @@
 Repository file manifest
-Generated 2026-08-04
+Generated 2026-08-05
 
 .gitattributes	115 bytes
 .github/workflows/ci.yml	1197 bytes
 .gitignore	177 bytes
 CITATION.bib	695 bytes
 CITATION.cff	1523 bytes
-CODE_AVAILABILITY.md	858 bytes
+CODE_AVAILABILITY.md	969 bytes
 LICENSE	1388 bytes
 LICENSE-DATA	1177 bytes
 Makefile	983 bytes
 README.md	6661 bytes
-RELEASE_NOTES.md	1842 bytes
+RELEASE_NOTES.md	2604 bytes
+THIRD_PARTY_NOTICES.md	2426 bytes
 VALIDATION_REPORT.md	1559 bytes
 docs/PUSH_INSTRUCTIONS.md	1559 bytes
 figures/main/Fig1.pdf	146911 bytes
@@ -37,16 +38,16 @@ paper/SFig4_negative_onset_broadening_check.pdf	20774 bytes
 paper/aps10pt4-2.rtx	4578 bytes
 paper/aps4-2.rtx	16252 bytes
 paper/apsrev4-2.bst	69609 bytes
-paper/main.bbl	32923 bytes
-paper/main.tex	98374 bytes
+paper/main.bbl	32769 bytes
+paper/main.tex	98353 bytes
 paper/make_nrg_jordan_structural.py	11042 bytes
-paper/manuscript.pdf	662693 bytes
+paper/manuscript.pdf	667814 bytes
 paper/physics.sty	29603 bytes
-paper/ref.bib	17408 bytes
+paper/ref.bib	17745 bytes
 paper/revsymb4-2.sty	5426 bytes
 paper/revtex4-2.cls	200683 bytes
-paper/supplement_checked.pdf	754765 bytes
-paper/supplemental_material.bbl	8489 bytes
+paper/supplement_checked.pdf	751627 bytes
+paper/supplemental_material.bbl	8518 bytes
 paper/supplemental_material.tex	79356 bytes
 paper/verify_finiteU_contact_algebra.py	3669 bytes
 reproducibility/README.md	1930 bytes
