@@ -1,4 +1,20 @@
-# Version 2.0.0 release candidate — 2026-08-04
+# Version 2.0.1 — 2026-08-05
+
+- Added a root-level third-party software notice recording the upstream
+  NonHermitianNRG repository, pinned revision, Burke–Mitchell publication,
+  and upstream MIT license.
+- Linked the third-party notice from the code-and-data availability record.
+- Added the Burke–Mitchell DOI and corrected two bibliography-provenance
+  mismatches: the unrelated Li et al. work was removed from the
+  non-Hermitian Kondo citation cluster, and the skin-effect statement now
+  cites Yao and Wang, Phys. Rev. Lett. 121, 086803 (2018).
+- Rebuilt the checked main and Supplemental bibliographies and PDFs.
+- This patch changes attribution and bibliography provenance only; it does
+  not change the model, numerical data, figures, or scientific conclusions.
+
+
+
+# Version 2.0.0 — 2026-08-04
 
 - Replaced the obsolete frozen Bethe/phase-map interpretation with exact
   one-particle Fisher–Lee, contact-phase, and Wigner–Smith statements.
