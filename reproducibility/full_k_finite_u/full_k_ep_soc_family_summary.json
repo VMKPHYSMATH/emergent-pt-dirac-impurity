@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "continued_interval": [
+    0.02,
+    0.1578
+  ],
+  "continued_point_count": 99,
+  "representative_topological_certificates": [
+    {
+      "soc": 0.05,
+      "contour_factor": 1.0,
+      "z": [
+        0.011972834346231764,
+        -0.002807216273795326
+      ],
+      "epsilon_d": 0.015170349783418911,
+      "auxiliary_vertex": 1.2134220096136232,
+      "winding": 1.0000000000000162,
+      "endpoint_permutation": [
+        1,
+        0
+      ],
+      "half_winding": 0.5000000000000059,
+      "minimum_boundary_modulus": 2.1008115658892156e-09,
+      "minimum_F_zz_modulus": 1.6967545586763477,
+      "minimum_pole_separation": 9.94988002476075e-05,
+      "maximum_assignment_to_half_separation_ratio": 0.10311015790272787,
+      "pole_failures": 0,
+      "passivity_margin": 0.7614719389862552,
+      "threshold_gap_in_widths": 1.3512479071286818
+    },
+    {
+      "soc": 0.1,
+      "contour_factor": 1.0,
+      "z": [
+        0.020357014816949105,
+        -0.0029285540681082646
+      ],
+      "epsilon_d": 0.02323413408450363,
+      "auxiliary_vertex": 1.833184476734544,
+      "winding": 0.9999999999999637,
+      "endpoint_permutation": [
+        1,
+        0
+      ],
+      "half_winding": 0.5000000000000098,
+      "minimum_boundary_modulus": 5.072144801665368e-09,
+      "minimum_F_zz_modulus": 1.8190753504899222,
+      "minimum_pole_separation": 0.00014857469197802716,
+      "maximum_assignment_to_half_separation_ratio": 0.09997532450181926,
+      "pole_failures": 0,
+      "passivity_margin": 0.6136037316593121,
+      "threshold_gap_in_widths": 0.576784264981418
+    },
+    {
+      "soc": 0.15,
+      "contour_factor": 0.5,
+      "z": [
+        0.032650215153775745,
+        -0.003036452350820721
+      ],
+      "epsilon_d": 0.03515181965187716,
+      "auxiliary_vertex": 2.4158929049948004,
+      "winding": 1.0000000000000417,
+      "endpoint_permutation": [
+        1,
+        0
+      ],
+      "half_winding": 0.4999999999999949,
+      "minimum_boundary_modulus": 2.95384573055425e-09,
+      "minimum_F_zz_modulus": 2.019649601024034,
+      "minimum_pole_separation": 0.00010798128125825508,
+      "maximum_assignment_to_half_separation_ratio": 0.11902166791036642,
+      "pole_failures": 0,
+      "passivity_margin": 0.5149004188379418,
+      "threshold_gap_in_widths": 0.07602364892162669
+    }
+  ],
+  "scope": "A one-dimensional full-k nonlinear-EP locus in the enlarged parameter space. It is not an EP phase region. The high-SOC endpoint is not classified because the branch approaches an open-channel threshold."
+}

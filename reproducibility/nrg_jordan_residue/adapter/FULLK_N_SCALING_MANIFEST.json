@@ -1,0 +1,19 @@
+{
+  "name": "PTDirac full-k matrix-chain N-scaling extension",
+  "version": "1.0.0",
+  "date": "2026-08-09",
+  "installation_mode": "additive",
+  "modified_existing_files": [],
+  "entry_points": [
+    "benchmarks/prb_complete/scripts/run_fullk_n_scaling.py",
+    "benchmarks/prb_complete/scripts/analyze_fullk_n_scaling.py",
+    "benchmarks/prb_complete/tests/validate_fullk_n_scaling_install.py"
+  ],
+  "scope": "Complete-basis finite full-k 2x2 matrix-Wilson chain-length scaling with independently reoptimized centers, common-contour topology gates, and pairwise sufficient Rouche checks.",
+  "nonclaims": [
+    "No thermodynamic-limit FDM-NRG result",
+    "No finite-temperature response result",
+    "No enhanced thermodynamic Kondo scale",
+    "No infinite-N theorem without a separately controlled tail bound"
+  ]
+}

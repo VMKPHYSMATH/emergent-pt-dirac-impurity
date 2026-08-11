@@ -1,6 +1,6 @@
 # Reproducibility gates
 
-The active v2 checks are organized by scientific claim.
+The active v2.1 checks are organized by scientific claim.
 
 | Directory or script | What it establishes | What it does not establish |
 |---|---|---|
@@ -11,7 +11,8 @@ The active v2 checks are organized by scientific claim.
 | `bethe_smith_phase/` | Exact one-particle phase quantization for the full two-channel scattering matrix | A multiparticle Bethe ansatz |
 | `low_temperature_saddle/` | A converged low-\(T\) saddle with residual, seed, grid, and continuity checks | A finite-\(r\) solution at the manuscript reference temperature \(T_b=0.1\) |
 | `nrg_jordan_residue/` | Independent creation/annihilation transition-operator propagation and a nearly traceless finite-\(U\) residue aligned with the nilpotent EP direction | A universal pole exponent, complex quartic plateau, interaction floor, thermodynamic Kondo enhancement, or phase boundary |
-| `frozen_kernel_figures.py` | Retained frozen Figs. 1, 2, and S1 | Physical-DOS, RG, or frozen-Bethe evidence |
+| `full_k_finite_u/` | Outgoing-sheet full-\(k\) EP2 certificate, SOC continuation, exact zero-temperature finite-chain finite-\(U\) response, EOM/Dyson identity, and the \(N=10\) to 12 common-contour Rouche gate | An infinite-chain, thermodynamic, finite-temperature FDM-NRG, strong-coupling Kondo, or phase-boundary result |
+| `frozen_kernel_figures.py` | Frozen-core and Bloch diagnostic data retained for the reorganized comparison and Supplemental Fig. S1 | Physical-DOS, RG, or frozen-Bethe evidence |
 
 Each reference-output directory contains a machine-readable summary and a
 `SHA256SUMS` file. Run `sha256sum -c SHA256SUMS` from that directory to

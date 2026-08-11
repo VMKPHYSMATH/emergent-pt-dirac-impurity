@@ -64,7 +64,7 @@ def main():
         ord="fro",
     )
 
-    # Off-EP CPT/metric diagonalization.
+    # Off-EP positive-metric diagonalization.
     d_value, g_value = 0.70, 0.30
     theta = np.arctanh(g_value / d_value)
     s_cpt = np.cosh(theta / 2) * I2 + np.sinh(theta / 2) * SY
@@ -96,7 +96,7 @@ def main():
     checks = {
         "YBE residual": ybe_error,
         "GL(2,C) covariance residual": covariance_error,
-        "CPT diagonalization residual": diagonalization_error,
+        "metric diagonalization residual": diagonalization_error,
         "dressed-rapidity factorization residual": factorization_error,
         "triplet eigenvalue residual": triplet_error,
         "singlet eigenvalue residual": singlet_error,
