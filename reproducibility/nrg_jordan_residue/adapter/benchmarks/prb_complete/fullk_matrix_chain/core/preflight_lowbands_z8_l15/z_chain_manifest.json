@@ -1,0 +1,44 @@
+{
+  "chains": [
+    {
+      "z_shift": 0.0625,
+      "chain": "z_00/full_k_block_wilson_chain.csv",
+      "summary": "z_00/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.1875,
+      "chain": "z_01/full_k_block_wilson_chain.csv",
+      "summary": "z_01/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.3125,
+      "chain": "z_02/full_k_block_wilson_chain.csv",
+      "summary": "z_02/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.4375,
+      "chain": "z_03/full_k_block_wilson_chain.csv",
+      "summary": "z_03/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.5625,
+      "chain": "z_04/full_k_block_wilson_chain.csv",
+      "summary": "z_04/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.6875,
+      "chain": "z_05/full_k_block_wilson_chain.csv",
+      "summary": "z_05/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.8125,
+      "chain": "z_06/full_k_block_wilson_chain.csv",
+      "summary": "z_06/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.9375,
+      "chain": "z_07/full_k_block_wilson_chain.csv",
+      "summary": "z_07/full_k_wilson_preflight_summary.json"
+    }
+  ]
+}

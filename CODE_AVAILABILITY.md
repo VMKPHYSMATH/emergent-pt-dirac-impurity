@@ -3,7 +3,9 @@
 The repository contains the scripts and tabulated data used for the main and
 Supplemental figures, the finite-\(U\) contact-algebra checker, causal
 scattering and weak-flow gates, low-temperature saddle checks, and the
-operator-resolved NRG residue audit used for Supplemental Fig. S8.
+operator-resolved NRG residue audit used for Supplemental Fig. S8, the
+stationary full-\(k\) nonlinear pole certificate, and the exact finite-chain
+finite-\(U\) continuation used for main Fig. 1 and Supplemental Figs. S9--S10.
 
 The stable repository URL is:
 
@@ -22,3 +24,7 @@ No data in this repository establish a universal interaction-induced EP
 floor, enhanced thermodynamic Kondo temperature, or many-body phase boundary.
 Third-party attribution, licensing, and the pinned upstream revision are
 recorded in `THIRD_PARTY_NOTICES.md`.
+
+The finite-\(U\) full-\(k\) calculation is an exact zero-temperature result on
+the reported finite matrix block-Wilson chains. It is not a continuum-limit,
+thermodynamic, finite-temperature FDM-NRG, or strong-coupling Kondo claim.

@@ -23,6 +23,12 @@ jobs:
         working-directory: reproducibility/nrg_jordan_residue/adapter
       - run: python benchmarks/prb_complete/tests/validate_jordan_comprehensive.py
         working-directory: reproducibility/nrg_jordan_residue/adapter
+      - run: python benchmarks/prb_complete/tests/validate_fullk_n_scaling_install.py
+        working-directory: reproducibility/nrg_jordan_residue/adapter
+      - run: python reproducibility/full_k_finite_u/full_k_two_cut_ep_certificate.py --soc 0.05 --out /tmp/full_k_two_cut_ep
+      - run: python reproducibility/full_k_finite_u/full_k_ep_soc_family.py --out /tmp/full_k_ep_soc_family
+      - run: python reproducibility/full_k_finite_u/finiteU_fullk_reproducibility/validate_archived_finiteU_gates.py
+      - run: python reproducibility/full_k_finite_u/validate_fullk_n_scaling_gate.py
 
   latex:
     runs-on: ubuntu-latest

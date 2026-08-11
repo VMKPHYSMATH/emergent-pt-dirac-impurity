@@ -14,7 +14,7 @@ acceptance or publication.
 
 The microscopic driven Hamiltonian is Hermitian. Non-Hermiticity appears only
 after projection of the bath and off-shell auxiliary modes into a passive
-retarded impurity kernel. The repository keeps four logically distinct results
+retarded impurity kernel. The repository keeps six logically distinct results
 separate:
 
 1. The complete curved, frequency-dependent kernel obeys exact one-particle
@@ -29,7 +29,19 @@ separate:
    arbitrary-particle RLL/RTT and many-body Jordan results are developed in
    the separate companion work
    [arXiv:2604.21547](https://arxiv.org/abs/2604.21547).
-4. The operator-resolved biorthogonal NRG audit validates a nearly traceless
+4. The causal outgoing-sheet full-\(k\) kernel has a topologically certified
+   EP2 on a stationary rotating-drive path. The certificate uses the boundary
+   winding/Brouwer degree of a branch-tracked local discriminant, together
+   with nonzero-second-derivative, rank-one, pole-exchange, and half-winding
+   guards. A 99-point SOC continuation contains independent certificates at
+   \(\lambda=0.05\), \(0.10\), and \(0.15\).
+5. At \(\lambda=0.05\), the EP2 is continued to \(U=0.0025\) on exact
+   zero-temperature finite matrix block-Wilson chains. Independently
+   reoptimized \(N=10\) and \(N=12\) centers retain winding \(-1\), pole
+   exchange, and half-winding \(-1/2\) on a shared contour; the pairwise
+   Rouche ratio is `0.6775 < 1`. This is a finite-chain result, not a
+   continuum, finite-temperature FDM-NRG, or strong-coupling Kondo theorem.
+6. The operator-resolved biorthogonal NRG audit validates a nearly traceless
    transition-residue matrix aligned with the nilpotent EP direction. It does
    **not** validate a universal pole exponent, quartic coefficient,
    interaction-induced EP floor, thermodynamic Kondo enhancement, or phase
@@ -51,8 +63,9 @@ operational Schur-tracked minimum on the plotted path.
 
 - `paper/` — checked main and Supplemental TeX sources, prebuilt
   bibliographies, compiled PDFs, figures, and bundled REVTeX support files.
-- `figures/main/` — main Figs. 1–2.
-- `figures/supplement/` — Supplemental Figs. S1–S8.
+- `figures/main/` — the finite-\(U\) full-\(k\) certificate and the frozen-core
+  comparison used as main Figs. 1–2.
+- `figures/supplement/` — Supplemental Figs. S1–S10.
 - `reproducibility/causal_smith_rg/` — passive-density, RG, resolvent,
   Fisher–Lee, and Wigner–Smith gates and reference output.
 - `reproducibility/low_temperature_saddle/` — low-temperature saddle,
@@ -61,7 +74,11 @@ operational Schur-tracked minimum on the plotted path.
   \(4\times4\) contact matrix, CPT covariance, and three-particle YBE check.
 - `reproducibility/nrg_jordan_residue/` — Julia adapter, independent
   creation/annihilation transition-operator propagation, complete exported
-  scan, gate summary, and Fig. S8 generator.
+  scan, gate summary, Fig. S8 generator, and installed full-\(k\) finite-chain
+  scaling driver/analyzer.
+- `reproducibility/full_k_finite_u/` — causal full-\(k\) EP certificate, SOC
+  family, exact finite-chain finite-\(U\) response, EOM/Dyson identity,
+  \(N_z\), kept-space, and \(N=10\) to 12 common-contour gates.
 - `reproducibility/bethe_smith_phase/` — one-particle scattering-phase
   quantization check; it is not a multiparticle Bethe-ansatz construction.
 - `reproducibility/analytic_checks/` — exact contact and Smith identities.
@@ -88,6 +105,12 @@ python -m pip install -r requirements.txt
 python reproducibility/finite_u_contact/verify_finiteU_contact_algebra.py
 python reproducibility/analytic_checks/contact_and_smith_identity_check.py
 python reproducibility/bethe_smith_phase/bethe_smith_phase_gate.py
+python reproducibility/full_k_finite_u/full_k_two_cut_ep_certificate.py \
+  --soc 0.05 --out /tmp/full_k_two_cut_ep
+python reproducibility/full_k_finite_u/full_k_ep_soc_family.py \
+  --out /tmp/full_k_ep_soc_family
+python reproducibility/full_k_finite_u/finiteU_fullk_reproducibility/validate_archived_finiteU_gates.py
+python reproducibility/full_k_finite_u/validate_fullk_n_scaling_gate.py
 python reproducibility/causal_smith_rg/channel_resolved_rg_gate.py --out regenerated_rg
 python reproducibility/causal_smith_rg/resolvent_cancellation_gate.py --out regenerated_resolvent
 python reproducibility/causal_smith_rg/smith_delay_rg_gate.py \
@@ -109,6 +132,7 @@ cd reproducibility/nrg_jordan_residue/adapter
 python benchmarks/prb_complete/tests/validate_biorth_fix.py
 python benchmarks/prb_complete/tests/validate_install.py
 python benchmarks/prb_complete/tests/validate_jordan_comprehensive.py
+python benchmarks/prb_complete/tests/validate_fullk_n_scaling_install.py
 ```
 
 The complete NRG rerun requires Julia and is documented in
@@ -130,16 +154,16 @@ pdflatex -interaction=nonstopmode -halt-on-error supplemental_material.tex
 pdflatex -interaction=nonstopmode -halt-on-error supplemental_material.tex
 ```
 
-The checked publication copies are `paper/manuscript.pdf` and
-`paper/supplement_checked.pdf`; compilation writes disposable `main.pdf` and
-`supplemental_material.pdf` files.
+The checked publication copies are `paper/manuscript.pdf` (18 pages) and
+`paper/supplement_checked.pdf` (26 pages); compilation writes disposable
+`main.pdf` and `supplemental_material.pdf` files.
 
 ## Citation and archival DOI
 
 Copy-ready metadata are provided in `CITATION.cff` and `CITATION.bib`.
 The stable Zenodo concept DOI for all repository versions is
 [10.5281/zenodo.21434682](https://doi.org/10.5281/zenodo.21434682). The
-version-specific DOI for v2 should be added only after the verified archive is
+version-specific DOI for v2.1 should be added only after the verified archive is
 deposited.
 
 ## License

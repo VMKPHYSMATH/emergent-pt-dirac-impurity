@@ -1,3 +1,30 @@
+# Version 2.1.0 — 2026-08-11
+
+- Replaced the earlier manuscript presentation with the final focused
+  18-page main article and 26-page Supplemental Material.
+- Added a causal outgoing-sheet full-\(k\) EP2 certificate for the stationary
+  rotating-drive kernel, including local-discriminant winding, pole exchange,
+  half-winding, nonzero second derivative, and rank-one geometry guards.
+- Added the 99-point SOC continuation family with independently certified
+  points at \(\lambda=0.05\), \(0.10\), and \(0.15\).
+- Added the exact zero-temperature finite-chain finite-\(U\) continuation on
+  four logarithmic-shifted matrix block-Wilson chains. At \(U=0.0025\), the
+  12-site calculation has winding \(-1\), pole exchange, half-winding
+  \(-1/2\), and an exact finite-chain sum-rule error of `3.77e-15`.
+- Added independently reoptimized \(N=10\) and \(N=12\) centers and a common
+  256-point contour. The sufficient Rouche ratio is `0.6775 < 1`, preserving
+  the enclosed zero count between those tested finite chains.
+- Added the exact EOM/Dyson check, \(N_z=4\) to 8 comparison, and an
+  \(N_{keep}=960\) kept-space calibration. The kept-space errors are reported
+  only as convergence evidence.
+- Replotted the two main figures at full width. The local discriminant and
+  pole displacement are normalized by explicitly reported positive scales;
+  the normalization cannot change their winding.
+- Kept the scope explicit: no continuum, thermodynamic, finite-temperature
+  FDM-NRG, strong-coupling Kondo, universal interaction-floor, or many-body
+  phase-boundary conclusion is inferred.
+
+
 # Version 2.0.1 — 2026-08-05
 
 - Added a root-level third-party software notice recording the upstream

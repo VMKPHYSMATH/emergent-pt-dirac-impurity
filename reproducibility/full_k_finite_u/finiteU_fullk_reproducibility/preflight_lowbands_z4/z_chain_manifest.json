@@ -1,0 +1,24 @@
+{
+  "chains": [
+    {
+      "z_shift": 0.125,
+      "chain": "z_00/full_k_block_wilson_chain.csv",
+      "summary": "z_00/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.375,
+      "chain": "z_01/full_k_block_wilson_chain.csv",
+      "summary": "z_01/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.625,
+      "chain": "z_02/full_k_block_wilson_chain.csv",
+      "summary": "z_02/full_k_wilson_preflight_summary.json"
+    },
+    {
+      "z_shift": 0.875,
+      "chain": "z_03/full_k_block_wilson_chain.csv",
+      "summary": "z_03/full_k_wilson_preflight_summary.json"
+    }
+  ]
+}
