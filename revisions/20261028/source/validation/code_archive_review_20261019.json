@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "input": "Dirac_impurity_EP_code_archive_20261019.zip",
+  "input_sha256": "08dd20827b413f2b588efbb63f051bca87ff3afc6aef1716ad2a63c215f92366",
+  "recorded_file_hashes_checked": 264,
+  "hashes_pass": true,
+  "python_files_parsed": 147,
+  "parse_errors": [],
+  "original_field_rerun_matches": {
+    "field2_cert": true,
+    "field_tilt_cert": true,
+    "w_extend_cert_json": true
+  },
+  "scope": "Integrity, syntax and selected numerical reruns; not every historical script or claim independently validated."
+}

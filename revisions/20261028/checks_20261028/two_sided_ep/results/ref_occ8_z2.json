@@ -1,0 +1,202 @@
+{
+  "settings": {
+    "U": 0.0005,
+    "mu": 0.012,
+    "bath_blocks": 8,
+    "z_shifts": [
+      0.25,
+      0.75
+    ],
+    "Lambda": 1.5,
+    "quadrature_nodes": 512,
+    "VO": 1.2134220096136235,
+    "scope": "exact finite-chain self-energy embedding"
+  },
+  "source_seed": [
+    0.013184494229779527,
+    -0.005012186477200969,
+    0.018197601233419788,
+    0.13144545139776737
+  ],
+  "scope": "finite-chain self-energy embedding; no interacting continuum claim",
+  "solution": {
+    "center": [
+      0.013219874547297224,
+      -0.00498729412634029,
+      0.01821230995992206,
+      0.13119389298471865
+    ],
+    "solver_success": true,
+    "message": "The solution converged.",
+    "scaled_residual": 4.1904142916021625e-13,
+    "nfev": 12,
+    "seconds": 0.6902777380000771,
+    "center_numerical_pass": true,
+    "checks": {
+      "F": 4.474700667685822e-19,
+      "F_z": 1.048010600439742e-15,
+      "F_zz": [
+        1.6411207386727285,
+        -0.2588029247960913
+      ],
+      "singular_values": [
+        0.0019292018655130594,
+        2.3198209917038387e-16
+      ],
+      "Fz_derivative_halving_difference": 9.4514566477087e-15,
+      "Fzz_derivative_halving_relative_difference": 9.011791377098604e-09,
+      "open_channel_count": 2
+    },
+    "filling": {
+      "nd": 0.7729781546784642,
+      "double_occupancy": 0.09066445298101039,
+      "local_moment_squared": 0.5916492487164434,
+      "single_occupancy_probability": 0.5916492487164435,
+      "empty_probability": 0.31768629830254613,
+      "double_minus_gaussian_reference": -0.0008714656558415149,
+      "nd_z_min": 0.7252636054782468,
+      "nd_z_max": 0.8206927038786818,
+      "z_members": [
+        {
+          "nd": 0.8206927038786818,
+          "n0": 0.16489312549699545,
+          "n1": 0.6557995783816863,
+          "double_occupancy": 0.10711445450393274,
+          "single_occupancy_probability": 0.6064637948708163,
+          "empty_probability": 0.286421750625251,
+          "local_moment_squared": 0.6064637948708163,
+          "local_moment_identity_error": 0.0,
+          "double_minus_gaussian_reference": -0.0009279129664804264,
+          "density_matrix": [
+            [
+              [
+                0.16489312549699545,
+                0.0
+              ],
+              [
+                0.009719810108995572,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.009719810108995572,
+                0.0
+              ],
+              [
+                0.6557995783816863,
+                0.0
+              ]
+            ]
+          ],
+          "density_eigenvalues": [
+            0.16470075136910423,
+            0.6559919525095775
+          ],
+          "occupation_bounds_error": 0.0,
+          "ground_charges": [
+            2
+          ],
+          "ground_degeneracy": 1,
+          "grand_ground_energy": -0.014286987241378751,
+          "sector_dimensions": {
+            "2": 153
+          },
+          "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+        },
+        {
+          "nd": 0.7252636054782468,
+          "n0": 0.1268062074060893,
+          "n1": 0.5984573980721575,
+          "double_occupancy": 0.07421445145808803,
+          "single_occupancy_probability": 0.5768347025620707,
+          "empty_probability": 0.3489508459798413,
+          "local_moment_squared": 0.5768347025620706,
+          "local_moment_identity_error": 1.1102230246251565e-16,
+          "double_minus_gaussian_reference": -0.0008150183452026033,
+          "density_matrix": [
+            [
+              [
+                0.1268062074060893,
+                0.0
+              ],
+              [
+                -0.029302613200121185,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.029302613200121185,
+                0.0
+              ],
+              [
+                0.5984573980721575,
+                0.0
+              ]
+            ]
+          ],
+          "density_eigenvalues": [
+            0.12499267600588557,
+            0.6002709294723612
+          ],
+          "occupation_bounds_error": 0.0,
+          "ground_charges": [
+            2
+          ],
+          "ground_degeneracy": 1,
+          "grand_ground_energy": -0.015841934540710412,
+          "sector_dimensions": {
+            "2": 153
+          },
+          "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+        }
+      ],
+      "scope": "arithmetic z-average of finite-chain equilibrium reference occupations"
+    },
+    "physical_axis_checks": [
+      {
+        "omega_relative_to_mu": -0.004,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.0034445774912040673,
+        "embedded_total_rate_min_eigenvalue": 0.0034453261999334303,
+        "embedded_spectral_min_eigenvalue": 26.473602591208696
+      },
+      {
+        "omega_relative_to_mu": 0.0,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.005507189268907624,
+        "embedded_total_rate_min_eigenvalue": 0.005507720917605077,
+        "embedded_spectral_min_eigenvalue": 38.542836635352536
+      },
+      {
+        "omega_relative_to_mu": 0.004,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.006243855304755269,
+        "embedded_total_rate_min_eigenvalue": 0.006244786378607359,
+        "embedded_spectral_min_eigenvalue": 35.5832775747137
+      },
+      {
+        "omega_relative_to_mu": 0.0,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.005507189268907624,
+        "embedded_total_rate_min_eigenvalue": 0.005507720917605077,
+        "embedded_spectral_min_eigenvalue": 38.542836635352536
+      }
+    ],
+    "physical_axis_pass": true,
+    "ground_charges": [
+      [
+        2
+      ],
+      [
+        2
+      ]
+    ],
+    "selfenergy_derivative_checks": {
+      "first_relative": 5.531119765444704e-10,
+      "second_relative": 2.6779481389077366e-06
+    }
+  },
+  "state_builds": 8
+}

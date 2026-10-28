@@ -1,0 +1,12 @@
+HF (my continuum code), controls (eps,V_O) at fixed W=0.1: d eps/dU=0.7606  dV_O/dU=30.633  dz/dU=(0.8229+0.0252j)
+HF (my continuum code), controls (eps,W) at fixed V_O   : d eps/dU=-0.5510  dW/dU=-7.6314   dz/dU=(-0.0767+0.4654j)
+package KR (archived ep_mu000, U=0->1e-4)          : d eps/dU=0.7552  dV_O/dU=30.410  dz/dU=(0.8169+0.0249j)
+package KR (new run) mu=0, controls (eps,W): U=0.0000 ok=True eps=0.01517035 W=0.10000000 z=0.01197283-0.00280722i n=0.03468 res=1.3e-14
+package KR (new run) mu=0, controls (eps,W): U=0.0001 ok=True eps=0.01511537 W=0.09924001 z=0.01196492-0.00276110i n=0.03415 res=1.6e-13
+    -> KR slope (U=0->1e-4): d eps/dU=-0.5498 dW/dU=-7.5999
+package KR (new run) mu=0, controls (eps,W): U=0.0005 ok=True eps=0.01489817 W=0.09626299 z=0.01192883-0.00258485i n=0.03213 res=3.8e-12
+package KR (new run) mu=0, controls (eps,W): U=0.0010 ok=True eps=0.01463397 W=0.09268284 z=0.01187554-0.00238195i n=0.02982 res=1.5e-11
+package KR (new run) mu=0, controls (eps,W): U=0.0015 ok=True eps=0.01437926 W=0.08925811 z=0.01181558-0.00219692i n=0.02772 res=1.0e-11
+package KR (new run) mu=0, controls (eps,W): U=0.0020 ok=True eps=0.01413507 W=0.08598648 z=0.01175103-0.00202823i n=0.02581 res=1.1e-11
+package KR (new run) mu=0, controls (eps,W): U=0.0025 ok=True eps=0.01390201 W=0.08286488 z=0.01168355-0.00187448i n=0.02407 res=1.3e-11
+converged block-Wilson centers (quadratic fit): d eps/dU=-0.3470 dW/dU=-4.459 ; W(U=0.0025)=0.090363 eps=0.014406

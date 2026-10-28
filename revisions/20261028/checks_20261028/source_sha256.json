@@ -1,0 +1,14 @@
+{
+  "solver/charge_solver.py": "b7e2827c45dbd9b54d98a2453a3b8dc1c8fdfc3ea29194e8fbf9ab8b823fb71a",
+  "solver/configs/submitted_baseline.json": "1fc400a8311284ab58796bbca80863de5c1923013ae98cce025540082471cfa5",
+  "solver/filling_campaign.py": "d95f7c99225b39f0747c9c7d1b801f43b5d314ca024395136a6d1ce1d295c356",
+  "solver/kept_filling.py": "de403b8c0cd52a3c84996aae42993def26db7328de9cffe68479b6c8d253eae7",
+  "solver/kr/matrix_saddle.py": "8eadd75d8711dd55424e1352f42eec4104c02a533237023840504ea18622a794",
+  "solver/kr/occupied_gate_path.json": "3a571c2bad90ea5d7388587cbb5c61b06af1eac189283a2cc724845352cf8862",
+  "solver/pole_derivatives.py": "22c2e676708e7db49713d4f2a60c53b3574fabd46fec11a4d073bb6245b2c230",
+  "solver/resonance_sheets.py": "60f06cd7503b3a1072f9c31450b36af7b04402dd7abe977b0c801bb562c5dc33",
+  "solver/vendor/exact_block_chain_response.py": "ff5f0d5e49e8ade168c711c0a0172c188ff97e1acedb9569d880275e33130b48",
+  "solver/vendor/full_k_two_cut_ep_certificate.py": "bf153b94e829d89962f0dbf3a728c3da9023f42b9cbd36ba675202f284205f56",
+  "solver/vendor/full_k_wilson_preflight.py": "42c33c666d97a1eb806b795d504adc604f45f09b2dcd4f6b885624e26472469d",
+  "solver/vendor/python_fullk_nrg_pilot.py": "b65a2ac7fe1c11a83d2eba224362cff9203c12979c1ea1b042f439d574214180"
+}

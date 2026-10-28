@@ -1,0 +1,193 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{15}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Kamenev}(2023)}]{kamenev2023field}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Kamenev}},\ }\href@noop {} {\emph {\bibinfo {title} {Field Theory of
+  Non-Equilibrium Systems}}},\ \bibinfo {edition} {2nd}\ ed.\ (\bibinfo
+  {publisher} {Cambridge University Press},\ \bibinfo {year}
+  {2023})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Oguri}\ and\ \citenamefont
+  {Sakano}(2013)}]{oguri2013highbias}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Oguri}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Sakano}},\
+  }\bibfield  {title} {\bibinfo {title} {Exact interacting green's function for
+  the {Anderson} impurity at high bias voltages},\ }\href
+  {https://doi.org/10.1103/PhysRevB.88.155424} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {88}},\ \bibinfo
+  {pages} {155424} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fisher}\ and\ \citenamefont
+  {Lee}(1981)}]{fisherlee1981}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~S.}\ \bibnamefont
+  {Fisher}}\ and\ \bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
+  {Lee}},\ }\bibfield  {title} {\bibinfo {title} {Relation between conductivity
+  and transmission matrix},\ }\href {https://doi.org/10.1103/PhysRevB.23.6851}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
+  {volume} {23}},\ \bibinfo {pages} {6851} (\bibinfo {year}
+  {1981})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wigner}(1955)}]{wigner1955}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~P.}\ \bibnamefont
+  {Wigner}},\ }\bibfield  {title} {\bibinfo {title} {Lower limit for the energy
+  derivative of the scattering phase shift},\ }\href
+  {https://doi.org/10.1103/PhysRev.98.145} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {98}},\ \bibinfo {pages}
+  {145} (\bibinfo {year} {1955})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Smith}(1960)}]{smith1960}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~T.}\ \bibnamefont
+  {Smith}},\ }\bibfield  {title} {\bibinfo {title} {Lifetime matrix in
+  collision theory},\ }\href {https://doi.org/10.1103/PhysRev.118.349}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo
+  {volume} {118}},\ \bibinfo {pages} {349} (\bibinfo {year}
+  {1960})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wiegmann}(1980)}]{Wiegmann1980}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
+  {Wiegmann}},\ }\bibfield  {title} {\bibinfo {title} {Towards an exact
+  solution of the {Anderson} model},\ }\href
+  {https://doi.org/10.1016/0375-9601(80)90206-8} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. A}\ }\textbf {\bibinfo {volume} {80}},\
+  \bibinfo {pages} {163} (\bibinfo {year} {1980})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kawakami}\ and\ \citenamefont
+  {Okiji}(1982)}]{KawakamiOkiji1982}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Kawakami}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Okiji}},\ }\bibfield  {title} {\bibinfo {title} {Ground state of {Anderson}
+  {H}amiltonian},\ }\href {https://doi.org/10.1143/JPSJ.51.1145} {\bibfield
+  {journal} {\bibinfo  {journal} {J. Phys. Soc. Jpn.}\ }\textbf {\bibinfo
+  {volume} {51}},\ \bibinfo {pages} {1145} (\bibinfo {year}
+  {1982})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wiegmann}\ and\ \citenamefont
+  {Tsvelick}(1983)}]{WiegmannTsvelick1983}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
+  {Wiegmann}}\ and\ \bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Tsvelick}},\ }\bibfield  {title} {\bibinfo {title} {Exact solution of the
+  {Anderson} model: {I}},\ }\href {https://doi.org/10.1088/0022-3719/16/12/017}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Phys. C: Solid State Phys.}\
+  }\textbf {\bibinfo {volume} {16}},\ \bibinfo {pages} {2281} (\bibinfo {year}
+  {1983})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chao}\ and\ \citenamefont
+  {Palacios}(2011)}]{ChaoPalacios2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.-P.}\ \bibnamefont
+  {Chao}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Palacios}},\ }\bibfield  {title} {\bibinfo {title} {Nonequilibrium transport
+  in the {Anderson} model of a biased quantum dot: Scattering {Bethe} ansatz
+  phenomenology},\ }\href {https://doi.org/10.1103/PhysRevB.83.195314}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
+  {volume} {83}},\ \bibinfo {pages} {195314} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kulkarni}(2026{\natexlab{a}})}]{KulkarniYB2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~M.}\ \bibnamefont
+  {Kulkarni}},\ }\href {https://doi.org/10.48550/arXiv.2604.21547} {\bibinfo
+  {title} {Unipotent boundary twists and bethe-root confluence in the
+  linearized finite-{$U$} {Anderson} model}} (\bibinfo {year}
+  {2026}{\natexlab{a}}),\ \bibinfo {note} {revised manuscript (October 2026);
+  earlier versions at arXiv:2604.21547},\ \Eprint
+  {https://arxiv.org/abs/2604.21547} {arXiv:2604.21547 [math-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Anderson}(1970)}]{anderson1970poor}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~W.}\ \bibnamefont
+  {Anderson}},\ }\bibfield  {title} {\bibinfo {title} {A poor man's derivation
+  of scaling laws for the {Kondo} problem},\ }\href
+  {https://doi.org/10.1088/0022-3719/3/12/008} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Phys. C: Solid State Phys.}\ }\textbf {\bibinfo {volume} {3}},\
+  \bibinfo {pages} {2436} (\bibinfo {year} {1970})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Burke}\ and\ \citenamefont
+  {Mitchell}(2025)}]{burke2025non}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~C.}\ \bibnamefont
+  {Burke}}\ and\ \bibinfo {author} {\bibfnamefont {A.~K.}\ \bibnamefont
+  {Mitchell}},\ }\bibfield  {title} {\bibinfo {title} {Non-{H}ermitian
+  numerical renormalization group: Solution of the non-{H}ermitian {Kondo}
+  model},\ }\href {https://doi.org/10.1103/19td-1k9s} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {135}},\
+  \bibinfo {pages} {206502} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sch{\"a}fer}\ \emph {et~al.}(2022)\citenamefont
+  {Sch{\"a}fer}, \citenamefont {Budich},\ and\ \citenamefont
+  {Luitz}}]{Schafer2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Sch{\"a}fer}}, \bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {Budich}},\ and\ \bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
+  {Luitz}},\ }\bibfield  {title} {\bibinfo {title} {Symmetry protected
+  exceptional points of interacting fermions},\ }\href
+  {https://doi.org/10.1103/PhysRevResearch.4.033181} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Research}\ }\textbf {\bibinfo {volume}
+  {4}},\ \bibinfo {pages} {033181} (\bibinfo {year} {2022})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Haldane}(1978)}]{Haldane1978}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~D.~M.}\
+  \bibnamefont {Haldane}},\ }\bibfield  {title} {\bibinfo {title} {Scaling
+  theory of the asymmetric {Anderson} model},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.40.416} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {40}},\ \bibinfo
+  {pages} {416} (\bibinfo {year} {1978})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kulkarni}(2026{\natexlab{b}})}]{kulkarni2026code}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~M.}\ \bibnamefont
+  {Kulkarni}},\ }\href {https://doi.org/10.5281/zenodo.21888925} {\bibinfo
+  {title} {{Reproducibility code and data for ``Emergent {PT} Symmetry and
+  Exceptional Points in a Driven Dirac Impurity''}}},\ \bibinfo {howpublished}
+  {GitHub repository and Zenodo archive} (\bibinfo {year}
+  {2026}{\natexlab{b}}),\ \bibinfo {note} {version v2.1.0; all-versions DOI:
+  10.5281/zenodo.21434682}\BibitemShut {NoStop}%
+\end{thebibliography}%

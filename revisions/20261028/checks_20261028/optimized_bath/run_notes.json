@@ -1,0 +1,6 @@
+{
+  "preliminary_primary_fit": "The first fit used separate band bounds; the 12-orbital projected seed lay outside those artificial bounds. Replaced by global spectral bounds in all subsequent fits.",
+  "equilibrium_shiftinvert_14": "Stopped a duplicate acceleration run after the standard solver had completed the same 14-orbital physical calculation. The 8-orbital acceleration check agrees exactly.",
+  "occupied_shiftinvert_14": "Stopped an expensive superseded trial using global-grid occupied moments. The improved split-threshold moments and 8/10/12-orbital interacting results are recorded separately.",
+  "scope": "No stopped run is evidence of absence of a ground state, local moment, or exceptional point."
+}

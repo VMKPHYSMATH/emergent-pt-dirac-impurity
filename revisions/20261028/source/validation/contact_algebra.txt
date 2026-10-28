@@ -1,0 +1,7 @@
+YBE residual: 1.144e-15
+GL(2,C) covariance residual: 4.475e-16
+metric diagonalization residual: 1.655e-16
+dressed-rapidity factorization residual: 4.857e-17
+triplet eigenvalue residual: 0.000e+00
+singlet eigenvalue residual: 0.000e+00
+all finite-U contact-algebra checks passed

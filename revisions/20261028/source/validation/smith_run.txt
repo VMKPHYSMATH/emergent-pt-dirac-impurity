@@ -1,0 +1,21 @@
+{
+  "controls": {
+    "EP": {
+      "peak": 30.555555555555568,
+      "slowest_halfwidth": 0.12,
+      "normalized_peak": 3.666666666666668
+    },
+    "Hermitian": {
+      "peak": 16.666666666666668,
+      "slowest_halfwidth": 0.12,
+      "normalized_peak": 2.0
+    },
+    "off EP": {
+      "peak": 63.76811594202898,
+      "slowest_halfwidth": 0.033397459621556116,
+      "normalized_peak": 2.1296930773166216
+    }
+  },
+  "max_smith_identity_residual": 2.492374500734704e-14,
+  "max_unitarity_residual": 1.99844476574922e-15
+}

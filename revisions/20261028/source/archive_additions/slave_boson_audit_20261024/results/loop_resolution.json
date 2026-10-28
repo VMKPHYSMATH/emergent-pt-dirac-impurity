@@ -1,0 +1,149 @@
+{
+  "points": [
+    {
+      "name": "low_fill_U002",
+      "summary": {
+        "U": 0.02,
+        "mu": 0.0,
+        "control": "V_O",
+        "h1": 0.0001,
+        "h2": 0.01,
+        "samples": 256,
+        "order": 64,
+        "winding": 1.0000000000041207,
+        "minimum_boundary_modulus": 9.692221184151733e-10,
+        "maximum_phase_increment": 0.20940474937416015,
+        "minimum_F_zz": 1.769730706343486,
+        "endpoint_permutation": [
+          1,
+          0
+        ],
+        "half_winding": 0.5000000000020508,
+        "exchange_error": 6.884395237791473e-16,
+        "minimum_pole_separation": 6.610105234070834e-05,
+        "maximum_pole_residual": 2.46024179641192e-21,
+        "maximum_assignment_ratio": 0.12170316707538101,
+        "maximum_saddle_residual": 4.1130293615410096e-13,
+        "all_two_cut": true,
+        "failures": 0,
+        "solver_flag_failures": 5,
+        "maximum_F_z_at_critical": 1.1234041382276854e-15,
+        "certified": true
+      },
+      "center_singular_values": [
+        0.00093390734910341,
+        9.062412731237113e-19
+      ],
+      "passed": true
+    },
+    {
+      "name": "low_fill_U02",
+      "summary": {
+        "U": 0.2,
+        "mu": 0.0,
+        "control": "V_O",
+        "h1": 0.0001,
+        "h2": 0.01,
+        "samples": 256,
+        "order": 64,
+        "winding": 0.9999999998713858,
+        "minimum_boundary_modulus": 4.226405162697909e-10,
+        "maximum_phase_increment": 0.3067716793789631,
+        "minimum_F_zz": 1.829419649820081,
+        "endpoint_permutation": [
+          1,
+          0
+        ],
+        "half_winding": 0.4999999999355621,
+        "exchange_error": 1.6491310649654867e-14,
+        "minimum_pole_separation": 4.295231914264713e-05,
+        "maximum_pole_residual": 1.8660731684687096e-21,
+        "maximum_assignment_ratio": 0.1763865033564435,
+        "maximum_saddle_residual": 5.9674487573602164e-12,
+        "all_two_cut": true,
+        "failures": 0,
+        "solver_flag_failures": 9,
+        "maximum_F_z_at_critical": 4.555872529434159e-16,
+        "certified": true
+      },
+      "center_singular_values": [
+        0.000770964516764853,
+        3.798693660858968e-18
+      ],
+      "passed": true
+    },
+    {
+      "name": "W_U00025",
+      "summary": {
+        "U": 0.0025,
+        "mu": 0.0,
+        "control": "W",
+        "h1": 0.0001,
+        "h2": 0.001,
+        "samples": 256,
+        "order": 64,
+        "winding": -1.0000000000002125,
+        "minimum_boundary_modulus": 1.067352341093066e-09,
+        "maximum_phase_increment": 0.072123823962567,
+        "minimum_F_zz": 1.729153469473648,
+        "endpoint_permutation": [
+          1,
+          0
+        ],
+        "half_winding": -0.5000000000000964,
+        "exchange_error": 3.7537828762698736e-17,
+        "minimum_pole_separation": 7.011502927242395e-05,
+        "maximum_pole_residual": 2.2733455405251358e-21,
+        "maximum_assignment_ratio": 0.11823707485774519,
+        "maximum_saddle_residual": 9.068266970668759e-14,
+        "all_two_cut": true,
+        "failures": 0,
+        "solver_flag_failures": 0,
+        "maximum_F_z_at_critical": 6.959436758319284e-16,
+        "certified": true
+      },
+      "center_singular_values": [
+        0.0008405901323381324,
+        6.413774116430852e-14
+      ],
+      "passed": true
+    },
+    {
+      "name": "n1_U00025",
+      "summary": {
+        "U": 0.0025,
+        "mu": 0.006656973796273652,
+        "control": "V_O",
+        "h1": 5e-06,
+        "h2": 0.001,
+        "samples": 256,
+        "order": 64,
+        "winding": -0.9999999999949739,
+        "minimum_boundary_modulus": 3.7188827090397383e-10,
+        "maximum_phase_increment": 0.1680234588531554,
+        "minimum_F_zz": 1.7445754651802796,
+        "endpoint_permutation": [
+          1,
+          0
+        ],
+        "half_winding": -0.4999999999973178,
+        "exchange_error": 8.043727995025711e-16,
+        "minimum_pole_separation": 4.127602005930512e-05,
+        "maximum_pole_residual": 5.311609409802657e-21,
+        "maximum_assignment_ratio": 0.08524219199231675,
+        "maximum_saddle_residual": 5.097484934157848e-15,
+        "all_two_cut": true,
+        "failures": 0,
+        "solver_flag_failures": 0,
+        "maximum_F_z_at_critical": 6.05855239141617e-16,
+        "certified": true
+      },
+      "center_singular_values": [
+        0.0015419367713338052,
+        1.0895192134636334e-17
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

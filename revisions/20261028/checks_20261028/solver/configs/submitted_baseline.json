@@ -1,0 +1,58 @@
+{
+  "model": {
+    "soc": 0.05,
+    "cutoff": 0.7853981633974483,
+    "W": 0.1,
+    "VO": 1.2134220096136235,
+    "auxiliary_energy": 120.0,
+    "drive_frequency": 60.0
+  },
+  "mapping": {
+    "quadrature_nodes": 512,
+    "Lambda": 1.5,
+    "intervals": 64,
+    "z_shifts": [
+      0.25,
+      0.75
+    ],
+    "blocks": 24,
+    "rank_tolerance": 1e-13,
+    "low_bands_only": false
+  },
+  "solver": {
+    "max_sector_dimension": 50000,
+    "ground_tolerance": 1e-11,
+    "real_axis_eta": 0.003
+  },
+  "grid": {
+    "U": [
+      0.0,
+      0.0025,
+      0.02
+    ],
+    "mu": [
+      0.0,
+      0.012
+    ],
+    "gate_offsets_in_Gamma_reference": [
+      -2.0,
+      0.0,
+      4.0
+    ],
+    "sites": [
+      10,
+      12
+    ]
+  },
+  "ep": {
+    "derivative_step": 1e-06,
+    "outer_iterations": 12,
+    "center_tolerance": 5e-07,
+    "required_open_channels": 2,
+    "W_min": 0.01,
+    "W_max": 0.25,
+    "topology_samples": 0,
+    "gate_halfwidth": 0.0001,
+    "W_halfwidth": 0.001
+  }
+}

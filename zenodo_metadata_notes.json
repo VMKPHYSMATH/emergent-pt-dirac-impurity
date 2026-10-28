@@ -1,0 +1,16 @@
+{
+  "status": "draft metadata; no new DOI deposited",
+  "title": "Reproducibility code and data for Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity",
+  "proposed_version": "2026-10-28-candidate",
+  "creator": {
+    "name": "Kulkarni, Vinayak M.",
+    "orcid": "0000-0001-7590-2728"
+  },
+  "resource_type": "Software",
+  "description": "Stationary-drive manuscript revision with U=0 causal resonance EP, continuum KR saddle, occupied finite-bath convergence diagnostics and a separate exact spin-symmetric dimer control. No converged local-moment continuum EP in the original model is claimed.",
+  "related_manuscript": "https://arxiv.org/abs/2505.17811",
+  "previous_version_doi": "10.5281/zenodo.21888925",
+  "all_versions_doi": "10.5281/zenodo.21434682",
+  "rights": "Python/software configuration: MIT. Numerical data and outputs: CC BY 4.0 where specified in LICENSE-DATA. Manuscript, TeX, PDFs and publication figures retain author copyright. Bundled third-party TeX files retain their own notices.",
+  "affiliation_note": "Manuscript retains JNCASR as doctoral affiliation and explicitly discloses independent work; no current appointment or institutional funding is implied."
+}
