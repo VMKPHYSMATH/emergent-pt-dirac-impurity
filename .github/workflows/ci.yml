@@ -41,14 +41,3 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: make check-revision
 
-  latex:
-    strategy:
-      fail-fast: false
-      matrix:
-        target: [paper, paper-legacy]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y texlive-latex-extra texlive-publishers
-      - run: make ${{ matrix.target }}
-

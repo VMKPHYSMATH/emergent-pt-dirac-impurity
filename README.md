@@ -2,7 +2,7 @@
 
 Vinayak M. Kulkarni - revision candidate **2026-10-28**.
 
-The latest scientific manuscript, Supplement and code are in
+The latest reproducibility code, numerical data and validation outputs are in
 [`revisions/20261028/`](revisions/20261028/). This candidate retains the original
 stationary-drive microscopic model. The historical v2.1.0 files and tags remain
 separate; this revision has not been assigned a new Zenodo DOI or journal decision.
@@ -26,9 +26,6 @@ EP. The exact scalar-bath PT dimer in the Supplement is a separate comparison.
 
 ## Read and reproduce
 
-- [Main manuscript](revisions/20261028/source/main.pdf) and
-  [Supplement](revisions/20261028/source/supplemental_material.pdf); editable TeX,
-  bibliography and all publication figures are beside them.
 - [Validation report](VALIDATION_REPORT.md), including the distinction between
   freshly run checks and retained evidence.
 - [New finite-bath and symmetry checks](revisions/20261028/checks_20261028/README.md).
@@ -52,9 +49,9 @@ Those commands are documented in their individual folders. Reruns overwrite
 outputs in the working copy; preserve the downloaded candidate for hash checks.
 Use one BLAS thread. Python/library versions are in `environment.json`.
 
-Compile with `bash build.sh` inside `revisions/20261028/source/` (pdfLaTeX and
-BibTeX). The author package additionally contains private editorial letters;
-those are excluded from this public repository candidate.
+Manuscript sources, manuscript PDFs and editorial letters are maintained separately
+and are not part of this code revision. Future uploads are restricted to
+reproducibility code, data, figures and validation documentation.
 
 ## Historical archive and rights
 

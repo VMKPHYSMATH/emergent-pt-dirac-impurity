@@ -1,4 +1,4 @@
-.PHONY: check check-revision paper paper-legacy clean
+.PHONY: check check-revision
 
 check:
 	python reproducibility/finite_u_contact/verify_finiteU_contact_algebra.py
@@ -16,16 +16,3 @@ check:
 check-revision:
 	python reproduce.py --verify-stored
 	python reproduce.py --quick
-
-paper:
-	bash revisions/20261028/source/build.sh
-
-paper-legacy:
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error main.tex
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error main.tex
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error supplemental_material.tex
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error supplemental_material.tex
-
-clean:
-	cd paper && latexmk -c main.tex supplemental_material.tex
-
