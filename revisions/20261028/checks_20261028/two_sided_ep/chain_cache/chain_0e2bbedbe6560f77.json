@@ -1,0 +1,113 @@
+{
+  "options": {
+    "model": {
+      "soc": 0.05,
+      "cutoff": 0.7853981633974483,
+      "W": 0.1,
+      "VO": 1.2134220096136235,
+      "auxiliary_energy": 120.0,
+      "drive_frequency": 60.0
+    },
+    "mapping": {
+      "quadrature_nodes": 512,
+      "Lambda": 1.5,
+      "intervals": 64,
+      "z_shifts": [
+        0.25,
+        0.75
+      ],
+      "blocks": 24,
+      "rank_tolerance": 1e-13,
+      "low_bands_only": false
+    },
+    "mu": 0.012
+  },
+  "reports": [
+    {
+      "source": "new microscopic Hermitian matrix chain",
+      "mu": 0.012,
+      "Lambda": 1.5,
+      "z_shift": 0.25,
+      "blocks": 24,
+      "low_bands_only": false,
+      "orthogonality_error": 2.803980226421895e-15,
+      "mapping_checks": [
+        {
+          "z_relative_to_mu": [
+            -0.004,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.008436962189051232,
+          "chain_to_continuum_relative_error": 0.00845527546816359
+        },
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.011801950075651296,
+          "chain_to_continuum_relative_error": 0.011804491974809877
+        },
+        {
+          "z_relative_to_mu": [
+            0.004,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.010706553738162518,
+          "chain_to_continuum_relative_error": 0.010697197443601498
+        },
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.011801950075651296,
+          "chain_to_continuum_relative_error": 0.011804491974809877
+        }
+      ]
+    },
+    {
+      "source": "new microscopic Hermitian matrix chain",
+      "mu": 0.012,
+      "Lambda": 1.5,
+      "z_shift": 0.75,
+      "blocks": 24,
+      "low_bands_only": false,
+      "orthogonality_error": 2.8557923648094607e-15,
+      "mapping_checks": [
+        {
+          "z_relative_to_mu": [
+            -0.004,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.007495568640853304,
+          "chain_to_continuum_relative_error": 0.007504027200813409
+        },
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.011562849137691712,
+          "chain_to_continuum_relative_error": 0.011579771218772421
+        },
+        {
+          "z_relative_to_mu": [
+            0.004,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.011874453559612686,
+          "chain_to_continuum_relative_error": 0.01187669313112397
+        },
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.011562849137691712,
+          "chain_to_continuum_relative_error": 0.011579771218772421
+        }
+      ]
+    }
+  ]
+}

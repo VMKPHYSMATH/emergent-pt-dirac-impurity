@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "Single-z block-Wilson chain for z-averaged complete-basis response.",
+  "settings": {
+    "soc": 0.05,
+    "impurity_hybridization": 0.1,
+    "auxiliary_vertex": 1.2134220096136235,
+    "quadrature_nodes": 8192,
+    "wilson_lambda": 1.5,
+    "wilson_intervals": 100,
+    "z_shifts": [
+      0.125,
+      0.375,
+      0.625,
+      0.875
+    ],
+    "lanczos_blocks": 100,
+    "rank_tolerance": 1e-13,
+    "low_bands_only": true
+  },
+  "z_shift": 0.375,
+  "block_chain": {
+    "blocks": 35,
+    "orthogonality_error": 6.00416684779323e-15,
+    "impurity_to_chain_matrix": [
+      [
+        [
+          0.022151097947220737,
+          0.0
+        ],
+        [
+          -2.0868976985260886e-09,
+          0.0
+        ]
+      ],
+      [
+        [
+          -2.0868976985267988e-09,
+          0.0
+        ],
+        [
+          0.022155167948233686,
+          0.0
+        ]
+      ]
+    ]
+  }
+}

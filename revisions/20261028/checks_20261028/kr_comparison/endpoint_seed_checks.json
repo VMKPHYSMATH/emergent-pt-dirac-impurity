@@ -1,0 +1,38 @@
+[
+  {
+    "seed": "independent_continuum_seed",
+    "nd": 0.994428049672309,
+    "D": 0.0017415079885575789,
+    "P1": 0.9909450336951938,
+    "spin_magnitude": 0.4953925632618406,
+    "density_eigenvalues": [
+      0.0018214615743138741,
+      0.9926065880979951
+    ],
+    "Z_eigenvalues": [
+      0.996126118962303,
+      0.9843634803903923
+    ],
+    "success": true,
+    "residual_max": 1.3974932322469158e-12,
+    "max_density_difference_from_continued": 6.913136729735925e-12
+  },
+  {
+    "seed": "perturbed_seed",
+    "nd": 0.994428049672289,
+    "D": 0.0017415079885853614,
+    "P1": 0.9909450336951183,
+    "spin_magnitude": 0.49539256326179887,
+    "density_eigenvalues": [
+      0.0018214615743456387,
+      0.9926065880979433
+    ],
+    "Z_eigenvalues": [
+      0.9961261189620707,
+      0.9843634803896084
+    ],
+    "success": true,
+    "residual_max": 6.897260540483785e-12,
+    "max_density_difference_from_continued": 5.1379595022993385e-12
+  }
+]

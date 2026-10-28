@@ -1,0 +1,346 @@
+{
+  "status": "FINITE_CHAIN_OCCUPATIONS_COMPUTED",
+  "job": {
+    "U": 0.0025,
+    "mu": 0.0,
+    "epsilon_d": 0.014406074261342024,
+    "W": 0.09036305151504315,
+    "sites": 10,
+    "archived": true,
+    "id": "100416f3e7f4de6d"
+  },
+  "filling": {
+    "nd": 0.017923987000484545,
+    "double_occupancy": 0.0,
+    "local_moment_squared": 0.017923987000484545,
+    "single_occupancy_probability": 0.017923987000484545,
+    "empty_probability": 0.9820760129995154,
+    "double_minus_gaussian_reference": -1.991780596917317e-22,
+    "nd_z_min": 0.012535861694075966,
+    "nd_z_max": 0.026336579577519656,
+    "z_members": [
+      {
+        "nd": 0.026336579577519656,
+        "n0": 0.025429089909552418,
+        "n1": 0.000907489667967237,
+        "double_occupancy": 0.0,
+        "single_occupancy_probability": 0.026336579577519656,
+        "empty_probability": 0.9736634204224803,
+        "local_moment_squared": 0.026336579577519656,
+        "local_moment_identity_error": 0.0,
+        "double_minus_gaussian_reference": 0.0,
+        "density_matrix": [
+          [
+            [
+              0.025429089909552418,
+              0.0
+            ],
+            [
+              -0.00480381477148409,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.00480381477148409,
+              0.0
+            ],
+            [
+              0.000907489667967237,
+              0.0
+            ]
+          ]
+        ],
+        "density_eigenvalues": [
+          1.0842021724855044e-19,
+          0.026336579577519656
+        ],
+        "occupation_bounds_error": 0.0,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "grand_ground_energy": -0.004846063348095528,
+        "sector_dimensions": {
+          "1": 22
+        },
+        "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+      },
+      {
+        "nd": 0.01777750964895792,
+        "n0": 0.017326631445003928,
+        "n1": 0.0004508782039539926,
+        "double_occupancy": 0.0,
+        "single_occupancy_probability": 0.01777750964895792,
+        "empty_probability": 0.982222490351042,
+        "local_moment_squared": 0.01777750964895792,
+        "local_moment_identity_error": 0.0,
+        "double_minus_gaussian_reference": 0.0,
+        "density_matrix": [
+          [
+            [
+              0.017326631445003928,
+              0.0
+            ],
+            [
+              -0.0027950313891790452,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.0027950313891790452,
+              0.0
+            ],
+            [
+              0.0004508782039539926,
+              0.0
+            ]
+          ]
+        ],
+        "density_eigenvalues": [
+          -5.421010862427522e-20,
+          0.01777750964895792
+        ],
+        "occupation_bounds_error": 5.421010862427522e-20,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "grand_ground_energy": -0.0057301653688886294,
+        "sector_dimensions": {
+          "1": 22
+        },
+        "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+      },
+      {
+        "nd": 0.015045997081384635,
+        "n0": 0.014696746768925645,
+        "n1": 0.00034925031245898973,
+        "double_occupancy": 0.0,
+        "single_occupancy_probability": 0.015045997081384635,
+        "empty_probability": 0.9849540029186153,
+        "local_moment_squared": 0.015045997081384635,
+        "local_moment_identity_error": 0.0,
+        "double_minus_gaussian_reference": -7.967122387669268e-22,
+        "density_matrix": [
+          [
+            [
+              0.014696746768925645,
+              0.0
+            ],
+            [
+              -0.002265577939771203,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.002265577939771203,
+              0.0
+            ],
+            [
+              0.00034925031245898973,
+              0.0
+            ]
+          ]
+        ],
+        "density_eigenvalues": [
+          5.421010862427522e-20,
+          0.015045997081384634
+        ],
+        "occupation_bounds_error": 0.0,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "grand_ground_energy": -0.006049096502922071,
+        "sector_dimensions": {
+          "1": 22
+        },
+        "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+      },
+      {
+        "nd": 0.012535861694075966,
+        "n0": 0.012272492470793794,
+        "n1": 0.00026336922328217124,
+        "double_occupancy": 0.0,
+        "single_occupancy_probability": 0.012535861694075966,
+        "empty_probability": 0.987464138305924,
+        "local_moment_squared": 0.012535861694075966,
+        "local_moment_identity_error": 0.0,
+        "double_minus_gaussian_reference": 0.0,
+        "density_matrix": [
+          [
+            [
+              0.012272492470793794,
+              0.0
+            ],
+            [
+              -0.0017978311405049297,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.0017978311405049297,
+              0.0
+            ],
+            [
+              0.00026336922328217124,
+              0.0
+            ]
+          ]
+        ],
+        "density_eigenvalues": [
+          0.0,
+          0.012535861694075966
+        ],
+        "occupation_bounds_error": 0.0,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "grand_ground_energy": -0.006359342964000811,
+        "sector_dimensions": {
+          "1": 22
+        },
+        "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+      }
+    ],
+    "scope": "arithmetic z-average of finite-chain equilibrium reference occupations"
+  },
+  "mapping": [
+    {
+      "source": "archived submitted low-band chain",
+      "z_shift": 0.125
+    },
+    {
+      "source": "archived submitted low-band chain",
+      "z_shift": 0.375
+    },
+    {
+      "source": "archived submitted low-band chain",
+      "z_shift": 0.625
+    },
+    {
+      "source": "archived submitted low-band chain",
+      "z_shift": 0.875
+    }
+  ],
+  "temperature": 0.0,
+  "truncated_chain_checks": [
+    {
+      "z_shift": 0.125,
+      "sites": 10,
+      "points": [
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.23289471473857284
+        },
+        {
+          "z_relative_to_mu": [
+            0.012,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.5774379334072993
+        }
+      ]
+    },
+    {
+      "z_shift": 0.375,
+      "sites": 10,
+      "points": [
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.15363044316724012
+        },
+        {
+          "z_relative_to_mu": [
+            0.012,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.3401096900302785
+        }
+      ]
+    },
+    {
+      "z_shift": 0.625,
+      "sites": 10,
+      "points": [
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.1259625695534905
+        },
+        {
+          "z_relative_to_mu": [
+            0.012,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.3387126917296384
+        }
+      ]
+    },
+    {
+      "z_shift": 0.875,
+      "sites": 10,
+      "points": [
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.10277470358809711
+        },
+        {
+          "z_relative_to_mu": [
+            0.012,
+            0.003
+          ],
+          "truncated_chain_to_continuum_relative_error": 0.31566733170086864
+        }
+      ]
+    }
+  ],
+  "physical_axis_checks": [
+    {
+      "omega_relative_to_mu": -0.004,
+      "eta": 0.003,
+      "bath_rate_min_eigenvalue": 0.0002982455877901507,
+      "embedded_total_rate_min_eigenvalue": 0.0002987495204582355,
+      "embedded_spectral_min_eigenvalue": 3.7563140767793888
+    },
+    {
+      "omega_relative_to_mu": 0.0,
+      "eta": 0.003,
+      "bath_rate_min_eigenvalue": 0.00041600554334528304,
+      "embedded_total_rate_min_eigenvalue": 0.00041663984765602275,
+      "embedded_spectral_min_eigenvalue": 6.758952141899723
+    },
+    {
+      "omega_relative_to_mu": 0.004,
+      "eta": 0.003,
+      "bath_rate_min_eigenvalue": 0.0007076012833265736,
+      "embedded_total_rate_min_eigenvalue": 0.0007083589085851309,
+      "embedded_spectral_min_eigenvalue": 15.205794794542014
+    },
+    {
+      "omega_relative_to_mu": 0.012,
+      "eta": 0.003,
+      "bath_rate_min_eigenvalue": 0.0026126698922625743,
+      "embedded_total_rate_min_eigenvalue": 0.0026150087748440655,
+      "embedded_spectral_min_eigenvalue": 59.69970347496634
+    }
+  ],
+  "physical_axis_checks_pass": true,
+  "elapsed_seconds": 0.07243348100001867
+}

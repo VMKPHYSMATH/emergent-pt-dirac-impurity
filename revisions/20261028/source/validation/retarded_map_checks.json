@@ -1,0 +1,74 @@
+{
+  "scope": "five resolved positive-frequency points; not an interval proof of the entire grid",
+  "points": [
+    {
+      "soc": 0.1,
+      "Omega": 60,
+      "omega": 0.020357014816949,
+      "quadrature_eta": 0.0001,
+      "quadrature_max_absolute_error": 4.9487148945247603e-17,
+      "eta_1e8_to_1e12": 3.82903450571324e-09,
+      "eta_1e10_to_1e12": 3.7911232746851153e-11,
+      "halfwidths": [
+        0.0015340100895330296,
+        0.003465989910072061
+      ]
+    },
+    {
+      "soc": 0.05,
+      "Omega": 40,
+      "omega": 0.018,
+      "quadrature_eta": 0.0001,
+      "quadrature_max_absolute_error": 3.74575767654754e-17,
+      "eta_1e8_to_1e12": 1.011134452208671e-09,
+      "eta_1e10_to_1e12": 1.0011232294548959e-11,
+      "halfwidths": [
+        0.002019795594630673,
+        0.002980204405241479
+      ]
+    },
+    {
+      "soc": 0.15,
+      "Omega": 70,
+      "omega": 0.04,
+      "quadrature_eta": 0.0001,
+      "quadrature_max_absolute_error": 1.6826147063091091e-16,
+      "eta_1e8_to_1e12": 4.267467729017661e-10,
+      "eta_1e10_to_1e12": 4.225215663455906e-12,
+      "halfwidths": [
+        0.0015779847192957212,
+        0.0034220152806518343
+      ]
+    },
+    {
+      "soc": 0.1,
+      "Omega": 0,
+      "omega": 0.02,
+      "quadrature_eta": 0.0001,
+      "quadrature_max_absolute_error": 4.030426789436264e-17,
+      "eta_1e8_to_1e12": 3.2648895392784486e-10,
+      "eta_1e10_to_1e12": 3.2325639560960626e-12,
+      "halfwidths": [
+        0.0016667531018859714,
+        0.003333246898048725
+      ]
+    },
+    {
+      "soc": 0.18,
+      "Omega": 75,
+      "omega": 0.08,
+      "quadrature_eta": 0.0001,
+      "quadrature_max_absolute_error": 4.349151031862608e-17,
+      "eta_1e8_to_1e12": 1.4545498486229255e-10,
+      "eta_1e10_to_1e12": 1.4401483477977095e-12,
+      "halfwidths": [
+        0.0017304864881246803,
+        0.003269513511853235
+      ]
+    }
+  ],
+  "grid_points": 14160,
+  "grid_finite_points": 14160,
+  "grid_min_halfwidth": 2.0899579809829927e-13,
+  "grid_eta": 1e-10
+}

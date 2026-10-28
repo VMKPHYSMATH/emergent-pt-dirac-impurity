@@ -1,0 +1,2921 @@
+{
+  "controls": {
+    "EP": {
+      "peak": 30.555555555555568,
+      "slowest_halfwidth": 0.12,
+      "normalized_peak": 3.666666666666668
+    },
+    "Hermitian": {
+      "peak": 16.666666666666668,
+      "slowest_halfwidth": 0.12,
+      "normalized_peak": 2.0
+    },
+    "off EP": {
+      "peak": 63.76811594202898,
+      "slowest_halfwidth": 0.033397459621556116,
+      "normalized_peak": 2.1296930773166216
+    }
+  },
+  "max_smith_identity_residual": 2.492374500734704e-14,
+  "max_unitarity_residual": 1.99844476574922e-15,
+  "records": [
+    {
+      "beta0": 0.35,
+      "control": false,
+      "D": 0.0925,
+      "G": 0.06999999999999999,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.081347688670796,
+      "normalized_peak": 2.5297617226404956
+    },
+    {
+      "beta0": 0.35124999999999995,
+      "control": false,
+      "D": 0.09256249999999999,
+      "G": 0.07024999999999999,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.131148706981374,
+      "normalized_peak": 2.5357378448377648
+    },
+    {
+      "beta0": 0.3525,
+      "control": false,
+      "D": 0.092625,
+      "G": 0.0705,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.18161552715648,
+      "normalized_peak": 2.5417938632587775
+    },
+    {
+      "beta0": 0.35374999999999995,
+      "control": false,
+      "D": 0.09268749999999999,
+      "G": 0.07075,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.232762733145332,
+      "normalized_peak": 2.5479315279774397
+    },
+    {
+      "beta0": 0.355,
+      "control": false,
+      "D": 0.09275,
+      "G": 0.071,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.284604202706355,
+      "normalized_peak": 2.5541525043247626
+    },
+    {
+      "beta0": 0.35624999999999996,
+      "control": false,
+      "D": 0.09281249999999999,
+      "G": 0.07125,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.33715486237712,
+      "normalized_peak": 2.560458583485254
+    },
+    {
+      "beta0": 0.3575,
+      "control": false,
+      "D": 0.092875,
+      "G": 0.0715,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.390430332436818,
+      "normalized_peak": 2.566851639892418
+    },
+    {
+      "beta0": 0.35874999999999996,
+      "control": false,
+      "D": 0.09293749999999999,
+      "G": 0.07175,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.444446300098342,
+      "normalized_peak": 2.573333556011801
+    },
+    {
+      "beta0": 0.36,
+      "control": false,
+      "D": 0.093,
+      "G": 0.072,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.49921910909098,
+      "normalized_peak": 2.5799062930909176
+    },
+    {
+      "beta0": 0.36124999999999996,
+      "control": false,
+      "D": 0.09306249999999999,
+      "G": 0.07225,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.55476531534638,
+      "normalized_peak": 2.5865718378415656
+    },
+    {
+      "beta0": 0.3625,
+      "control": false,
+      "D": 0.093125,
+      "G": 0.0725,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.611102523111676,
+      "normalized_peak": 2.5933323027734008
+    },
+    {
+      "beta0": 0.36374999999999996,
+      "control": false,
+      "D": 0.09318749999999999,
+      "G": 0.07275,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.668248532482835,
+      "normalized_peak": 2.60018982389794
+    },
+    {
+      "beta0": 0.365,
+      "control": false,
+      "D": 0.09325,
+      "G": 0.073,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.72622184506708,
+      "normalized_peak": 2.6071466214080496
+    },
+    {
+      "beta0": 0.36624999999999996,
+      "control": false,
+      "D": 0.09331249999999999,
+      "G": 0.07325,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.78488352251773,
+      "normalized_peak": 2.614186022702128
+    },
+    {
+      "beta0": 0.3675,
+      "control": false,
+      "D": 0.093375,
+      "G": 0.0735,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.843870302020086,
+      "normalized_peak": 2.6212644362424102
+    },
+    {
+      "beta0": 0.36874999999999997,
+      "control": false,
+      "D": 0.09343749999999999,
+      "G": 0.07375,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.903169004366283,
+      "normalized_peak": 2.628380280523954
+    },
+    {
+      "beta0": 0.37,
+      "control": false,
+      "D": 0.0935,
+      "G": 0.074,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 21.962782141088233,
+      "normalized_peak": 2.635533856930588
+    },
+    {
+      "beta0": 0.37124999999999997,
+      "control": false,
+      "D": 0.09356249999999999,
+      "G": 0.07425,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.022712250598694,
+      "normalized_peak": 2.642725470071843
+    },
+    {
+      "beta0": 0.3725,
+      "control": false,
+      "D": 0.093625,
+      "G": 0.0745,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.082961898552853,
+      "normalized_peak": 2.649955427826342
+    },
+    {
+      "beta0": 0.37374999999999997,
+      "control": false,
+      "D": 0.09368749999999999,
+      "G": 0.07475,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.143533678215675,
+      "normalized_peak": 2.6572240413858808
+    },
+    {
+      "beta0": 0.375,
+      "control": false,
+      "D": 0.09375,
+      "G": 0.07500000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.20443021083534,
+      "normalized_peak": 2.6645316253002407
+    },
+    {
+      "beta0": 0.37625,
+      "control": false,
+      "D": 0.0938125,
+      "G": 0.07525,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.26565414602259,
+      "normalized_peak": 2.671878497522711
+    },
+    {
+      "beta0": 0.3775,
+      "control": false,
+      "D": 0.093875,
+      "G": 0.07550000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.32720816213636,
+      "normalized_peak": 2.679264979456363
+    },
+    {
+      "beta0": 0.37875,
+      "control": false,
+      "D": 0.0939375,
+      "G": 0.07575,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.389094966675714,
+      "normalized_peak": 2.6866913960010854
+    },
+    {
+      "beta0": 0.38,
+      "control": false,
+      "D": 0.094,
+      "G": 0.07600000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.45131729667812,
+      "normalized_peak": 2.6941580756013743
+    },
+    {
+      "beta0": 0.38125,
+      "control": false,
+      "D": 0.0940625,
+      "G": 0.07625,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.51387791912436,
+      "normalized_peak": 2.701665350294923
+    },
+    {
+      "beta0": 0.3825,
+      "control": false,
+      "D": 0.094125,
+      "G": 0.07650000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.576779631350057,
+      "normalized_peak": 2.7092135557620067
+    },
+    {
+      "beta0": 0.38375,
+      "control": false,
+      "D": 0.0941875,
+      "G": 0.07675,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.64002526146402,
+      "normalized_peak": 2.7168030313756826
+    },
+    {
+      "beta0": 0.385,
+      "control": false,
+      "D": 0.09425,
+      "G": 0.07700000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.703617668773532,
+      "normalized_peak": 2.7244341202528237
+    },
+    {
+      "beta0": 0.38625,
+      "control": false,
+      "D": 0.0943125,
+      "G": 0.07725,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.767559744216648,
+      "normalized_peak": 2.7321071693059977
+    },
+    {
+      "beta0": 0.3875,
+      "control": false,
+      "D": 0.094375,
+      "G": 0.07750000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.831854410801782,
+      "normalized_peak": 2.7398225292962137
+    },
+    {
+      "beta0": 0.38875,
+      "control": false,
+      "D": 0.0944375,
+      "G": 0.07775,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.89650462405459,
+      "normalized_peak": 2.7475805548865506
+    },
+    {
+      "beta0": 0.39,
+      "control": false,
+      "D": 0.0945,
+      "G": 0.07800000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 22.961513372472282,
+      "normalized_peak": 2.755381604696674
+    },
+    {
+      "beta0": 0.39125,
+      "control": false,
+      "D": 0.0945625,
+      "G": 0.07825,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.026883677985698,
+      "normalized_peak": 2.7632260413582834
+    },
+    {
+      "beta0": 0.3925,
+      "control": false,
+      "D": 0.094625,
+      "G": 0.07850000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.09261859642905,
+      "normalized_peak": 2.771114231571486
+    },
+    {
+      "beta0": 0.39375,
+      "control": false,
+      "D": 0.0946875,
+      "G": 0.07875,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.158721218017646,
+      "normalized_peak": 2.7790465461621174
+    },
+    {
+      "beta0": 0.395,
+      "control": false,
+      "D": 0.09475,
+      "G": 0.07900000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.225194667833765,
+      "normalized_peak": 2.7870233601400516
+    },
+    {
+      "beta0": 0.39625,
+      "control": false,
+      "D": 0.0948125,
+      "G": 0.07925,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.292042106320633,
+      "normalized_peak": 2.795045052758476
+    },
+    {
+      "beta0": 0.39749999999999996,
+      "control": false,
+      "D": 0.094875,
+      "G": 0.0795,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.359266729784984,
+      "normalized_peak": 2.803112007574198
+    },
+    {
+      "beta0": 0.39875,
+      "control": false,
+      "D": 0.0949375,
+      "G": 0.07975,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.426871770908136,
+      "normalized_peak": 2.811224612508976
+    },
+    {
+      "beta0": 0.4,
+      "control": false,
+      "D": 0.095,
+      "G": 0.08000000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.494860499265798,
+      "normalized_peak": 2.8193832599118958
+    },
+    {
+      "beta0": 0.40125,
+      "control": false,
+      "D": 0.0950625,
+      "G": 0.08025,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.563236221856812,
+      "normalized_peak": 2.827588346622817
+    },
+    {
+      "beta0": 0.40249999999999997,
+      "control": false,
+      "D": 0.095125,
+      "G": 0.0805,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.63200228364112,
+      "normalized_peak": 2.8358402740369346
+    },
+    {
+      "beta0": 0.40375,
+      "control": false,
+      "D": 0.0951875,
+      "G": 0.08075,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.701162068086884,
+      "normalized_peak": 2.844139448170426
+    },
+    {
+      "beta0": 0.405,
+      "control": false,
+      "D": 0.09525,
+      "G": 0.08100000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.770718997727155,
+      "normalized_peak": 2.8524862797272585
+    },
+    {
+      "beta0": 0.40625,
+      "control": false,
+      "D": 0.0953125,
+      "G": 0.08125,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.8406765347262,
+      "normalized_peak": 2.8608811841671438
+    },
+    {
+      "beta0": 0.4075,
+      "control": false,
+      "D": 0.095375,
+      "G": 0.0815,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.911038181455787,
+      "normalized_peak": 2.8693245817746944
+    },
+    {
+      "beta0": 0.40875,
+      "control": false,
+      "D": 0.0954375,
+      "G": 0.08175,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 23.981807481081383,
+      "normalized_peak": 2.877816897729766
+    },
+    {
+      "beta0": 0.41000000000000003,
+      "control": false,
+      "D": 0.0955,
+      "G": 0.08200000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.05298801815882,
+      "normalized_peak": 2.8863585621790584
+    },
+    {
+      "beta0": 0.41125,
+      "control": false,
+      "D": 0.0955625,
+      "G": 0.08225,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.124583419241286,
+      "normalized_peak": 2.8949500103089543
+    },
+    {
+      "beta0": 0.4125,
+      "control": false,
+      "D": 0.095625,
+      "G": 0.0825,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.196597353497168,
+      "normalized_peak": 2.90359168241966
+    },
+    {
+      "beta0": 0.41375,
+      "control": false,
+      "D": 0.0956875,
+      "G": 0.08275,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.269033533338714,
+      "normalized_peak": 2.9122840240006456
+    },
+    {
+      "beta0": 0.41500000000000004,
+      "control": false,
+      "D": 0.09575,
+      "G": 0.08300000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.341895715061938,
+      "normalized_peak": 2.9210274858074325
+    },
+    {
+      "beta0": 0.41625,
+      "control": false,
+      "D": 0.0958125,
+      "G": 0.08325,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.415187699497807,
+      "normalized_peak": 2.9298225239397366
+    },
+    {
+      "beta0": 0.4175,
+      "control": false,
+      "D": 0.095875,
+      "G": 0.0835,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.48891333267524,
+      "normalized_peak": 2.9386695999210284
+    },
+    {
+      "beta0": 0.41875,
+      "control": false,
+      "D": 0.0959375,
+      "G": 0.08375,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.563076506495726,
+      "normalized_peak": 2.947569180779487
+    },
+    {
+      "beta0": 0.42,
+      "control": false,
+      "D": 0.096,
+      "G": 0.084,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.63768115942029,
+      "normalized_peak": 2.9565217391304346
+    },
+    {
+      "beta0": 0.42125,
+      "control": false,
+      "D": 0.0960625,
+      "G": 0.08425,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.71273127716868,
+      "normalized_peak": 2.9655277532602415
+    },
+    {
+      "beta0": 0.4225,
+      "control": false,
+      "D": 0.096125,
+      "G": 0.0845,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.788230893431248,
+      "normalized_peak": 2.9745877072117497
+    },
+    {
+      "beta0": 0.42375,
+      "control": false,
+      "D": 0.0961875,
+      "G": 0.08475,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.86418409059375,
+      "normalized_peak": 2.9837020908712497
+    },
+    {
+      "beta0": 0.425,
+      "control": false,
+      "D": 0.09625,
+      "G": 0.085,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 24.940595000475245,
+      "normalized_peak": 2.9928714000570293
+    },
+    {
+      "beta0": 0.42625,
+      "control": false,
+      "D": 0.0963125,
+      "G": 0.08525,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.017467805079534,
+      "normalized_peak": 3.002096136609544
+    },
+    {
+      "beta0": 0.4275,
+      "control": false,
+      "D": 0.096375,
+      "G": 0.0855,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.094806737360297,
+      "normalized_peak": 3.0113768084832357
+    },
+    {
+      "beta0": 0.42875,
+      "control": false,
+      "D": 0.0964375,
+      "G": 0.08575,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.172616082000253,
+      "normalized_peak": 3.0207139298400305
+    },
+    {
+      "beta0": 0.43,
+      "control": false,
+      "D": 0.0965,
+      "G": 0.08600000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.250900176204716,
+      "normalized_peak": 3.030108021144566
+    },
+    {
+      "beta0": 0.43125,
+      "control": false,
+      "D": 0.0965625,
+      "G": 0.08625000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.329663410509657,
+      "normalized_peak": 3.0395596092611585
+    },
+    {
+      "beta0": 0.4325,
+      "control": false,
+      "D": 0.096625,
+      "G": 0.08650000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.408910229604956,
+      "normalized_peak": 3.049069227552595
+    },
+    {
+      "beta0": 0.43375,
+      "control": false,
+      "D": 0.0966875,
+      "G": 0.08675000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.48864513317274,
+      "normalized_peak": 3.0586374159807286
+    },
+    {
+      "beta0": 0.435,
+      "control": false,
+      "D": 0.09675,
+      "G": 0.08700000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.56887267674137,
+      "normalized_peak": 3.0682647212089647
+    },
+    {
+      "beta0": 0.43625,
+      "control": false,
+      "D": 0.0968125,
+      "G": 0.08725000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.6495974725555,
+      "normalized_peak": 3.0779516967066596
+    },
+    {
+      "beta0": 0.4375,
+      "control": false,
+      "D": 0.096875,
+      "G": 0.08750000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.73082419046235,
+      "normalized_peak": 3.087698902855482
+    },
+    {
+      "beta0": 0.43875000000000003,
+      "control": false,
+      "D": 0.0969375,
+      "G": 0.08775000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.812557558814646,
+      "normalized_peak": 3.0975069070577574
+    },
+    {
+      "beta0": 0.44,
+      "control": false,
+      "D": 0.097,
+      "G": 0.08800000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.894802365390596,
+      "normalized_peak": 3.1073762838468713
+    },
+    {
+      "beta0": 0.44125000000000003,
+      "control": false,
+      "D": 0.0970625,
+      "G": 0.08825000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 25.977563458331367,
+      "normalized_peak": 3.117307614999764
+    },
+    {
+      "beta0": 0.4425,
+      "control": false,
+      "D": 0.097125,
+      "G": 0.08850000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.060845747096135,
+      "normalized_peak": 3.127301489651536
+    },
+    {
+      "beta0": 0.44375,
+      "control": false,
+      "D": 0.0971875,
+      "G": 0.08875,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.144654203435643,
+      "normalized_peak": 3.137358504412277
+    },
+    {
+      "beta0": 0.445,
+      "control": false,
+      "D": 0.09725,
+      "G": 0.08900000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.22899386238407,
+      "normalized_peak": 3.147479263486088
+    },
+    {
+      "beta0": 0.44625000000000004,
+      "control": false,
+      "D": 0.0973125,
+      "G": 0.08925000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.31386982327001,
+      "normalized_peak": 3.157664378792401
+    },
+    {
+      "beta0": 0.4475,
+      "control": false,
+      "D": 0.097375,
+      "G": 0.08950000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.399287250746973,
+      "normalized_peak": 3.1679144700896367
+    },
+    {
+      "beta0": 0.44875,
+      "control": false,
+      "D": 0.0974375,
+      "G": 0.08975,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.485251375843607,
+      "normalized_peak": 3.178230165101233
+    },
+    {
+      "beta0": 0.45,
+      "control": false,
+      "D": 0.0975,
+      "G": 0.09000000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.571767497034408,
+      "normalized_peak": 3.188612099644129
+    },
+    {
+      "beta0": 0.45125000000000004,
+      "control": false,
+      "D": 0.0975625,
+      "G": 0.09025000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.658840981331043,
+      "normalized_peak": 3.199060917759725
+    },
+    {
+      "beta0": 0.4525,
+      "control": false,
+      "D": 0.097625,
+      "G": 0.09050000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.74647726539506,
+      "normalized_peak": 3.209577271847407
+    },
+    {
+      "beta0": 0.45375,
+      "control": false,
+      "D": 0.0976875,
+      "G": 0.09075,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.834681856672297,
+      "normalized_peak": 3.2201618228006756
+    },
+    {
+      "beta0": 0.455,
+      "control": false,
+      "D": 0.09775,
+      "G": 0.09100000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 26.923460334549517,
+      "normalized_peak": 3.230815240145942
+    },
+    {
+      "beta0": 0.45625000000000004,
+      "control": false,
+      "D": 0.0978125,
+      "G": 0.09125000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.012818351533774,
+      "normalized_peak": 3.241538202184053
+    },
+    {
+      "beta0": 0.4575,
+      "control": false,
+      "D": 0.097875,
+      "G": 0.09150000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.102761634455113,
+      "normalized_peak": 3.2523313961346134
+    },
+    {
+      "beta0": 0.45875,
+      "control": false,
+      "D": 0.0979375,
+      "G": 0.09175,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.19329598569302,
+      "normalized_peak": 3.2631955182831622
+    },
+    {
+      "beta0": 0.46,
+      "control": false,
+      "D": 0.098,
+      "G": 0.09200000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.284427284427295,
+      "normalized_peak": 3.274131274131275
+    },
+    {
+      "beta0": 0.46125000000000005,
+      "control": false,
+      "D": 0.0980625,
+      "G": 0.09225000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.376161487913727,
+      "normalized_peak": 3.285139378549647
+    },
+    {
+      "beta0": 0.4625,
+      "control": false,
+      "D": 0.098125,
+      "G": 0.09250000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.468504632785482,
+      "normalized_peak": 3.2962205559342577
+    },
+    {
+      "beta0": 0.46375,
+      "control": false,
+      "D": 0.0981875,
+      "G": 0.09275,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.561462836380386,
+      "normalized_peak": 3.3073755403656464
+    },
+    {
+      "beta0": 0.465,
+      "control": false,
+      "D": 0.09825,
+      "G": 0.09300000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.65504229809507,
+      "normalized_peak": 3.318605075771408
+    },
+    {
+      "beta0": 0.46625000000000005,
+      "control": false,
+      "D": 0.0983125,
+      "G": 0.09325000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.7492493007664,
+      "normalized_peak": 3.329909916091968
+    },
+    {
+      "beta0": 0.4675,
+      "control": false,
+      "D": 0.098375,
+      "G": 0.09350000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.844090212080935,
+      "normalized_peak": 3.341290825449712
+    },
+    {
+      "beta0": 0.46875,
+      "control": false,
+      "D": 0.0984375,
+      "G": 0.09375,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 27.939571486012987,
+      "normalized_peak": 3.3527485783215583
+    },
+    {
+      "beta0": 0.47000000000000003,
+      "control": false,
+      "D": 0.0985,
+      "G": 0.09400000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.03569966429216,
+      "normalized_peak": 3.364283959715059
+    },
+    {
+      "beta0": 0.47125,
+      "control": false,
+      "D": 0.0985625,
+      "G": 0.09425,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.132481377900714,
+      "normalized_peak": 3.3758977653480855
+    },
+    {
+      "beta0": 0.47250000000000003,
+      "control": false,
+      "D": 0.098625,
+      "G": 0.09450000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.22992334860193,
+      "normalized_peak": 3.387590801832231
+    },
+    {
+      "beta0": 0.47375,
+      "control": false,
+      "D": 0.0986875,
+      "G": 0.09475,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.32803239049978,
+      "normalized_peak": 3.399363886859973
+    },
+    {
+      "beta0": 0.47500000000000003,
+      "control": false,
+      "D": 0.09875,
+      "G": 0.09500000000000001,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.426815411631033,
+      "normalized_peak": 3.4112178493957237
+    },
+    {
+      "beta0": 0.47625000000000006,
+      "control": false,
+      "D": 0.0988125,
+      "G": 0.09525000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.526279415590217,
+      "normalized_peak": 3.423153529870826
+    },
+    {
+      "beta0": 0.47750000000000004,
+      "control": false,
+      "D": 0.098875,
+      "G": 0.09550000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.626431503188634,
+      "normalized_peak": 3.435171780382636
+    },
+    {
+      "beta0": 0.47875,
+      "control": false,
+      "D": 0.0989375,
+      "G": 0.09575,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.72727887414782,
+      "normalized_peak": 3.4472734648977386
+    },
+    {
+      "beta0": 0.48000000000000004,
+      "control": false,
+      "D": 0.099,
+      "G": 0.09600000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.828828828828833,
+      "normalized_peak": 3.4594594594594597
+    },
+    {
+      "beta0": 0.48125000000000007,
+      "control": false,
+      "D": 0.0990625,
+      "G": 0.09625000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 28.931088769997594,
+      "normalized_peak": 3.471730652399711
+    },
+    {
+      "beta0": 0.48250000000000004,
+      "control": false,
+      "D": 0.099125,
+      "G": 0.09650000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.03406620462774,
+      "normalized_peak": 3.4840879445553288
+    },
+    {
+      "beta0": 0.48375,
+      "control": false,
+      "D": 0.0991875,
+      "G": 0.09675,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.13776874574162,
+      "normalized_peak": 3.4965322494889945
+    },
+    {
+      "beta0": 0.485,
+      "control": false,
+      "D": 0.09925,
+      "G": 0.097,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.242204114290534,
+      "normalized_peak": 3.509064493714864
+    },
+    {
+      "beta0": 0.48625,
+      "control": false,
+      "D": 0.0993125,
+      "G": 0.09725,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.34738014107491,
+      "normalized_peak": 3.5216856169289894
+    },
+    {
+      "beta0": 0.48750000000000004,
+      "control": false,
+      "D": 0.099375,
+      "G": 0.09750000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.453304768705873,
+      "normalized_peak": 3.5343965722447046
+    },
+    {
+      "beta0": 0.48875,
+      "control": false,
+      "D": 0.0994375,
+      "G": 0.09775,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.55998605360876,
+      "normalized_peak": 3.547198326433051
+    },
+    {
+      "beta0": 0.49,
+      "control": false,
+      "D": 0.0995,
+      "G": 0.098,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.667432168070093,
+      "normalized_peak": 3.560091860168411
+    },
+    {
+      "beta0": 0.49125,
+      "control": false,
+      "D": 0.0995625,
+      "G": 0.09825,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.77565140232862,
+      "normalized_peak": 3.573078168279434
+    },
+    {
+      "beta0": 0.49250000000000005,
+      "control": false,
+      "D": 0.099625,
+      "G": 0.09850000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.884652166712094,
+      "normalized_peak": 3.586158260005451
+    },
+    {
+      "beta0": 0.49375,
+      "control": false,
+      "D": 0.0996875,
+      "G": 0.09875,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 29.99444299382035,
+      "normalized_peak": 3.5993331592584417
+    },
+    {
+      "beta0": 0.495,
+      "control": false,
+      "D": 0.09975,
+      "G": 0.099,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 30.105032540756504,
+      "normalized_peak": 3.6126039048907805
+    },
+    {
+      "beta0": 0.49625,
+      "control": false,
+      "D": 0.0998125,
+      "G": 0.09925,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 30.21642959140688,
+      "normalized_peak": 3.6259715509688255
+    },
+    {
+      "beta0": 0.49750000000000005,
+      "control": false,
+      "D": 0.099875,
+      "G": 0.09950000000000002,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 30.328643058771476,
+      "normalized_peak": 3.639437167052577
+    },
+    {
+      "beta0": 0.49875,
+      "control": false,
+      "D": 0.0999375,
+      "G": 0.09975,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 30.44168198734573,
+      "normalized_peak": 3.6530018384814875
+    },
+    {
+      "beta0": 0.5,
+      "control": false,
+      "D": 0.1,
+      "G": 0.1,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 30.555555555555568,
+      "normalized_peak": 3.666666666666668
+    },
+    {
+      "beta0": 0.50125,
+      "control": false,
+      "D": 0.1000625,
+      "G": 0.10025,
+      "slowest_pole_halfwidth": 0.11387149335074176,
+      "proper_peak": 30.67027307824636,
+      "normalized_peak": 3.4924697968949645
+    },
+    {
+      "beta0": 0.5025000000000001,
+      "control": false,
+      "D": 0.100125,
+      "G": 0.10050000000000002,
+      "slowest_pole_halfwidth": 0.1113262248703346,
+      "proper_peak": 30.785844009227915,
+      "normalized_peak": 3.42727179299435
+    },
+    {
+      "beta0": 0.50375,
+      "control": false,
+      "D": 0.1001875,
+      "G": 0.10075,
+      "slowest_pole_halfwidth": 0.10936856812324876,
+      "proper_peak": 30.902277943876435,
+      "normalized_peak": 3.379737890468417
+    },
+    {
+      "beta0": 0.505,
+      "control": false,
+      "D": 0.10025,
+      "G": 0.101,
+      "slowest_pole_halfwidth": 0.10771433762469437,
+      "proper_peak": 31.019584621795296,
+      "normalized_peak": 3.341254010929836
+    },
+    {
+      "beta0": 0.5062500000000001,
+      "control": false,
+      "D": 0.1003125,
+      "G": 0.10125000000000002,
+      "slowest_pole_halfwidth": 0.10625355159504812,
+      "proper_peak": 31.13777392953596,
+      "normalized_peak": 3.3084990687768934
+    },
+    {
+      "beta0": 0.5075000000000001,
+      "control": false,
+      "D": 0.100375,
+      "G": 0.10150000000000002,
+      "slowest_pole_halfwidth": 0.10492985152694231,
+      "proper_peak": 31.256855903380696,
+      "normalized_peak": 3.279777249140767
+    },
+    {
+      "beta0": 0.50875,
+      "control": false,
+      "D": 0.1004375,
+      "G": 0.10175000000000001,
+      "slowest_pole_halfwidth": 0.10370978533751009,
+      "proper_peak": 31.37684073218893,
+      "normalized_peak": 3.254085416904557
+    },
+    {
+      "beta0": 0.51,
+      "control": false,
+      "D": 0.1005,
+      "G": 0.10200000000000001,
+      "slowest_pole_halfwidth": 0.10257157494206662,
+      "proper_peak": 31.497738760308593,
+      "normalized_peak": 3.230772671758629
+    },
+    {
+      "beta0": 0.51125,
+      "control": false,
+      "D": 0.1005625,
+      "G": 0.10225000000000001,
+      "slowest_pole_halfwidth": 0.10150010557462552,
+      "proper_peak": 31.619560490554466,
+      "normalized_peak": 3.2093887280145363
+    },
+    {
+      "beta0": 0.5125000000000001,
+      "control": false,
+      "D": 0.100625,
+      "G": 0.10250000000000002,
+      "slowest_pole_halfwidth": 0.10048438125500489,
+      "proper_peak": 31.742316587255154,
+      "normalized_peak": 3.1896070418708127
+    },
+    {
+      "beta0": 0.51375,
+      "control": false,
+      "D": 0.1006875,
+      "G": 0.10275000000000001,
+      "slowest_pole_halfwidth": 0.0995161077001952,
+      "proper_peak": 31.866017879370848,
+      "normalized_peak": 3.171182067259815
+    },
+    {
+      "beta0": 0.515,
+      "control": false,
+      "D": 0.10075,
+      "G": 0.10300000000000001,
+      "slowest_pole_halfwidth": 0.09858884636456969,
+      "proper_peak": 31.990675363683224,
+      "normalized_peak": 3.15392377852899
+    },
+    {
+      "beta0": 0.5162500000000001,
+      "control": false,
+      "D": 0.1008125,
+      "G": 0.10325000000000002,
+      "slowest_pole_halfwidth": 0.09769748122408581,
+      "proper_peak": 32.116300208060274,
+      "normalized_peak": 3.137681636564072
+    },
+    {
+      "beta0": 0.5175000000000001,
+      "control": false,
+      "D": 0.100875,
+      "G": 0.10350000000000002,
+      "slowest_pole_halfwidth": 0.09683786764997653,
+      "proper_peak": 32.242903754797055,
+      "normalized_peak": 3.1223340464579685
+    },
+    {
+      "beta0": 0.51875,
+      "control": false,
+      "D": 0.1009375,
+      "G": 0.10375000000000001,
+      "slowest_pole_halfwidth": 0.09600659270236923,
+      "proper_peak": 32.37049752403559,
+      "normalized_peak": 3.1077811713631367
+    },
+    {
+      "beta0": 0.52,
+      "control": false,
+      "D": 0.101,
+      "G": 0.10400000000000001,
+      "slowest_pole_halfwidth": 0.09520080646472548,
+      "proper_peak": 32.499093217265155,
+      "normalized_peak": 3.0939398836559326
+    },
+    {
+      "beta0": 0.52125,
+      "control": false,
+      "D": 0.1010625,
+      "G": 0.10425000000000001,
+      "slowest_pole_halfwidth": 0.09441810027089459,
+      "proper_peak": 32.62870272090576,
+      "normalized_peak": 3.080740125211691
+    },
+    {
+      "beta0": 0.5225000000000001,
+      "control": false,
+      "D": 0.101125,
+      "G": 0.10450000000000002,
+      "slowest_pole_halfwidth": 0.09365641681547471,
+      "proper_peak": 32.75933810997682,
+      "normalized_peak": 3.068122224627054
+    },
+    {
+      "beta0": 0.52375,
+      "control": false,
+      "D": 0.1011875,
+      "G": 0.10475000000000001,
+      "slowest_pole_halfwidth": 0.09291398250480513,
+      "proper_peak": 32.89101165185354,
+      "normalized_peak": 3.0560348811856617
+    },
+    {
+      "beta0": 0.525,
+      "control": false,
+      "D": 0.10125,
+      "G": 0.10500000000000001,
+      "slowest_pole_halfwidth": 0.09218925567339126,
+      "proper_peak": 33.023735810113536,
+      "normalized_peak": 3.0444336238890832
+    },
+    {
+      "beta0": 0.5262500000000001,
+      "control": false,
+      "D": 0.1013125,
+      "G": 0.10525000000000002,
+      "slowest_pole_halfwidth": 0.09148088634354136,
+      "proper_peak": 33.15752324847587,
+      "normalized_peak": 3.0332796157271513
+    },
+    {
+      "beta0": 0.5275000000000001,
+      "control": false,
+      "D": 0.101375,
+      "G": 0.10550000000000002,
+      "slowest_pole_halfwidth": 0.09078768453203336,
+      "proper_peak": 33.29238683483568,
+      "normalized_peak": 3.0225387132794825
+    },
+    {
+      "beta0": 0.52875,
+      "control": false,
+      "D": 0.1014375,
+      "G": 0.10575000000000001,
+      "slowest_pole_halfwidth": 0.09010859498534735,
+      "proper_peak": 33.428339645396534,
+      "normalized_peak": 3.012180718139666
+    },
+    {
+      "beta0": 0.53,
+      "control": false,
+      "D": 0.1015,
+      "G": 0.10600000000000001,
+      "slowest_pole_halfwidth": 0.08944267681880491,
+      "proper_peak": 33.56539496890373,
+      "normalized_peak": 3.002178774499197
+    },
+    {
+      "beta0": 0.53125,
+      "control": false,
+      "D": 0.1015625,
+      "G": 0.10625000000000001,
+      "slowest_pole_halfwidth": 0.08878908694462781,
+      "proper_peak": 33.70356631098117,
+      "normalized_peak": 2.9925088795297357
+    },
+    {
+      "beta0": 0.5325000000000001,
+      "control": false,
+      "D": 0.10162500000000001,
+      "G": 0.10650000000000003,
+      "slowest_pole_halfwidth": 0.08814706646162707,
+      "proper_peak": 33.842867398574725,
+      "normalized_peak": 2.9831494818341984
+    },
+    {
+      "beta0": 0.5337500000000001,
+      "control": false,
+      "D": 0.1016875,
+      "G": 0.10675000000000001,
+      "slowest_pole_halfwidth": 0.08751592938454292,
+      "proper_peak": 33.98331218450561,
+      "normalized_peak": 2.97408114939207
+    },
+    {
+      "beta0": 0.535,
+      "control": false,
+      "D": 0.10175000000000001,
+      "G": 0.10700000000000001,
+      "slowest_pole_halfwidth": 0.08689505323973468,
+      "proper_peak": 34.124914852136335,
+      "normalized_peak": 2.965286292877799
+    },
+    {
+      "beta0": 0.5362500000000001,
+      "control": false,
+      "D": 0.1018125,
+      "G": 0.10725000000000003,
+      "slowest_pole_halfwidth": 0.08628387116304712,
+      "proper_peak": 34.26768982015297,
+      "normalized_peak": 2.9567489334973396
+    },
+    {
+      "beta0": 0.5375000000000001,
+      "control": false,
+      "D": 0.10187500000000001,
+      "G": 0.10750000000000003,
+      "slowest_pole_halfwidth": 0.08568186521676907,
+      "proper_peak": 34.41165174746671,
+      "normalized_peak": 2.9484545069128387
+    },
+    {
+      "beta0": 0.5387500000000001,
+      "control": false,
+      "D": 0.1019375,
+      "G": 0.10775000000000001,
+      "slowest_pole_halfwidth": 0.08508856070354585,
+      "proper_peak": 34.55681553823884,
+      "normalized_peak": 2.940389696646672
+    },
+    {
+      "beta0": 0.54,
+      "control": false,
+      "D": 0.10200000000000001,
+      "G": 0.10800000000000001,
+      "slowest_pole_halfwidth": 0.08450352130140229,
+      "proper_peak": 34.70319634703196,
+      "normalized_peak": 2.9325422917381614
+    },
+    {
+      "beta0": 0.54125,
+      "control": false,
+      "D": 0.1020625,
+      "G": 0.10825000000000001,
+      "slowest_pole_halfwidth": 0.08392634487953843,
+      "proper_peak": 34.85080958409193,
+      "normalized_peak": 2.9249010644856224
+    },
+    {
+      "beta0": 0.5425,
+      "control": false,
+      "D": 0.102125,
+      "G": 0.1085,
+      "slowest_pole_halfwidth": 0.08335665988204675,
+      "proper_peak": 34.99967092076369,
+      "normalized_peak": 2.917455664925661
+    },
+    {
+      "beta0": 0.5437500000000001,
+      "control": false,
+      "D": 0.1021875,
+      "G": 0.10875000000000001,
+      "slowest_pole_halfwidth": 0.08279412218815413,
+      "proper_peak": 35.14979629504582,
+      "normalized_peak": 2.910196529340751
+    },
+    {
+      "beta0": 0.545,
+      "control": false,
+      "D": 0.10225000000000001,
+      "G": 0.10900000000000001,
+      "slowest_pole_halfwidth": 0.08223841237447765,
+      "proper_peak": 35.3012019172869,
+      "normalized_peak": 2.9031148005885417
+    },
+    {
+      "beta0": 0.54625,
+      "control": false,
+      "D": 0.1023125,
+      "G": 0.10925000000000001,
+      "slowest_pole_halfwidth": 0.08168923331816492,
+      "proper_peak": 35.45390427602915,
+      "normalized_peak": 2.8962022584444305
+    },
+    {
+      "beta0": 0.5475000000000001,
+      "control": false,
+      "D": 0.10237500000000001,
+      "G": 0.10950000000000003,
+      "slowest_pole_halfwidth": 0.08114630809047864,
+      "proper_peak": 35.607920144002634,
+      "normalized_peak": 2.8894512584663983
+    },
+    {
+      "beta0": 0.5487500000000001,
+      "control": false,
+      "D": 0.1024375,
+      "G": 0.10975000000000001,
+      "slowest_pole_halfwidth": 0.08060937809896873,
+      "proper_peak": 35.76326658427544,
+      "normalized_peak": 2.882854678146073
+    },
+    {
+      "beta0": 0.55,
+      "control": false,
+      "D": 0.10250000000000001,
+      "G": 0.11000000000000001,
+      "slowest_pole_halfwidth": 0.0800782014433217,
+      "proper_peak": 35.919960956564196,
+      "normalized_peak": 2.876405869315998
+    },
+    {
+      "beta0": 0.35,
+      "control": true,
+      "D": 0.0925,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666664,
+      "normalized_peak": 1.9999999999999996
+    },
+    {
+      "beta0": 0.35124999999999995,
+      "control": true,
+      "D": 0.09256249999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.3525,
+      "control": true,
+      "D": 0.092625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.35374999999999995,
+      "control": true,
+      "D": 0.09268749999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821757,
+      "normalized_peak": 1.9999999782986109
+    },
+    {
+      "beta0": 0.355,
+      "control": true,
+      "D": 0.09275,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.35624999999999996,
+      "control": true,
+      "D": 0.09281249999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.3575,
+      "control": true,
+      "D": 0.092875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287065,
+      "normalized_peak": 1.9999999131944477
+    },
+    {
+      "beta0": 0.35874999999999996,
+      "control": true,
+      "D": 0.09293749999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.36,
+      "control": true,
+      "D": 0.093,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666666,
+      "normalized_peak": 1.9999999999999991
+    },
+    {
+      "beta0": 0.36124999999999996,
+      "control": true,
+      "D": 0.09306249999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.3625,
+      "control": true,
+      "D": 0.093125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.36374999999999996,
+      "control": true,
+      "D": 0.09318749999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.365,
+      "control": true,
+      "D": 0.09325,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.36624999999999996,
+      "control": true,
+      "D": 0.09331249999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.3675,
+      "control": true,
+      "D": 0.093375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.36874999999999997,
+      "control": true,
+      "D": 0.09343749999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.37,
+      "control": true,
+      "D": 0.0935,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.37124999999999997,
+      "control": true,
+      "D": 0.09356249999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.3725,
+      "control": true,
+      "D": 0.093625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.37374999999999997,
+      "control": true,
+      "D": 0.09368749999999999,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821757,
+      "normalized_peak": 1.9999999782986109
+    },
+    {
+      "beta0": 0.375,
+      "control": true,
+      "D": 0.09375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148652,
+      "normalized_peak": 1.9999996527778383
+    },
+    {
+      "beta0": 0.37625,
+      "control": true,
+      "D": 0.0938125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.3775,
+      "control": true,
+      "D": 0.093875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.37875,
+      "control": true,
+      "D": 0.0939375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.38,
+      "control": true,
+      "D": 0.094,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.38125,
+      "control": true,
+      "D": 0.0940625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.3825,
+      "control": true,
+      "D": 0.094125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.38375,
+      "control": true,
+      "D": 0.0941875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.385,
+      "control": true,
+      "D": 0.09425,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.38625,
+      "control": true,
+      "D": 0.0943125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.3875,
+      "control": true,
+      "D": 0.094375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.38875,
+      "control": true,
+      "D": 0.0944375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.39,
+      "control": true,
+      "D": 0.0945,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666667,
+      "normalized_peak": 2.0000000000000004
+    },
+    {
+      "beta0": 0.39125,
+      "control": true,
+      "D": 0.0945625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.3925,
+      "control": true,
+      "D": 0.094625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.39375,
+      "control": true,
+      "D": 0.0946875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.395,
+      "control": true,
+      "D": 0.09475,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666377314865,
+      "normalized_peak": 1.9999996527778379
+    },
+    {
+      "beta0": 0.39625,
+      "control": true,
+      "D": 0.0948125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.39749999999999996,
+      "control": true,
+      "D": 0.094875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.39875,
+      "control": true,
+      "D": 0.0949375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062654,
+      "normalized_peak": 1.9999998046875183
+    },
+    {
+      "beta0": 0.4,
+      "control": true,
+      "D": 0.095,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666664,
+      "normalized_peak": 1.9999999999999996
+    },
+    {
+      "beta0": 0.40125,
+      "control": true,
+      "D": 0.0950625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.40249999999999997,
+      "control": true,
+      "D": 0.095125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.40375,
+      "control": true,
+      "D": 0.0951875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.405,
+      "control": true,
+      "D": 0.09525,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148652,
+      "normalized_peak": 1.9999996527778383
+    },
+    {
+      "beta0": 0.40625,
+      "control": true,
+      "D": 0.0953125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.4075,
+      "control": true,
+      "D": 0.095375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.40875,
+      "control": true,
+      "D": 0.0954375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.41000000000000003,
+      "control": true,
+      "D": 0.0955,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.41125,
+      "control": true,
+      "D": 0.0955625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.4125,
+      "control": true,
+      "D": 0.095625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287075,
+      "normalized_peak": 1.999999913194449
+    },
+    {
+      "beta0": 0.41375,
+      "control": true,
+      "D": 0.0956875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.41500000000000004,
+      "control": true,
+      "D": 0.09575,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148645,
+      "normalized_peak": 1.9999996527778374
+    },
+    {
+      "beta0": 0.41625,
+      "control": true,
+      "D": 0.0958125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.4175,
+      "control": true,
+      "D": 0.095875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.41875,
+      "control": true,
+      "D": 0.0959375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.42,
+      "control": true,
+      "D": 0.096,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666667,
+      "normalized_peak": 2.0000000000000004
+    },
+    {
+      "beta0": 0.42125,
+      "control": true,
+      "D": 0.0960625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.4225,
+      "control": true,
+      "D": 0.096125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.42375,
+      "control": true,
+      "D": 0.0961875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.425,
+      "control": true,
+      "D": 0.09625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148652,
+      "normalized_peak": 1.9999996527778383
+    },
+    {
+      "beta0": 0.42625,
+      "control": true,
+      "D": 0.0963125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.4275,
+      "control": true,
+      "D": 0.096375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.42875,
+      "control": true,
+      "D": 0.0964375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.43,
+      "control": true,
+      "D": 0.0965,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666664,
+      "normalized_peak": 1.9999999999999996
+    },
+    {
+      "beta0": 0.43125,
+      "control": true,
+      "D": 0.0965625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.4325,
+      "control": true,
+      "D": 0.096625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.43375,
+      "control": true,
+      "D": 0.0966875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821757,
+      "normalized_peak": 1.9999999782986109
+    },
+    {
+      "beta0": 0.435,
+      "control": true,
+      "D": 0.09675,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148652,
+      "normalized_peak": 1.9999996527778383
+    },
+    {
+      "beta0": 0.43625,
+      "control": true,
+      "D": 0.0968125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.4375,
+      "control": true,
+      "D": 0.096875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.43875000000000003,
+      "control": true,
+      "D": 0.0969375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.44,
+      "control": true,
+      "D": 0.097,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.44125000000000003,
+      "control": true,
+      "D": 0.0970625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.4425,
+      "control": true,
+      "D": 0.097125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.44375,
+      "control": true,
+      "D": 0.0971875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.445,
+      "control": true,
+      "D": 0.09725,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.44625000000000004,
+      "control": true,
+      "D": 0.0973125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.4475,
+      "control": true,
+      "D": 0.097375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.44875,
+      "control": true,
+      "D": 0.0974375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.45,
+      "control": true,
+      "D": 0.0975,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666664,
+      "normalized_peak": 1.9999999999999996
+    },
+    {
+      "beta0": 0.45125000000000004,
+      "control": true,
+      "D": 0.0975625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.4525,
+      "control": true,
+      "D": 0.097625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.45375,
+      "control": true,
+      "D": 0.0976875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.455,
+      "control": true,
+      "D": 0.09775,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.45625000000000004,
+      "control": true,
+      "D": 0.0978125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821768,
+      "normalized_peak": 1.999999978298612
+    },
+    {
+      "beta0": 0.4575,
+      "control": true,
+      "D": 0.097875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.45875,
+      "control": true,
+      "D": 0.0979375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.46,
+      "control": true,
+      "D": 0.098,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666667,
+      "normalized_peak": 2.0000000000000004
+    },
+    {
+      "beta0": 0.46125000000000005,
+      "control": true,
+      "D": 0.0980625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.4625,
+      "control": true,
+      "D": 0.098125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.46375,
+      "control": true,
+      "D": 0.0981875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.465,
+      "control": true,
+      "D": 0.09825,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666377314865,
+      "normalized_peak": 1.9999996527778379
+    },
+    {
+      "beta0": 0.46625000000000005,
+      "control": true,
+      "D": 0.0983125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.4675,
+      "control": true,
+      "D": 0.098375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287065,
+      "normalized_peak": 1.9999999131944477
+    },
+    {
+      "beta0": 0.46875,
+      "control": true,
+      "D": 0.0984375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.47000000000000003,
+      "control": true,
+      "D": 0.0985,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666667,
+      "normalized_peak": 2.0000000000000004
+    },
+    {
+      "beta0": 0.47125,
+      "control": true,
+      "D": 0.0985625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.47250000000000003,
+      "control": true,
+      "D": 0.098625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287065,
+      "normalized_peak": 1.9999999131944477
+    },
+    {
+      "beta0": 0.47375,
+      "control": true,
+      "D": 0.0986875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.47500000000000003,
+      "control": true,
+      "D": 0.09875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148652,
+      "normalized_peak": 1.9999996527778383
+    },
+    {
+      "beta0": 0.47625000000000006,
+      "control": true,
+      "D": 0.0988125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.47750000000000004,
+      "control": true,
+      "D": 0.098875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.47875,
+      "control": true,
+      "D": 0.0989375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.48000000000000004,
+      "control": true,
+      "D": 0.099,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666666,
+      "normalized_peak": 1.9999999999999991
+    },
+    {
+      "beta0": 0.48125000000000007,
+      "control": true,
+      "D": 0.0990625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.48250000000000004,
+      "control": true,
+      "D": 0.099125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.48375,
+      "control": true,
+      "D": 0.0991875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.485,
+      "control": true,
+      "D": 0.09925,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.48625,
+      "control": true,
+      "D": 0.0993125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.48750000000000004,
+      "control": true,
+      "D": 0.099375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.48875,
+      "control": true,
+      "D": 0.0994375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062668,
+      "normalized_peak": 1.99999980468752
+    },
+    {
+      "beta0": 0.49,
+      "control": true,
+      "D": 0.0995,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.49125,
+      "control": true,
+      "D": 0.0995625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.49250000000000005,
+      "control": true,
+      "D": 0.099625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.49375,
+      "control": true,
+      "D": 0.0996875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.495,
+      "control": true,
+      "D": 0.09975,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148645,
+      "normalized_peak": 1.9999996527778374
+    },
+    {
+      "beta0": 0.49625,
+      "control": true,
+      "D": 0.0998125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.49750000000000005,
+      "control": true,
+      "D": 0.099875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287065,
+      "normalized_peak": 1.9999999131944477
+    },
+    {
+      "beta0": 0.49875,
+      "control": true,
+      "D": 0.0999375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.5,
+      "control": true,
+      "D": 0.1,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.50125,
+      "control": true,
+      "D": 0.1000625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.5025000000000001,
+      "control": true,
+      "D": 0.100125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.50375,
+      "control": true,
+      "D": 0.1001875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.505,
+      "control": true,
+      "D": 0.10025,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666377314865,
+      "normalized_peak": 1.9999996527778379
+    },
+    {
+      "beta0": 0.5062500000000001,
+      "control": true,
+      "D": 0.1003125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.5075000000000001,
+      "control": true,
+      "D": 0.100375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.50875,
+      "control": true,
+      "D": 0.1004375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.51,
+      "control": true,
+      "D": 0.1005,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666667,
+      "normalized_peak": 2.0000000000000004
+    },
+    {
+      "beta0": 0.51125,
+      "control": true,
+      "D": 0.1005625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.5125000000000001,
+      "control": true,
+      "D": 0.100625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.51375,
+      "control": true,
+      "D": 0.1006875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.515,
+      "control": true,
+      "D": 0.10075,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148652,
+      "normalized_peak": 1.9999996527778383
+    },
+    {
+      "beta0": 0.5162500000000001,
+      "control": true,
+      "D": 0.1008125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.5175000000000001,
+      "control": true,
+      "D": 0.100875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.51875,
+      "control": true,
+      "D": 0.1009375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.52,
+      "control": true,
+      "D": 0.101,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.52125,
+      "control": true,
+      "D": 0.1010625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.5225000000000001,
+      "control": true,
+      "D": 0.101125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.52375,
+      "control": true,
+      "D": 0.1011875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.525,
+      "control": true,
+      "D": 0.10125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.5262500000000001,
+      "control": true,
+      "D": 0.1013125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.5275000000000001,
+      "control": true,
+      "D": 0.101375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.52875,
+      "control": true,
+      "D": 0.1014375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.53,
+      "control": true,
+      "D": 0.1015,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666666666667,
+      "normalized_peak": 2.0000000000000004
+    },
+    {
+      "beta0": 0.53125,
+      "control": true,
+      "D": 0.1015625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.5325000000000001,
+      "control": true,
+      "D": 0.10162500000000001,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.5337500000000001,
+      "control": true,
+      "D": 0.1016875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821757,
+      "normalized_peak": 1.9999999782986109
+    },
+    {
+      "beta0": 0.535,
+      "control": true,
+      "D": 0.10175000000000001,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666377314865,
+      "normalized_peak": 1.9999996527778379
+    },
+    {
+      "beta0": 0.5362500000000001,
+      "control": true,
+      "D": 0.1018125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.5375000000000001,
+      "control": true,
+      "D": 0.10187500000000001,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666594328707,
+      "normalized_peak": 1.9999999131944486
+    },
+    {
+      "beta0": 0.5387500000000001,
+      "control": true,
+      "D": 0.1019375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062664,
+      "normalized_peak": 1.9999998046875196
+    },
+    {
+      "beta0": 0.54,
+      "control": true,
+      "D": 0.10200000000000001,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    },
+    {
+      "beta0": 0.54125,
+      "control": true,
+      "D": 0.1020625,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666503906266,
+      "normalized_peak": 1.9999998046875191
+    },
+    {
+      "beta0": 0.5425,
+      "control": true,
+      "D": 0.102125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287075,
+      "normalized_peak": 1.999999913194449
+    },
+    {
+      "beta0": 0.5437500000000001,
+      "control": true,
+      "D": 0.1021875,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666485821764,
+      "normalized_peak": 1.9999999782986118
+    },
+    {
+      "beta0": 0.545,
+      "control": true,
+      "D": 0.10225000000000001,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666663773148656,
+      "normalized_peak": 1.9999996527778388
+    },
+    {
+      "beta0": 0.54625,
+      "control": true,
+      "D": 0.1023125,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.66666648582176,
+      "normalized_peak": 1.9999999782986113
+    },
+    {
+      "beta0": 0.5475000000000001,
+      "control": true,
+      "D": 0.10237500000000001,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665943287068,
+      "normalized_peak": 1.9999999131944481
+    },
+    {
+      "beta0": 0.5487500000000001,
+      "control": true,
+      "D": 0.1024375,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666665039062657,
+      "normalized_peak": 1.9999998046875187
+    },
+    {
+      "beta0": 0.55,
+      "control": true,
+      "D": 0.10250000000000001,
+      "G": 0.0,
+      "slowest_pole_halfwidth": 0.12,
+      "proper_peak": 16.666666666666668,
+      "normalized_peak": 2.0
+    }
+  ]
+}

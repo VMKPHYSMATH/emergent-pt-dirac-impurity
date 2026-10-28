@@ -1,0 +1,2 @@
+ARCHIVED SUMMARY VALIDATION ONLY
+PASS: finite-N common-contour Rouche gate summary

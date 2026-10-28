@@ -1,0 +1,1789 @@
+{
+  "scope": "finite-chain occupancy/truncation feasibility only; no EP search",
+  "parameters": {
+    "U": 0.2,
+    "epsilon_d_absolute": -0.08482965,
+    "mu": 0.012,
+    "W": 0.1,
+    "VO": 1.2134220096136235,
+    "Lambda": 1.5,
+    "z_shift": 0.5
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "mapping": {
+    "source": "new microscopic Hermitian matrix chain",
+    "mu": 0.012,
+    "Lambda": 1.5,
+    "z_shift": 0.5,
+    "blocks": 24,
+    "low_bands_only": false,
+    "orthogonality_error": 2.7245013220536145e-15,
+    "mapping_checks": [
+      {
+        "z_relative_to_mu": [
+          -0.004,
+          0.003
+        ],
+        "star_to_continuum_relative_error": 0.008063576026054257,
+        "chain_to_continuum_relative_error": 0.00805275090860641
+      },
+      {
+        "z_relative_to_mu": [
+          0.0,
+          0.003
+        ],
+        "star_to_continuum_relative_error": 0.011645379680743693,
+        "chain_to_continuum_relative_error": 0.01165366192587651
+      },
+      {
+        "z_relative_to_mu": [
+          0.004,
+          0.003
+        ],
+        "star_to_continuum_relative_error": 0.012161745286235587,
+        "chain_to_continuum_relative_error": 0.012162209835275332
+      },
+      {
+        "z_relative_to_mu": [
+          0.0,
+          0.003
+        ],
+        "star_to_continuum_relative_error": 0.011645379680743693,
+        "chain_to_continuum_relative_error": 0.01165366192587651
+      }
+    ]
+  },
+  "runs": [
+    {
+      "method": "exact_charge_sectors",
+      "bath_blocks": 6,
+      "nd": 0.9905203316255702,
+      "D": 0.0,
+      "P1": 0.9905203316255702,
+      "density_eigenvalues": [
+        2.7755575615628914e-17,
+        0.9905203316255702
+      ],
+      "spin_magnitude": 0.4952601658127851,
+      "sum_rule_error": 3.1401849173675503e-16,
+      "seconds": 0.10701275700012047,
+      "observables": {
+        "nd": 0.9905203316255702,
+        "n0": 0.7338178729635598,
+        "n1": 0.2567024586620104,
+        "double_occupancy": 0.0,
+        "single_occupancy_probability": 0.9905203316255702,
+        "empty_probability": 0.009479668374429817,
+        "local_moment_squared": 0.9905203316255702,
+        "local_moment_identity_error": 0.0,
+        "double_minus_gaussian_reference": 0.0,
+        "density_matrix": [
+          [
+            [
+              0.7338178729635598,
+              0.0
+            ],
+            [
+              -0.434019414542567,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.434019414542567,
+              0.0
+            ],
+            [
+              0.2567024586620104,
+              0.0
+            ]
+          ]
+        ],
+        "density_eigenvalues": [
+          2.7755575615628914e-17,
+          0.9905203316255702
+        ],
+        "occupation_bounds_error": 0.0,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "grand_ground_energy": -0.09863753931312438,
+        "sector_dimensions": {
+          "2": 91,
+          "3": 364,
+          "4": 1001,
+          "1": 14
+        },
+        "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+      }
+    },
+    {
+      "method": "kept_space_pilot",
+      "bath_blocks": 6,
+      "nkeep": 64,
+      "nd": 0.9906630427338414,
+      "D": 0.0,
+      "P1": 0.9906630427338414,
+      "density_eigenvalues": [
+        8.326672684688674e-17,
+        0.9906630427338413
+      ],
+      "spin_magnitude": 0.4953315213669206,
+      "sum_rule_error": 0.008663162151790974,
+      "seconds": 0.16626199299980726,
+      "observables": {
+        "nd": 0.9906630427338414,
+        "n0": 0.7333576498223271,
+        "n1": 0.2573053929115143,
+        "double_occupancy": 0.0,
+        "local_moment_squared": 0.9906630427338414,
+        "single_occupancy_probability": 0.9906630427338414,
+        "empty_probability": 0.009336957266158574,
+        "density_matrix": [
+          [
+            [
+              0.7333576498223271,
+              0.0
+            ],
+            [
+              -0.43439253933763433,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.43439253933763466,
+              0.0
+            ],
+            [
+              0.2573053929115143,
+              0.0
+            ]
+          ]
+        ],
+        "double_minus_gaussian_reference": -2.442571644353216e-16,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+      },
+      "flow": [
+        {
+          "iteration": 0,
+          "kept": 16,
+          "nd": 0.9966943011722945,
+          "n0": 0.49834714512372524,
+          "n1": 0.4983471560485693,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9966943011722945,
+          "single_occupancy_probability": 0.9966943011722945,
+          "empty_probability": 0.0033056988277054833,
+          "density_matrix": [
+            [
+              [
+                0.49834714512372524,
+                0.0
+              ],
+              [
+                -0.4983471505861472,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4983471505861472,
+                0.0
+              ],
+              [
+                0.4983471560485693,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -5.532764808370795e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 1,
+          "kept": 64,
+          "nd": 0.996357101731512,
+          "n0": 0.6525146001367887,
+          "n1": 0.3438425015947233,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.996357101731512,
+          "single_occupancy_probability": 0.996357101731512,
+          "empty_probability": 0.0036428982684879596,
+          "density_matrix": [
+            [
+              [
+                0.6525146001367887,
+                0.0
+              ],
+              [
+                -0.473668927034605,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.47366892703460506,
+                0.0
+              ],
+              [
+                0.3438425015947233,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -3.6221836648796917e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 2,
+          "kept": 64,
+          "nd": 0.9929789696439028,
+          "n0": 0.6981744268750976,
+          "n1": 0.2948045427688052,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9929789696439028,
+          "single_occupancy_probability": 0.9929789696439028,
+          "empty_probability": 0.0070210303560972465,
+          "density_matrix": [
+            [
+              [
+                0.6981744268750976,
+                0.0
+              ],
+              [
+                -0.45367939416264613,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.45367939416264624,
+                0.0
+              ],
+              [
+                0.2948045427688052,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -7.75129323921209e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 3,
+          "kept": 64,
+          "nd": 0.9913780659338713,
+          "n0": 0.7222468639588232,
+          "n1": 0.2691312019750482,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9913780659338713,
+          "single_occupancy_probability": 0.9913780659338713,
+          "empty_probability": 0.008621934066128656,
+          "density_matrix": [
+            [
+              [
+                0.7222468639588232,
+                0.0
+              ],
+              [
+                -0.4408845275352119,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.440884527535212,
+                0.0
+              ],
+              [
+                0.2691312019750482,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -1.2027826467455915e-16,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 4,
+          "kept": 64,
+          "nd": 0.9908054570937918,
+          "n0": 0.7309750748925499,
+          "n1": 0.2598303822012419,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9908054570937918,
+          "single_occupancy_probability": 0.9908054570937918,
+          "empty_probability": 0.009194542906208247,
+          "density_matrix": [
+            [
+              [
+                0.7309750748925499,
+                0.0
+              ],
+              [
+                -0.43580905576744544,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4358090557674457,
+                0.0
+              ],
+              [
+                0.2598303822012419,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -1.6230907171456205e-16,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 5,
+          "kept": 64,
+          "nd": 0.9906630427338414,
+          "n0": 0.7333576498223271,
+          "n1": 0.2573053929115143,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9906630427338414,
+          "single_occupancy_probability": 0.9906630427338414,
+          "empty_probability": 0.009336957266158574,
+          "density_matrix": [
+            [
+              [
+                0.7333576498223271,
+                0.0
+              ],
+              [
+                -0.43439253933763433,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.43439253933763466,
+                0.0
+              ],
+              [
+                0.2573053929115143,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -2.442571644353216e-16,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        }
+      ]
+    },
+    {
+      "method": "kept_space_pilot",
+      "bath_blocks": 6,
+      "nkeep": 128,
+      "nd": 0.9905135957739998,
+      "D": 0.0,
+      "P1": 0.9905135957739998,
+      "density_eigenvalues": [
+        8.326672684688674e-17,
+        0.9905135957739997
+      ],
+      "spin_magnitude": 0.4952567978869998,
+      "sum_rule_error": 0.002213069592612195,
+      "seconds": 0.8493457590002436,
+      "observables": {
+        "nd": 0.9905135957739998,
+        "n0": 0.7337944735369076,
+        "n1": 0.25671912223709215,
+        "double_occupancy": 0.0,
+        "local_moment_squared": 0.9905135957739998,
+        "single_occupancy_probability": 0.9905135957739998,
+        "empty_probability": 0.009486404226000222,
+        "density_matrix": [
+          [
+            [
+              0.7337944735369076,
+              0.0
+            ],
+            [
+              -0.43402658115468445,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.43402658115468457,
+              0.0
+            ],
+            [
+              0.25671912223709215,
+              0.0
+            ]
+          ]
+        ],
+        "double_minus_gaussian_reference": -1.2220132797950538e-16,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+      },
+      "flow": [
+        {
+          "iteration": 0,
+          "kept": 16,
+          "nd": 0.9966943011722945,
+          "n0": 0.49834714512372524,
+          "n1": 0.4983471560485693,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9966943011722945,
+          "single_occupancy_probability": 0.9966943011722945,
+          "empty_probability": 0.0033056988277054833,
+          "density_matrix": [
+            [
+              [
+                0.49834714512372524,
+                0.0
+              ],
+              [
+                -0.4983471505861472,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4983471505861472,
+                0.0
+              ],
+              [
+                0.4983471560485693,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -5.532764808370795e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 1,
+          "kept": 64,
+          "nd": 0.996357101731512,
+          "n0": 0.6525146001367887,
+          "n1": 0.3438425015947233,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.996357101731512,
+          "single_occupancy_probability": 0.996357101731512,
+          "empty_probability": 0.0036428982684879596,
+          "density_matrix": [
+            [
+              [
+                0.6525146001367887,
+                0.0
+              ],
+              [
+                -0.473668927034605,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.47366892703460506,
+                0.0
+              ],
+              [
+                0.3438425015947233,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -3.6221836648796917e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 2,
+          "kept": 128,
+          "nd": 0.9929789696439028,
+          "n0": 0.6981744268750976,
+          "n1": 0.2948045427688052,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9929789696439028,
+          "single_occupancy_probability": 0.9929789696439028,
+          "empty_probability": 0.0070210303560972465,
+          "density_matrix": [
+            [
+              [
+                0.6981744268750976,
+                0.0
+              ],
+              [
+                -0.45367939416264613,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.45367939416264624,
+                0.0
+              ],
+              [
+                0.2948045427688052,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -7.75129323921209e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 3,
+          "kept": 128,
+          "nd": 0.991378027291403,
+          "n0": 0.7222505860437389,
+          "n1": 0.2691274412476641,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.991378027291403,
+          "single_occupancy_probability": 0.991378027291403,
+          "empty_probability": 0.008621972708596992,
+          "density_matrix": [
+            [
+              [
+                0.7222505860437389,
+                0.0
+              ],
+              [
+                -0.44088258319146295,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.440882583191463,
+                0.0
+              ],
+              [
+                0.2691274412476641,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -4.009296150873866e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 4,
+          "kept": 128,
+          "nd": 0.9907386773808204,
+          "n0": 0.7311771940779405,
+          "n1": 0.2595614833028799,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9907386773808204,
+          "single_occupancy_probability": 0.9907386773808204,
+          "empty_probability": 0.009261322619179557,
+          "density_matrix": [
+            [
+              [
+                0.7311771940779405,
+                0.0
+              ],
+              [
+                -0.4356437042493645,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4356437042493646,
+                0.0
+              ],
+              [
+                0.2595614833028799,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -1.6235395118922965e-16,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 5,
+          "kept": 128,
+          "nd": 0.9905135957739998,
+          "n0": 0.7337944735369076,
+          "n1": 0.25671912223709215,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9905135957739998,
+          "single_occupancy_probability": 0.9905135957739998,
+          "empty_probability": 0.009486404226000222,
+          "density_matrix": [
+            [
+              [
+                0.7337944735369076,
+                0.0
+              ],
+              [
+                -0.43402658115468445,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.43402658115468457,
+                0.0
+              ],
+              [
+                0.25671912223709215,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -1.2220132797950538e-16,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        }
+      ]
+    },
+    {
+      "method": "kept_space_pilot",
+      "bath_blocks": 6,
+      "nkeep": 256,
+      "nd": 0.990520331625643,
+      "D": 0.0,
+      "P1": 0.990520331625643,
+      "density_eigenvalues": [
+        -5.551115123125783e-17,
+        0.990520331625643
+      ],
+      "spin_magnitude": 0.4952601658128215,
+      "sum_rule_error": 0.0004890672296824913,
+      "seconds": 4.923566277999726,
+      "observables": {
+        "nd": 0.990520331625643,
+        "n0": 0.7338178729468516,
+        "n1": 0.2567024586787913,
+        "double_occupancy": 0.0,
+        "local_moment_squared": 0.990520331625643,
+        "single_occupancy_probability": 0.990520331625643,
+        "empty_probability": 0.009479668374356987,
+        "density_matrix": [
+          [
+            [
+              0.7338178729468516,
+              0.0
+            ],
+            [
+              -0.43401941455181203,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.43401941455181214,
+              0.0
+            ],
+            [
+              0.2567024586787913,
+              0.0
+            ]
+          ]
+        ],
+        "double_minus_gaussian_reference": 0.0,
+        "ground_charges": [
+          1
+        ],
+        "ground_degeneracy": 1,
+        "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+      },
+      "flow": [
+        {
+          "iteration": 0,
+          "kept": 16,
+          "nd": 0.9966943011722945,
+          "n0": 0.49834714512372524,
+          "n1": 0.4983471560485693,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9966943011722945,
+          "single_occupancy_probability": 0.9966943011722945,
+          "empty_probability": 0.0033056988277054833,
+          "density_matrix": [
+            [
+              [
+                0.49834714512372524,
+                0.0
+              ],
+              [
+                -0.4983471505861472,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4983471505861472,
+                0.0
+              ],
+              [
+                0.4983471560485693,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -5.532764808370795e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 1,
+          "kept": 64,
+          "nd": 0.996357101731512,
+          "n0": 0.6525146001367887,
+          "n1": 0.3438425015947233,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.996357101731512,
+          "single_occupancy_probability": 0.996357101731512,
+          "empty_probability": 0.0036428982684879596,
+          "density_matrix": [
+            [
+              [
+                0.6525146001367887,
+                0.0
+              ],
+              [
+                -0.473668927034605,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.47366892703460506,
+                0.0
+              ],
+              [
+                0.3438425015947233,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -3.6221836648796917e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 2,
+          "kept": 256,
+          "nd": 0.9929789696439028,
+          "n0": 0.6981744268750976,
+          "n1": 0.2948045427688052,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9929789696439028,
+          "single_occupancy_probability": 0.9929789696439028,
+          "empty_probability": 0.0070210303560972465,
+          "density_matrix": [
+            [
+              [
+                0.6981744268750976,
+                0.0
+              ],
+              [
+                -0.45367939416264613,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.45367939416264624,
+                0.0
+              ],
+              [
+                0.2948045427688052,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -7.75129323921209e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 3,
+          "kept": 256,
+          "nd": 0.9913780248309831,
+          "n0": 0.7222497945802099,
+          "n1": 0.2691282302507733,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9913780248309831,
+          "single_occupancy_probability": 0.9913780248309831,
+          "empty_probability": 0.00862197516901686,
+          "density_matrix": [
+            [
+              [
+                0.7222497945802099,
+                0.0
+              ],
+              [
+                -0.4408829878940176,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4408829878940176,
+                0.0
+              ],
+              [
+                0.2691282302507733,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 4.0092917573686986e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 4,
+          "kept": 256,
+          "nd": 0.9907386733597638,
+          "n0": 0.7311760531779061,
+          "n1": 0.2595626201818578,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9907386733597638,
+          "single_occupancy_probability": 0.9907386733597638,
+          "empty_probability": 0.009261326640236156,
+          "density_matrix": [
+            [
+              [
+                0.7311760531779061,
+                0.0
+              ],
+              [
+                -0.43564431842626694,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.43564431842626705,
+                0.0
+              ],
+              [
+                0.2595626201818578,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 4.0588424464633e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 5,
+          "kept": 256,
+          "nd": 0.990520331625643,
+          "n0": 0.7338178729468516,
+          "n1": 0.2567024586787913,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.990520331625643,
+          "single_occupancy_probability": 0.990520331625643,
+          "empty_probability": 0.009479668374356987,
+          "density_matrix": [
+            [
+              [
+                0.7338178729468516,
+                0.0
+              ],
+              [
+                -0.43401941455181203,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.43401941455181214,
+                0.0
+              ],
+              [
+                0.2567024586787913,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 0.0,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        }
+      ]
+    },
+    {
+      "method": "exact_charge_sectors",
+      "bath_blocks": 8,
+      "nd": 0.9944551408216012,
+      "D": 0.0018112818459244673,
+      "P1": 0.9908325771297524,
+      "density_eigenvalues": [
+        0.0024769468440425544,
+        0.9919781939775587
+      ],
+      "spin_magnitude": 0.4947506235667581,
+      "sum_rule_error": 3.1463121132764933e-16,
+      "seconds": 1.9965336749996823,
+      "observables": {
+        "nd": 0.9944551408216012,
+        "n0": 0.009496359110695433,
+        "n1": 0.9849587817109058,
+        "double_occupancy": 0.0018112818459244673,
+        "single_occupancy_probability": 0.9908325771297524,
+        "empty_probability": 0.007356141024323221,
+        "local_moment_squared": 0.9908325771297524,
+        "local_moment_identity_error": 0.0,
+        "double_minus_gaussian_reference": -0.0006457954110072783,
+        "density_matrix": [
+          [
+            [
+              0.009496359110695433,
+              0.0
+            ],
+            [
+              -0.0830448375483274,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.0830448375483274,
+              0.0
+            ],
+            [
+              0.9849587817109058,
+              0.0
+            ]
+          ]
+        ],
+        "density_eigenvalues": [
+          0.0024769468440425544,
+          0.9919781939775587
+        ],
+        "occupation_bounds_error": 0.0,
+        "ground_charges": [
+          2
+        ],
+        "ground_degeneracy": 1,
+        "grand_ground_energy": -0.10887546250534269,
+        "sector_dimensions": {
+          "3": 816,
+          "4": 3060,
+          "2": 153,
+          "5": 8568,
+          "6": 18564
+        },
+        "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+      }
+    },
+    {
+      "method": "kept_space_pilot",
+      "bath_blocks": 8,
+      "nkeep": 256,
+      "nd": 0.9944836387803718,
+      "D": 0.0018359204226481645,
+      "P1": 0.9908117979350755,
+      "density_eigenvalues": [
+        0.0025039944404164375,
+        0.9919796443399553
+      ],
+      "spin_magnitude": 0.4947378249497694,
+      "sum_rule_error": 0.006442019951279686,
+      "seconds": 6.422338132999812,
+      "observables": {
+        "nd": 0.9944836387803718,
+        "n0": 0.009331515931434902,
+        "n1": 0.9851521228489369,
+        "double_occupancy": 0.0018359204226481645,
+        "local_moment_squared": 0.9908117979350755,
+        "single_occupancy_probability": 0.9908117979350755,
+        "empty_probability": 0.0073522816422763385,
+        "density_matrix": [
+          [
+            [
+              0.009331515931434902,
+              0.0
+            ],
+            [
+              -0.08190879815269084,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.08190879815269081,
+              0.0
+            ],
+            [
+              0.9851521228489369,
+              0.0
+            ]
+          ]
+        ],
+        "double_minus_gaussian_reference": -0.000647991091785357,
+        "ground_charges": [
+          2
+        ],
+        "ground_degeneracy": 1,
+        "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+      },
+      "flow": [
+        {
+          "iteration": 0,
+          "kept": 16,
+          "nd": 0.9966943011722945,
+          "n0": 0.49834714512372524,
+          "n1": 0.4983471560485693,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9966943011722945,
+          "single_occupancy_probability": 0.9966943011722945,
+          "empty_probability": 0.0033056988277054833,
+          "density_matrix": [
+            [
+              [
+                0.49834714512372524,
+                0.0
+              ],
+              [
+                -0.4983471505861472,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4983471505861472,
+                0.0
+              ],
+              [
+                0.4983471560485693,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -5.532764808370795e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 1,
+          "kept": 64,
+          "nd": 0.996357101731512,
+          "n0": 0.6525146001367887,
+          "n1": 0.3438425015947233,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.996357101731512,
+          "single_occupancy_probability": 0.996357101731512,
+          "empty_probability": 0.0036428982684879596,
+          "density_matrix": [
+            [
+              [
+                0.6525146001367887,
+                0.0
+              ],
+              [
+                -0.473668927034605,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.47366892703460506,
+                0.0
+              ],
+              [
+                0.3438425015947233,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -3.6221836648796917e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 2,
+          "kept": 256,
+          "nd": 0.9929789696439028,
+          "n0": 0.6981744268750976,
+          "n1": 0.2948045427688052,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9929789696439028,
+          "single_occupancy_probability": 0.9929789696439028,
+          "empty_probability": 0.0070210303560972465,
+          "density_matrix": [
+            [
+              [
+                0.6981744268750976,
+                0.0
+              ],
+              [
+                -0.45367939416264613,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.45367939416264624,
+                0.0
+              ],
+              [
+                0.2948045427688052,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -7.75129323921209e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 3,
+          "kept": 256,
+          "nd": 0.9913780248309831,
+          "n0": 0.7222497945802099,
+          "n1": 0.2691282302507733,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9913780248309831,
+          "single_occupancy_probability": 0.9913780248309831,
+          "empty_probability": 0.00862197516901686,
+          "density_matrix": [
+            [
+              [
+                0.7222497945802099,
+                0.0
+              ],
+              [
+                -0.4408829878940176,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4408829878940176,
+                0.0
+              ],
+              [
+                0.2691282302507733,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 4.0092917573686986e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 4,
+          "kept": 256,
+          "nd": 0.9907386733597638,
+          "n0": 0.7311760531779061,
+          "n1": 0.2595626201818578,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9907386733597638,
+          "single_occupancy_probability": 0.9907386733597638,
+          "empty_probability": 0.009261326640236156,
+          "density_matrix": [
+            [
+              [
+                0.7311760531779061,
+                0.0
+              ],
+              [
+                -0.43564431842626694,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.43564431842626705,
+                0.0
+              ],
+              [
+                0.2595626201818578,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 4.0588424464633e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 5,
+          "kept": 256,
+          "nd": 0.990520331625643,
+          "n0": 0.7338178729468516,
+          "n1": 0.2567024586787913,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.990520331625643,
+          "single_occupancy_probability": 0.990520331625643,
+          "empty_probability": 0.009479668374356987,
+          "density_matrix": [
+            [
+              [
+                0.7338178729468516,
+                0.0
+              ],
+              [
+                -0.43401941455181203,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.43401941455181214,
+                0.0
+              ],
+              [
+                0.2567024586787913,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 0.0,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 6,
+          "kept": 256,
+          "nd": 0.9960236402986609,
+          "n0": 0.010246401237291246,
+          "n1": 0.9857772390613696,
+          "double_occupancy": 0.003229412688083112,
+          "local_moment_squared": 0.9895648149224946,
+          "single_occupancy_probability": 0.9895648149224946,
+          "empty_probability": 0.007205772389422251,
+          "density_matrix": [
+            [
+              [
+                0.010246401237291246,
+                0.0
+              ],
+              [
+                0.07434738995776724,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.07434738995776734,
+                0.0
+              ],
+              [
+                0.9857772390613696,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -0.001343722040396535,
+          "ground_charges": [
+            2
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 7,
+          "kept": 256,
+          "nd": 0.9944836387803718,
+          "n0": 0.009331515931434902,
+          "n1": 0.9851521228489369,
+          "double_occupancy": 0.0018359204226481645,
+          "local_moment_squared": 0.9908117979350755,
+          "single_occupancy_probability": 0.9908117979350755,
+          "empty_probability": 0.0073522816422763385,
+          "density_matrix": [
+            [
+              [
+                0.009331515931434902,
+                0.0
+              ],
+              [
+                -0.08190879815269084,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.08190879815269081,
+                0.0
+              ],
+              [
+                0.9851521228489369,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -0.000647991091785357,
+          "ground_charges": [
+            2
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        }
+      ]
+    },
+    {
+      "method": "kept_space_pilot",
+      "bath_blocks": 8,
+      "nkeep": 512,
+      "nd": 0.9944537260147952,
+      "D": 0.001809649915207954,
+      "P1": 0.9908344261843793,
+      "density_eigenvalues": [
+        0.0024754775201790667,
+        0.9919782484946162
+      ],
+      "spin_magnitude": 0.4947513854872186,
+      "sum_rule_error": 0.0020873103967399406,
+      "seconds": 42.759388858999955,
+      "observables": {
+        "nd": 0.9944537260147952,
+        "n0": 0.009489340529810333,
+        "n1": 0.9849643854849849,
+        "double_occupancy": 0.001809649915207954,
+        "local_moment_squared": 0.9908344261843793,
+        "single_occupancy_probability": 0.9908344261843793,
+        "empty_probability": 0.007355923900412752,
+        "density_matrix": [
+          [
+            [
+              0.009489340529810333,
+              0.0
+            ],
+            [
+              -0.08301230396120401,
+              0.0
+            ]
+          ],
+          [
+            [
+              -0.08301230396120426,
+              0.0
+            ],
+            [
+              0.9849643854849849,
+              0.0
+            ]
+          ]
+        ],
+        "double_minus_gaussian_reference": -0.0006459699394470927,
+        "ground_charges": [
+          2
+        ],
+        "ground_degeneracy": 1,
+        "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+      },
+      "flow": [
+        {
+          "iteration": 0,
+          "kept": 16,
+          "nd": 0.9966943011722945,
+          "n0": 0.49834714512372524,
+          "n1": 0.4983471560485693,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9966943011722945,
+          "single_occupancy_probability": 0.9966943011722945,
+          "empty_probability": 0.0033056988277054833,
+          "density_matrix": [
+            [
+              [
+                0.49834714512372524,
+                0.0
+              ],
+              [
+                -0.4983471505861472,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4983471505861472,
+                0.0
+              ],
+              [
+                0.4983471560485693,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -5.532764808370795e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 1,
+          "kept": 64,
+          "nd": 0.996357101731512,
+          "n0": 0.6525146001367887,
+          "n1": 0.3438425015947233,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.996357101731512,
+          "single_occupancy_probability": 0.996357101731512,
+          "empty_probability": 0.0036428982684879596,
+          "density_matrix": [
+            [
+              [
+                0.6525146001367887,
+                0.0
+              ],
+              [
+                -0.473668927034605,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.47366892703460506,
+                0.0
+              ],
+              [
+                0.3438425015947233,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -3.6221836648796917e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 2,
+          "kept": 256,
+          "nd": 0.9929789696439028,
+          "n0": 0.6981744268750976,
+          "n1": 0.2948045427688052,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9929789696439028,
+          "single_occupancy_probability": 0.9929789696439028,
+          "empty_probability": 0.0070210303560972465,
+          "density_matrix": [
+            [
+              [
+                0.6981744268750976,
+                0.0
+              ],
+              [
+                -0.45367939416264613,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.45367939416264624,
+                0.0
+              ],
+              [
+                0.2948045427688052,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -7.75129323921209e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 3,
+          "kept": 512,
+          "nd": 0.9913780248309831,
+          "n0": 0.7222497945802099,
+          "n1": 0.2691282302507733,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9913780248309831,
+          "single_occupancy_probability": 0.9913780248309831,
+          "empty_probability": 0.00862197516901686,
+          "density_matrix": [
+            [
+              [
+                0.7222497945802099,
+                0.0
+              ],
+              [
+                -0.4408829878940176,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4408829878940176,
+                0.0
+              ],
+              [
+                0.2691282302507733,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 4.0092917573686986e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 4,
+          "kept": 512,
+          "nd": 0.9907386733597534,
+          "n0": 0.7311760531849,
+          "n1": 0.25956262017485343,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9907386733597534,
+          "single_occupancy_probability": 0.9907386733597534,
+          "empty_probability": 0.009261326640246592,
+          "density_matrix": [
+            [
+              [
+                0.7311760531849,
+                0.0
+              ],
+              [
+                -0.4356443184224726,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.43564431842247253,
+                0.0
+              ],
+              [
+                0.25956262017485343,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 4.058842446502118e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 5,
+          "kept": 512,
+          "nd": 0.9905203316255751,
+          "n0": 0.7338178729572551,
+          "n1": 0.25670245866832003,
+          "double_occupancy": 0.0,
+          "local_moment_squared": 0.9905203316255751,
+          "single_occupancy_probability": 0.9905203316255751,
+          "empty_probability": 0.009479668374424932,
+          "density_matrix": [
+            [
+              [
+                0.7338178729572551,
+                0.0
+              ],
+              [
+                -0.4340194145460365,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.4340194145460366,
+                0.0
+              ],
+              [
+                0.25670245866832003,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": 4.0735074921930137e-17,
+          "ground_charges": [
+            1
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 6,
+          "kept": 512,
+          "nd": 0.9960175507952141,
+          "n0": 0.010206728224724104,
+          "n1": 0.98581082257049,
+          "double_occupancy": 0.003225333949526633,
+          "local_moment_squared": 0.9895668828961609,
+          "single_occupancy_probability": 0.9895668828961609,
+          "empty_probability": 0.007207783154312487,
+          "density_matrix": [
+            [
+              [
+                0.010206728224724104,
+                0.0
+              ],
+              [
+                0.07411250883563036,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.07411250883563035,
+                0.0
+              ],
+              [
+                0.98581082257049,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -0.0013439052315306873,
+          "ground_charges": [
+            2
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        },
+        {
+          "iteration": 7,
+          "kept": 512,
+          "nd": 0.9944537260147952,
+          "n0": 0.009489340529810333,
+          "n1": 0.9849643854849849,
+          "double_occupancy": 0.001809649915207954,
+          "local_moment_squared": 0.9908344261843793,
+          "single_occupancy_probability": 0.9908344261843793,
+          "empty_probability": 0.007355923900412752,
+          "density_matrix": [
+            [
+              [
+                0.009489340529810333,
+                0.0
+              ],
+              [
+                -0.08301230396120401,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.08301230396120426,
+                0.0
+              ],
+              [
+                0.9849643854849849,
+                0.0
+              ]
+            ]
+          ],
+          "double_minus_gaussian_reference": -0.0006459699394470927,
+          "ground_charges": [
+            2
+          ],
+          "ground_degeneracy": 1,
+          "state_prescription": "T=0 equal ground ensemble in finite-chain kept space"
+        }
+      ]
+    }
+  ],
+  "total_seconds": 55.2947278329998,
+  "timing_note": "The N=8 exact run was performed separately; per-run timings are recorded. Timings are specific to this environment."
+}

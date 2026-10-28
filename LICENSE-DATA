@@ -11,6 +11,11 @@ machine-readable/reference validation outputs under:
   reproducibility/causal_smith_rg/reference_rg_output/
   reproducibility/causal_smith_rg/reference_smith_output/
   reproducibility/low_temperature_saddle/
+  revisions/20261028/source/archive_additions/ (numerical data and outputs only)
+  revisions/20261028/source/reproducibility/ (numerical data and outputs only)
+  revisions/20261028/source/validation/ (numerical data and outputs only)
+
+  revisions/20261028/checks_20261028/ (numerical data and outputs only)
 
 It does not apply to the manuscript text, TeX sources, compiled PDFs,
 publication figures, source code, README files, or checksum manifests.
@@ -26,3 +31,4 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 A human-readable summary is available at:
 https://creativecommons.org/licenses/by/4.0/
+

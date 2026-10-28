@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "parameters": {
+    "cutoff": 0.7853981633974483,
+    "soc": 0.1,
+    "impurity_hybridization": 0.1,
+    "auxiliary_energy": 120.0,
+    "drive_frequency": 60.0,
+    "bath_temperature": 0.1,
+    "derivative_step": 2e-06,
+    "gate_halfwidth": 0.0001,
+    "auxiliary_vertex_halfwidth": 0.01,
+    "contour_samples": 512,
+    "pole_samples": 256,
+    "certification_tolerance": 1e-10
+  },
+  "ep": {
+    "certified": true,
+    "coordinates": [
+      0.020357014816949105,
+      -0.0029285540681082646,
+      1.833184476734544
+    ],
+    "z": [
+      0.020357014816949105,
+      -0.0029285540681082646
+    ],
+    "epsilon": [
+      0.02323413408450363,
+      -3.2847260068163964e-16
+    ],
+    "auxiliary_vertex": 1.833184476734544,
+    "reduced_residual": [
+      3.22931311140702e-20,
+      4.965730653278336e-20,
+      -3.2847260068163964e-16
+    ],
+    "F": [
+      -1.0535456084257637e-20,
+      4.2426523628131805e-20
+    ],
+    "F_z": [
+      -3.526961345548774e-18,
+      -3.9497699227467565e-16
+    ],
+    "F_zz": [
+      1.8102430530954035,
+      -0.3379495138125867
+    ],
+    "kernel_singular_values": [
+      0.001954983619450695,
+      2.233251881466695e-17
+    ],
+    "open_channels": [
+      {
+        "root_index": 0,
+        "velocity_sign": 1,
+        "branch_sign": -1,
+        "momentum_squared": 0.04939990806438281,
+        "momentum": 0.22226090088988393,
+        "velocity": 0.3679654658970506,
+        "soc_to_quadratic_ratio": 0.4499216893282711
+      },
+      {
+        "root_index": 1,
+        "velocity_sign": 1,
+        "branch_sign": 1,
+        "momentum_squared": 0.0013352427882434084,
+        "momentum": 0.03654097410091045,
+        "velocity": 0.09228136783986297,
+        "soc_to_quadratic_ratio": 2.736653919620288
+      }
+    ],
+    "derivative_step_stability": [
+      {
+        "step": 0.0002,
+        "coordinates": [
+          0.0203570156357631,
+          -0.002928554392774254,
+          1.8331844767347647
+        ],
+        "epsilon": [
+          0.023234134084513483,
+          2.981555974335137e-19
+        ],
+        "reduced_residual_norm": 2.9815634941494046e-19,
+        "F_modulus": 1.524219795387129e-21,
+        "F_z_modulus": 7.501614198391993e-09
+      },
+      {
+        "step": 0.0001,
+        "coordinates": [
+          0.02035701486819554,
+          -0.00292855408891925,
+          1.8331844767345438
+        ],
+        "epsilon": [
+          0.023234134084503342,
+          1.0909784360635388e-17
+        ],
+        "reduced_residual_norm": 1.0909785016728315e-17,
+        "F_modulus": 3.83449849137114e-21,
+        "F_z_modulus": 4.709218658175891e-10
+      },
+      {
+        "step": 5e-05,
+        "coordinates": [
+          0.02035701482015266,
+          -0.0029285540694169625,
+          1.833184476734543
+        ],
+        "epsilon": [
+          0.023234134084503272,
+          -2.72405795836983e-18
+        ],
+        "reduced_residual_norm": 2.724059227947738e-18,
+        "F_modulus": 2.616536106492769e-21,
+        "F_z_modulus": 2.9464875037261796e-11
+      },
+      {
+        "step": 2e-05,
+        "coordinates": [
+          0.02035701481703074,
+          -0.002928554068141678,
+          1.8331844767345442
+        ],
+        "epsilon": [
+          0.023234134084503286,
+          -1.0069527676959122e-17
+        ],
+        "reduced_residual_norm": 1.006952810891884e-17,
+        "F_modulus": 3.9251699987356276e-21,
+        "F_z_modulus": 7.545945503607926e-13
+      },
+      {
+        "step": 1e-05,
+        "coordinates": [
+          0.020357014816953827,
+          -0.0029285540681103306,
+          1.8331844767345438
+        ],
+        "epsilon": [
+          0.023234134084503366,
+          2.9802007216195303e-17
+        ],
+        "reduced_residual_norm": 2.9802008963468535e-17,
+        "F_modulus": 7.98112602484511e-21,
+        "F_z_modulus": 4.7212458522883357e-14
+      },
+      {
+        "step": 5e-06,
+        "coordinates": [
+          0.020357014816949105,
+          -0.0029285540681082646,
+          1.833184476734544
+        ],
+        "epsilon": [
+          0.023234134084503186,
+          -1.6237282785686036e-16
+        ],
+        "reduced_residual_norm": 1.6237282957964124e-16,
+        "F_modulus": 1.5436536180305163e-20,
+        "F_z_modulus": 2.769222713280264e-15
+      },
+      {
+        "step": 2e-06,
+        "coordinates": [
+          0.020357014816949105,
+          -0.0029285540681082646,
+          1.833184476734544
+        ],
+        "epsilon": [
+          0.02323413408450363,
+          -3.2847260068163964e-16
+        ],
+        "reduced_residual_norm": 3.2847260602256363e-16,
+        "F_modulus": 4.371505166497859e-20,
+        "F_z_modulus": 3.9499273902526634e-16
+      }
+    ]
+  },
+  "local_topology": {
+    "certified": true,
+    "winding": 0.9999999999999637,
+    "minimum_boundary_modulus": 5.072144801665368e-09,
+    "maximum_phase_increment": 0.08975040207877438,
+    "minimum_F_zz_modulus": 1.8190753504899222,
+    "endpoint_permutation": [
+      1,
+      0
+    ],
+    "half_winding": 0.5000000000000098,
+    "minimum_pole_separation": 0.00014857469197802716,
+    "maximum_pole_residual": 1.868409259925934e-20,
+    "maximum_assignment_to_half_separation_ratio": 0.09997532450181926,
+    "pole_failures": 0
+  },
+  "nested_contour_checks": [
+    {
+      "radius_factor": 0.5,
+      "certified": true,
+      "winding": 1.0000000000000546,
+      "minimum_boundary_modulus": 2.5443428173502444e-09,
+      "maximum_phase_increment": 0.08944436537853934,
+      "minimum_F_zz_modulus": 1.8299255732253872,
+      "endpoint_permutation": [
+        1,
+        0
+      ],
+      "half_winding": 0.5000000000000108,
+      "maximum_assignment_to_half_separation_ratio": 0.09687024315958907
+    },
+    {
+      "radius_factor": 1.0,
+      "certified": true,
+      "winding": 0.9999999999999637,
+      "minimum_boundary_modulus": 5.072144801665368e-09,
+      "maximum_phase_increment": 0.08975040207877438,
+      "minimum_F_zz_modulus": 1.8190753504899222,
+      "endpoint_permutation": [
+        1,
+        0
+      ],
+      "half_winding": 0.5000000000000098,
+      "maximum_assignment_to_half_separation_ratio": 0.09997532450181926
+    },
+    {
+      "radius_factor": 2.0,
+      "certified": true,
+      "winding": 1.0000000000000087,
+      "minimum_boundary_modulus": 1.0078614959253143e-08,
+      "maximum_phase_increment": 0.09035355981699347,
+      "minimum_F_zz_modulus": 1.7998183352288384,
+      "endpoint_permutation": [
+        1,
+        0
+      ],
+      "half_winding": 0.5000000000000006,
+      "maximum_assignment_to_half_separation_ratio": 0.1042102394339391
+    }
+  ],
+  "validation": {
+    "quadrature_point": [
+      0.020357014816949105,
+      0.01
+    ],
+    "quadrature_residual": 6.969346735380695e-19,
+    "sheet_eta": 1e-08,
+    "sheet_continuity_residual": 7.795106423713657e-09,
+    "rate_matrix_eigenvalues": [
+      0.00153400811755512,
+      0.0034659879333386475
+    ],
+    "mean_rate": 0.002499998025446884,
+    "passivity_margin": 0.6136037316593121,
+    "upper_threshold": 0.018667870911316938,
+    "threshold_gap_in_widths": 0.576784264981418,
+    "matrix_shift_identity_relative_residual": 3.923489914340214e-16,
+    "auxiliary_even_at_pole": [
+      -1.0560540107430738e-05,
+      1.519727361855406e-06
+    ],
+    "auxiliary_odd_at_pole": [
+      -0.018678256218426635,
+      1.2159056429512978e-06
+    ],
+    "off_shell_ratio": 0.0305530746122424,
+    "drive_to_cutoff_ratio": 76.39437268410977,
+    "thermal_suppression_exponent": 600.0
+  },
+  "scope": "Exact for the stated full-k retarded kernel and rotating-frame auxiliary closure. The nonlinear pole EP is not identified with the constant nilpotent Markov-core EP, and no full-k Yang-Baxter statement follows."
+}

@@ -1,0 +1,497 @@
+{
+  "model": {
+    "mu": 0.012,
+    "epsilon_d_U0": 0.0151703497834,
+    "W": 0.1,
+    "VO": 1.2134220096136235,
+    "soc": 0.05
+  },
+  "scope": "passive physical-sheet bath compression; no finite-U or EP claim",
+  "microscopic_radial_nodes": 8192,
+  "microscopic_vs_analytic_max_training_relative_error": 1.927606478370338e-12,
+  "fits": [
+    {
+      "bath_orbitals": 6,
+      "energies": [
+        0.010579133309898998,
+        0.014173174811138658,
+        0.10276470599595165,
+        0.10673456245650166,
+        0.43724324676078846,
+        0.5096235849581503
+      ],
+      "couplings": [
+        [
+          0.0019369997437476123,
+          -0.0019984441743539057,
+          0.001825654799351634,
+          -0.01331081309369857,
+          -0.013223465385422744,
+          0.011252381705900753
+        ],
+        [
+          -0.0013293888612159477,
+          0.0021223574444069276,
+          -0.01379106052891377,
+          -0.00226096237356243,
+          0.01091971330951647,
+          0.013056282810312214
+        ]
+      ],
+      "fit": {
+        "success": true,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 45,
+        "cost": 3.5358697321617925,
+        "gradient_optimality": 0.00025501514477848004,
+        "training_relative_rms": 0.10910566291728686,
+        "low_frequency_training_floor": 0.0002
+      },
+      "validation": {
+        "held_out_real_frequency": [
+          {
+            "eta": 0.001,
+            "rms_relative": 0.7330048774664201,
+            "max_relative": 1.1779408864781864
+          },
+          {
+            "eta": 0.003,
+            "rms_relative": 0.6360900454861644,
+            "max_relative": 0.9852532808140744
+          },
+          {
+            "eta": 0.01,
+            "rms_relative": 0.521009965739455,
+            "max_relative": 0.864397401059953
+          }
+        ],
+        "held_out_imaginary_frequency_rms_relative": 0.1986955019641895,
+        "zeroth_moment_relative_error": 0.002154226312831907,
+        "first_moment_relative_error": 0.005500110445799466,
+        "minimum_residue_eigenvalue": -2.710505431213761e-20,
+        "filling": [
+          {
+            "epsilon_d": 0.0151703497834,
+            "W": 0.1,
+            "continuum_nd": 0.9628172932310781,
+            "fit_nd": 0.7983465220671019,
+            "absolute_nd_error": 0.16447077116397624,
+            "density_frobenius_error": 0.285859022471756
+          },
+          {
+            "epsilon_d": 0.0131703497834,
+            "W": 0.1,
+            "continuum_nd": 1.4090280885859872,
+            "fit_nd": 1.6870075108867877,
+            "absolute_nd_error": 0.2779794223008005,
+            "density_frobenius_error": 0.24590675319086355
+          },
+          {
+            "epsilon_d": 0.0171703497834,
+            "W": 0.1,
+            "continuum_nd": 0.4893362707103846,
+            "fit_nd": 0.2519669002178114,
+            "absolute_nd_error": 0.23736937049257323,
+            "density_frobenius_error": 0.2172132512566394
+          },
+          {
+            "epsilon_d": 0.018197601233595,
+            "W": 0.131445451398,
+            "continuum_nd": 0.8092445947552762,
+            "fit_nd": 0.5786844593407747,
+            "absolute_nd_error": 0.2305601354145015,
+            "density_frobenius_error": 0.3064671965283563
+          }
+        ],
+        "bath_orbitals_below_mu": 1
+      },
+      "projection_seed_validation": {
+        "held_out_real_frequency": [
+          {
+            "eta": 0.001,
+            "rms_relative": 1.3276492449791506,
+            "max_relative": 3.85574317787091
+          },
+          {
+            "eta": 0.003,
+            "rms_relative": 0.7503026563583632,
+            "max_relative": 1.1234817504800172
+          },
+          {
+            "eta": 0.01,
+            "rms_relative": 0.38289448583323993,
+            "max_relative": 0.774130124522285
+          }
+        ],
+        "held_out_imaginary_frequency_rms_relative": 0.8670621911648747,
+        "zeroth_moment_relative_error": 3.8185759575027856e-14,
+        "first_moment_relative_error": 6.084359346113966e-14,
+        "minimum_residue_eigenvalue": -1.3552527156068805e-20,
+        "filling": [
+          {
+            "epsilon_d": 0.0151703497834,
+            "W": 0.1,
+            "continuum_nd": 0.9628172932310781,
+            "fit_nd": 1.2253654596641588,
+            "absolute_nd_error": 0.26254816643308065,
+            "density_frobenius_error": 0.2773350737302425
+          },
+          {
+            "epsilon_d": 0.0131703497834,
+            "W": 0.1,
+            "continuum_nd": 1.4090280885859872,
+            "fit_nd": 1.3639773481233928,
+            "absolute_nd_error": 0.045050740462594385,
+            "density_frobenius_error": 0.19474147321312582
+          },
+          {
+            "epsilon_d": 0.0171703497834,
+            "W": 0.1,
+            "continuum_nd": 0.4893362707103846,
+            "fit_nd": 0.3227932122337829,
+            "absolute_nd_error": 0.16654305847660172,
+            "density_frobenius_error": 0.2655581278954136
+          },
+          {
+            "epsilon_d": 0.018197601233595,
+            "W": 0.131445451398,
+            "continuum_nd": 0.8092445947552762,
+            "fit_nd": 1.108961364640929,
+            "absolute_nd_error": 0.2997167698856529,
+            "density_frobenius_error": 0.27651234449113543
+          }
+        ],
+        "bath_orbitals_below_mu": 1
+      },
+      "seconds": 3.231913941999892
+    },
+    {
+      "bath_orbitals": 8,
+      "energies": [
+        0.010252320220998463,
+        0.013495030334592062,
+        0.015237431040843515,
+        0.029314297134067503,
+        0.08909526186871869,
+        0.10287735101417102,
+        0.40204784552755696,
+        0.46353679208646975
+      ],
+      "couplings": [
+        [
+          0.0022568789803122775,
+          0.0018551898543976912,
+          0.0015036280070312394,
+          0.002203823256219339,
+          0.006894245895509062,
+          0.009453805684096405,
+          -0.012932158563195377,
+          0.013037599828475036
+        ],
+        [
+          -0.0012864833506090003,
+          -0.0015192080421908797,
+          0.001976240175311857,
+          -0.002243781658212972,
+          -0.009405152140648387,
+          0.0073665530737235104,
+          0.012884430170511217,
+          0.013009878223962747
+        ]
+      ],
+      "fit": {
+        "success": true,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 302,
+        "cost": 2.3870695514336946,
+        "gradient_optimality": 0.0028523752105999163,
+        "training_relative_rms": 0.08964786592432022,
+        "low_frequency_training_floor": 0.0002
+      },
+      "validation": {
+        "held_out_real_frequency": [
+          {
+            "eta": 0.001,
+            "rms_relative": 0.7413614572669771,
+            "max_relative": 1.4836390905071437
+          },
+          {
+            "eta": 0.003,
+            "rms_relative": 0.5300634090778805,
+            "max_relative": 0.8778437404143115
+          },
+          {
+            "eta": 0.01,
+            "rms_relative": 0.3940572742654524,
+            "max_relative": 0.7134768023539221
+          }
+        ],
+        "held_out_imaginary_frequency_rms_relative": 0.14574673369215313,
+        "zeroth_moment_relative_error": 0.0015920505408633695,
+        "first_moment_relative_error": 0.0026280684223670076,
+        "minimum_residue_eigenvalue": -4.235164736271502e-22,
+        "filling": [
+          {
+            "epsilon_d": 0.0151703497834,
+            "W": 0.1,
+            "continuum_nd": 0.9628172932310781,
+            "fit_nd": 1.0452079710419606,
+            "absolute_nd_error": 0.0823906778108825,
+            "density_frobenius_error": 0.16957943462970915
+          },
+          {
+            "epsilon_d": 0.0131703497834,
+            "W": 0.1,
+            "continuum_nd": 1.4090280885859872,
+            "fit_nd": 1.5082936110769705,
+            "absolute_nd_error": 0.0992655224909833,
+            "density_frobenius_error": 0.07948150457643062
+          },
+          {
+            "epsilon_d": 0.0171703497834,
+            "W": 0.1,
+            "continuum_nd": 0.4893362707103846,
+            "fit_nd": 0.24470152341210016,
+            "absolute_nd_error": 0.24463474729828444,
+            "density_frobenius_error": 0.22650982807755773
+          },
+          {
+            "epsilon_d": 0.018197601233595,
+            "W": 0.131445451398,
+            "continuum_nd": 0.8092445947552762,
+            "fit_nd": 0.8879873897289934,
+            "absolute_nd_error": 0.07874279497371717,
+            "density_frobenius_error": 0.11944746664450875
+          }
+        ],
+        "bath_orbitals_below_mu": 1
+      },
+      "projection_seed_validation": {
+        "held_out_real_frequency": [
+          {
+            "eta": 0.001,
+            "rms_relative": 2.0970584510481833,
+            "max_relative": 6.3568999123215075
+          },
+          {
+            "eta": 0.003,
+            "rms_relative": 1.060286481538213,
+            "max_relative": 2.0752801782506745
+          },
+          {
+            "eta": 0.01,
+            "rms_relative": 0.38943230907244214,
+            "max_relative": 0.5460282369468294
+          }
+        ],
+        "held_out_imaginary_frequency_rms_relative": 0.24540650809098175,
+        "zeroth_moment_relative_error": 3.804803374512024e-14,
+        "first_moment_relative_error": 6.039969028604951e-14,
+        "minimum_residue_eigenvalue": -1.3552527156068805e-20,
+        "filling": [
+          {
+            "epsilon_d": 0.0151703497834,
+            "W": 0.1,
+            "continuum_nd": 0.9628172932310781,
+            "fit_nd": 0.6789900324223552,
+            "absolute_nd_error": 0.2838272608087229,
+            "density_frobenius_error": 0.24690983357401325
+          },
+          {
+            "epsilon_d": 0.0131703497834,
+            "W": 0.1,
+            "continuum_nd": 1.4090280885859872,
+            "fit_nd": 1.537837370603349,
+            "absolute_nd_error": 0.12880928201736186,
+            "density_frobenius_error": 0.17415996884400067
+          },
+          {
+            "epsilon_d": 0.0171703497834,
+            "W": 0.1,
+            "continuum_nd": 0.4893362707103846,
+            "fit_nd": 0.39919276719106067,
+            "absolute_nd_error": 0.09014350351932393,
+            "density_frobenius_error": 0.09252417998445824
+          },
+          {
+            "epsilon_d": 0.018197601233595,
+            "W": 0.131445451398,
+            "continuum_nd": 0.8092445947552762,
+            "fit_nd": 0.6468972794845984,
+            "absolute_nd_error": 0.1623473152706778,
+            "density_frobenius_error": 0.1489227309411695
+          }
+        ],
+        "bath_orbitals_below_mu": 2
+      },
+      "seconds": 3.9854415609997886
+    },
+    {
+      "bath_orbitals": 10,
+      "energies": [
+        0.009477609749596197,
+        0.011728321854334247,
+        0.013089737151232102,
+        0.015073556543888889,
+        0.024272272946756244,
+        0.03716226019949656,
+        0.07591093571029514,
+        0.10167716496621196,
+        0.37223503721783485,
+        0.4761925591287612
+      ],
+      "couplings": [
+        [
+          0.002728728824551267,
+          0.00010701703098476018,
+          0.0017732357038371307,
+          -0.0009000692708655958,
+          -0.0024826089902418363,
+          -0.0019165104910109881,
+          -0.0066193393324366365,
+          0.008798921300077181,
+          -0.013513023609650282,
+          0.012863566670550084
+        ],
+        [
+          -0.0008670996263527241,
+          -0.0010239612028331109,
+          -0.0008260423705025117,
+          -0.002487064692618067,
+          0.0017778256993355478,
+          0.0022126735659792804,
+          0.00703342492872453,
+          0.00883628816248698,
+          0.01362283250362543,
+          0.012705167011583881
+        ]
+      ],
+      "fit": {
+        "success": true,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 381,
+        "cost": 1.6450205407853853,
+        "gradient_optimality": 0.00011177585037678388,
+        "training_relative_rms": 0.07441492681118889,
+        "low_frequency_training_floor": 0.0002
+      },
+      "validation": {
+        "held_out_real_frequency": [
+          {
+            "eta": 0.001,
+            "rms_relative": 0.7512099882915528,
+            "max_relative": 1.3448062938118128
+          },
+          {
+            "eta": 0.003,
+            "rms_relative": 0.47311419444368336,
+            "max_relative": 0.840301585609208
+          },
+          {
+            "eta": 0.01,
+            "rms_relative": 0.32926624817258154,
+            "max_relative": 0.633070244898108
+          }
+        ],
+        "held_out_imaginary_frequency_rms_relative": 0.09556599642399502,
+        "zeroth_moment_relative_error": 0.0008281544724303944,
+        "first_moment_relative_error": 0.00849304416618251,
+        "minimum_residue_eigenvalue": 0.0,
+        "filling": [
+          {
+            "epsilon_d": 0.0151703497834,
+            "W": 0.1,
+            "continuum_nd": 0.9628172932310781,
+            "fit_nd": 1.0571494841922457,
+            "absolute_nd_error": 0.09433219096116763,
+            "density_frobenius_error": 0.09690690609512101
+          },
+          {
+            "epsilon_d": 0.0131703497834,
+            "W": 0.1,
+            "continuum_nd": 1.4090280885859872,
+            "fit_nd": 1.470509484223723,
+            "absolute_nd_error": 0.0614813956377358,
+            "density_frobenius_error": 0.04487497915125505
+          },
+          {
+            "epsilon_d": 0.0171703497834,
+            "W": 0.1,
+            "continuum_nd": 0.4893362707103846,
+            "fit_nd": 0.4494324969390848,
+            "absolute_nd_error": 0.03990377377129978,
+            "density_frobenius_error": 0.0395848691738826
+          },
+          {
+            "epsilon_d": 0.018197601233595,
+            "W": 0.131445451398,
+            "continuum_nd": 0.8092445947552762,
+            "fit_nd": 0.748539944504045,
+            "absolute_nd_error": 0.060704650251231174,
+            "density_frobenius_error": 0.06431985809075604
+          }
+        ],
+        "bath_orbitals_below_mu": 2
+      },
+      "projection_seed_validation": {
+        "held_out_real_frequency": [
+          {
+            "eta": 0.001,
+            "rms_relative": 3.933262675472892,
+            "max_relative": 12.606023889674267
+          },
+          {
+            "eta": 0.003,
+            "rms_relative": 1.9315736633036558,
+            "max_relative": 4.115839345320947
+          },
+          {
+            "eta": 0.01,
+            "rms_relative": 0.6529524013665068,
+            "max_relative": 1.1751864092092743
+          }
+        ],
+        "held_out_imaginary_frequency_rms_relative": 0.16684130557765292,
+        "zeroth_moment_relative_error": 3.830010915872903e-14,
+        "first_moment_relative_error": 6.052782115295754e-14,
+        "minimum_residue_eigenvalue": 0.0,
+        "filling": [
+          {
+            "epsilon_d": 0.0151703497834,
+            "W": 0.1,
+            "continuum_nd": 0.9628172932310781,
+            "fit_nd": 0.9211647491548528,
+            "absolute_nd_error": 0.04165254407622532,
+            "density_frobenius_error": 0.12954758432226385
+          },
+          {
+            "epsilon_d": 0.0131703497834,
+            "W": 0.1,
+            "continuum_nd": 1.4090280885859872,
+            "fit_nd": 1.461064635880402,
+            "absolute_nd_error": 0.05203654729441487,
+            "density_frobenius_error": 0.04674052385014877
+          },
+          {
+            "epsilon_d": 0.0171703497834,
+            "W": 0.1,
+            "continuum_nd": 0.4893362707103846,
+            "fit_nd": 0.5270704177970078,
+            "absolute_nd_error": 0.037734147086623204,
+            "density_frobenius_error": 0.0947222392668555
+          },
+          {
+            "epsilon_d": 0.018197601233595,
+            "W": 0.131445451398,
+            "continuum_nd": 0.8092445947552762,
+            "fit_nd": 0.7982676687367225,
+            "absolute_nd_error": 0.010976926018553712,
+            "density_frobenius_error": 0.08909753429115295
+          }
+        ],
+        "bath_orbitals_below_mu": 2
+      },
+      "seconds": 5.031247683999936
+    }
+  ]
+}

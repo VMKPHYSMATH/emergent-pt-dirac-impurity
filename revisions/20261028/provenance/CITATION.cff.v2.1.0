@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+doi: 10.5281/zenodo.21434682
+message: "Please cite both the reproducibility archive and the associated manuscript."
+title: "Reproducibility code and data for Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity"
+type: software
+authors:
+  - family-names: Kulkarni
+    given-names: Vinayak M.
+    orcid: "https://orcid.org/0000-0001-7590-2728"
+version: "2.1.0"
+date-released: "2026-08-11"
+repository-code: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
+url: "https://github.com/VMKPHYSMATH/emergent-pt-dirac-impurity"
+abstract: >-
+  Code, data, figures, and checked manuscript sources for a passive
+  pseudo-Hermitian driven Dirac impurity. Version 2.1 adds a causal full-k
+  exceptional-point certificate for a stationary rotating drive, an SOC
+  continuation family, and an exact zero-temperature finite-chain finite-U
+  continuation with a common-contour N=10 to N=12 Rouche stability gate.
+  These finite-chain results are not promoted to a continuum, thermodynamic,
+  finite-temperature FDM-NRG, or strong-coupling Kondo theorem. The exact
+  integrability claim remains restricted to the linearized equal-velocity
+  scalar-hybridization submanifold.
+keywords:
+  - non-Hermitian physics
+  - exceptional points
+  - quantum impurity
+  - Dirac bath
+  - causal spectral density
+  - Wigner-Smith delay
+  - numerical renormalization group
+  - block Wilson chain
+  - Brouwer degree
+  - Yang-Baxter equation
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Kulkarni
+      given-names: Vinayak M.
+      orcid: "https://orcid.org/0000-0001-7590-2728"
+  title: "Emergent PT Symmetry and Exceptional Points in a Driven Dirac Impurity"
+  year: 2026
+  identifiers:
+    - type: url
+      value: "https://arxiv.org/abs/2505.17811"
+

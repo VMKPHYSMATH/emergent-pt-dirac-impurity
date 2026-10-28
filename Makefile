@@ -1,4 +1,4 @@
-.PHONY: check paper clean
+.PHONY: check check-revision
 
 check:
 	python reproducibility/finite_u_contact/verify_finiteU_contact_algebra.py
@@ -13,11 +13,6 @@ check:
 	python reproducibility/full_k_finite_u/finiteU_fullk_reproducibility/validate_archived_finiteU_gates.py
 	python reproducibility/full_k_finite_u/validate_fullk_n_scaling_gate.py
 
-paper:
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error main.tex
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error main.tex
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error supplemental_material.tex
-	cd paper && pdflatex -interaction=nonstopmode -halt-on-error supplemental_material.tex
-
-clean:
-	cd paper && latexmk -c main.tex supplemental_material.tex
+check-revision:
+	python reproduce.py --verify-stored
+	python reproduce.py --quick

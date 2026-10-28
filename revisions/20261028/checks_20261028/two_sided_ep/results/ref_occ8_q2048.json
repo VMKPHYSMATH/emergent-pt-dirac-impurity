@@ -1,0 +1,151 @@
+{
+  "settings": {
+    "U": 0.0005,
+    "mu": 0.012,
+    "bath_blocks": 8,
+    "z_shifts": [
+      0.5
+    ],
+    "Lambda": 1.5,
+    "quadrature_nodes": 2048,
+    "VO": 1.2134220096136235,
+    "scope": "exact finite-chain self-energy embedding"
+  },
+  "source_seed": [
+    0.013184494229779527,
+    -0.005012186477200969,
+    0.018197601233419788,
+    0.13144545139776737
+  ],
+  "scope": "finite-chain self-energy embedding; no interacting continuum claim",
+  "solution": {
+    "center": [
+      0.013190137775726004,
+      -0.005009743482625662,
+      0.018201302424839735,
+      0.1314220189846407
+    ],
+    "solver_success": true,
+    "message": "The solution converged.",
+    "scaled_residual": 3.287978613333853e-13,
+    "nfev": 13,
+    "seconds": 0.38255641399973683,
+    "center_numerical_pass": true,
+    "checks": {
+      "F": 5.101411826675157e-19,
+      "F_z": 8.45939395072832e-16,
+      "F_zz": [
+        1.6415872403834235,
+        -0.261082088393836
+      ],
+      "singular_values": [
+        0.0019387758046146356,
+        2.6311308480295303e-16
+      ],
+      "Fz_derivative_halving_difference": 5.951707468496702e-15,
+      "Fzz_derivative_halving_relative_difference": 8.467702921684493e-09,
+      "open_channel_count": 2
+    },
+    "filling": {
+      "nd": 0.7735813615818675,
+      "double_occupancy": 0.08991172533709049,
+      "local_moment_squared": 0.5937579109076866,
+      "single_occupancy_probability": 0.5937579109076865,
+      "empty_probability": 0.31633036375522294,
+      "double_minus_gaussian_reference": -0.0008778254819733627,
+      "nd_z_min": 0.7735813615818675,
+      "nd_z_max": 0.7735813615818675,
+      "z_members": [
+        {
+          "nd": 0.7735813615818675,
+          "n0": 0.1444222865606906,
+          "n1": 0.629159075021177,
+          "double_occupancy": 0.08991172533709049,
+          "single_occupancy_probability": 0.5937579109076865,
+          "empty_probability": 0.31633036375522294,
+          "local_moment_squared": 0.5937579109076866,
+          "local_moment_identity_error": 1.1102230246251565e-16,
+          "double_minus_gaussian_reference": -0.0008778254819733627,
+          "density_matrix": [
+            [
+              [
+                0.1444222865606906,
+                0.0
+              ],
+              [
+                -0.00866264427894897,
+                0.0
+              ]
+            ],
+            [
+              [
+                -0.00866264427894897,
+                0.0
+              ],
+              [
+                0.629159075021177,
+                0.0
+              ]
+            ]
+          ],
+          "density_eigenvalues": [
+            0.14426752740625137,
+            0.6293138341756161
+          ],
+          "occupation_bounds_error": 0.0,
+          "ground_charges": [
+            2
+          ],
+          "ground_degeneracy": 1,
+          "grand_ground_energy": -0.01511622271214406,
+          "sector_dimensions": {
+            "2": 153
+          },
+          "state_prescription": "T=0 grand-canonical Hermitian finite-chain ground ensemble"
+        }
+      ],
+      "scope": "arithmetic z-average of finite-chain equilibrium reference occupations"
+    },
+    "physical_axis_checks": [
+      {
+        "omega_relative_to_mu": -0.004,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.003456567087019069,
+        "embedded_total_rate_min_eigenvalue": 0.003457127785462879,
+        "embedded_spectral_min_eigenvalue": 26.549740280556044
+      },
+      {
+        "omega_relative_to_mu": 0.0,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.005526358230436149,
+        "embedded_total_rate_min_eigenvalue": 0.00552694100169945,
+        "embedded_spectral_min_eigenvalue": 38.51856169936259
+      },
+      {
+        "omega_relative_to_mu": 0.004,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.0062655883915046715,
+        "embedded_total_rate_min_eigenvalue": 0.006266462165277868,
+        "embedded_spectral_min_eigenvalue": 35.42384156246127
+      },
+      {
+        "omega_relative_to_mu": 0.0,
+        "eta": 0.003,
+        "bath_rate_min_eigenvalue": 0.005526358230436149,
+        "embedded_total_rate_min_eigenvalue": 0.00552694100169945,
+        "embedded_spectral_min_eigenvalue": 38.51856169936259
+      }
+    ],
+    "physical_axis_pass": true,
+    "ground_charges": [
+      [
+        2
+      ]
+    ],
+    "selfenergy_derivative_checks": {
+      "first_relative": 1.833100900581641e-09,
+      "second_relative": 1.9951017924186403e-05
+    }
+  },
+  "state_builds": 9
+}

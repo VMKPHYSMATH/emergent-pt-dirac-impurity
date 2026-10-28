@@ -1,0 +1,73 @@
+{
+  "completed_jobs": 4,
+  "results": [
+    {
+      "id": "100416f3e7f4de6d",
+      "U": 0.0025,
+      "mu": 0.0,
+      "sites": 10,
+      "epsilon_d": 0.014406074261342024,
+      "W": 0.09036305151504315,
+      "status": "FINITE_CHAIN_OCCUPATIONS_COMPUTED",
+      "epsilon_d_at_ep": null,
+      "W_at_ep": null,
+      "nd": 0.017923987000484545,
+      "double_occupancy": 0.0,
+      "local_moment_squared": 0.017923987000484545,
+      "nd_z_min": 0.012535861694075966,
+      "nd_z_max": 0.026336579577519656,
+      "double_minus_gaussian_reference": -1.991780596917317e-22
+    },
+    {
+      "id": "11e127ffe0aaf577",
+      "U": 0.0,
+      "mu": 0.0,
+      "sites": 12,
+      "epsilon_d": 0.015170349783,
+      "W": 0.1,
+      "status": "FINITE_CHAIN_OCCUPATIONS_COMPUTED",
+      "epsilon_d_at_ep": null,
+      "W_at_ep": null,
+      "nd": 0.020652188253805284,
+      "double_occupancy": 9.646247294837478e-07,
+      "local_moment_squared": 0.02065025900434632,
+      "nd_z_min": 0.019225530847340327,
+      "nd_z_max": 0.022664954653798704,
+      "double_minus_gaussian_reference": 1.572569606136812e-19
+    },
+    {
+      "id": "76e4be15d8dc21d9",
+      "U": 0.0,
+      "mu": 0.0,
+      "sites": 10,
+      "epsilon_d": 0.015170349783,
+      "W": 0.1,
+      "status": "FINITE_CHAIN_OCCUPATIONS_COMPUTED",
+      "epsilon_d_at_ep": null,
+      "W_at_ep": null,
+      "nd": 0.021514200162551025,
+      "double_occupancy": 0.0,
+      "local_moment_squared": 0.021514200162551025,
+      "nd_z_min": 0.015217152034913268,
+      "nd_z_max": 0.03128709241451237,
+      "double_minus_gaussian_reference": 1.875657880965982e-21
+    },
+    {
+      "id": "af9c72e3753cddf7",
+      "U": 0.0025,
+      "mu": 0.0,
+      "sites": 12,
+      "epsilon_d": 0.014406074261342024,
+      "W": 0.09036305151504315,
+      "status": "FINITE_CHAIN_OCCUPATIONS_COMPUTED",
+      "epsilon_d_at_ep": null,
+      "W_at_ep": null,
+      "nd": 0.01706375753480609,
+      "double_occupancy": 5.725741255765939e-07,
+      "local_moment_squared": 0.01706261238655494,
+      "nd_z_min": 0.015847178031987312,
+      "nd_z_max": 0.018765822176321962,
+      "double_minus_gaussian_reference": -7.781067611240876e-08
+    }
+  ]
+}

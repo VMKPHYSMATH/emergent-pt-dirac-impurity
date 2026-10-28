@@ -1,0 +1,223 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath,amssymb,bm,booktabs,graphicx,microtype,hyperref,xcolor}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\Id}{\mathbb I}
+\begin{document}
+\begin{center}
+{\Large\bfseries Equilibrium slave-boson check of the stationary bath}\par\vspace{4pt}
+{\large Finite-$U$ matrix saddle and impurity resonance poles}\par\vspace{5pt}
+Calculation record for Vinayak M. Kulkarni --- 17 October 2026
+\end{center}
+
+\textbf{Status: exploratory numerical result within mean field.}
+This calculation is separate from the APS Open Science manuscript revision.
+It tests the full stationary radial bath at zero temperature, rather than the
+separate Markov slave-boson benchmark. The bath continuum is integrated
+directly; the interaction treatment remains a slave-boson approximation.
+
+\section*{1. What the calculation establishes}
+An equilibrium finite-$U$ slave-boson saddle can retain a nonlinear continuum
+resonance EP. A locally stable example has \emph{mean} impurity occupancy
+$n_d=1$ at $U=0.0025$, with the following retuned parameters:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Quantity & Value in the manuscript's model units\\
+\midrule
+$\epsilon_d$ & $0.008761698951796$\\
+$V_O$ & $0.945864146591530$\\
+$\mu$ & $0.006656973796273$\\
+$z_{\rm EP}$ & $0.006535134304576-0.002983035811337\ii$\\
+$D=\langle n_\uparrow n_\downarrow\rangle$ & $0.228945653167805$\\
+Eigenvalues of the local density matrix & $0.4053765225,\ 0.5946234775$\\
+Eigenvalues of the quasiparticle weight & $0.9973955023,\ 0.9973955023$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The residuals satisfy $|F|<10^{-17}$, $|F_z|<10^{-12}$ and
+$F_{zz}=1.7116469191-0.3435121542\ii\ne0$. The kernel has one vanishing
+singular value and one finite singular value, approximately $1.542\times10^{-3}$.
+Two poles exchange on a small loop in $(\epsilon_d,V_O)$ after the equilibrium
+saddle is re-solved at every loop point. The separation half-winding is $-1/2$.
+
+\textbf{Mean occupancy one is not a local-moment certificate.}
+Here the empty and double probabilities are both $0.22895$, and the
+single-occupancy probability is only $P_{\rm single}=n_d-2D=0.54211$.
+The uncorrelated double occupancy at the same density matrix would be
+$\det n=0.24105$. Thus this EP lies in a charge-fluctuating regime with modest
+correlation corrections, not an established Kondo or developed local-moment regime.
+
+\textbf{Stronger-$U$ check.}
+On the distinct path $\mu=0.012$, $\epsilon_d=\epsilon_d^{(0)}-U/2$,
+$V_O=1.21342200961$ and $W=0.1$, the saddle reaches
+$n_d=0.994055$, $D=0.00125994$ at $U=0.2$.
+It is strongly polarized: the density eigenvalues are $0.001316$ and $0.992739$.
+The tested poles are separated; an EP in this occupied regime has not been
+established. This gate path is \emph{not} particle-hole symmetry of the asymmetric bath.
+
+\newpage
+\section*{2. Numerical geometry and filling}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/Stationary_SB_Checks.pdf}
+\end{center}
+\textbf{Figure 1.} (a) Complex pole trajectories about the selected finite-$U$
+EP. Open circles mark the initial poles, arrows show continuation direction,
+and the star is the computed double pole. The saddle is solved anew along
+$\epsilon_d=\epsilon_{d,\rm EP}+5\times10^{-6}\cos\phi$,
+$V_O=V_{O,\rm EP}+10^{-3}\sin\phi$, with $U$ and $\mu$ fixed.
+Each tracked branch ends at the other's starting pole.
+(b) A retuned EP branch at $n_d=1$, obtained by adjusting $\epsilon_d,V_O,\mu$
+while holding $W=0.1$. (c,d) The separate occupied gate path of Sec.~1.
+These occupied-path curves are not an EP locus.
+
+\textbf{Additional control choice.}
+Holding $V_O$ fixed instead and retuning $\epsilon_d,W,\mu$ also produces
+an $n_d=1$ EP branch in the tested weak-to-moderate-$U$ window. In that branch,
+the increase of $W$ broadens the resonances and double occupancy remains large.
+It does not supply a local-moment EP either. The archive records both choices.
+
+\textbf{Why fixed-parameter splitting is compatible with a retuned EP.}
+An interaction-induced change of the saddle generally moves the double-pole
+condition. A split pair at one fixed set of controls and a double pole at a
+different, retuned set are different statements. Failure of a continuation
+solver at larger $U$ is not a proof that no EP exists anywhere in parameter space.
+
+\newpage
+\section*{3. Model and saddle equations}
+All frequencies are absolute energies. The state assumed here is the
+$T=0$ grand-canonical equilibrium state of the Hermitian stationary
+rotating-frame model. This is a preparation assumption; stationarity alone
+does not establish thermalization of a laboratory driven system.
+
+The bath parameters are $K=\pi/4$, $\lambda_{\rm SOC}=0.05$,
+$\epsilon_O=120$, $\Omega=60$ and, unless varied explicitly, $W=0.1$.
+The full physical-sheet hybridization is
+\begin{align}
+\Delta_b(z)&=W^2\int_0^K\frac{k\,dk}{2\pi}
+\left[(z-B(z)-k^2)\Id-\lambda_{\rm SOC}k\sigma_x-A(z)\sigma_z\right]^{-1},\\
+B(z)&=\frac{V_O^2(z-\epsilon_O)}{(z-\epsilon_O)^2-\Omega^2}
++\frac{V_O^2\epsilon_O}{\epsilon_O^2-\Omega^2},\qquad
+A(z)=-\frac{V_O^2\Omega}{(z-\epsilon_O)^2-\Omega^2}.
+\end{align}
+The spin-even static subtraction is the same bath-energy convention as the
+existing noninteracting certificate. No Markov approximation is made.
+
+A normal single-orbital Kotliar--Ruckenstein/Gutzwiller saddle is parameterized
+by local probabilities $(e,p_+,p_-,d)$ summing to one. The symbol $d$ in these
+probabilities means $D$, not an impurity annihilation operator. In a variational
+natural spin basis, $n_\pm=p_\pm+d$, and
+\begin{equation}
+r_\pm=\frac{\sqrt{e p_\pm}+\sqrt{d p_\mp}}
+{\sqrt{n_\pm(1-n_\pm)}},\qquad
+R=\mathcal U_\theta\operatorname{diag}(r_+,r_-)\mathcal U_\theta^\dagger.
+\end{equation}
+The natural axis is varied, and the real symmetric constraint matrix
+$\Lambda=\Lambda_0\Id+\Lambda_x\sigma_x+\Lambda_z\sigma_z$ is independent.
+This is a spin-covariant matrix saddle in the normal, real sector of this real
+Hamiltonian. No paramagnetic or scalar-$Z$ restriction is imposed.
+Transverse complex-spin stability is checked separately.
+
+The functional is
+\begin{equation}
+\mathcal L=\Omega_{\rm qp}(R,\Lambda)
++\Tr[(\epsilon_d\Id-\Lambda)n]+Ud,\qquad
+G_f(z)=[z\Id-\Lambda-R\Delta_b(z)R]^{-1}.
+\end{equation}
+Stationarity imposes the matrix density constraint and the probability and
+spin-axis forces. At zero temperature,
+\begin{equation}
+n_f=\frac{\Id}{2}+\frac1\pi\int_0^\infty
+\operatorname{Herm}G_f(\mu+\ii y)\,dy,
+\quad \operatorname{Herm}M=\tfrac12(M+M^\dagger).
+\end{equation}
+The bath-force matrix follows by differentiating the same grand potential.
+Independent diagonalization of a Hermitian discretized star checks both the
+density and this force. The angular stationarity equation is regularized at
+vanishing spin polarization; otherwise polar coordinates can produce spurious
+unpolarized stationary points.
+
+For resonance poles, the saddle is held fixed in the spectral variable:
+\begin{equation}
+K_f^{\rm II}(z)=z\Id-\Lambda-R\Delta_b^{\rm II}(z)R,
+\qquad G_{d,\rm coh}^{\rm II}(z)=R[K_f^{\rm II}(z)]^{-1}R.
+\end{equation}
+The outgoing continuation crosses both open radial channels at the certified
+point. The equations $F=\det K_f^{\rm II}=0$ and $F_z=0$ are solved jointly with
+the saddle and filling constraint. The saddle is re-solved when physical
+controls change, not when differentiating with respect to $z$.
+
+\newpage
+\section*{4. Checks, limits and reproducibility}
+\begin{center}
+\begin{tabular}{p{0.55\textwidth}p{0.36\textwidth}}
+\toprule
+Check & Result\\
+\midrule
+$U=0$ quasiparticle weights and published pole & $Z_\pm=1$; original EP recovered\\
+Analytic radial integral against adaptive quadrature & Maximum error $1.54\times10^{-16}$\\
+194-dimensional Hermitian star: density / force & Errors $1.14\times10^{-12}$ / $1.48\times10^{-14}$\\
+20, 32, 48, 64 Gaussian nodes per integration interval & EP energy change below $10^{-12}$\\
+Selected saddle: density constraints & Below $10^{-12}$\\
+Selected saddle: constrained curvature & All positive; minimum $7.76\times10^{-5}$\\
+Transverse spin curvature & Positive, $8.73\times10^{-5}$\\
+Six perturbed saddle seeds & Same local solution\\
+128-step self-consistent encircling & Exchange error $8.49\times10^{-16}$\\
+Pole separation half-winding & $-0.499999999997$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+These checks validate a \emph{locally stable mean-field} EP. They do not bound
+the error of slave-boson mean field relative to the exact interacting impurity,
+prove a global free-energy minimum, or establish a screened Kondo state.
+The coherent physical Green function has total weight $RR^\dagger$, not the
+full canonical unit spectral sum: incoherent spectral weight is outside this
+saddle approximation. Local occupation and double occupancy are obtained
+from the constrained local probabilities, not by integrating only this
+coherent physical Green function.
+
+At the stronger-$U$ gate-path points the formal saddle poles are
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+$U$ & $n_d$ & Lower pole & Upper resonance\\
+\midrule
+$0.02$ & $0.975798$ & $0.00369918-0.00030563\ii$ & $0.01990449-0.00250010\ii$\\
+$0.08$ & $0.986771$ & $-0.02565504$ (bound) & $0.04958040-0.00241067\ii$\\
+$0.20$ & $0.994055$ & $-0.08527794$ (bound) & $0.10881797-0.00240659\ii$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Their determinant derivatives are nonzero. These are distinct poles, not
+double poles. In particular, the large-energy strong-$U$ poles should not be
+interpreted as a controlled calculation of Hubbard satellites: the coherent
+saddle is a low-energy approximation.
+
+\textbf{Reproduction.} From the archive root, use Python with NumPy, SciPy and
+Matplotlib. The following scripts regenerate the main tests:
+\begin{verbatim}
+python src/filling_continuation.py --order 32 --umax .003
+python src/select_ep.py
+python src/occupied_scan.py
+python src/validate.py
+python src/plot_results.py
+pdflatex Stationary_SB_Calculation_Note.tex
+\end{verbatim}
+JSON files retain saddle variables, probabilities, EP controls, residuals and
+the full pole-exchange contour. Additional scripts/options reproduce the
+low-filling and fixed-$V_O$, variable-$W$ paths. See \texttt{README.md}.
+
+\textbf{Method references.}
+G. Kotliar and A. E. Ruckenstein, Phys. Rev. Lett. \textbf{57}, 1362 (1986),
+\href{https://doi.org/10.1103/PhysRevLett.57.1362}{doi:10.1103/PhysRevLett.57.1362}.
+F. Lechermann et al., Phys. Rev. B \textbf{76}, 155102 (2007),
+\href{https://arxiv.org/abs/0704.1434}{arXiv:0704.1434}.
+The bath kernel and outgoing-sheet routines are copied from the manuscript's
+existing full-momentum noninteracting certificate; the finite-$U$ saddle and
+validation routines are new calculations in this package.
+\end{document}

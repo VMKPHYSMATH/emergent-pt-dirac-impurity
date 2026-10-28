@@ -1,0 +1,59 @@
+{
+  "reference_width": 0.0025,
+  "continuum_nd_U0": 0.9628172932310781,
+  "families": {
+    "balanced": {
+      "n0_12": 0.9280093555634927,
+      "nd_12": 0.9937276534308732,
+      "double_12": 0.0007017376025038986,
+      "single_probability_12": 0.9923241782258654,
+      "nd_change_10_12": 7.150821671353391e-06,
+      "double_relative_change_10_12": 0.0780934538516771,
+      "Sigma_change_10_12_over_Gamma": 0.8098071805566225,
+      "Sigma_difference_from_occupied_12_over_Gamma": 4.432862945167396,
+      "Sx_12": -0.20725949131761714,
+      "Sz_12": -0.44998293337109097
+    },
+    "equilibrium": {
+      "n0_12": 0.9671983118984886,
+      "nd_12": 0.993743209199097,
+      "double_12": 0.000967235708383191,
+      "single_probability_12": 0.9918087377823306,
+      "nd_change_10_12": 7.041610099300932e-05,
+      "double_relative_change_10_12": 0.0460097945548712,
+      "Sigma_change_10_12_over_Gamma": 1.6043319311933195,
+      "Sigma_difference_from_occupied_12_over_Gamma": 10.338505293122102,
+      "Sx_12": -0.25625746610981054,
+      "Sz_12": -0.4229317077923327
+    },
+    "occupied_exact": {
+      "n0_12": 0.9248248345522891,
+      "nd_12": 0.9940522516443675,
+      "double_12": 0.0013269839442182684,
+      "single_probability_12": 0.991398283755931,
+      "nd_change_10_12": 1.6015706381211636e-05,
+      "double_relative_change_10_12": -0.002081841046000177,
+      "Sigma_change_10_12_over_Gamma": 0.3298602705340236,
+      "Sigma_difference_from_occupied_12_over_Gamma": 0.0,
+      "Sx_12": -0.16832797213383932,
+      "Sz_12": -0.46494984358380975
+    },
+    "spin": {
+      "n0_12": 1.0135363782946627,
+      "nd_12": 0.9940329645707651,
+      "double_12": 0.0012892172174543994,
+      "single_probability_12": 0.9914545301358563,
+      "nd_change_10_12": 5.08155661270715e-05,
+      "double_relative_change_10_12": -0.009817765400784606,
+      "Sigma_change_10_12_over_Gamma": 1.2103062321504598,
+      "Sigma_difference_from_occupied_12_over_Gamma": 5.210900374992395,
+      "Sx_12": -0.2132136445071814,
+      "Sz_12": -0.4465377246352824
+    }
+  },
+  "checks": {
+    "largest_sumrule_error": 1.0475661708512007e-15,
+    "minimum_sampled_rate": 0.0025961969921449567,
+    "minimum_sampled_spectral_eigenvalue": 0.14686311111922187
+  }
+}

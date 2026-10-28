@@ -30,9 +30,14 @@ jobs:
       - run: python reproducibility/full_k_finite_u/finiteU_fullk_reproducibility/validate_archived_finiteU_gates.py
       - run: python reproducibility/full_k_finite_u/validate_fullk_n_scaling_gate.py
 
-  latex:
+  revision-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y texlive-latex-extra texlive-publishers
-      - run: make paper
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: make check-revision
+

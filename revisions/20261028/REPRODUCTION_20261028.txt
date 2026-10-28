@@ -1,0 +1,20 @@
+Running kr_paths
+Running kr_functional
+Running u0
+Running contact_algebra
+Running pt_control
+PASS: 98 accepted KR points and finer-grid residuals
+PASS: KR tail cutoff
+PASS: scalar r versus independent finite-cutoff reference
+PASS: corrected scalar production solver
+PASS: stationary-bath Coleman integration and Matsubara sums
+PASS: independent log-determinant functional derivatives
+PASS: selected KR local stability and six perturbed seeds
+PASS: 128-sample filling-one pole exchange
+PASS: four 256-sample EP loops, rank and nonzero second derivative
+PASS: four finite-chain KR comparison points (ED values are reference inputs)
+PASS: U=0 full-radial-bath EP certificate
+PASS: 14 exact scalar-bath control cases (separate model)
+PASS: optimized-bath sampled sum-rule and positivity checks
+PASS: reported self-energy nonconvergence diagnostic is retained
+Completed quick rerun. Reference hashes describe pre-rerun bytes; inspect changes before regenerating hashes.

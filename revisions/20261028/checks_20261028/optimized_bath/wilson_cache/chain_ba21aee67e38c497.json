@@ -1,0 +1,69 @@
+{
+  "options": {
+    "model": {
+      "soc": 0.05,
+      "cutoff": 0.7853981633974483,
+      "W": 0.1,
+      "VO": 1.2134220096136235,
+      "auxiliary_energy": 120.0,
+      "drive_frequency": 60.0
+    },
+    "mapping": {
+      "quadrature_nodes": 512,
+      "Lambda": 1.5,
+      "intervals": 64,
+      "z_shifts": [
+        0.5
+      ],
+      "blocks": 24,
+      "rank_tolerance": 1e-13,
+      "low_bands_only": false
+    },
+    "mu": 0.012
+  },
+  "reports": [
+    {
+      "source": "new microscopic Hermitian matrix chain",
+      "mu": 0.012,
+      "Lambda": 1.5,
+      "z_shift": 0.5,
+      "blocks": 24,
+      "low_bands_only": false,
+      "orthogonality_error": 2.7245013220536145e-15,
+      "mapping_checks": [
+        {
+          "z_relative_to_mu": [
+            -0.004,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.008063576026054257,
+          "chain_to_continuum_relative_error": 0.00805275090860641
+        },
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.011645379680743693,
+          "chain_to_continuum_relative_error": 0.01165366192587651
+        },
+        {
+          "z_relative_to_mu": [
+            0.004,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.012161745286235587,
+          "chain_to_continuum_relative_error": 0.012162209835275332
+        },
+        {
+          "z_relative_to_mu": [
+            0.0,
+            0.003
+          ],
+          "star_to_continuum_relative_error": 0.011645379680743693,
+          "chain_to_continuum_relative_error": 0.01165366192587651
+        }
+      ]
+    }
+  ]
+}
